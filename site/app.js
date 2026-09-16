@@ -9,7 +9,7 @@
 
   function statusLabel(status) {
     if (status === "live") return "Live";
-    if (status === "researched") return "Parser ready";
+    if (status === "researched") return "Treasurer page classified";
     return "Unknown";
   }
 

@@ -69,6 +69,7 @@ if (CENSUS.length !== 46) {
 
 const LEXINGTON = {
   status: "live",
+  sourceFamily: "realad-pdf",
   identifier: "tms",
   identifierFormat: "dashed-sections",
   adapter: "lexington",
@@ -98,6 +99,7 @@ const LEXINGTON = {
 
 const BEAUFORT = {
   status: "researched",
+  sourceFamily: "realad-pdf",
   identifier: "pin",
   identifierFormat: "R+17-digits",
   adapter: "beaufort",
@@ -116,6 +118,100 @@ const BEAUFORT = {
     "Parser ready (PIN, not TMS). Not wired as a live CSV in the original app. County-published GIS links verified 2026-09-16. The older Html5Viewer URL returned 404; Parcels/MapServer redirected to login. No parcel count is claimed.",
 };
 
+/**
+ * Treasurer pages opened or cited 16 Sep 2026. No adapters yet, so these
+ * stay `researched`. GIS URLs are omitted unless already verified.
+ * See docs/COVERAGE.md for the five source families.
+ */
+const RESEARCHED = {
+  charleston: {
+    status: "researched",
+    sourceFamily: "county-pdf",
+    identifier: "pin",
+    identifierFormat: "10-digit",
+    treasurerUrl:
+      "https://www.charlestoncounty.gov/departments/delinquent-tax/tax-sale.php",
+    listingSampleUrl:
+      "https://www.charlestoncounty.org/departments/delinquent-tax/files/RP-Tax-Sale-Listing.pdf?v=0",
+    notes:
+      "Family county-pdf. 2025 listing PDF uses 10-digit PINs. 2026 sale advertised to begin 9 Nov 2026. PDF cites S.C. Code 30-2-50. No adapter yet. Do not commit the listing.",
+  },
+  greenville: {
+    status: "researched",
+    sourceFamily: "html-table",
+    identifier: "map",
+    identifierFormat: "13-digit",
+    treasurerUrl: "https://www.greenvillecounty.org/TaxCollector/",
+    listingUrl: "https://www.greenvillecounty.org/appsAS400/Taxsale/",
+    notes:
+      "Family html-table. Live HTML columns Item #, Map #, Name, Amount Due. Map numbers are 13-digit, sometimes with a letter prefix. HTTP 200 on 16 Sep 2026. No adapter yet. Do not scrape into git.",
+  },
+  horry: {
+    status: "researched",
+    sourceFamily: "xlsx",
+    identifier: null,
+    identifierFormat: null,
+    treasurerUrl:
+      "https://www.horrycountysc.gov/departments/treasurer/delinquent-tax/",
+    notes:
+      "Family xlsx. Treasurer page (HTTP 200) advertises Delinquent List 08.19.26.xlsx. Column map not recorded; do not commit the spreadsheet.",
+  },
+  bamberg: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl:
+      "https://www.bambergcounty.sc.gov/tax-services/delinquent-tax-office/delinquent-tax-properties",
+    notes:
+      "Family page-or-newspaper. 2025 sale 8 Dec 2025; advertised in the Bamberg Leader. A seasonal Tax Sale List link, not a standing file.",
+  },
+  williamsburg: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl:
+      "https://www.williamsburgcounty.sc.gov/325/Delinquent-Tax-Sale",
+    notes:
+      "Family page-or-newspaper. 2025 sale was 3 Dec 2025. Page says 2026 information will be added at the appropriate time.",
+  },
+  spartanburg: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl: "https://www.spartanburgcounty.org/640/2025-Tax-Sale-Info",
+    notes:
+      "Family page-or-newspaper. CivicPlus page for 18–19 Nov 2025. Final 2025 list was posted as unavailable when checked via the CivicPlus mirror.",
+  },
+  sumter: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl:
+      "https://www.sumtercountysc.gov/departments/s_-_z/treasurer/delinquent_tax.php",
+    notes:
+      "Family page-or-newspaper. 2026 sale 9 Mar 2026. Page links a 2025 list of properties. File was not downloaded.",
+  },
+  dorchester: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl:
+      "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax",
+    notes:
+      "Family page-or-newspaper. 2026 sale 19 Oct 2026 with a published fee calendar. No listing file sampled.",
+  },
+  lancaster: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl: "https://www.lancastercountysc.gov/198/Tax-Sale-Procedures",
+    notes:
+      "Family page-or-newspaper. 2026 sale 9 Nov 2026. Updated list after 5 pm 6 Nov for registered bidders.",
+  },
+  richland: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl:
+      "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale",
+    notes:
+      "Family page-or-newspaper. 2025 sale ended. Bidder portal at www7.richlandcountysc.gov/TaxSaleBidder. No 2026 file sampled.",
+  },
+};
+
 function row([id, name, fips, lat, lng]) {
   const base = {
     id,
@@ -126,6 +222,7 @@ function row([id, name, fips, lat, lng]) {
     geoid: "45" + fips,
     center: [lat, lng],
     status: "unknown",
+    sourceFamily: null,
     identifier: null,
     identifierFormat: null,
     adapter: null,
@@ -137,6 +234,7 @@ function row([id, name, fips, lat, lng]) {
   };
   if (id === "lexington") return Object.assign(base, LEXINGTON);
   if (id === "beaufort") return Object.assign(base, BEAUFORT);
+  if (RESEARCHED[id]) return Object.assign(base, RESEARCHED[id]);
   return base;
 }
 

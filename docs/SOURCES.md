@@ -56,7 +56,7 @@ The original file skipped codes and then duplicated others. Confirmed correction
 
 Saluda through York already matched Census (081–091). Kershaw and Lexington both stored 063; Lee and Marlboro both stored 069. Lexington’s real code is 063. Kershaw is 055. McCormick is 065, which the old file had assigned to Lancaster.
 
-The other 44 counties have `treasurerUrl` and `gisUrl` set to null. They were not verified, so they are `unknown`.
+Counties whose treasurer pages were opened on 16 September 2026 and classified into a source family are `researched` even without an adapter. See `docs/COVERAGE.md`. The rest stay `unknown` with null URLs.
 
 ## Lexington (live)
 
@@ -107,6 +107,25 @@ Mentioned only. Not in `counties/sc.json` and not in SC pricing. List URLs were 
 - 2022, 2023, and 2025 tables on themountaineer.com (see `counties/extras.json`)
 - Tax bill search template: `https://taxes.haywoodcountync.gov/ITSPublic/TaxBillSearch?parcelNumber={PIN}`
 
+## Other researched treasurer pages (16 September 2026)
+
+Opened or cited while classifying source families. No GIS URLs added. No listing files stored.
+
+| County | Family | Page |
+| --- | --- | --- |
+| Charleston | county-pdf | https://www.charlestoncounty.gov/departments/delinquent-tax/tax-sale.php (200). Sample 2025 PDF uses 10-digit PINs. |
+| Greenville | html-table | https://www.greenvillecounty.org/appsAS400/Taxsale/ (200). Columns Item #, Map #, Name, Amount Due. |
+| Horry | xlsx | https://www.horrycountysc.gov/departments/treasurer/delinquent-tax/ (200). Advertises an `.xlsx` delinquent list. |
+| Bamberg | page-or-newspaper | https://www.bambergcounty.sc.gov/tax-services/delinquent-tax-office/delinquent-tax-properties |
+| Williamsburg | page-or-newspaper | https://www.williamsburgcounty.sc.gov/325/Delinquent-Tax-Sale |
+| Spartanburg | page-or-newspaper | https://www.spartanburgcounty.org/640/2025-Tax-Sale-Info |
+| Sumter | page-or-newspaper | https://www.sumtercountysc.gov/departments/s_-_z/treasurer/delinquent_tax.php |
+| Dorchester | page-or-newspaper | https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax |
+| Lancaster | page-or-newspaper | https://www.lancastercountysc.gov/198/Tax-Sale-Procedures |
+| Richland | page-or-newspaper | https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale |
+
+qPublic/Beacon (`qpublic.schneidercorp.com`) is an assessor GIS portal for many SC counties. It is not a tax-sale list.
+
 ## What was not done
 
-No statewide treasurer crawl. No invented ArcGIS URLs. No download of the Lexington owner CSV. No parcel counts.
+No remaining-county treasurer crawl. No invented ArcGIS URLs. No download of owner CSVs, Greenville HTML rows, or the Charleston PDF into git. No parcel counts.

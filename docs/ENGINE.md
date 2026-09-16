@@ -34,6 +34,10 @@ node engine/cli.js inquiry beaufort path/to/local.csv 10
 
 PDF text extraction still depends on a local PDF and is not a dependency of `npm test`. Supply extracted text, or run the original PDF scripts against files you download from the treasurer page.
 
+## All 46 counties
+
+There is no statewide feed. See `docs/COVERAGE.md`. Ingest by source family (`realad-pdf`, `html-table`, `county-pdf`, `xlsx`, `page-or-newspaper`), not by writing 46 parsers. A county is `researched` when its treasurer page and family are verified, `live` only when an adapter exists.
+
 ## Status words
 
 | Status | Meaning here |

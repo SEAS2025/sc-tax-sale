@@ -79,16 +79,21 @@ test("registry has 46 unique official FIPS codes", () => {
   assert.notEqual(getCounty("lee").fips, getCounty("marlboro").fips);
 });
 
-test("status counts: Lexington live, Beaufort researched, rest unknown", () => {
+test("status counts: Lexington live, researched families, rest unknown", () => {
   const counts = countByStatus();
-  assert.deepEqual(counts, { live: 1, researched: 1, unknown: 44 });
+  assert.deepEqual(counts, { live: 1, researched: 11, unknown: 34 });
   assert.equal(getCounty("lexington").status, "live");
+  assert.equal(getCounty("lexington").sourceFamily, "realad-pdf");
   assert.equal(getCounty("lexington").adapter, "lexington");
   assert.equal(getCounty("beaufort").status, "researched");
-  assert.equal(getCounty("beaufort").adapter, "beaufort");
-  assert.equal(getCounty("richland").status, "unknown");
-  assert.equal(getCounty("richland").gisUrl, null);
-  assert.equal(getCounty("richland").treasurerUrl, null);
+  assert.equal(getCounty("beaufort").sourceFamily, "realad-pdf");
+  assert.equal(getCounty("greenville").sourceFamily, "html-table");
+  assert.equal(getCounty("charleston").sourceFamily, "county-pdf");
+  assert.equal(getCounty("horry").sourceFamily, "xlsx");
+  assert.equal(getCounty("richland").status, "researched");
+  assert.equal(getCounty("richland").treasurerUrl.includes("Tax-Sale"), true);
+  assert.equal(getCounty("aiken").status, "unknown");
+  assert.equal(getCounty("aiken").treasurerUrl, null);
 });
 
 test("registry does not republish the owner CSV or Base44 secrets", () => {

@@ -2,7 +2,7 @@
 
 South Carolina delinquent tax sale analysis for all 46 counties. Southeast Aerial Systems.
 
-Lexington is the live county. Beaufort has a parser and verified county pages, and is not a live sale file. The other 44 counties are in the registry with blank treasurer and GIS fields until those pages are checked. Haywood County, North Carolina is an out-of-state extra and is not part of SC pricing.
+Lexington is the live county. Beaufort and ten other counties have verified treasurer pages classified into source families (see `docs/COVERAGE.md`). There is no statewide file: cover the other counties with three ingest adapters (`html-table`, `county-pdf`, `xlsx`) plus a page watcher, not 46 PDF parsers. Haywood County, North Carolina is an out-of-state extra and is not part of SC pricing.
 
 This is public-record research, not legal advice.
 
@@ -22,6 +22,7 @@ No checkout on the site. Write [southeastaerialsystems@gmail.com](mailto:southea
 - `site/` — static marketing site. Cloudflare Pages build output.
 - `counties/sc.json` — 46-county registry. Census FIPS. Lexington live, Beaufort researched.
 - `engine/` — Lexington TMS adapter and Beaufort PIN parsers.
+- `docs/COVERAGE.md` — how to cover all 46 counties by source family, not 46 parsers.
 - `docs/SOURCES.md` — what was verified, and what was not.
 
 The original analysis app was a Base44 React project. This repo does not publish that UI, its auth, or owner-level CSVs.
