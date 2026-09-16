@@ -83,11 +83,22 @@ function log(...parts) {
 
 const LIMITS = new Map();
 
+/**
+ * One bucket per host. The bucket used to keep whichever profile happened to
+ * create it, so a host first touched by the slow crawl profile stayed at that
+ * pace forever -- a HEAD sweep asking for 110 ms between probes silently ran
+ * at 900 ms with two slots, turning a 7-minute sweep into an hour of near
+ * silence. The requested profile now takes effect on every acquire.
+ */
 function limiterFor(host, profile) {
   let lim = LIMITS.get(host);
   if (!lim) {
-    lim = { running: 0, last: 0, queue: [], ...profile };
+    lim = { running: 0, last: 0, queue: [], timer: null, concurrency: 1, minIntervalMs: 1000 };
     LIMITS.set(host, lim);
+  }
+  if (profile) {
+    if (profile.concurrency) lim.concurrency = profile.concurrency;
+    if (profile.minIntervalMs != null) lim.minIntervalMs = profile.minIntervalMs;
   }
   return lim;
 }
@@ -107,13 +118,28 @@ function pump(lim) {
   const job = lim.queue.shift();
   lim.running += 1;
   lim.last = Date.now();
+  let released = false;
+  const release = () => {
+    if (released) return;
+    released = true;
+    lim.running -= 1;
+    pump(lim);
+  };
+  // Release before settling the caller, on both paths. Doing it in a trailing
+  // .finally() also works but leaves lim.running briefly overstated while the
+  // caller runs, which makes the invariant untestable and easy to break.
   Promise.resolve()
     .then(job.task)
-    .then(job.resolve, job.reject)
-    .finally(() => {
-      lim.running -= 1;
-      pump(lim);
-    });
+    .then(
+      (value) => {
+        release();
+        job.resolve(value);
+      },
+      (err) => {
+        release();
+        job.reject(err);
+      },
+    );
   pump(lim);
 }
 
@@ -125,18 +151,77 @@ function schedule(host, profile, task) {
   });
 }
 
+/* ---------------------------------------------------------------- watchdog */
+
+const STALL_MS = 5 * 60 * 1000;
+
+/**
+ * Run one phase under a stall watchdog. A phase that reports no progress for
+ * STALL_MS is abandoned loudly and the crawl moves on: finishing the state
+ * with known gaps beats burning an hour on a wedged host. Phases cooperate by
+ * calling ctx.touch() as they work and checking ctx.expired in their loops,
+ * because an abandoned promise in JS keeps running otherwise.
+ */
+function runPhase(label, fn, stallMs) {
+  const limit = stallMs || STALL_MS;
+  const ctx = {
+    label,
+    expired: false,
+    last: Date.now(),
+    touch() {
+      this.last = Date.now();
+    },
+  };
+  let timer = null;
+  const bail = new Promise((resolve) => {
+    const tick = () => {
+      if (ctx.expired) return;
+      if (Date.now() - ctx.last >= limit) {
+        ctx.expired = true;
+        log("    !! WATCHDOG:", label, "made no progress for", Math.round(limit / 60000), "min; abandoning phase");
+        resolve([]);
+        return;
+      }
+      timer = setTimeout(tick, 10000);
+    };
+    timer = setTimeout(tick, 10000);
+  });
+  return Promise.race([
+    Promise.resolve().then(() => fn(ctx)),
+    bail,
+  ]).then(
+    (value) => {
+      clearTimeout(timer);
+      ctx.expired = true;
+      return Array.isArray(value) ? value : [];
+    },
+    (err) => {
+      clearTimeout(timer);
+      ctx.expired = true;
+      throw err;
+    },
+  );
+}
+
 /* ------------------------------------------------------------------ fetch */
 
-function backoffMs(attempt, response) {
+function backoffMs(attempt, response, capMs) {
+  const cap = capMs || 120000;
   const retryAfter = response && response.headers && response.headers.get("retry-after");
   const hinted = retryAfter && /^\d+$/.test(retryAfter.trim()) ? Number(retryAfter) * 1000 : 0;
-  return Math.max(hinted, Math.min(120000, 3000 * Math.pow(2, attempt)) + Math.floor(Math.random() * 1500));
+  const grown = Math.min(cap, 3000 * Math.pow(2, attempt)) + Math.floor(Math.random() * 1500);
+  return Math.min(Math.max(hinted, grown), cap);
 }
 
 async function politeFetch(url, options) {
   const opts = options || {};
   const profile = opts.profile || PROFILE_SITE;
   const retries = opts.retries == null ? 3 : opts.retries;
+  const cap = opts.maxBackoffMs || 120000;
+  // A hard ceiling on the whole retry sequence. Without it a run of 503s
+  // could legitimately sleep for many minutes per URL, which reads exactly
+  // like a hang from the outside.
+  const giveUpAt = Date.now() + (opts.totalBudgetMs || 4 * 60 * 1000);
   const host = hostOf(url);
   let lastError = null;
   for (let attempt = 0; attempt <= retries; attempt += 1) {
@@ -148,13 +233,18 @@ async function politeFetch(url, options) {
         signal: AbortSignal.timeout(opts.timeoutMs || 30000),
       }));
       if ([429, 502, 503, 504].includes(response.status) && attempt < retries) {
-        await sleep(backoffMs(attempt, response));
+        const wait = backoffMs(attempt, response, cap);
+        if (Date.now() + wait > giveUpAt) return response;
+        await sleep(wait);
         continue;
       }
       return response;
     } catch (err) {
       lastError = err;
-      if (attempt < retries) await sleep(backoffMs(attempt, null));
+      if (attempt >= retries) break;
+      const wait = backoffMs(attempt, null, cap);
+      if (Date.now() + wait > giveUpAt) break;
+      await sleep(wait);
     }
   }
   if (lastError) throw lastError;
@@ -291,6 +381,18 @@ function waybackUrl(timestamp, original) {
   return "https://web.archive.org/web/" + timestamp + "id_/" + original;
 }
 
+/**
+ * A capture timestamp is when the crawler visited, not the year of the sale.
+ * cherokeecountysc.gov/wp-content/uploads/2021/12/...-12-3-21.pdf captured in
+ * 2024 is still the 2021 list, and filing it as 2024 would drop an archive on
+ * the recent side of the five-year window and manufacture a false pair. Trust
+ * the year the county put in its own URL; fall back to the capture date only
+ * when the URL says nothing at all.
+ */
+function captureYear(row) {
+  return catalog.yearFrom(row.original) || Number(String(row.timestamp).slice(0, 4));
+}
+
 const CDX_KEEP = /\.(pdf|xls|xlsx|csv)(\?|$)/i;
 
 // Several counties published the list as a plain page rather than a file
@@ -417,16 +519,18 @@ function parentDir(url) {
  * URL at an old capture, then sweep the folder it lives in. Only then fall
  * back to a domain-wide sweep, which is noisy and much slower.
  */
-async function waybackTargeted(county, want, from, to, target) {
+async function waybackTargeted(county, want, from, to, target, ctx) {
   const found = [];
   const seen = new Set();
   const dirs = new Set();
   for (const known of knownListingUrls(county)) {
+    if (ctx && ctx.expired) return found;
+    if (ctx) ctx.touch();
     const rows = await cdxExact(known, from, to);
     const dir = parentDir(known);
     if (dir) dirs.add(dir);
     for (const row of rows) {
-      const year = Number(String(row.timestamp).slice(0, 4));
+      const year = captureYear(row);
       if (!target.has(year)) continue;
       const url = waybackUrl(row.timestamp, row.original);
       if (seen.has(url) || alreadyKnown(county.id, url)) continue;
@@ -440,6 +544,8 @@ async function waybackTargeted(county, want, from, to, target) {
     }
   }
   for (const dir of dirs) {
+    if (ctx && ctx.expired) return found;
+    if (ctx) ctx.touch();
     const rows = (await cdxPrefix(dir, from, to))
       .filter(keepCapture)
       .filter((row) => catalog.looksLikeListing(row.original))
@@ -447,7 +553,7 @@ async function waybackTargeted(county, want, from, to, target) {
       .sort((a, b) => b.score - a.score)
       .slice(0, 12);
     for (const { row } of rows) {
-      const year = Number(String(row.timestamp).slice(0, 4));
+      const year = captureYear(row);
       if (!target.has(year)) continue;
       const url = waybackUrl(row.timestamp, row.original);
       if (seen.has(url) || alreadyKnown(county.id, url)) continue;
@@ -463,21 +569,23 @@ async function waybackTargeted(county, want, from, to, target) {
   return found;
 }
 
-async function huntWayback(county, want, budget) {
+async function huntWayback(county, want, budget, ctx) {
   const found = [];
   const hosts = [...new Set(countyHosts(county).map((host) => host.replace(/^www\./, "")))];
   if (!hosts.length) return found;
   const spans = want === "historic" ? [["2020", "2022"]] : [["2024", "2026"]];
   const targetYears = want === "historic" ? HISTORIC_YEARS : RECENT_YEARS;
   try {
-    const targeted = await waybackTargeted(county, want, spans[0][0], spans[0][1], targetYears);
+    const targeted = await waybackTargeted(county, want, spans[0][0], spans[0][1], targetYears, ctx);
     found.push(...targeted);
     if (found.length >= 2) return found;
   } catch (err) {
     log("    wayback targeted failed", String(err.message || err).slice(0, 60));
   }
   for (const host of hosts) {
+    if (ctx && ctx.expired) return found;
     for (const [from, to] of spans) {
+      if (ctx) ctx.touch();
       const rows = await cdxRows(host, from, to);
       if (!rows.length) continue;
       const wanted = rows
@@ -489,7 +597,9 @@ async function huntWayback(county, want, budget) {
         .slice(0, budget);
       log("    cdx", host, from + "-" + to, rows.length + " rows,", wanted.length + " listing-like");
       for (const { row } of wanted) {
-        const year = Number(String(row.timestamp).slice(0, 4));
+        if (ctx && ctx.expired) return found;
+        if (ctx) ctx.touch();
+        const year = captureYear(row);
         const target = want === "historic" ? HISTORIC_YEARS : RECENT_YEARS;
         if (!target.has(year)) {
           log("       skip", year, "out of window", row.original.slice(0, 90));
@@ -522,36 +632,60 @@ function filenameFromHead(response) {
   return match ? decodeURIComponent(match[1].replace(/"$/, "")) : "";
 }
 
-async function docCenterSweep(county, origin, maxId, want) {
+async function docCenterSweep(county, origin, maxId, want, ctx) {
   const found = [];
   const hits = [];
   const target = want === "historic" ? HISTORIC_YEARS : RECENT_YEARS;
   const ids = [];
   for (let id = 1; id <= maxId; id += 1) ids.push(id);
   let scanned = 0;
+  let throttled = 0;
+  let lastBeat = Date.now();
+  let giveUp = false;
   await Promise.all(Array.from({ length: 6 }, async () => {
     while (ids.length) {
+      if (giveUp || (ctx && ctx.expired)) return;
       const id = ids.shift();
       const url = origin + "/DocumentCenter/View/" + id;
+      // Counted before the request so the heartbeat advances even when a
+      // probe fails; a silent loop is what made the last stall invisible.
+      scanned += 1;
+      if (ctx) ctx.touch();
+      if (scanned % 100 === 0 || Date.now() - lastBeat > 60000) {
+        lastBeat = Date.now();
+        log("      doccenter", county.id, "probed " + scanned + "/" + maxId + ",", hits.length, "listing-like so far");
+      }
       try {
         const response = await politeFetch(url, {
           method: "HEAD",
           profile: PROFILE_SWEEP,
           timeoutMs: 15000,
-          retries: 1,
+          retries: 0,
+          maxBackoffMs: 4000,
         });
-        scanned += 1;
-        if (!response || !response.ok) continue;
+        if (!response) continue;
+        if (response.status === 429 || response.status === 503) {
+          throttled += 1;
+          // The host is asking us to stop. Sweeping through a few thousand
+          // more ids against a rate limiter is neither polite nor useful.
+          if (throttled >= 15) {
+            giveUp = true;
+            log("      doccenter", county.id, "host is rate-limiting after", scanned, "probes; stopping sweep");
+          }
+          continue;
+        }
+        if (!response.ok) continue;
         const name = filenameFromHead(response);
         if (!name) continue;
         if (!catalog.looksLikeListing(name)) continue;
+        log("      doccenter", county.id, "id", id, "->", name.slice(0, 70));
         hits.push({ id, url, name });
       } catch (_err) {
         // a dead document id is normal; keep sweeping
       }
     }
   }));
-  log("    doccenter", origin, "scanned", scanned, "listing-like", hits.length);
+  log("    doccenter", origin, "scanned", scanned, "listing-like", hits.length, throttled ? "(throttled " + throttled + ")" : "");
   hits.sort((a, b) => b.id - a.id);
   for (const hit of hits.slice(0, 40)) {
     const year = catalog.yearFrom(hit.name);
@@ -594,7 +728,7 @@ function linksIn(html, base) {
 
 const DOC_RE = /\.(pdf|xls|xlsx|csv)(\?|$)/i;
 
-async function crawlSite(county, want, blocked) {
+async function crawlSite(county, want, blocked, ctx) {
   const found = [];
   const hosts = new Set(countyHosts(county));
   const target = want === "historic" ? HISTORIC_YEARS : RECENT_YEARS;
@@ -602,9 +736,11 @@ async function crawlSite(county, want, blocked) {
   const seen = new Set();
   const docs = new Map();
   while (queue.length) {
+    if (ctx && ctx.expired) break;
     const { url, depth } = queue.shift();
     if (seen.has(url) || seen.size > 40) continue;
     seen.add(url);
+    if (ctx) ctx.touch();
     let response;
     try {
       response = await politeFetch(url, { profile: PROFILE_SITE, timeoutMs: 30000, retries: 1 });
@@ -637,9 +773,11 @@ async function crawlSite(county, want, blocked) {
   }
   log("    crawl", county.id, "pages", seen.size, "listing-like docs", docs.size);
   for (const [url, text] of docs) {
+    if (ctx && ctx.expired) break;
     if (alreadyKnown(county.id, url)) continue;
     const year = catalog.yearFrom(url, text);
     if (year && !target.has(year)) continue;
+    if (ctx) ctx.touch();
     const verdict = await validate(county.id, { url, year: year || null, source: "crawl" });
     log("      ", verdict.ok ? "HIT " : "miss", verdict.year || "?", verdict.reason, url.slice(0, 110));
     if (verdict.ok && verdict.year && target.has(verdict.year)) found.push(verdict);
@@ -655,12 +793,15 @@ const S3_PATTERNS = [
   (host) => "https://files." + host + "/?list-type=2&max-keys=400",
 ];
 
-async function probeObjectStorage(county, want) {
+async function probeObjectStorage(county, want, ctx) {
   const found = [];
   const target = want === "historic" ? HISTORIC_YEARS : RECENT_YEARS;
   for (const host of countyHosts(county)) {
+    if (ctx && ctx.expired) break;
     const bare = host.replace(/^www\./, "");
     for (const make of S3_PATTERNS) {
+      if (ctx && ctx.expired) break;
+      if (ctx) ctx.touch();
       const url = make(bare);
       let response;
       try {
@@ -786,14 +927,14 @@ async function huntCounty(county, needs, opts) {
   for (const want of wants) {
     log("  phase crawl /", want);
     try {
-      finds.push(...await crawlSite(county, want, blocked));
+      finds.push(...await runPhase("crawl " + county.id + "/" + want, (ctx) => crawlSite(county, want, blocked, ctx)));
     } catch (err) {
       log("    crawl failed", String(err.message || err).slice(0, 80));
     }
 
     log("  phase object-storage /", want);
     try {
-      finds.push(...await probeObjectStorage(county, want));
+      finds.push(...await runPhase("s3 " + county.id + "/" + want, (ctx) => probeObjectStorage(county, want, ctx)));
     } catch (err) {
       log("    s3 failed", String(err.message || err).slice(0, 80));
     }
@@ -802,7 +943,10 @@ async function huntCounty(county, needs, opts) {
       for (const host of countyHosts(county)) {
         log("  phase doccenter /", want, host);
         try {
-          finds.push(...await docCenterSweep(county, "https://" + host, opts.maxDocId, want));
+          finds.push(...await runPhase(
+            "doccenter " + county.id + "/" + host,
+            (ctx) => docCenterSweep(county, "https://" + host, opts.maxDocId, want, ctx),
+          ));
         } catch (err) {
           log("    doccenter failed", String(err.message || err).slice(0, 80));
         }
@@ -812,7 +956,13 @@ async function huntCounty(county, needs, opts) {
     if (!opts.skipWayback) {
       log("  phase wayback /", want);
       try {
-        finds.push(...await huntWayback(county, want, 18));
+        // Wayback legitimately pauses for minutes between throttled queries,
+        // so it gets a wider stall allowance than the other phases.
+        finds.push(...await runPhase(
+          "wayback " + county.id + "/" + want,
+          (ctx) => huntWayback(county, want, 18, ctx),
+          8 * 60 * 1000,
+        ));
       } catch (err) {
         log("    wayback failed", String(err.message || err).slice(0, 80));
       }
@@ -864,7 +1014,21 @@ async function main() {
   log("hunt complete");
 }
 
-main().catch((err) => {
-  log("fatal", err && err.stack ? err.stack : String(err));
-  process.exit(1);
-});
+if (require.main === module) {
+  main().catch((err) => {
+    log("fatal", err && err.stack ? err.stack : String(err));
+    process.exit(1);
+  });
+}
+
+module.exports = {
+  LIMITS,
+  limiterFor,
+  schedule,
+  runPhase,
+  keepCapture,
+  bigEnough,
+  rankCdx,
+  parentDir,
+  filenameFromHead,
+};

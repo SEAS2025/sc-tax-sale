@@ -522,3 +522,79 @@ test("inquiry draft lists identifiers and amounts, not a fake payment link", () 
   assert.equal(draft.text.includes("stripe.com"), false);
   assert.equal(draft.text.includes("EXAMPLE OWNER"), false);
 });
+
+test("host limiter honours the newest profile instead of the one that created it", () => {
+  const hunt = require("../scripts/hunt");
+  hunt.LIMITS.delete("limiter.example");
+  const slow = hunt.limiterFor("limiter.example", { concurrency: 2, minIntervalMs: 900 });
+  assert.equal(slow.minIntervalMs, 900);
+  assert.equal(slow.concurrency, 2);
+  // A HEAD sweep asking for a faster pace used to be silently ignored,
+  // which stretched a 7-minute document-center sweep past an hour.
+  const fast = hunt.limiterFor("limiter.example", { concurrency: 8, minIntervalMs: 110 });
+  assert.equal(fast.minIntervalMs, 110);
+  assert.equal(fast.concurrency, 8);
+  assert.equal(fast, slow, "same host must reuse one bucket");
+});
+
+test("limiter releases its slot when a task rejects", async () => {
+  const hunt = require("../scripts/hunt");
+  hunt.LIMITS.delete("reject.example");
+  const profile = { concurrency: 1, minIntervalMs: 0 };
+  await assert.rejects(
+    () => hunt.schedule("reject.example", profile, () => Promise.reject(new Error("boom"))),
+    /boom/,
+  );
+  const lim = hunt.LIMITS.get("reject.example");
+  assert.equal(lim.running, 0, "a rejected task must not leak its slot");
+  // The next acquire must still be servable; a leaked slot would hang here.
+  assert.equal(await hunt.schedule("reject.example", profile, () => "ok"), "ok");
+  assert.equal(lim.running, 0);
+});
+
+test("phase watchdog abandons a phase that stops reporting progress", async () => {
+  const hunt = require("../scripts/hunt");
+  let stillRunning = true;
+  const result = await hunt.runPhase("stalled-test", async (ctx) => {
+    while (!ctx.expired) await new Promise((r) => setTimeout(r, 10));
+    stillRunning = false;
+    return ["never"];
+  }, 60);
+  assert.deepEqual(result, [], "an abandoned phase yields no finds");
+  await new Promise((r) => setTimeout(r, 40));
+  assert.equal(stillRunning, false, "the phase must observe ctx.expired and stop");
+});
+
+test("phase watchdog lets a phase that keeps touching progress finish", async () => {
+  const hunt = require("../scripts/hunt");
+  const result = await hunt.runPhase("busy-test", async (ctx) => {
+    for (let i = 0; i < 6; i += 1) {
+      await new Promise((r) => setTimeout(r, 20));
+      ctx.touch();
+    }
+    return ["found"];
+  }, 80);
+  assert.deepEqual(result, ["found"]);
+});
+
+test("archived captures keep pages and revisits but drop assets", () => {
+  const hunt = require("../scripts/hunt");
+  // Colleton published the list as a page, and Wayback files repeat captures
+  // as warc/revisit with no real mimetype.
+  assert.equal(hunt.keepCapture({ original: "https://x.gov/2020-tax-sale-list", mimetype: "warc/revisit" }), true);
+  assert.equal(hunt.keepCapture({ original: "https://x.gov/tax-sale", mimetype: "text/html" }), true);
+  assert.equal(hunt.keepCapture({ original: "https://x.gov/list.pdf", mimetype: "application/pdf" }), true);
+  assert.equal(hunt.keepCapture({ original: "https://x.gov/banner.jpg", mimetype: "image/jpeg" }), false);
+  assert.equal(hunt.keepCapture({ original: "https://x.gov/site.css", mimetype: "text/css" }), false);
+  // Size gating applies to documents only; pages and revisits run small.
+  assert.equal(hunt.bigEnough({ original: "https://x.gov/list.pdf", length: 200 }), false);
+  assert.equal(hunt.bigEnough({ original: "https://x.gov/2020-tax-sale-list", length: 200 }), true);
+});
+
+test("document-center filenames come from content-disposition", () => {
+  const hunt = require("../scripts/hunt");
+  const headers = new Map([["content-disposition", 'attachment; filename="2021-Delinquent-Tax-Sale.pdf"']]);
+  const name = hunt.filenameFromHead({ headers: { get: (k) => headers.get(k) || null } });
+  assert.equal(name, "2021-Delinquent-Tax-Sale.pdf");
+  assert.equal(hunt.parentDir("https://x.gov/a/b/list.pdf"), "https://x.gov/a/b/");
+});
