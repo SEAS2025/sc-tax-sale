@@ -8,7 +8,7 @@ They are not counted by `engine/test.js`, are not part of SC pricing, and are no
 
 Public records only. No login, captcha, or paywall was bypassed. **No obituaries, death notices, or any owner-name source were used.** The published lists do carry a `LIABLE OWNER` column; that column is located only so it can be dropped, and no owner value is written to any snapshot, JSON file, document, or PDF.
 
-Generated 2026-09-16T22:48:48.058Z by `engine/out-of-state.js` (driver: `scripts/hunt-out-of-state.sh`).
+Generated 2026-09-16T22:48:49.959Z by `engine/out-of-state.js` (driver: `scripts/hunt-out-of-state.sh`).
 
 ## Status of this run
 
@@ -16,14 +16,14 @@ Generated 2026-09-16T22:48:48.058Z by `engine/out-of-state.js` (driver: `scripts
 - `land`: 2026-09-16T22:39:09.196Z
 - `lists`: 2026-09-16T22:41:15.641Z
 - `wayback`: 2026-09-16T22:48:48.034Z
-- `pair`: not completed in this run
+- `pair`: 2026-09-16T22:48:49.933Z
 - `pdf`: not completed in this run
 
 ## Summary
 
 | County | Regime | Verified sources | Readable tax years | Widest paired span | Parcels in that pair |
 | --- | --- | --- | --- | --- | --- |
-| Haywood NC | Foreclosure (NC) | 12 | none | — | 0 |
+| Haywood NC | Foreclosure (NC) | 12 | 2017, 2022, 2023, 2025 | 5 tax years apart | 1357 |
 | Coconino AZ | Lien certificate (AZ) | 7 | none | — | 0 |
 | Mohave AZ | Lien certificate (AZ) | 6 | none | — | 0 |
 | Yavapai AZ | Lien certificate (AZ) | 3 | none | — | 0 |
@@ -87,13 +87,26 @@ Statute text verified over the network:
 
 **Parcels per tax year.**
 
-_No tax year produced a readable parcel column._
+| Tax year | Advertised | Files | Rows read | Unique parcels |
+| --- | --- | --- | --- | --- |
+| 2017 | 2018 | 6 | 4115 | 4091 |
+| 2022 | 2023 | 1 | 3163 | 3153 |
+| 2023 | 2024 | 1 | 3088 | 3082 |
+| 2025 | 2026 | 1 | 2837 | 2824 |
 
 **Intersections, with the true year span of each.**
 
-_Fewer than two tax years are readable, so there is nothing to intersect._
+| Tax years | True span | Parcels on both |
+| --- | --- | --- |
+| 2022 ∩ 2023 | one tax year apart | 1770 |
+| 2023 ∩ 2025 | 2 tax years apart | 1443 |
+| 2022 ∩ 2025 | 3 tax years apart | 1270 |
+| 2017 ∩ 2022 | 5 tax years apart | 1357 |
+| 2017 ∩ 2023 | 6 tax years apart | 1197 |
+| 2017 ∩ 2025 | 8 tax years apart | 976 |
+| 2017 ∩ 2022 ∩ 2023 ∩ 2025 | all 4 readable years | 555 |
 
-**No pair — a genuine zero, not a parsing failure.** Nothing is reported for this county. Sources responded, but no published page exposed a readable parcel column. Across every page fetched for this county there were 0 identifier-shaped tokens in total, so the pages genuinely do not carry parcel data — they are navigation and document-index pages.
+**Headline pair.** 1357 parcels appear on both the tax-year-2017 and tax-year-2022 advertised lists — 5 tax years apart. That is a genuine five-year span, so the report may be labelled as a five-year delinquent file.
 
 **Wayback CDX.** `haywoodcountync.gov|delinquent` — Internet Archive is temporarily offline (service-wide outage).
 
