@@ -44,9 +44,13 @@ Lexington (live) and Beaufort (parser ready). Text extract, then a layout-specif
 
 **Colleton** [tax sale](https://www.colletoncounty.org/delinquent-tax/tax-sale) links `taxsale-1-30-26.pdf` (sale advertised 20 Feb 2026). Headers: Map Number, Description, Acres, Total Tax Due. Map shape `213-00-00-020.000`. File not stored.
 
+**Florence** [Delinquent Tax](https://www.florencecountysc.gov/offices/delinquent-tax/) posts 2026 real-property and mobile-home PDFs on county S3 (sale 5 Oct 2026). HEAD only; files not stored.
+
 ### 4. `xlsx` — spreadsheet download
 
 **Horry** treasurer page `https://www.horrycountysc.gov/departments/treasurer/delinquent-tax/` (HTTP 200) advertises `Delinquent List 08.19.26.xlsx`. One sheet-to-canonical adapter covers every county that uses Excel. Column names will still need a per-file map the first time.
+
+**Dillon** treasurer page labels `PAPER.XLS` as the Delinquent Tax Sale List (HEAD 200, `application/vnd.ms-excel`, Last-Modified 6 May 2026). Same adapter family. File not stored.
 
 ### 5. `page-or-newspaper` — CivicPlus / seasonal list / bidder portal
 

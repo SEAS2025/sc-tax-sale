@@ -18,7 +18,10 @@ const SEEDS = {
     "https://www.bambergcounty.sc.gov",
     "https://www.bambergcounty.sc.gov/tax-services/delinquent-tax-office/delinquent-tax-properties",
   ],
-  barnwell: ["https://www.barnwellcountysc.us"],
+  barnwell: [
+    "https://www.barnwellcountysc.us",
+    "https://www.barnwellcountysc.us/m/directory/department?did=15",
+  ],
   beaufort: [
     "https://www.beaufortcountysc.gov",
     "https://www.beaufortcountytreasurer.com/research-and-data",
@@ -39,19 +42,28 @@ const SEEDS = {
   ],
   chesterfield: [
     "http://www.chesterfieldcountysc.com",
-    "https://www.chesterfieldcountysc.com/taxes",
+    "https://www.chesterfieldcountysc.com/tax-collector",
   ],
   clarendon: ["http://www.clarendoncountygov.org"],
   colleton: ["http://www.colletoncounty.org"],
   darlington: ["http://www.darcosc.com"],
-  dillon: ["https://www.dilloncountysc.org"],
+  dillon: [
+    "https://www.dilloncountysc.org",
+    "https://www.dilloncountysc.org/departments/treasurer.php",
+  ],
   dorchester: [
     "https://www.dorchestercountysc.gov/",
     "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax",
   ],
-  edgefield: ["https://edgefieldcounty.sc.gov/"],
+  edgefield: [
+    "https://edgefieldcounty.sc.gov/",
+    "https://edgefieldcounty.sc.gov/tax-collector/",
+  ],
   fairfield: ["https://www.fairfieldsc.com/"],
-  florence: ["http://www.florenceco.org"],
+  florence: [
+    "http://www.florenceco.org",
+    "https://www.florencecountysc.gov/offices/delinquent-tax/",
+  ],
   georgetown: ["http://www.gtcountysc.gov"],
   greenville: [
     "https://www.greenvillecounty.org",
@@ -77,7 +89,10 @@ const SEEDS = {
   ],
   marion: ["https://www.marionsc.org/"],
   marlboro: ["https://marlborocounty.sc.gov/"],
-  mccormick: ["http://www.mccormickcountysc.org"],
+  mccormick: [
+    "http://www.mccormickcountysc.org",
+    "https://mccormickcountysc.org/departments/treasurer.php",
+  ],
   newberry: ["https://www.newberrycounty.net/"],
   oconee: ["https://oconeesc.com/"],
   orangeburg: ["https://www.orangeburgcounty.org/"],

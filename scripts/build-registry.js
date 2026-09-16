@@ -416,6 +416,62 @@ const RESEARCHED = {
     notes:
       "Family page-or-newspaper. 2025 sale ended. Bidder portal at www7.richlandcountysc.gov/TaxSaleBidder. No 2026 file sampled.",
   },
+  florence: {
+    status: "researched",
+    sourceFamily: "county-pdf",
+    treasurerUrl: "https://www.florencecountysc.gov/offices/delinquent-tax/",
+    listingSampleUrl:
+      "https://s3.us-east-1.amazonaws.com/files.florenceco.org/public/DelinquentTax/2026/2026%20Tax%20Sale%20List%20Real%209-01-26.pdf",
+    gisUrl:
+      "https://flocogis.maps.arcgis.com/apps/instant/basic/index.html?appid=b4d40bf0ec4d4829aceaa520c74949c3",
+    notes:
+      "Family county-pdf. Official page opened 16 Sep 2026. Sale 5 Oct 2026 (continues 6 Oct if needed). County-hosted 2026 real-property and mobile-home PDFs on S3 last-modified 11 Sep 2026 (HEAD only, not stored). Lists were promised for September; they are posted. GIS Instant app is linked from the same page; no MapServer invented.",
+  },
+  dillon: {
+    status: "researched",
+    sourceFamily: "xlsx",
+    treasurerUrl: "https://www.dilloncountysc.org/departments/treasurer.php",
+    listingSampleUrl:
+      "https://www.dilloncountysc.org/Documents/Departments/Treasurer/PAPER.XLS",
+    notes:
+      "Family xlsx. Treasurer page opened 16 Sep 2026. The county labels PAPER.XLS as Delinquent Tax Sale List (application/vnd.ms-excel, Last-Modified 6 May 2026). HEAD only; file not stored. Column map not recorded.",
+  },
+  edgefield: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl: "https://edgefieldcounty.sc.gov/tax-collector/",
+    notes:
+      "Family page-or-newspaper. Tax Collector page opened 16 Sep 2026. Sales are the first Monday in December. No parcel file on the page.",
+  },
+  chesterfield: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl: "https://www.chesterfieldcountysc.com/tax-collector",
+    notes:
+      "Family page-or-newspaper. Homepage and Tax Collector page opened 16 Sep 2026. Homepage announces sale Monday 26 Oct 2026; bidder registration due 23 Oct 2026. FAQ says parcels are advertised in county newspapers for three weeks. The linked PDF is a bidder registration form, not a parcel list.",
+  },
+  mccormick: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl: "https://mccormickcountysc.org/departments/treasurer.php",
+    notes:
+      "Family page-or-newspaper. Treasurer / Tax Collector page opened 16 Sep 2026. Sale is the first Monday in October. Ads in The McCormick Messenger for three consecutive weeks. No parcel file on the page.",
+  },
+  barnwell: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl:
+      "https://www.barnwellcountysc.us/m/directory/department?did=15",
+    notes:
+      "Family page-or-newspaper. CivicPlus staff directory is the only official tax-collector page (Alissa Abbott, 803-541-1048). No sale date or parcel file on the site. Website Sign In is a CivicPlus CMS account, not a tax-sale login. List historically in The People Sentinel / scpublicnotices.com; that is a newspaper ad, not a county file.",
+  },
+  allendale: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl: "https://www.allendalecounty.com/",
+    notes:
+      "Family page-or-newspaper. Official homepage opened 16 Sep 2026. No dedicated delinquent-tax page; inner /government/county_offices and /other_elected_officials paths 404. Online payments go to allendaletreasurer.qpaybill.com. No parcel list on the county site.",
+  },
 };
 
 function row([id, name, fips, lat, lng]) {

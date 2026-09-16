@@ -17,6 +17,18 @@ Firefox (Playwright) visits each county’s official website from the SC Associa
 | Calhoun | page-or-newspaper | [Tax Collector](https://calhouncounty.sc.gov/departments/tax-collector). No current listing. |
 | York | page-or-newspaper | [Tax Collection](https://www.yorkcountysc.gov/216/Tax-Collection). Sale 12 Oct 2026. County-published Experience URL recorded; no MapServer invented. |
 
-As of this pass, 36 counties are `researched` and Lexington is `live`. Still without a confirmed tax-sale page: allendale, barnwell, chesterfield, dillon, edgefield, florence, mccormick. Playwright still stops at Cloudflare on Berkeley and Chester; a human pass recorded those two pages. Laurens uses laurenscountysc.gov, not the hijacked laurenscounty.us seed. A cookie-consent script that mentions reCaptcha is not a captcha wall. A Cloudflare “Just a moment” page is a captcha wall and is not solved.
+All 46 counties are now classified: Lexington `live`, 45 `researched`. Playwright still stops at Cloudflare on Berkeley and Chester; a human pass recorded those two pages. Laurens uses laurenscountysc.gov, not the hijacked laurenscounty.us seed. A cookie-consent script that mentions reCaptcha is not a captcha wall. A Cloudflare “Just a moment” page is a captcha wall and is not solved.
 
-Lists found as county-hosted files (not stored in git): Georgetown Document Center View/3625, Colleton `taxsale-1-30-26.pdf`, Cherokee scan PDF. York’s 2025 dashboard is an Experience Builder item the county page linked.
+Last seven (human browser, 16 Sep 2026):
+
+| County | Family | Result |
+| --- | --- | --- |
+| Florence | county-pdf | [Delinquent Tax](https://www.florencecountysc.gov/offices/delinquent-tax/). Sale 5 Oct 2026. 2026 real and mobile-home PDFs on county S3. Not stored. |
+| Dillon | xlsx | [Treasurer](https://www.dilloncountysc.org/departments/treasurer.php). `PAPER.XLS` labeled Delinquent Tax Sale List. Not stored. |
+| Edgefield | page-or-newspaper | [Tax Collector](https://edgefieldcounty.sc.gov/tax-collector/). First Monday in December. |
+| Chesterfield | page-or-newspaper | [Tax Collector](https://www.chesterfieldcountysc.com/tax-collector). Sale 26 Oct 2026. Newspaper ads. |
+| McCormick | page-or-newspaper | [Treasurer](https://mccormickcountysc.org/departments/treasurer.php). First Monday in October. McCormick Messenger. |
+| Barnwell | page-or-newspaper | [Tax Collector directory](https://www.barnwellcountysc.us/m/directory/department?did=15). Staff page only. |
+| Allendale | page-or-newspaper | [Homepage](https://www.allendalecounty.com/). No dedicated tax-sale page. |
+
+Lists found as county-hosted files (not stored in git): Georgetown Document Center View/3625, Colleton `taxsale-1-30-26.pdf`, Cherokee scan PDF, Florence 2026 S3 PDFs, Dillon `PAPER.XLS`. York’s 2025 dashboard is an Experience Builder item the county page linked.

@@ -80,12 +80,12 @@ test("registry has 46 unique official FIPS codes", () => {
   assert.notEqual(getCounty("lee").fips, getCounty("marlboro").fips);
 });
 
-test("status counts: Lexington live, researched families, rest unknown", () => {
+test("status counts: Lexington live, all other counties researched", () => {
   const counts = countByStatus();
   assert.equal(counts.live + counts.researched + counts.unknown, 46);
   assert.equal(counts.live, 1);
-  assert.ok(counts.researched >= 11);
-  assert.equal(counts.unknown, 46 - counts.live - counts.researched);
+  assert.equal(counts.researched, 45);
+  assert.equal(counts.unknown, 0);
   assert.equal(getCounty("lexington").status, "live");
   assert.equal(getCounty("lexington").sourceFamily, "realad-pdf");
   assert.equal(getCounty("lexington").adapter, "lexington");
@@ -108,6 +108,15 @@ test("status counts: Lexington live, researched families, rest unknown", () => {
   assert.equal(getCounty("colleton").sourceFamily, "county-pdf");
   assert.equal(getCounty("pickens").treasurerUrl.includes("co.pickens.sc.us"), true);
   assert.equal(getCounty("oconee").listingUrl.includes("sale-list"), true);
+  assert.equal(getCounty("florence").sourceFamily, "county-pdf");
+  assert.equal(getCounty("florence").listingSampleUrl.includes("florenceco.org"), true);
+  assert.equal(getCounty("dillon").sourceFamily, "xlsx");
+  assert.equal(getCounty("dillon").listingSampleUrl.includes("PAPER.XLS"), true);
+  assert.equal(getCounty("edgefield").treasurerUrl.includes("tax-collector"), true);
+  assert.equal(getCounty("chesterfield").status, "researched");
+  assert.equal(getCounty("mccormick").status, "researched");
+  assert.equal(getCounty("barnwell").status, "researched");
+  assert.equal(getCounty("allendale").status, "researched");
 });
 
 test("registry does not republish the owner CSV or Base44 secrets", () => {

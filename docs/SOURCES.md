@@ -131,7 +131,7 @@ Opened or cited while classifying source families. No GIS URLs added. No listing
 | Calhoun | page-or-newspaper | https://calhouncounty.sc.gov/departments/tax-collector (200). No current listing. |
 | York | page-or-newspaper | https://www.yorkcountysc.gov/216/Tax-Collection (200). Sale 12 Oct 2026. Experience item on the page: experience/ef9243d9330c4891ba724689f2eb1502. |
 | Colleton | county-pdf | https://www.colletoncounty.org/delinquent-tax/tax-sale (200). Listing PDF taxsale-1-30-26.pdf. Dotted map. File not stored. |
-| Chester | page-or-newspaper | Tax collector URL linked from the homepage. Cloudflare challenge. Not solved. |
+| Chester | page-or-newspaper | https://chestercountysc.gov/departments/tax-and-finance-departments/tax-collector/ Human pass after Cloudflare. Ads last 3 weeks of October. |
 | Darlington | page-or-newspaper | https://www.darcosc.com/departments/tax_collector.php. December sale. Darlington News and Press. |
 | Saluda | page-or-newspaper | https://saludacounty.sc.gov/departments/tax-collector/delinquent-tax-sale. Sale 8 Dec 2026. Twin City News. |
 | Orangeburg | page-or-newspaper | https://www.orangeburgcounty.org/362/General-Tax-Sale-Information. Sale 14 Dec 2026. Times and Democrat. |
@@ -147,9 +147,16 @@ Opened or cited while classifying source families. No GIS URLs added. No listing
 | Pickens | page-or-newspaper | https://www.co.pickens.sc.us/departments/delinquent_tax/index.php. Sale 13 Oct 2026. Newspaper plus the page. |
 | Newberry | page-or-newspaper | https://www.newberrycounty.gov/delinquent-tax/tax-sales. Procedures PDF. Page still shows 3 Nov 2025. |
 | Clarendon | page-or-newspaper | https://www.clarendoncountysc.gov/our-government/treasurer/. Redirect from the SCAC host. No list. |
+| Florence | county-pdf | https://www.florencecountysc.gov/offices/delinquent-tax/ Sale 5 Oct 2026. 2026 real-property and mobile-home PDFs on county S3 (HEAD only). Instant GIS app linked from the page. |
+| Dillon | xlsx | https://www.dilloncountysc.org/departments/treasurer.php PAPER.XLS labeled Delinquent Tax Sale List. Not stored. |
+| Edgefield | page-or-newspaper | https://edgefieldcounty.sc.gov/tax-collector/ First Monday in December. No file. |
+| Chesterfield | page-or-newspaper | https://www.chesterfieldcountysc.com/tax-collector Sale 26 Oct 2026. Newspaper ads. Bidder form is not a list. |
+| McCormick | page-or-newspaper | https://mccormickcountysc.org/departments/treasurer.php First Monday in October. McCormick Messenger. |
+| Barnwell | page-or-newspaper | https://www.barnwellcountysc.us/m/directory/department?did=15 Staff directory only. No sale file. |
+| Allendale | page-or-newspaper | https://www.allendalecounty.com/ No dedicated tax-sale page. Inner office paths 404. |
 
 qPublic/Beacon (`qpublic.schneidercorp.com`) is an assessor GIS portal for many SC counties. It is not a tax-sale list.
 
 ## What was not done
 
-No remaining-county treasurer crawl. No invented ArcGIS URLs. No download of owner CSVs, Greenville HTML rows, or the Charleston PDF into git. No parcel counts.
+No invented ArcGIS URLs. No download of owner CSVs, Greenville HTML rows, Charleston PDF, Florence PDFs, or Dillon PAPER.XLS into git. No parcel counts.
