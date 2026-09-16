@@ -53,6 +53,9 @@ The county page is real, but the file is missing, behind bidder registration, or
 | Dorchester | [Delinquent Tax](https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax) | 2026 sale 19 Oct 2026; calendar of fees, no file sampled |
 | Lancaster | [Tax Sale Procedures](https://www.lancastercountysc.gov/198/Tax-Sale-Procedures) | 2026 sale 9 Nov 2026; updated list after 5 pm 6 Nov for registered bidders |
 | Richland | [Tax Sale](https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale) | 2025 sale ended; bidder app at `www7.richlandcountysc.gov/TaxSaleBidder` |
+| Aiken | [Delinquent Tax Sale](https://www.aikencountysc.gov/309/Delinquent-Tax-Sale) | 2 Nov 2026; Aiken Standard; bidder instructions PDF, no parcel list |
+| Anderson | [Tax Sale](https://www.andersoncountysc.org/tax-sale/) | 19 Oct 2026; listings promised from 30 Sep 2026; 2025 FLC PDFs posted |
+| Abbeville | [Delinquent Tax Collector](https://abbevillecountysc.com/delinquent-tax-collector/) | First Monday in November; The Press and Banner |
 
 These counties need a **page watcher**, not a parser, until a file appears. Then they collapse into family 2, 3, or 4.
 

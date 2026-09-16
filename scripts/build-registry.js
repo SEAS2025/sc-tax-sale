@@ -84,6 +84,8 @@ const LEXINGTON = {
     "amount_2022_list",
   ],
   treasurerUrl: "https://lex-co.sc.gov/treasurer/delinquent-taxes",
+  listingSampleUrl:
+    "https://lex-co.sc.gov/sites/lexco/files/Documents/Lexington%20County/Departments/Treasurer/Tax%20Sale/REAL%20ESTATE%20LISTING.pdf",
   treasurerUrlAliasRedirectsFrom:
     "https://lex-co.sc.gov/departments/treasurer/delinquent-taxes",
   gisUrl: "https://maps.lex-co.com/OneMap/",
@@ -94,7 +96,7 @@ const LEXINGTON = {
     "https://www.lex-co.com/PropSearch/#/property?tm={TMS_NODASH}",
   planningGisUrl: "https://lex-co.sc.gov/planning-gis",
   notes:
-    "Live county in the original Base44 analysis app. Adapter, TMS section geocoder, and CSV schema are implemented. The original CDN CSV is not redistributed (owner names and addresses). Obtain lists from the treasurer page.",
+    "Live county in the original Base44 analysis app. Adapter, TMS section geocoder, and CSV schema are implemented. The original CDN CSV is not redistributed (owner names and addresses). A county-hosted REAL ESTATE LISTING PDF responded 200 on 16 Sep 2026 (Last-Modified 16 Nov 2023); treat it as a layout sample, not the 2026 ad. 2026 advertisements are scheduled in the Chronicle beginning 15 Oct 2026.",
 };
 
 const BEAUFORT = {
@@ -201,6 +203,27 @@ const RESEARCHED = {
     treasurerUrl: "https://www.lancastercountysc.gov/198/Tax-Sale-Procedures",
     notes:
       "Family page-or-newspaper. 2026 sale 9 Nov 2026. Updated list after 5 pm 6 Nov for registered bidders.",
+  },
+  aiken: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl: "https://www.aikencountysc.gov/309/Delinquent-Tax-Sale",
+    notes:
+      "Family page-or-newspaper. Browsed 16 Sep 2026 from the SCAC homepage. 2026 sale 2 Nov 2026, advertised in the Aiken Standard. Bidder instructions PDF is DocumentCenter/View/2540; no parcel list on the page. Registration 18 Sep–16 Oct 2026. qPublic link is assessor lookup only.",
+  },
+  anderson: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl: "https://www.andersoncountysc.org/tax-sale/",
+    notes:
+      "Family page-or-newspaper. Browsed 16 Sep 2026. Sale 19 Oct 2026 at the Civic Center of Anderson. Page says property listings will be posted on that site beginning 30 Sep 2026. 2025 Forfeited Land Commission real-estate and mobile-home PDFs are on the same page (post-sale, not the current sale universe). acpass login wall was not bypassed.",
+  },
+  abbeville: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl: "https://abbevillecountysc.com/delinquent-tax-collector/",
+    notes:
+      "Family page-or-newspaper. Browsed 16 Sep 2026. FAQ says the sale is usually the first Monday in November and delinquent parcels are advertised in The Press and Banner for three weeks. No listing file linked. A cookie-consent script mentions reCaptcha; the page content loaded.",
   },
   richland: {
     status: "researched",

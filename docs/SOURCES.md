@@ -123,6 +123,9 @@ Opened or cited while classifying source families. No GIS URLs added. No listing
 | Dorchester | page-or-newspaper | https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax |
 | Lancaster | page-or-newspaper | https://www.lancastercountysc.gov/198/Tax-Sale-Procedures |
 | Richland | page-or-newspaper | https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale |
+| Aiken | page-or-newspaper | https://www.aikencountysc.gov/309/Delinquent-Tax-Sale (200). 2 Nov 2026; Aiken Standard ads. Bidder-instructions PDF only. |
+| Anderson | page-or-newspaper | https://www.andersoncountysc.org/tax-sale/ (200). Sale 19 Oct 2026; listings promised 30 Sep 2026. 2025 FLC PDFs are post-sale. |
+| Abbeville | page-or-newspaper | https://abbevillecountysc.com/delinquent-tax-collector/ (200). Press and Banner ads. No file. |
 
 qPublic/Beacon (`qpublic.schneidercorp.com`) is an assessor GIS portal for many SC counties. It is not a tax-sale list.
 

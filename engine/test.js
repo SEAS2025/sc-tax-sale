@@ -96,8 +96,9 @@ test("status counts: Lexington live, researched families, rest unknown", () => {
   assert.equal(getCounty("horry").sourceFamily, "xlsx");
   assert.equal(getCounty("richland").status, "researched");
   assert.equal(getCounty("richland").treasurerUrl.includes("Tax-Sale"), true);
-  assert.equal(getCounty("aiken").status, "unknown");
-  assert.equal(getCounty("aiken").treasurerUrl, null);
+  assert.equal(getCounty("aiken").status, "researched");
+  assert.equal(getCounty("aiken").sourceFamily, "page-or-newspaper");
+  assert.equal(getCounty("aiken").treasurerUrl.includes("/309/Delinquent-Tax-Sale"), true);
 });
 
 test("registry does not republish the owner CSV or Base44 secrets", () => {

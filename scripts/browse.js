@@ -22,7 +22,8 @@ const { SEEDS } = require("./county-seeds");
 const ROOT = path.join(__dirname, "..");
 const REPORT_DIR = path.join(ROOT, "docs", "crawl");
 const HTML_DIR = path.join(ROOT, ".crawl-html");
-const LISTING_RE = /tax|sale|delinquent|realad|listing|bidder|forfeit/i;
+const STRONG_RE = /tax[\s-]*sale|delinquent|realad|forfeit|bidder/i;
+const SKIP_TEXT = /pay my tax|print tax|tax receipt|levy sheet|exemption|capital sales|a-tax|accommodations|vehicle tax/i;
 const FILE_RE = /\.(pdf|xlsx|xls|csv|zip|aspx)(\?|#|$)/i;
 const CLOUD_RE = /(^|\.)((dropbox|box)\.com|drive\.google\.com|docs\.google\.com|sharepoint\.com|1drv\.ms|onedrive\.live\.com)$/i;
 const NAV_RE = /delinquent|tax sale|tax collector|treasurer|document center|related information|departments|agenda|news|forfeited/i;
@@ -58,10 +59,12 @@ function allowedHop(href, seedHosts) {
 }
 
 function isListingLink(link) {
-  const blob = (link.text || "") + " " + (link.href || "");
-  if (QPUBLIC_RE.test(blob)) return false;
-  if (!LISTING_RE.test(blob)) return false;
-  return FILE_RE.test(link.href) || LISTING_RE.test(link.text || "");
+  const text = link.text || "";
+  const href = link.href || "";
+  if (QPUBLIC_RE.test(href)) return false;
+  if (SKIP_TEXT.test(text)) return false;
+  if (STRONG_RE.test(text) || STRONG_RE.test(href)) return true;
+  return FILE_RE.test(href) && /listing|sale|delinquent|bidder/i.test(text + " " + href);
 }
 
 function kindOf(href) {
@@ -128,7 +131,8 @@ async function blockState(page) {
   const html = await page.content();
   const title = await page.title();
   const snippet = await page.evaluate(() => (document.body ? document.body.innerText : "").replace(/\s+/g, " ").slice(0, 1500));
-  const captcha = /captcha|cf-turnstile|g-recaptcha|hcaptcha|verify you are human/i.test(html);
+  const captcha = /verify you are human|attention required|just a moment/i.test(snippet + " " + title)
+    || (/cf-turnstile|h-captcha/i.test(html) && snippet.length < 500);
   const password = await page.locator('input[type="password"]').count();
   const loginWall = password > 0 && /sign in|log in|password/i.test(snippet);
   return {
@@ -165,12 +169,18 @@ async function openPage(page, url, report, htmlDir) {
 }
 
 function scoreNav(link) {
-  const blob = (link.text || "") + " " + link.href;
+  let last = "";
+  try {
+    last = decodeURIComponent(new URL(link.href).pathname).split("/").filter(Boolean).pop() || "";
+  } catch (_err) {
+    last = "";
+  }
+  const blob = (link.text || "") + " " + last.replace(/[-_]/g, " ");
   if (/delinquent|tax sale/i.test(blob)) return 100;
   if (/tax collector|treasurer/i.test(blob)) return 80;
   if (/document center|related information/i.test(blob)) return 60;
-  if (/forfeited/i.test(blob)) return 55;
-  if (/departments/i.test(blob)) return 30;
+  if (/forfeit/i.test(blob)) return 55;
+  if (/^departments?$/i.test(blob.trim()) || /\bdepartments\b/i.test(link.text || "")) return 30;
   if (/agenda|news/i.test(blob)) return 20;
   return 0;
 }
@@ -219,7 +229,7 @@ async function wayback(seedUrl) {
   const cdx = "https://web.archive.org/cdx/search/cdx?url=" + encodeURIComponent(host + "/*")
     + "&output=json&fl=original,timestamp,statuscode,mimetype&filter=statuscode:200&filter=original:.*(tax|delinquent).*&limit=12&collapse=urlkey";
   try {
-    const response = await fetch(cdx, { signal: AbortSignal.timeout(15000) });
+    const response = await fetch(cdx, { signal: AbortSignal.timeout(8000) });
     if (!response.ok) return [{ error: "wayback HTTP " + response.status }];
     const rows = await response.json();
     return rows.slice(1).map((row) => ({
@@ -261,7 +271,7 @@ async function browseCounty(browser, id) {
   });
   const page = await context.newPage();
   const visited = new Set();
-  const deadline = Date.now() + 110000;
+  const deadline = Date.now() + 80000;
 
   async function visit(url) {
     if (Date.now() > deadline) return null;
@@ -281,11 +291,24 @@ async function browseCounty(browser, id) {
     const nav = home.links
       .filter((link) => scoreNav(link) > 0 && allowedHop(link.href, report.seedHosts))
       .sort((a, b) => scoreNav(b) - scoreNav(a))
-      .slice(0, 8);
+      .slice(0, 6);
     for (const link of nav) {
       if (Date.now() > deadline) break;
       await visit(link.href);
     }
+  }
+
+  const extra = [];
+  for (const entry of report.pages) {
+    if (!/delinquent|tax sale|treasurer|tax collector|document center/i.test((entry.title || "") + " " + (entry.finalUrl || ""))) continue;
+    for (const link of entry.links || []) {
+      if (scoreNav(link) >= 55 && allowedHop(link.href, report.seedHosts)) extra.push(link);
+    }
+  }
+  extra.sort((a, b) => scoreNav(b) - scoreNav(a));
+  for (const link of extra.slice(0, 6)) {
+    if (Date.now() > deadline) break;
+    await visit(link.href);
   }
 
   const civic = report.pages.some((entry) => entry.civicplus);
