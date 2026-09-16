@@ -41,6 +41,7 @@ const UA = "sc-tax-sale-research/1.0 (public records research; parcel identifier
 const BROWSER_UA = "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0";
 const FETCH_MS = 45000;
 const MIN_ROWS = 25;
+const MIN_BODY_BYTES = 400;
 const CDX_PAUSE_MS = 8000;
 const CDX_TRIES = 4;
 const SEASON = new Date().getUTCFullYear();
@@ -182,7 +183,13 @@ async function browserFetch(url) {
     if (/captcha|are you a robot|verify you are human/i.test(html) && html.length < 8000) {
       return { ok: false, status, url: page.url(), blocked: "captcha wall — not bypassed", via: "playwright" };
     }
-    if (/sign in|log in to continue|subscribe to (read|continue)/i.test(title)) {
+    // A wall has to be the whole page. Government sites built on CivicPlus put
+    // "Website Sign In" in the title of every ordinary public page, so the words
+    // alone are not evidence of a wall.
+    const wholePageIsWall = /^(sign in|log in|subscribe|subscription required)\b/i.test(title.trim())
+      || /please (?:sign in|log in) to (?:read|continue|view)/i.test(html)
+      || /subscribe to (?:read|continue|view) (?:this|the rest)/i.test(html);
+    if (wholePageIsWall) {
       return { ok: false, status, url: page.url(), blocked: "login or subscription wall — not bypassed", via: "playwright" };
     }
     return {
@@ -245,12 +252,15 @@ async function verifySources(registry, state, only) {
       };
       if (got.blocked) record.blocked = got.blocked;
       if (got.error) record.error = got.error;
-      if (got.ok && record.bytes > 400) {
+      if (got.ok && record.bytes > MIN_BODY_BYTES) {
         cs.verified.push(record);
         log("verified", county.id, got.status, target.url);
       } else {
+        if (got.ok && record.bytes <= MIN_BODY_BYTES) {
+          record.tooSmall = "answered but returned only " + record.bytes + " bytes, too little to read";
+        }
         cs.unreachable.push(record);
-        log("unreachable", county.id, got.status, target.url, got.blocked || got.error || "");
+        log("not usable", county.id, got.status, target.url, got.blocked || got.error || record.tooSmall || "");
       }
       saveState(state);
       await sleep(1200);
@@ -268,6 +278,8 @@ async function probeLand(registry, state) {
   for (const probe of registry.landOwnershipProbes || []) {
     const got = await getUrl(probe.url);
     const row = { url: probe.url, note: probe.note, status: got.status, via: got.via, ok: Boolean(got.ok) };
+    if (got.blocked) row.blocked = got.blocked;
+    if (got.error) row.error = String(got.error).slice(0, 160);
     if (got.ok && got.buf && got.buf.length) {
       const text = htmlToText(got.buf.toString("utf8"));
       row.acreageMentions = [...text.matchAll(/([\d,]{4,12})\s*(acres|square miles)/gi)]
@@ -732,6 +744,16 @@ function fmtUrl(url) {
   return "<" + url + ">";
 }
 
+/** Say why a URL could not be used, rather than calling a 200 "unreachable". */
+function unusableReason(row) {
+  if (row.blocked) return " — " + row.blocked;
+  if (row.error) return " — " + row.error;
+  if (row.tooSmall) return " — " + row.tooSmall;
+  if (row.status === 404) return " — page not found";
+  if (row.status === 0) return " — no answer";
+  return "";
+}
+
 function listTable(cs) {
   const rows = cs.lists || [];
   if (!rows.length) return "_No list responded._\n";
@@ -793,7 +815,9 @@ function landSection(state) {
   if (!state.land || !state.land.length) return "_Land-ownership probes have not run yet._\n";
   const lines = [];
   for (const row of state.land) {
-    lines.push("- " + fmtUrl(row.url) + " — HTTP " + row.status + (row.ok ? " verified" : " not reachable") + ". " + row.note);
+    lines.push("- " + fmtUrl(row.url) + " — HTTP " + row.status
+      + (row.ok ? " verified" : " requested" + (unusableReason(row) || " — no readable page came back"))
+      + ". " + row.note);
     for (const mention of (row.acreageMentions || []).slice(0, 3)) lines.push("  - quoted from that page: " + mention);
     for (const mention of (row.percentMentions || []).slice(0, 3)) lines.push("  - quoted from that page: " + mention);
   }
@@ -858,8 +882,8 @@ function writeDoc(registry, state, destPath) {
     }
     const badStatutes = (cs.unreachable || []).filter((row) => row.role === "statute");
     if (badStatutes.length) {
-      out.push("Statute URLs that did not respond (cited by section number only, text not fetched):");
-      for (const row of badStatutes) out.push("- " + fmtUrl(row.url) + " — HTTP " + row.status);
+      out.push("Statute URLs that did not give a readable answer (cited by section number only, text not fetched):");
+      for (const row of badStatutes) out.push("- " + fmtUrl(row.url) + " — HTTP " + row.status + unusableReason(row));
       out.push("");
     }
     out.push("**Official sources verified.**");
@@ -877,10 +901,10 @@ function writeDoc(registry, state, destPath) {
     out.push("");
     const blocked = (cs.unreachable || []).filter((row) => row.role !== "statute");
     if (blocked.length) {
-      out.push("**Not reachable / blocked.**");
+      out.push("**Not usable.** Each of these was requested; none gave back a page this run could read.");
       out.push("");
       for (const row of blocked) {
-        out.push("- " + fmtUrl(row.url) + " — HTTP " + row.status + (row.blocked ? " — " + row.blocked : row.error ? " — " + row.error : ""));
+        out.push("- " + fmtUrl(row.url) + " — HTTP " + row.status + unusableReason(row));
       }
       out.push("");
     }

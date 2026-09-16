@@ -8,22 +8,22 @@ They are not counted by `engine/test.js`, are not part of SC pricing, and are no
 
 Public records only. No login, captcha, or paywall was bypassed. **No obituaries, death notices, or any owner-name source were used.** The published lists do carry a `LIABLE OWNER` column; that column is located only so it can be dropped, and no owner value is written to any snapshot, JSON file, document, or PDF.
 
-Generated 2026-09-16T22:48:53.531Z by `engine/out-of-state.js` (driver: `scripts/hunt-out-of-state.sh`).
+Generated 2026-09-16T23:03:42.024Z by `engine/out-of-state.js` (driver: `scripts/hunt-out-of-state.sh`).
 
 ## Status of this run
 
-- `verify`: 2026-09-16T22:38:51.681Z
-- `land`: 2026-09-16T22:39:09.196Z
-- `lists`: 2026-09-16T22:41:15.641Z
-- `wayback`: 2026-09-16T22:48:48.034Z
-- `pair`: 2026-09-16T22:48:49.933Z
-- `pdf`: wrote /home/user1/Projects/sc-tax-sale/inbox/repeat/Haywood-NC-5-year-delinquent.pdf (1357 rows, engine playwright-chromium)
+- `verify`: 2026-09-16T23:02:10.411Z
+- `land`: 2026-09-16T23:03:42.018Z
+- `lists`: not completed in this run
+- `wayback`: not completed in this run
+- `pair`: 2026-09-16T22:48:55.408Z
+- `pdf`: not completed in this run
 
 ## Summary
 
 | County | Regime | Verified sources | Readable tax years | Widest paired span | Parcels in that pair |
 | --- | --- | --- | --- | --- | --- |
-| Haywood NC | Foreclosure (NC) | 12 | 2017, 2022, 2023, 2025 | 5 tax years apart | 1357 |
+| Haywood NC | Foreclosure (NC) | 12 | 2017, 2022, 2025 | 5 tax years apart | 50 |
 | Coconino AZ | Lien certificate (AZ) | 7 | none | — | 0 |
 | Mohave AZ | Lien certificate (AZ) | 6 | none | — | 0 |
 | Yavapai AZ | Lien certificate (AZ) | 3 | none | — | 0 |
@@ -47,13 +47,13 @@ Statute text verified over the network:
 - <https://taxes.haywoodcountync.gov/> — HTTP 200, 703 bytes, via fetch (search)
 - <https://www.themountaineer.com/search/?q=delinquent+tax&t=article&l=100&s=start_time&sd=desc> — HTTP 200, 529278 bytes, via fetch (index) — Public search index used to discover which advertisement years were published.
 - <https://www.themountaineer.com/news/local/county_government/haywood-county-delinquent-tax-liens-2017/article_46577228-27ac-11e8-84db-db93d9d0fe16.html> — HTTP 200, 335533 bytes, via fetch (listing, tax year 2017) — G.S. 105-369 advertisement for tax year 2017, ordered by the Haywood County Board of Commissioners on 5 February 2018. Published as six public PDF assets with Liable Owner / Parcel / Amount columns.
-- <https://www.themountaineer.com/news/haywood-county-delinquent-property-taxes-searchable-database/table_aacb7d88-cdf3-11ed-86d6-63fe99f2cb89.html> — HTTP 200, 1423770 bytes, via fetch (listing, tax year 2022) — Published 29 March 2023. Header row LIABLE OWNER / PARCEL / AMOUNT; parcel is the NC grid PIN with hyphens stripped.
+- <https://www.themountaineer.com/news/haywood-county-delinquent-property-taxes-searchable-database/table_aacb7d88-cdf3-11ed-86d6-63fe99f2cb89.html> — HTTP 200, 1522733 bytes, via playwright (listing, tax year 2022) — Published 29 March 2023. Header row LIABLE OWNER / PARCEL / AMOUNT; parcel is the NC grid PIN with hyphens stripped.
 - <https://www.themountaineer.com/news/haywood-county-delinquent-property-taxes-2023/table_b947921c-ecb9-11ee-be16-d3009a61771d.html> — HTTP 200, 1393041 bytes, via fetch (listing, tax year 2023) — Published 26 March 2024.
 - <https://www.themountaineer.com/haywood-county-delinquent-tax-listings-2025/table_5350fa1b-a3ce-47a1-bff2-52bec243d9ce.html> — HTTP 200, 1318045 bytes, via fetch (listing, tax year 2025) — Published 16 April 2026.
 
-**Not reachable / blocked.**
+**Not usable.** Each of these was requested; none gave back a page this run could read.
 
-- <https://www.haywoodcountync.gov/Bids.aspx?CatID=17&txtSort=Category&showAllBids=True> — HTTP 404
+- <https://www.haywoodcountync.gov/Bids.aspx?CatID=17&txtSort=Category&showAllBids=True> — HTTP 404 — page not found
 
 **Identifier format.** Haywood publishes the North Carolina grid PIN with its hyphens stripped, for example 8614733009 for 8614-73-3009. The canonical form kept in this repo is that digits-only 10-character string, applied to both sides of every intersection.
 
@@ -61,54 +61,31 @@ Statute text verified over the network:
 
 | Tax year | Rows read | Unique parcels | Identifier-shaped tokens anywhere on page | Reader | Source | Status |
 | --- | --- | --- | --- | --- | --- | --- |
-| — | 0 | 0 | 0 | html-table | registry:office | only-0-parcels-in-parcel-column |
-| — | 0 | 0 | 0 | html-table | hop:haywoodcountync.gov | only-0-parcels-in-parcel-column |
-| — | 0 | 0 | 0 | html-table | hop:haywoodcountync.gov | only-0-parcels-in-parcel-column |
-| — | 0 | 0 | 0 | html-table | hop:haywoodcountync.gov | only-0-parcels-in-parcel-column |
-| — | 0 | 0 | 0 | html-table | hop:haywoodcountync.gov | only-0-parcels-in-parcel-column |
-| — | 0 | 0 | 0 | html-table | hop:haywoodcountync.gov | only-0-parcels-in-parcel-column |
-| — | 0 | 0 | 0 | html-table | hop:haywoodcountync.gov | only-0-parcels-in-parcel-column |
-| — | 0 | 0 | 0 | html-table | hop:haywoodcountync.gov | only-0-parcels-in-parcel-column |
-| — | 0 | 0 | 0 | html-table | registry:notices | only-0-parcels-in-parcel-column |
-| 2026 | 0 | 0 | 0 | html-table | hop:haywoodcountync.gov | only-0-parcels-in-parcel-column |
-| — | 0 | 0 | 0 | html-table | registry:search | only-0-parcels-in-parcel-column |
-| 2017 | 0 | 0 | 0 | html-table | registry:listing | only-0-parcels-in-parcel-column |
-| 2017 | 640 | 640 | n/a | pdf-columns | asset-pdf:2017 | read ok |
-| 2017 | 785 | 785 | n/a | pdf-columns | asset-pdf:2017 | read ok |
-| 2017 | 785 | 785 | n/a | pdf-columns | asset-pdf:2017 | read ok |
-| 2017 | 785 | 785 | n/a | pdf-columns | asset-pdf:2017 | read ok |
-| 2017 | 785 | 785 | n/a | pdf-columns | asset-pdf:2017 | read ok |
-| 2017 | 335 | 312 | n/a | pdf-columns | asset-pdf:2017 | read ok |
-| 2017 | 0 | 0 | 0 | pdf-columns | asset-pdf:2017 | only-0-parcels-in-parcel-column |
-| 2022 | 3163 | 3153 | n/a | html-table | registry:listing | read ok |
-| 2023 | 3088 | 3082 | n/a | html-table | registry:listing | read ok |
-| 2025 | 2837 | 2824 | n/a | html-table | registry:listing | read ok |
-| 2019 | 0 | 0 | 0 | html-table | wayback:haywoodcountync.gov | only-0-parcels-in-parcel-column |
+| 2017 | 60 | 60 | n/a | pdf-columns | test | read ok |
+| 2017 | 30 | 30 | n/a | pdf-columns | test | read ok |
+| 2022 | 60 | 60 | n/a | html-table | test | read ok |
+| 2025 | 40 | 40 | n/a | html-table | test | read ok |
 
 **Parcels per tax year.**
 
 | Tax year | Advertised | Files | Rows read | Unique parcels |
 | --- | --- | --- | --- | --- |
-| 2017 | 2018 | 6 | 4115 | 4091 |
-| 2022 | 2023 | 1 | 3163 | 3153 |
-| 2023 | 2024 | 1 | 3088 | 3082 |
-| 2025 | 2026 | 1 | 2837 | 2824 |
+| 2017 | 2018 | 2 | 90 | 60 |
+| 2022 | 2023 | 1 | 60 | 60 |
+| 2025 | 2026 | 1 | 40 | 40 |
 
 **Intersections, with the true year span of each.**
 
 | Tax years | True span | Parcels on both |
 | --- | --- | --- |
-| 2022 ∩ 2023 | one tax year apart | 1770 |
-| 2023 ∩ 2025 | 2 tax years apart | 1443 |
-| 2022 ∩ 2025 | 3 tax years apart | 1270 |
-| 2017 ∩ 2022 | 5 tax years apart | 1357 |
-| 2017 ∩ 2023 | 6 tax years apart | 1197 |
-| 2017 ∩ 2025 | 8 tax years apart | 976 |
-| 2017 ∩ 2022 ∩ 2023 ∩ 2025 | all 4 readable years | 555 |
+| 2022 ∩ 2025 | 3 tax years apart | 30 |
+| 2017 ∩ 2022 | 5 tax years apart | 50 |
+| 2017 ∩ 2025 | 8 tax years apart | 30 |
+| 2017 ∩ 2022 ∩ 2025 | all 3 readable years | 30 |
 
-**Headline pair.** 1357 parcels appear on both the tax-year-2017 and tax-year-2022 advertised lists — 5 tax years apart. That is a genuine five-year span, so the report may be labelled as a five-year delinquent file.
+**Headline pair.** 50 parcels appear on both the tax-year-2017 and tax-year-2022 advertised lists — 5 tax years apart. That is a genuine five-year span, so the report may be labelled as a five-year delinquent file.
 
-**Wayback CDX.** `haywoodcountync.gov|delinquent` — Internet Archive is temporarily offline (service-wide outage).
+**Wayback CDX.** `themountaineer.com|delinquent` — Internet Archive is temporarily offline (service-wide outage).
 
 ## Coconino County, AZ
 
@@ -126,27 +103,23 @@ Statute text verified over the network:
 
 - <https://www.coconino.az.gov/treasurer> — HTTP 200, 147115 bytes, via playwright (office)
 - <https://coconino.arizonataxsale.com/> — HTTP 200, 21749 bytes, via playwright (auction)
-- <https://www.coconino.az.gov/DocumentCenter> — HTTP 200, 542033 bytes, via playwright (docs)
+- <https://www.coconino.az.gov/DocumentCenter> — HTTP 200, 542144 bytes, via playwright (docs)
 
-**Not reachable / blocked.**
+**Not usable.** Each of these was requested; none gave back a page this run could read.
 
-- <https://www.coconino.az.gov/166/Treasurer> — HTTP 404
-- <https://www.coconino.az.gov/165/Tax-Lien-Sale> — HTTP 404
+- <https://www.coconino.az.gov/166/Treasurer> — HTTP 404 — page not found
+- <https://www.coconino.az.gov/165/Tax-Lien-Sale> — HTTP 404 — page not found
 - <https://treasurer.coconino.az.gov/> — HTTP 0 — page.goto: Timeout 45000ms exceeded.
 Call log:
   - navigating to "https://treasurer.coconino.az.gov/", waiting until "domcontentloaded"
 
-- <https://publicnoticeads.com/az/> — HTTP 200
+- <https://publicnoticeads.com/az/> — HTTP 200 — answered but returned only 114 bytes, too little to read
 
 **Files read.**
 
 | Tax year | Rows read | Unique parcels | Identifier-shaped tokens anywhere on page | Reader | Source | Status |
 | --- | --- | --- | --- | --- | --- | --- |
-| — | 0 | 0 | 0 | html-table | registry:office | only-0-parcels-in-parcel-column |
-| — | 0 | 0 | 0 | html-table | hop:coconino.az.gov | only-0-parcels-in-parcel-column |
-| — | 0 | 0 | 0 | html-table | hop:coconino.az.gov | only-0-parcels-in-parcel-column |
-| — | 0 | 0 | 0 | html-table | registry:auction | only-0-parcels-in-parcel-column |
-| — | 0 | 0 | 0 | html-table | registry:docs | only-0-parcels-in-parcel-column |
+| — | 0 | 0 | 0 | html-table | registry:docs | read ok |
 
 **Parcels per tax year.**
 
@@ -157,8 +130,6 @@ _No tax year produced a readable parcel column._
 _Fewer than two tax years are readable, so there is nothing to intersect._
 
 **No pair — a genuine zero, not a parsing failure.** Nothing is reported for this county. Sources responded, but no published page exposed a readable parcel column. Across every page fetched for this county there were 0 identifier-shaped tokens in total, so the pages genuinely do not carry parcel data — they are navigation and document-index pages.
-
-**Wayback CDX.** `coconino.az.gov|tax-lien` — Internet Archive is temporarily offline (service-wide outage); `coconino.az.gov|taxlien` — Internet Archive is temporarily offline (service-wide outage); `coconino.arizonataxsale.com|*` — Internet Archive is temporarily offline (service-wide outage).
 
 **Limitations.**
 
@@ -182,28 +153,16 @@ Statute text verified over the network:
 
 - <https://www.mohave.gov/> — HTTP 200, 125396 bytes, via fetch (office)
 - <https://www.mohavecounty.us/ContentPage.aspx?id=95&cid=444> — HTTP 200, 88212 bytes, via playwright (office)
-- <https://mohave.arizonataxsale.com/> — HTTP 200, 21739 bytes, via playwright (auction)
+- <https://mohave.arizonataxsale.com/> — HTTP 200, 21740 bytes, via playwright (auction)
 
-**Not reachable / blocked.**
+**Not usable.** Each of these was requested; none gave back a page this run could read.
 
-- <https://www.mohave.gov/ContentPage.aspx?id=95&cid=444> — HTTP 404
-- <https://publicnoticeads.com/az/> — HTTP 200
+- <https://www.mohave.gov/ContentPage.aspx?id=95&cid=444> — HTTP 404 — page not found
+- <https://publicnoticeads.com/az/> — HTTP 200 — answered but returned only 114 bytes, too little to read
 
 **Files read.**
 
-| Tax year | Rows read | Unique parcels | Identifier-shaped tokens anywhere on page | Reader | Source | Status |
-| --- | --- | --- | --- | --- | --- | --- |
-| — | 0 | 0 | 0 | html-table | registry:office | only-0-parcels-in-parcel-column |
-| — | 0 | 0 | 0 | html-table | registry:office | only-0-parcels-in-parcel-column |
-| — | 0 | 0 | 0 | html-table | registry:auction | only-0-parcels-in-parcel-column |
-| 2018 | 0 | 0 | 0 | html-table | wayback:mohave.arizonataxsale.com | only-0-parcels-in-parcel-column |
-| 2020 | 0 | 0 | 0 | html-table | wayback:mohave.arizonataxsale.com | only-0-parcels-in-parcel-column |
-| 2023 | 0 | 0 | 0 | html-table | wayback:mohave.arizonataxsale.com | only-0-parcels-in-parcel-column |
-| 2023 | 0 | 0 | 0 | html-table | wayback:mohave.arizonataxsale.com | only-0-parcels-in-parcel-column |
-| 2023 | 0 | 0 | 0 | html-table | wayback:mohave.arizonataxsale.com | only-0-parcels-in-parcel-column |
-| 2023 | 0 | 0 | 0 | html-table | wayback:mohave.arizonataxsale.com | only-0-parcels-in-parcel-column |
-| 2019 | 0 | 0 | 0 | html-table | wayback:mohave.arizonataxsale.com | only-0-parcels-in-parcel-column |
-| 2018 | 0 | 0 | 0 | html-table | wayback:mohave.arizonataxsale.com | only-0-parcels-in-parcel-column |
+_No list responded._
 
 **Parcels per tax year.**
 
@@ -213,7 +172,7 @@ _No tax year produced a readable parcel column._
 
 _Fewer than two tax years are readable, so there is nothing to intersect._
 
-**No pair — a genuine zero, not a parsing failure.** Nothing is reported for this county. Sources responded, but no published page exposed a readable parcel column. Across every page fetched for this county there were 0 identifier-shaped tokens in total, so the pages genuinely do not carry parcel data — they are navigation and document-index pages.
+**No pair — a genuine zero, not a parsing failure.** Nothing is reported for this county. No source responded.
 
 **Limitations.**
 
@@ -231,19 +190,16 @@ Statute text verified over the network:
 
 **Official sources verified.**
 
-- <https://www.yavapaiaz.gov/> — HTTP 200, 179479 bytes, via fetch (office)
+- <https://www.yavapaiaz.gov/> — HTTP 200, 179477 bytes, via fetch (office)
 - <https://yavapai.arizonataxsale.com/> — HTTP 200, 21575 bytes, via playwright (auction)
 
-**Not reachable / blocked.**
+**Not usable.** Each of these was requested; none gave back a page this run could read.
 
-- <https://www.yavapaiaz.gov/Departments/Treasurer> — HTTP 404
+- <https://www.yavapaiaz.gov/Departments/Treasurer> — HTTP 404 — page not found
 
 **Files read.**
 
-| Tax year | Rows read | Unique parcels | Identifier-shaped tokens anywhere on page | Reader | Source | Status |
-| --- | --- | --- | --- | --- | --- | --- |
-| — | 0 | 0 | 0 | html-table | registry:office | only-0-parcels-in-parcel-column |
-| — | 0 | 0 | 0 | html-table | registry:auction | only-0-parcels-in-parcel-column |
+_No list responded._
 
 **Parcels per tax year.**
 
@@ -253,7 +209,7 @@ _No tax year produced a readable parcel column._
 
 _Fewer than two tax years are readable, so there is nothing to intersect._
 
-**No pair — a genuine zero, not a parsing failure.** Nothing is reported for this county. Sources responded, but no published page exposed a readable parcel column. Across every page fetched for this county there were 0 identifier-shaped tokens in total, so the pages genuinely do not carry parcel data — they are navigation and document-index pages.
+**No pair — a genuine zero, not a parsing failure.** Nothing is reported for this county. No source responded.
 
 ## How much Grand Canyon land is actually on a county tax roll
 
@@ -265,7 +221,7 @@ Sources probed for this statement:
   - quoted from that page: 1,218,375 acres
   - quoted from that page: 1,904 square miles
   - quoted from that page: 7.5% of park
-- <https://www.coconino.az.gov/2418/Comprehensive-Plan> — HTTP 200 not reachable. Coconino County land ownership breakdown.
+- <https://www.coconino.az.gov/2418/Comprehensive-Plan> — HTTP 200 requested — login or subscription wall — not bypassed. Coconino County land ownership breakdown.
 - <https://land.az.gov/> — HTTP 200 verified. Arizona State Land Department trust land, also off the county tax roll.
 
 ## Method and limits
