@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "generatedAt": "2026-09-16T19:41:01.184Z",
+  "generatedAt": "2026-09-16T22:31:46.771Z",
   "recentYears": [
     2024,
     2025,
@@ -13,11 +13,11 @@
   ],
   "source": "Official leftover and current sale lists crossed with hosted 2020–2022 lists. Identifiers only.",
   "note": "Parcel identifiers and amounts only. Owner names are not stored.",
-  "bothCount": 976,
-  "withBoth": 5,
-  "withRecent": 12,
+  "bothCount": 999,
+  "withBoth": 6,
+  "withRecent": 13,
   "withHistoric": 7,
-  "changedCount": 7,
+  "changedCount": 13,
   "counties": [
     {
       "id": "abbeville",
@@ -61,7 +61,7 @@
       "recent": {
         "year": 2025,
         "url": "https://www.bambergcounty.sc.gov/sites/default/files/uploads/2025-tax-sale-list.pdf",
-        "idCount": 8235
+        "idCount": 696
       },
       "historic": null,
       "bothCount": 0,
@@ -355,7 +355,7 @@
           "amountHistoric": null
         }
       ],
-      "changed": false
+      "changed": true
     },
     {
       "id": "charleston",
@@ -968,15 +968,135 @@
     {
       "id": "cherokee",
       "name": "Cherokee",
-      "recent": null,
+      "recent": {
+        "year": 2024,
+        "url": "https://web.archive.org/web/20250413211557id_/https://cherokeecountysc.gov/wp-content/uploads/2024/10/Tax-Sale-List-2024-1.pdf",
+        "idCount": 529
+      },
       "historic": {
         "year": 2021,
         "url": "https://cherokeecountysc.gov/wp-content/uploads/2021/12/Bidder-List-Update-12-3-21-PDF.pdf",
         "idCount": 111
       },
-      "bothCount": 0,
-      "both": [],
-      "changed": false
+      "bothCount": 23,
+      "both": [
+        {
+          "tms": "016-00-00-005.000",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "016-00-00-005.009",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "094-00-00-029.001",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "167-00-00-004.002",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "174-04-00-001.000",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "155-00-00-065.012",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "052-00-00-013.010",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "118-06-00-014.000",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "099-01-00-113.000",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "100-10-00-124.000",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "080-07-00-001.001",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "080-07-00-003.000",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "138-00-00-046.028",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "194-00-00-016.009",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "222-00-00-002.006",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "049-00-00-057.000",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "081-16-00-059.000",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "081-13-00-069.000",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "098-07-00-058.000",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "099-12-00-060.000",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "154-00-00-003.000",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "174-09-00-008.000",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "103-00-00-104.102",
+          "amountRecent": null,
+          "amountHistoric": null
+        }
+      ],
+      "changed": true
     },
     {
       "id": "chester",
@@ -1016,7 +1136,7 @@
       "historic": null,
       "bothCount": 0,
       "both": [],
-      "changed": false
+      "changed": true
     },
     {
       "id": "darlington",
@@ -1033,12 +1153,12 @@
       "recent": {
         "year": 2026,
         "url": "https://www.dilloncountysc.org/Documents/Departments/Treasurer/PAPER.XLS",
-        "idCount": 854
+        "idCount": 851
       },
       "historic": null,
       "bothCount": 0,
       "both": [],
-      "changed": false
+      "changed": true
     },
     {
       "id": "dorchester",
@@ -2949,7 +3069,7 @@
       "recent": {
         "year": 2026,
         "url": "https://www.greenvillecounty.org/appsAS400/Taxsale/",
-        "idCount": 1995
+        "idCount": 1905
       },
       "historic": null,
       "bothCount": 0,
@@ -2985,7 +3105,7 @@
       "historic": null,
       "bothCount": 0,
       "both": [],
-      "changed": false
+      "changed": true
     },
     {
       "id": "jasper",
@@ -4403,7 +4523,7 @@
           "amountHistoric": 135.11
         }
       ],
-      "changed": false
+      "changed": true
     },
     {
       "id": "marion",

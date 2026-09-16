@@ -21,5 +21,21 @@
       "source": "wayback:cherokeecountysc.gov",
       "confirmedAt": "2026-09-16"
     }
+  ],
+  "greenville": [
+    {
+      "url": "https://web.archive.org/web/20211022232845id_/http://www.greenvillecounty.org/appsAS400/Taxsale/",
+      "year": 2021,
+      "idCount": 836,
+      "source": "wayback-exact",
+      "confirmedAt": "2026-09-16"
+    },
+    {
+      "url": "https://web.archive.org/web/20220519213726id_/http://www.greenvillecounty.org/appsAS400/Taxsale/",
+      "year": 2022,
+      "idCount": 428,
+      "source": "wayback-exact",
+      "confirmedAt": "2026-09-16"
+    }
   ]
 }
