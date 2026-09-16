@@ -1,0 +1,315 @@
+{
+  "id": "laurens",
+  "browsedAt": "2026-09-16T17:34:21.837Z",
+  "seedUrls": [
+    "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php"
+  ],
+  "seedSource": "https://www.sccounties.org/county-information",
+  "pages": [
+    {
+      "url": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php",
+      "finalUrl": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php",
+      "status": 200,
+      "title": "Laurens, South Carolina - Laurens County Government",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://laurenscountysc.gov/#",
+      "finalUrl": "https://laurenscountysc.gov/#",
+      "status": 200,
+      "title": "Laurens, South Carolina - Laurens County Government",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [
+        "September 09, 2026",
+        "June 18, 2026",
+        "June 01, 2026"
+      ],
+      "tables": [
+        {
+          "headers": [
+            "S M T W T F S",
+            "S",
+            "M",
+            "T",
+            "W",
+            "T",
+            "F",
+            "S"
+          ],
+          "rowCount": 9
+        },
+        {
+          "headers": [
+            "S",
+            "M",
+            "T",
+            "W",
+            "T",
+            "F",
+            "S"
+          ],
+          "rowCount": 1
+        },
+        {
+          "headers": [],
+          "rowCount": 6
+        }
+      ]
+    },
+    {
+      "url": "https://laurenscountysc.gov/departments/treasurer/delinquent_tax_sale_registration_packet.php",
+      "finalUrl": "https://laurenscountysc.gov/departments/treasurer/delinquent_tax_sale_registration_packet.php",
+      "status": 200,
+      "title": "Laurens, South Carolina - Laurens County Government",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [
+        "November 3, 2025",
+        "November 28, 2025",
+        "December 3, 2025"
+      ],
+      "tables": []
+    },
+    {
+      "url": "https://laurenscountysc.gov/departments/treasurer/delinquent_tax_sale_bidder_registration_form.php",
+      "finalUrl": "https://laurenscountysc.gov/departments/treasurer/delinquent_tax_sale_bidder_registration_form.php",
+      "status": 200,
+      "title": "Laurens, South Carolina - Laurens County Government",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [
+        "November 1, 2026"
+      ],
+      "tables": []
+    },
+    {
+      "url": "https://laurenscountysc.gov/error.html",
+      "finalUrl": "https://laurenscountysc.gov/error.html",
+      "status": 404,
+      "title": "404. The page/URL requested wasn't found on this page.\"404 .Page/URL Not Found\"",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    }
+  ],
+  "candidateLinks": [
+    {
+      "text": "Delinquent Taxes",
+      "href": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php",
+      "kind": "html",
+      "foundOn": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php"
+    },
+    {
+      "text": "Show Flyout for Delinquent Taxes",
+      "href": "https://laurenscountysc.gov/#",
+      "kind": "html",
+      "foundOn": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php"
+    },
+    {
+      "text": "Delinquent Tax Sale Registration Packet",
+      "href": "https://laurenscountysc.gov/departments/treasurer/delinquent_tax_sale_registration_packet.php",
+      "kind": "html",
+      "foundOn": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php"
+    },
+    {
+      "text": "Delinquent Tax Sale Bidder Registration Form",
+      "href": "https://laurenscountysc.gov/departments/treasurer/delinquent_tax_sale_bidder_registration_form.php",
+      "kind": "html",
+      "foundOn": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php"
+    },
+    {
+      "text": "Tax Sale Information and Registration",
+      "href": "https://laurenscountysc.gov/error.html",
+      "kind": "html",
+      "foundOn": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php"
+    },
+    {
+      "text": "Tax Sale Frequently Asked Questions",
+      "href": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php#faq-questions-13",
+      "kind": "html",
+      "foundOn": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php"
+    },
+    {
+      "text": "When will the next Laurens County Tax Sale be held?",
+      "href": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php#collapselinks-220-20b0",
+      "kind": "html",
+      "foundOn": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php"
+    },
+    {
+      "text": "Where is the tax sale held and what time does it begin?",
+      "href": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php#collapselinks-220-20b1",
+      "kind": "html",
+      "foundOn": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php"
+    },
+    {
+      "text": "Can you send me a list of properties that will be available for sale?",
+      "href": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php#collapselinks-220-20b2",
+      "kind": "html",
+      "foundOn": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php"
+    },
+    {
+      "text": "Delinquent Tax Notice of Properties",
+      "href": "https://1543.newstogo.us/editionviewer/default.aspx?Edition=a1d4f6a3-9c80-4cc6-8436-26eab0597187",
+      "kind": "aspx",
+      "foundOn": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php"
+    },
+    {
+      "text": "Do I need to register for the sale and is there a fee for this?",
+      "href": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php#collapselinks-220-20b3",
+      "kind": "html",
+      "foundOn": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php"
+    },
+    {
+      "text": "What form of payment do you accept?",
+      "href": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php#collapselinks-220-20b4",
+      "kind": "html",
+      "foundOn": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php"
+    },
+    {
+      "text": "What happens to the properties that are not sold at the auction?",
+      "href": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php#collapselinks-220-20b5",
+      "kind": "html",
+      "foundOn": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php"
+    },
+    {
+      "text": "Can I bid without attending (via mail or a representative)?",
+      "href": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php#collapselinks-220-20b6",
+      "kind": "html",
+      "foundOn": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php"
+    },
+    {
+      "text": "What happens if I am the successful bidder?",
+      "href": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php#collapselinks-220-20b7",
+      "kind": "html",
+      "foundOn": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php"
+    },
+    {
+      "text": "Login",
+      "href": "https://cms2.revize.com/revize/security/index.jsp?webspace=laurens&filename=/departments/treasurer/delinquent_taxes.php",
+      "kind": "html",
+      "foundOn": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php"
+    },
+    {
+      "text": "",
+      "href": "https://www.linkedin.com/sharing/share-offsite/?url=http://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php",
+      "kind": "html",
+      "foundOn": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php"
+    },
+    {
+      "text": "",
+      "href": "https://www.facebook.com/sharer/sharer.php?u=http://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php",
+      "kind": "html",
+      "foundOn": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php"
+    },
+    {
+      "text": "",
+      "href": "https://www.twitter.com/intent/tweet?url=http://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php",
+      "kind": "html",
+      "foundOn": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php"
+    },
+    {
+      "text": "",
+      "href": "https://www.reddit.com/submit?url=http://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php",
+      "kind": "html",
+      "foundOn": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php"
+    },
+    {
+      "text": "Login",
+      "href": "https://cms2.revize.com/revize/security/index.jsp?webspace=laurens&filename=/departments/treasurer/delinquent_tax_sale_registration_packet.php",
+      "kind": "html",
+      "foundOn": "https://laurenscountysc.gov/departments/treasurer/delinquent_tax_sale_registration_packet.php"
+    },
+    {
+      "text": "",
+      "href": "https://www.linkedin.com/sharing/share-offsite/?url=http://laurenscountysc.gov/departments/treasurer/delinquent_tax_sale_registration_packet.php",
+      "kind": "html",
+      "foundOn": "https://laurenscountysc.gov/departments/treasurer/delinquent_tax_sale_registration_packet.php"
+    },
+    {
+      "text": "",
+      "href": "https://www.facebook.com/sharer/sharer.php?u=http://laurenscountysc.gov/departments/treasurer/delinquent_tax_sale_registration_packet.php",
+      "kind": "html",
+      "foundOn": "https://laurenscountysc.gov/departments/treasurer/delinquent_tax_sale_registration_packet.php"
+    },
+    {
+      "text": "",
+      "href": "https://www.twitter.com/intent/tweet?url=http://laurenscountysc.gov/departments/treasurer/delinquent_tax_sale_registration_packet.php",
+      "kind": "html",
+      "foundOn": "https://laurenscountysc.gov/departments/treasurer/delinquent_tax_sale_registration_packet.php"
+    },
+    {
+      "text": "",
+      "href": "https://www.reddit.com/submit?url=http://laurenscountysc.gov/departments/treasurer/delinquent_tax_sale_registration_packet.php",
+      "kind": "html",
+      "foundOn": "https://laurenscountysc.gov/departments/treasurer/delinquent_tax_sale_registration_packet.php"
+    },
+    {
+      "text": "Login",
+      "href": "https://cms2.revize.com/revize/security/index.jsp?webspace=laurens&filename=/departments/treasurer/delinquent_tax_sale_bidder_registration_form.php",
+      "kind": "html",
+      "foundOn": "https://laurenscountysc.gov/departments/treasurer/delinquent_tax_sale_bidder_registration_form.php"
+    },
+    {
+      "text": "",
+      "href": "https://www.linkedin.com/sharing/share-offsite/?url=http://laurenscountysc.gov/departments/treasurer/delinquent_tax_sale_bidder_registration_form.php",
+      "kind": "html",
+      "foundOn": "https://laurenscountysc.gov/departments/treasurer/delinquent_tax_sale_bidder_registration_form.php"
+    },
+    {
+      "text": "",
+      "href": "https://www.facebook.com/sharer/sharer.php?u=http://laurenscountysc.gov/departments/treasurer/delinquent_tax_sale_bidder_registration_form.php",
+      "kind": "html",
+      "foundOn": "https://laurenscountysc.gov/departments/treasurer/delinquent_tax_sale_bidder_registration_form.php"
+    },
+    {
+      "text": "",
+      "href": "https://www.twitter.com/intent/tweet?url=http://laurenscountysc.gov/departments/treasurer/delinquent_tax_sale_bidder_registration_form.php",
+      "kind": "html",
+      "foundOn": "https://laurenscountysc.gov/departments/treasurer/delinquent_tax_sale_bidder_registration_form.php"
+    },
+    {
+      "text": "",
+      "href": "https://www.reddit.com/submit?url=http://laurenscountysc.gov/departments/treasurer/delinquent_tax_sale_bidder_registration_form.php",
+      "kind": "html",
+      "foundOn": "https://laurenscountysc.gov/departments/treasurer/delinquent_tax_sale_bidder_registration_form.php"
+    }
+  ],
+  "followed": [],
+  "blocked": [],
+  "arcgis": [],
+  "qpublic": [],
+  "wayback": [
+    {
+      "error": "The operation was aborted due to timeout"
+    }
+  ],
+  "suggestedFamily": "page-or-newspaper",
+  "treasurerUrl": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php",
+  "listingSampleUrl": null,
+  "notes": "30 listing-like link(s)."
+}

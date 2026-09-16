@@ -23,14 +23,20 @@ const SEEDS = {
     "https://www.beaufortcountysc.gov",
     "https://www.beaufortcountytreasurer.com/research-and-data",
   ],
-  berkeley: ["https://www.berkeleycountysc.gov"],
+  berkeley: [
+    "https://www.berkeleycountysc.gov",
+    "https://berkeleycountysc.gov/dept/delinquent-tax-collector/",
+  ],
   calhoun: ["https://calhouncounty.sc.gov"],
   charleston: [
     "https://www.charlestoncounty.org",
     "https://www.charlestoncounty.gov/departments/delinquent-tax/tax-sale.php",
   ],
   cherokee: ["https://www.cherokeecountysc.gov"],
-  chester: ["https://www.chestercountysc.gov"],
+  chester: [
+    "https://www.chestercountysc.gov",
+    "https://chestercountysc.gov/departments/tax-and-finance-departments/tax-collector/",
+  ],
   chesterfield: [
     "http://www.chesterfieldcountysc.com",
     "https://www.chesterfieldcountysc.com/taxes",
@@ -63,7 +69,7 @@ const SEEDS = {
     "https://www.lancastercountysc.gov",
     "https://www.lancastercountysc.gov/198/Tax-Sale-Procedures",
   ],
-  laurens: ["https://laurenscounty.us/"],
+  laurens: ["https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php"],
   lee: ["https://www.leecountysc.org/"],
   lexington: [
     "https://lex-co.sc.gov",

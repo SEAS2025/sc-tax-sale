@@ -329,6 +329,20 @@ const RESEARCHED = {
     notes:
       "Family page-or-newspaper. Browsed 16 Sep 2026 after the county site redirected from newberrycounty.net. Tax sales page and a procedures PDF (tax_sale_info-consolidated.pdf) exist. The delinquent-tax page still lists a sale on 3 Nov 2025. No current parcel file stored.",
   },
+  laurens: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl: "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php",
+    notes:
+      "Family page-or-newspaper. SCAC seed laurenscounty.us is not the treasurer site. Official page browsed 16 Sep 2026. 2025 sale was 3 Dec 2025; list in the Laurens County Advertiser and Clinton Chronicle. Registration for the next sale reopens 1 Nov 2026. Newspaper viewer is a subscribe wall; not bypassed.",
+  },
+  berkeley: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl: "https://berkeleycountysc.gov/dept/delinquent-tax-collector/",
+    notes:
+      "Family page-or-newspaper. Playwright still gets a Cloudflare challenge on this URL and does not solve it. A human browser pass recorded ads in the Post and Courier and land/mobile-home sales in November or December, with no county listing file.",
+  },
   clarendon: {
     status: "researched",
     sourceFamily: "page-or-newspaper",
@@ -376,7 +390,7 @@ const RESEARCHED = {
     treasurerUrl:
       "https://chestercountysc.gov/departments/tax-and-finance-departments/tax-collector",
     notes:
-      "Family page-or-newspaper. Homepage links Tax Collector and Forfeited Land Commission. Those pages returned a Cloudflare challenge on 16 Sep 2026 and were not read. Challenge was not solved. A Forfeited Land Auction link points at terryhowe.com; not scraped.",
+      "Family page-or-newspaper. Playwright hit a Cloudflare challenge and did not solve it. A human browser pass on 16 Sep 2026 read the public tax collector page: ads the last three weeks of October; sale the first Monday of November or December. No parcel file. Forfeited Land Auction link to terryhowe.com was not scraped.",
   },
   york: {
     status: "researched",

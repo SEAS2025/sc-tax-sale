@@ -17,6 +17,6 @@ Firefox (Playwright) visits each county’s official website from the SC Associa
 | Calhoun | page-or-newspaper | [Tax Collector](https://calhouncounty.sc.gov/departments/tax-collector). No current listing. |
 | York | page-or-newspaper | [Tax Collection](https://www.yorkcountysc.gov/216/Tax-Collection). Sale 12 Oct 2026. County-published Experience URL recorded; no MapServer invented. |
 
-As of this pass, 36 counties are `researched` and Lexington is `live`. Still without a confirmed tax-sale page: allendale, barnwell, chesterfield, dillon, florence, mccormick. Blocked and not solved: Berkeley and Laurens (Cloudflare), Edgefield (403), Chester (Cloudflare on the tax collector page). A cookie-consent script that mentions reCaptcha is not a captcha wall. A Cloudflare “Just a moment” page is a captcha wall and is not solved.
+As of this pass, 36 counties are `researched` and Lexington is `live`. Still without a confirmed tax-sale page: allendale, barnwell, chesterfield, dillon, edgefield, florence, mccormick. Playwright still stops at Cloudflare on Berkeley and Chester; a human pass recorded those two pages. Laurens uses laurenscountysc.gov, not the hijacked laurenscounty.us seed. A cookie-consent script that mentions reCaptcha is not a captcha wall. A Cloudflare “Just a moment” page is a captcha wall and is not solved.
 
 Lists found as county-hosted files (not stored in git): Georgetown Document Center View/3625, Colleton `taxsale-1-30-26.pdf`, Cherokee scan PDF. York’s 2025 dashboard is an Experience Builder item the county page linked.
