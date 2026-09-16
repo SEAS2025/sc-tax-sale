@@ -146,6 +146,104 @@ function parseFile(file, county) {
   return parseRows(rowsFromFile(file), county);
 }
 
+function colRef(index) {
+  let n = index + 1;
+  let out = "";
+  while (n > 0) {
+    const rem = (n - 1) % 26;
+    out = String.fromCharCode(65 + rem) + out;
+    n = Math.floor((n - 1) / 26);
+  }
+  return out;
+}
+
+function xmlEscape(value) {
+  return String(value == null ? "" : value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/[^\x09\x0a\x0d\x20-\uD7FF\uE000-\uFFFD]/g, "");
+}
+
+function sheetName(name, used) {
+  let base = String(name || "Sheet").replace(/[:\\/?*\[\]]/g, " ").trim().slice(0, 31) || "Sheet";
+  let candidate = base;
+  let n = 2;
+  while (used.has(candidate.toLowerCase())) {
+    const suffix = " " + n;
+    candidate = base.slice(0, 31 - suffix.length) + suffix;
+    n += 1;
+  }
+  used.add(candidate.toLowerCase());
+  return candidate;
+}
+
+function writeWorkbook(dest, sheets) {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), "xlsx-book-"));
+  const strings = [];
+  function sid(value) {
+    const text = String(value == null ? "" : value);
+    let i = strings.indexOf(text);
+    if (i < 0) {
+      strings.push(text);
+      i = strings.length - 1;
+    }
+    return i;
+  }
+  const usedNames = new Set();
+  const named = (sheets || []).map((sheet, i) => ({
+    name: sheetName(sheet.name || ("Sheet" + (i + 1)), usedNames),
+    headers: sheet.headers || [],
+    rows: sheet.rows || [],
+  }));
+  const sheetFiles = {};
+  const workbookSheets = [];
+  const rels = [];
+  const overrides = [
+    '<Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/>',
+    '<Override PartName="/xl/sharedStrings.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sharedStrings+xml"/>',
+  ];
+  named.forEach((sheet, i) => {
+    const part = "worksheets/sheet" + (i + 1) + ".xml";
+    const rid = "rId" + (i + 1);
+    workbookSheets.push('<sheet name="' + xmlEscape(sheet.name) + '" sheetId="' + (i + 1) + '" r:id="' + rid + '"/>');
+    rels.push('<Relationship Id="' + rid + '" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="' + part + '"/>');
+    overrides.push('<Override PartName="/xl/' + part + '" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/>');
+    const all = [sheet.headers].concat(sheet.rows);
+    const rowsXml = all.map((row, r) => {
+      const cells = (row || []).map((value, c) => {
+        const ref = colRef(c) + (r + 1);
+        if (typeof value === "number" && Number.isFinite(value)) {
+          return '<c r="' + ref + '"><v>' + value + "</v></c>";
+        }
+        if (value == null || value === "") return '<c r="' + ref + '"/>';
+        return '<c r="' + ref + '" t="s"><v>' + sid(value) + "</v></c>";
+      }).join("");
+      return '<row r="' + (r + 1) + '">' + cells + "</row>";
+    }).join("");
+    sheetFiles["xl/" + part] = '<?xml version="1.0" encoding="UTF-8"?><worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><sheetData>' + rowsXml + "</sheetData></worksheet>";
+  });
+  rels.push('<Relationship Id="rId' + (named.length + 1) + '" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/sharedStrings" Target="sharedStrings.xml"/>');
+  const files = Object.assign({
+    "[Content_Types].xml": '<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/>' + overrides.join("") + "</Types>",
+    "_rels/.rels": '<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/></Relationships>',
+    "xl/workbook.xml": '<?xml version="1.0" encoding="UTF-8"?><workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheets>' + workbookSheets.join("") + "</sheets></workbook>",
+    "xl/_rels/workbook.xml.rels": '<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">' + rels.join("") + "</Relationships>",
+    "xl/sharedStrings.xml": '<?xml version="1.0" encoding="UTF-8"?><sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" count="' + strings.length + '" uniqueCount="' + strings.length + '">' + strings.map((s) => "<si><t>" + xmlEscape(s) + "</t></si>").join("") + "</sst>",
+  }, sheetFiles);
+  for (const [rel, body] of Object.entries(files)) {
+    const full = path.join(dir, rel);
+    fs.mkdirSync(path.dirname(full), { recursive: true });
+    fs.writeFileSync(full, body);
+  }
+  fs.mkdirSync(path.dirname(dest), { recursive: true });
+  if (fs.existsSync(dest)) fs.unlinkSync(dest);
+  execFileSync("zip", ["-qr", dest, "."], { cwd: dir });
+  fs.rmSync(dir, { recursive: true, force: true });
+  return dest;
+}
+
 function writeFixture(dest, headers, dataRows) {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), "xlsx-fixture-"));
   const strings = [];
@@ -190,4 +288,6 @@ module.exports = {
   parseFile,
   parseRows,
   writeFixture,
+  writeWorkbook,
+  colRef,
 };

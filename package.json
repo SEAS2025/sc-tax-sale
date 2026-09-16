@@ -11,7 +11,13 @@
     "test": "node --test engine/test.js",
     "sync-site": "node scripts/sync-site-data.js",
     "counties": "node engine/cli.js counties",
-    "build-registry": "node scripts/build-registry.js"
+    "build-registry": "node scripts/build-registry.js",
+    "scan": "node engine/cli.js scan --write",
+    "scan:due": "node engine/cli.js scan --due --write",
+    "scan:seed": "node engine/cli.js scan --seed --write",
+    "repeat": "node engine/cli.js repeat --write",
+    "repeat:xlsx": "node engine/cli.js repeat --xlsx",
+    "repeat:pdf": "node engine/cli.js repeat --pdf"
   },
   "engines": {
     "node": ">=18"

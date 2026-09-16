@@ -1,0 +1,2607 @@
+{
+  "season": 2026,
+  "checked": "2026-09-16",
+  "generatedAt": "2026-09-16T20:06:30.239Z",
+  "today": "2026-09-16",
+  "source": "Official treasurer pages plus the seeded 2026 calendar. Listing files are not stored.",
+  "counts": {
+    "held": 2,
+    "posted": 4,
+    "scheduled": 18,
+    "rule": 7,
+    "leftover": 5,
+    "flyer": 1,
+    "unknown": 9,
+    "windowOpen": 4,
+    "due": 2,
+    "blocked": 2
+  },
+  "counties": [
+    {
+      "id": "abbeville",
+      "name": "Abbeville",
+      "treasurerUrl": "https://abbevillecountysc.com/delinquent-tax-collector/",
+      "saleDate": "2026-11-02",
+      "saleDates": [
+        "2026-11-02"
+      ],
+      "saleNote": "Usually first Monday in November",
+      "adOutlet": "The Press and Banner",
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": "2026-10-12",
+      "catchUntil": "2026-10-19",
+      "catchDays": 7,
+      "listStatus": "rule",
+      "datePrecision": "implied",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:22.937Z",
+        "url": "https://abbevillecountysc.com/delinquent-tax-collector/",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 2,
+        "listingLinks": [
+          {
+            "text": "Delinquent Tax Collector",
+            "href": "https://abbevillecountysc.com/delinquent-tax-collector/"
+          },
+          {
+            "text": "Delinquent Tax Collector",
+            "href": "https://abbevillecountysc.com/delinquent-tax-collector/"
+          }
+        ],
+        "mentions2026": false,
+        "leftover2025": false,
+        "mentionsNewspaper": false,
+        "foundDates": [],
+        "hasHtmlTable": false,
+        "suggestedCollapse": null,
+        "heads": [],
+        "error": null
+      }
+    },
+    {
+      "id": "aiken",
+      "name": "Aiken",
+      "treasurerUrl": "https://www.aikencountysc.gov/309/Delinquent-Tax-Sale",
+      "saleDate": "2026-11-02",
+      "saleDates": [
+        "2026-11-02"
+      ],
+      "saleNote": "9 a.m., USC Aiken Convocation Center",
+      "adOutlet": "Aiken Standard",
+      "adDates": [
+        "2026-10-16",
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "listPromised": "2026-10-16",
+      "watchFrom": "2026-10-16",
+      "catchUntil": "2026-10-23",
+      "catchDays": 7,
+      "listStatus": "scheduled",
+      "datePrecision": "posted",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:22.976Z",
+        "url": "https://www.aikencountysc.gov/309/Delinquent-Tax-Sale",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 4,
+        "listingLinks": [
+          {
+            "text": "Delinquent Real Property Taxes",
+            "href": "https://www.aikencountysc.gov/310/Delinquent-Real-Property-Taxes"
+          },
+          {
+            "text": "Delinquent Tax Sale",
+            "href": "https://www.aikencountysc.gov/309/Delinquent-Tax-Sale"
+          },
+          {
+            "text": "Delinquent Tax Collector",
+            "href": "https://www.aikencountysc.gov/273/Delinquent-Tax-Collector"
+          },
+          {
+            "text": "2026 Delinquent Tax Sale Bidder Instructions (PDF)",
+            "href": "https://www.aikencountysc.gov/DocumentCenter/View/2540/Bidder-Instructions-2026"
+          }
+        ],
+        "mentions2026": true,
+        "leftover2025": false,
+        "mentionsNewspaper": true,
+        "foundDates": [
+          "2026-09-18",
+          "2026-10-16",
+          "2026-10-23",
+          "2026-11-02"
+        ],
+        "hasHtmlTable": false,
+        "suggestedCollapse": null,
+        "heads": [],
+        "error": null
+      }
+    },
+    {
+      "id": "allendale",
+      "name": "Allendale",
+      "treasurerUrl": "https://www.allendalecounty.com/",
+      "saleDate": null,
+      "saleDates": [],
+      "saleNote": null,
+      "adOutlet": null,
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": null,
+      "catchUntil": null,
+      "catchDays": 7,
+      "listStatus": "unknown",
+      "datePrecision": "unknown",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:22.978Z",
+        "url": "https://www.allendalecounty.com/",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 0,
+        "listingLinks": [],
+        "mentions2026": false,
+        "leftover2025": false,
+        "mentionsNewspaper": false,
+        "foundDates": [],
+        "hasHtmlTable": false,
+        "suggestedCollapse": null,
+        "heads": [],
+        "error": null
+      }
+    },
+    {
+      "id": "anderson",
+      "name": "Anderson",
+      "treasurerUrl": "https://www.andersoncountysc.org/tax-sale/",
+      "saleDate": "2026-10-19",
+      "saleDates": [
+        "2026-10-19"
+      ],
+      "saleNote": "Civic Center of Anderson",
+      "adOutlet": null,
+      "adDates": [],
+      "listPromised": "2026-09-30",
+      "watchFrom": "2026-09-30",
+      "catchUntil": "2026-10-07",
+      "catchDays": 7,
+      "listStatus": "scheduled",
+      "datePrecision": "posted",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:22.979Z",
+        "url": "https://www.andersoncountysc.org/http-anderson-postingpro-net-agreement-aspxstscpy2021cid4acceptscookies1/",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 3,
+        "listingLinks": [
+          {
+            "text": "Tax Sale",
+            "href": "https://www.andersoncountysc.org/departments-a-z/treasurer/"
+          },
+          {
+            "text": "Tax Sale",
+            "href": "https://www.andersoncountysc.org/departments-a-z/treasurer/"
+          },
+          {
+            "text": "2026 Tax Sale FAQ",
+            "href": "https://www.andersoncountysc.org/wp-content/uploads/2026/09/2026-FAQ.pdf"
+          }
+        ],
+        "mentions2026": true,
+        "leftover2025": false,
+        "mentionsNewspaper": false,
+        "foundDates": [
+          "2026-10-19"
+        ],
+        "hasHtmlTable": false,
+        "suggestedCollapse": "county-pdf",
+        "heads": [],
+        "error": null
+      }
+    },
+    {
+      "id": "bamberg",
+      "name": "Bamberg",
+      "treasurerUrl": "https://www.bambergcounty.sc.gov/tax-services/delinquent-tax-office/delinquent-tax-properties",
+      "saleDate": "2025-12-08",
+      "saleDates": [
+        "2025-12-08"
+      ],
+      "saleNote": null,
+      "adOutlet": "Bamberg Leader",
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": null,
+      "catchUntil": null,
+      "catchDays": 7,
+      "listStatus": "leftover",
+      "datePrecision": "posted",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:22.981Z",
+        "url": "https://www.bambergcounty.sc.gov/tax-services/delinquent-tax-office/delinquent-tax-properties",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 8,
+        "listingLinks": [
+          {
+            "text": "Delinquent Tax Office",
+            "href": "https://www.bambergcounty.sc.gov/tax-services/delinquent-tax-office"
+          },
+          {
+            "text": "Delinquent Tax Office",
+            "href": "https://www.bambergcounty.sc.gov/tax-services/delinquent-tax-office"
+          },
+          {
+            "text": "Bamberg County Tax Sale Rules and Regulations",
+            "href": "https://www.bambergcounty.sc.gov/sites/default/files/uploads/bamberg-county-tax-sale-rules-and-regulations-2025-sale.pdf"
+          },
+          {
+            "text": "2025 Tax Sale List",
+            "href": "https://www.bambergcounty.sc.gov/sites/default/files/uploads/2025-tax-sale-list.pdf"
+          },
+          {
+            "text": "Delinquent Tax Office",
+            "href": "https://www.bambergcounty.sc.gov/tax-services/delinquent-tax-office"
+          },
+          {
+            "text": "Delinquent Tax Properties",
+            "href": "https://www.bambergcounty.sc.gov/tax-services/delinquent-tax-office/delinquent-tax-properties"
+          },
+          {
+            "text": "Delinquent Tax Office",
+            "href": "https://www.bambergcounty.sc.gov/tax-services/delinquent-tax-office"
+          },
+          {
+            "text": "Delinquent Tax Properties",
+            "href": "https://www.bambergcounty.sc.gov/tax-services/delinquent-tax-office/delinquent-tax-properties"
+          }
+        ],
+        "mentions2026": false,
+        "leftover2025": true,
+        "mentionsNewspaper": true,
+        "foundDates": [
+          "2025-12-01",
+          "2025-12-08"
+        ],
+        "hasHtmlTable": false,
+        "suggestedCollapse": "county-pdf",
+        "heads": [],
+        "error": null
+      }
+    },
+    {
+      "id": "barnwell",
+      "name": "Barnwell",
+      "treasurerUrl": "https://www.barnwellcountysc.us/m/directory/department?did=15",
+      "saleDate": null,
+      "saleDates": [],
+      "saleNote": null,
+      "adOutlet": "The People Sentinel / scpublicnotices.com",
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": null,
+      "catchUntil": null,
+      "catchDays": 7,
+      "listStatus": "unknown",
+      "datePrecision": "unknown",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:23.447Z",
+        "url": "https://www.barnwellcountysc.us/m/directory/department?did=15",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 0,
+        "listingLinks": [],
+        "mentions2026": false,
+        "leftover2025": false,
+        "mentionsNewspaper": false,
+        "foundDates": [],
+        "hasHtmlTable": false,
+        "suggestedCollapse": null,
+        "heads": [],
+        "error": null
+      }
+    },
+    {
+      "id": "beaufort",
+      "name": "Beaufort",
+      "treasurerUrl": "https://www.beaufortcountytreasurer.com/research-and-data",
+      "saleDate": "2026-10-05",
+      "saleDates": [
+        "2026-10-05"
+      ],
+      "saleNote": "First Monday in October, Buckwalter Recreation Center, Bluffton",
+      "adOutlet": "Local newspapers + treasurer help center",
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": "2026-09-14",
+      "catchUntil": "2026-09-21",
+      "catchDays": 7,
+      "listStatus": "scheduled",
+      "datePrecision": "posted",
+      "windowOpen": true,
+      "due": true,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:23.465Z",
+        "url": "https://www.beaufortcountytreasurer.com/research-and-data",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 1,
+        "listingLinks": [
+          {
+            "text": "Tax Sale and Delinquency Data",
+            "href": "https://www.dropbox.com/sh/nas1s7v7atvi3my/AACpFF7meiuXpO_QHBORoVx-a?dl=0"
+          }
+        ],
+        "mentions2026": false,
+        "leftover2025": false,
+        "mentionsNewspaper": false,
+        "foundDates": [],
+        "hasHtmlTable": false,
+        "suggestedCollapse": null,
+        "heads": [
+          {
+            "url": "https://treasurerhelp.zendesk.com/hc/en-us/articles/4409081325069-List-of-Delinquent-Properties-for-Tax-Sale",
+            "httpStatus": 403,
+            "lastModified": null,
+            "contentType": "text/html; charset=UTF-8"
+          }
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "berkeley",
+      "name": "Berkeley",
+      "treasurerUrl": "https://berkeleycountysc.gov/dept/delinquent-tax-collector/",
+      "saleDate": null,
+      "saleDates": [],
+      "saleNote": "Land / mobile-home sales November or December",
+      "adOutlet": "Post and Courier",
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": null,
+      "catchUntil": null,
+      "catchDays": 7,
+      "listStatus": "unknown",
+      "datePrecision": "unknown",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:23.555Z",
+        "url": "https://berkeleycountysc.gov/dept/delinquent-tax-collector/",
+        "httpStatus": 403,
+        "blocked": true,
+        "blockReason": "http-403",
+        "listingLinkCount": 0,
+        "listingLinks": [],
+        "mentions2026": false,
+        "leftover2025": false,
+        "mentionsNewspaper": false,
+        "foundDates": [],
+        "hasHtmlTable": false,
+        "suggestedCollapse": null,
+        "heads": [],
+        "error": null
+      }
+    },
+    {
+      "id": "calhoun",
+      "name": "Calhoun",
+      "treasurerUrl": "https://calhouncounty.sc.gov/departments/tax-collector",
+      "saleDate": "2026-11-09",
+      "saleDates": [
+        "2026-11-09"
+      ],
+      "saleNote": "10 a.m., John Ford Community Center",
+      "adOutlet": "The Calhoun Times Leader",
+      "adDates": [
+        "2026-10-23",
+        "2026-10-30",
+        "2026-11-06"
+      ],
+      "listPromised": null,
+      "watchFrom": "2026-10-23",
+      "catchUntil": "2026-10-30",
+      "catchDays": 7,
+      "listStatus": "scheduled",
+      "datePrecision": "posted",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:23.791Z",
+        "url": "https://calhouncounty.sc.gov/departments/tax-collector",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 1,
+        "listingLinks": [
+          {
+            "text": "Tax Sale Rules & Regulations",
+            "href": "https://calhouncounty.sc.gov/sites/calhouncounty/files/Documents/Calhoun%20County/Departments/Tax%20Collector/Calhoun-Del_Tax_Rules_Regs.pdf"
+          }
+        ],
+        "mentions2026": true,
+        "leftover2025": false,
+        "mentionsNewspaper": true,
+        "foundDates": [
+          "2026-10-01",
+          "2026-10-14",
+          "2026-11-06",
+          "2026-11-09"
+        ],
+        "hasHtmlTable": false,
+        "suggestedCollapse": "county-pdf",
+        "heads": [],
+        "error": null
+      }
+    },
+    {
+      "id": "charleston",
+      "name": "Charleston",
+      "treasurerUrl": "https://www.charlestoncounty.gov/departments/delinquent-tax/tax-sale.php",
+      "saleDate": "2026-11-09",
+      "saleDates": [
+        "2026-11-09"
+      ],
+      "saleNote": "9 a.m., Charleston Coliseum; continues following days if needed",
+      "adOutlet": null,
+      "adDates": [],
+      "listPromised": "2026-09-07",
+      "watchFrom": "2026-09-07",
+      "catchUntil": "2026-09-14",
+      "catchDays": 7,
+      "listStatus": "scheduled",
+      "datePrecision": "posted",
+      "windowOpen": true,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:24.092Z",
+        "url": "https://www.charlestoncounty.gov/departments/delinquent-tax/tax-sale.php",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 8,
+        "listingLinks": [
+          {
+            "text": "Back to Charleston County Delinquent Tax Division Homepage",
+            "href": "https://www.charlestoncounty.gov/departments/delinquent-tax/"
+          },
+          {
+            "text": "listing file",
+            "href": "https://www.charlestoncounty.gov/departments/delinquent-tax/files/Sealed-Bid-Instructions.pdf?v=514"
+          },
+          {
+            "text": "listing file",
+            "href": "https://www.charlestoncounty.gov/departments/delinquent-tax/files/Sealed-Bid-Form.pdf?v=514"
+          },
+          {
+            "text": "listing file",
+            "href": "https://www.charlestoncounty.gov/departments/delinquent-tax/files/Bidder-Registration-Form-2023-Tax-Sale.pdf?v=514"
+          },
+          {
+            "text": "Go to Tax Sale Bidder Registration",
+            "href": "https://govhub.com/charleston/taxsale?v=514"
+          },
+          {
+            "text": "Sealed Bid Listing",
+            "href": "https://www.charlestoncounty.gov/departments/delinquent-tax/files/FLC-Properties-for-Sealed-Bid-TS2025.pdf?v=514"
+          },
+          {
+            "text": "FLC Sealed Bid Submittal Form",
+            "href": "https://www.charlestoncounty.gov/departments/delinquent-tax/files/FLC-Sealed-Bid-Submittal-Form-12-08-2025-Tax-Sale.pdf?v=514"
+          },
+          {
+            "text": "Delinquent Tax Sale",
+            "href": "https://www.charlestoncounty.gov/departments/delinquent-tax/tax-sale.php#delinquent_tax_sale"
+          }
+        ],
+        "mentions2026": true,
+        "leftover2025": false,
+        "mentionsNewspaper": true,
+        "foundDates": [
+          "2026-01-12",
+          "2026-01-23",
+          "2026-09-07",
+          "2026-10-21",
+          "2026-11-09",
+          "2026-11-16"
+        ],
+        "hasHtmlTable": false,
+        "suggestedCollapse": "xlsx",
+        "heads": [
+          {
+            "url": "https://www.charlestoncounty.org/departments/delinquent-tax/files/RP-Tax-Sale-Listing.pdf?v=0",
+            "httpStatus": 200,
+            "lastModified": "Mon, 01 Dec 2025 14:17:33 GMT",
+            "contentType": "application/pdf"
+          }
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "cherokee",
+      "name": "Cherokee",
+      "treasurerUrl": "https://cherokeecountysc.gov/delinquent-tax/",
+      "saleDate": null,
+      "saleDates": [],
+      "saleNote": null,
+      "adOutlet": null,
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": null,
+      "catchUntil": null,
+      "catchDays": 7,
+      "listStatus": "flyer",
+      "datePrecision": "unknown",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:24.112Z",
+        "url": "https://cherokeecountysc.gov/delinquent-tax/",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 8,
+        "listingLinks": [
+          {
+            "text": "Delinquent Tax",
+            "href": "https://cherokeecountysc.gov/delinquent-tax/"
+          },
+          {
+            "text": "Tax Collection and Tax Sale Procedures",
+            "href": "https://cherokeecountysc.gov/delinquent-tax/tax-collection-and-tax-sale-procedures/"
+          },
+          {
+            "text": "Delinquent Tax",
+            "href": "https://cherokeecountysc.gov/delinquent-tax/"
+          },
+          {
+            "text": "Tax Collection and Tax Sale Procedures",
+            "href": "https://cherokeecountysc.gov/delinquent-tax/tax-collection-and-tax-sale-procedures/"
+          },
+          {
+            "text": "Delinquent Tax",
+            "href": "https://cherokeecountysc.gov/delinquent-tax/"
+          },
+          {
+            "text": "Tax Collection and Tax Sale Procedures",
+            "href": "https://cherokeecountysc.gov/delinquent-tax/tax-collection-and-tax-sale-procedures/"
+          },
+          {
+            "text": "Delinquent Tax",
+            "href": "https://cherokeecountysc.gov/delinquent-tax/"
+          },
+          {
+            "text": "Tax Collection and Tax Sale Procedures",
+            "href": "https://cherokeecountysc.gov/delinquent-tax/tax-collection-and-tax-sale-procedures/"
+          }
+        ],
+        "mentions2026": false,
+        "leftover2025": false,
+        "mentionsNewspaper": false,
+        "foundDates": [],
+        "hasHtmlTable": false,
+        "suggestedCollapse": "county-pdf",
+        "heads": [
+          {
+            "url": "https://cherokeecountysc.gov/wp-content/uploads/2026/08/TAX-SALE-TAB.pdf",
+            "httpStatus": 200,
+            "lastModified": "Tue, 25 Aug 2026 20:20:07 GMT",
+            "contentType": "application/pdf"
+          }
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "chester",
+      "name": "Chester",
+      "treasurerUrl": "https://chestercountysc.gov/departments/tax-and-finance-departments/tax-collector",
+      "saleDate": null,
+      "saleDates": [],
+      "saleNote": "First Monday of November or December",
+      "adOutlet": "County newspapers, last three weeks of October",
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": "2026-10-11",
+      "catchUntil": "2026-10-18",
+      "catchDays": 7,
+      "listStatus": "rule",
+      "datePrecision": "implied",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:24.294Z",
+        "url": "https://chestercountysc.gov/departments/tax-and-finance-departments/tax-collector",
+        "httpStatus": 403,
+        "blocked": true,
+        "blockReason": "http-403",
+        "listingLinkCount": 0,
+        "listingLinks": [],
+        "mentions2026": false,
+        "leftover2025": false,
+        "mentionsNewspaper": false,
+        "foundDates": [],
+        "hasHtmlTable": false,
+        "suggestedCollapse": null,
+        "heads": [],
+        "error": null
+      }
+    },
+    {
+      "id": "chesterfield",
+      "name": "Chesterfield",
+      "treasurerUrl": "https://www.chesterfieldcountysc.com/tax-collector",
+      "saleDate": "2026-10-26",
+      "saleDates": [
+        "2026-10-26"
+      ],
+      "saleNote": null,
+      "adOutlet": "County newspapers",
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": "2026-10-05",
+      "catchUntil": "2026-10-12",
+      "catchDays": 7,
+      "listStatus": "scheduled",
+      "datePrecision": "posted",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:24.304Z",
+        "url": "https://www.chesterfieldcountysc.com/tax-collector",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 0,
+        "listingLinks": [],
+        "mentions2026": false,
+        "leftover2025": false,
+        "mentionsNewspaper": true,
+        "foundDates": [],
+        "hasHtmlTable": false,
+        "suggestedCollapse": null,
+        "heads": [],
+        "error": null
+      }
+    },
+    {
+      "id": "clarendon",
+      "name": "Clarendon",
+      "treasurerUrl": "https://www.clarendoncountysc.gov/our-government/treasurer/",
+      "saleDate": null,
+      "saleDates": [],
+      "saleNote": null,
+      "adOutlet": null,
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": null,
+      "catchUntil": null,
+      "catchDays": 7,
+      "listStatus": "unknown",
+      "datePrecision": "unknown",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:24.330Z",
+        "url": "https://www.clarendoncountysc.gov/our-government/treasurer/",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 0,
+        "listingLinks": [],
+        "mentions2026": false,
+        "leftover2025": false,
+        "mentionsNewspaper": false,
+        "foundDates": [],
+        "hasHtmlTable": false,
+        "suggestedCollapse": null,
+        "heads": [],
+        "error": null
+      }
+    },
+    {
+      "id": "colleton",
+      "name": "Colleton",
+      "treasurerUrl": "https://www.colletoncounty.org/delinquent-tax/tax-sale",
+      "saleDate": "2026-02-20",
+      "saleDates": [
+        "2026-02-20"
+      ],
+      "saleNote": "Colleton Civic Center",
+      "adOutlet": null,
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": "2026-01-30",
+      "catchUntil": "2026-02-06",
+      "catchDays": 7,
+      "listStatus": "held",
+      "datePrecision": "posted",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:24.424Z",
+        "url": "https://www.colletoncounty.org/delinquent-tax/tax-sale",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 8,
+        "listingLinks": [
+          {
+            "text": "Delinquent Tax",
+            "href": "https://www.colletoncounty.org/delinquent-tax"
+          },
+          {
+            "text": "Delinquent Tax Sale",
+            "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+          },
+          {
+            "text": "Delinquent Tax",
+            "href": "https://www.colletoncounty.org/delinquent-tax"
+          },
+          {
+            "text": "here",
+            "href": "https://www.colletoncounty.org/sites/default/files/uploads/taxsale-1-30-26.pdf"
+          },
+          {
+            "text": "listing file",
+            "href": "https://www.colletoncounty.org/sites/default/files/uploads/del_tax/taxsalelist-01-29.pdf"
+          },
+          {
+            "text": "Delinquent Tax",
+            "href": "https://www.colletoncounty.org/delinquent-tax"
+          },
+          {
+            "text": "Tax Sale",
+            "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+          },
+          {
+            "text": "Delinquent Tax",
+            "href": "https://www.colletoncounty.org/delinquent-tax"
+          }
+        ],
+        "mentions2026": true,
+        "leftover2025": false,
+        "mentionsNewspaper": false,
+        "foundDates": [
+          "2026-02-11",
+          "2026-02-20"
+        ],
+        "hasHtmlTable": false,
+        "suggestedCollapse": "county-pdf",
+        "heads": [
+          {
+            "url": "https://www.colletoncounty.org/sites/default/files/uploads/taxsale-1-30-26.pdf",
+            "httpStatus": 200,
+            "lastModified": "Tue, 03 Feb 2026 16:12:53 GMT",
+            "contentType": "application/pdf"
+          }
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "darlington",
+      "name": "Darlington",
+      "treasurerUrl": "https://www.darcosc.com/departments/tax_collector.php",
+      "saleDate": null,
+      "saleDates": [],
+      "saleNote": "December at Darlington Middle School; exact day by phone",
+      "adOutlet": "Darlington News & Press",
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": null,
+      "catchUntil": null,
+      "catchDays": 7,
+      "listStatus": "unknown",
+      "datePrecision": "unknown",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:24.675Z",
+        "url": "https://www.darcosc.com/departments/tax_collector.php",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 0,
+        "listingLinks": [],
+        "mentions2026": false,
+        "leftover2025": false,
+        "mentionsNewspaper": true,
+        "foundDates": [],
+        "hasHtmlTable": false,
+        "suggestedCollapse": null,
+        "heads": [],
+        "error": null
+      }
+    },
+    {
+      "id": "dillon",
+      "name": "Dillon",
+      "treasurerUrl": "https://www.dilloncountysc.org/departments/treasurer.php",
+      "saleDate": null,
+      "saleDates": [],
+      "saleNote": null,
+      "adOutlet": null,
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": null,
+      "catchUntil": null,
+      "catchDays": 7,
+      "listStatus": "posted",
+      "datePrecision": "unknown",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:24.734Z",
+        "url": "https://www.dilloncountysc.org/departments/treasurer.php",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 0,
+        "listingLinks": [],
+        "mentions2026": false,
+        "leftover2025": false,
+        "mentionsNewspaper": false,
+        "foundDates": [],
+        "hasHtmlTable": false,
+        "suggestedCollapse": null,
+        "heads": [
+          {
+            "url": "https://www.dilloncountysc.org/Documents/Departments/Treasurer/PAPER.XLS",
+            "httpStatus": 200,
+            "lastModified": "Wed, 06 May 2026 16:57:15 GMT",
+            "contentType": "application/vnd.ms-excel"
+          }
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "dorchester",
+      "name": "Dorchester",
+      "treasurerUrl": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax",
+      "saleDate": "2026-10-19",
+      "saleDates": [
+        "2026-10-19"
+      ],
+      "saleNote": "Published fee calendar (page may 403 to automated fetches)",
+      "adOutlet": null,
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": "2026-09-28",
+      "catchUntil": "2026-10-05",
+      "catchDays": 7,
+      "listStatus": "scheduled",
+      "datePrecision": "posted",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:24.804Z",
+        "url": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 7,
+        "listingLinks": [
+          {
+            "text": "Delinquent Tax",
+            "href": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax"
+          },
+          {
+            "text": "Delinquent Tax Lookup",
+            "href": "https://www.dorchestercountysc.gov/how-do-i/find/delinquent-tax-lookup"
+          },
+          {
+            "text": "Delinquent Tax",
+            "href": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax"
+          },
+          {
+            "text": "Delinquent Property Locator Map",
+            "href": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax/delinquent-property-locator-map"
+          },
+          {
+            "text": "Delinquent Real Estate Property List",
+            "href": "https://www.dorchestercountysc.gov/?splash=https%3a%2f%2fas400.dorchestercounty.net%2fwebapps%2fdtx000200.pgm&____isexternal=true"
+          },
+          {
+            "text": "Delinquent Mobile Home Property List",
+            "href": "https://www.dorchestercountysc.gov/?splash=https%3a%2f%2fas400.dorchestercounty.net%2fwebapps%2fdtx000201.pgm&____isexternal=true"
+          },
+          {
+            "text": "To view the Notice and Instructions to Bidders for the Tax Sale, please click th",
+            "href": "https://www.dorchestercountysc.gov/home/showpublisheddocument/27342/639249945092730000"
+          }
+        ],
+        "mentions2026": true,
+        "leftover2025": false,
+        "mentionsNewspaper": false,
+        "foundDates": [
+          "2026-03-31",
+          "2026-05-01",
+          "2026-06-30",
+          "2026-08-31",
+          "2026-09-30",
+          "2026-10-01",
+          "2026-10-05",
+          "2026-10-07",
+          "2026-10-14",
+          "2026-10-16",
+          "2026-10-19"
+        ],
+        "hasHtmlTable": false,
+        "suggestedCollapse": null,
+        "heads": [],
+        "error": null
+      }
+    },
+    {
+      "id": "edgefield",
+      "name": "Edgefield",
+      "treasurerUrl": "https://edgefieldcounty.sc.gov/tax-collector/",
+      "saleDate": "2026-12-07",
+      "saleDates": [
+        "2026-12-07"
+      ],
+      "saleNote": "First Monday in December",
+      "adOutlet": null,
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": "2026-11-16",
+      "catchUntil": "2026-11-23",
+      "catchDays": 7,
+      "listStatus": "rule",
+      "datePrecision": "implied",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:24.905Z",
+        "url": "https://edgefieldcounty.sc.gov/tax-collector/",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 0,
+        "listingLinks": [],
+        "mentions2026": false,
+        "leftover2025": false,
+        "mentionsNewspaper": false,
+        "foundDates": [],
+        "hasHtmlTable": false,
+        "suggestedCollapse": null,
+        "heads": [],
+        "error": null
+      }
+    },
+    {
+      "id": "fairfield",
+      "name": "Fairfield",
+      "treasurerUrl": "https://www.fairfieldsc.com/departments/tax-collector",
+      "saleDate": "2026-11-02",
+      "saleDates": [
+        "2026-11-02"
+      ],
+      "saleNote": "10 a.m., courtroom, 101 S. Congress St., Winnsboro",
+      "adOutlet": "Country Chronicle",
+      "adDates": [
+        "2026-10-15",
+        "2026-10-22",
+        "2026-10-29"
+      ],
+      "listPromised": null,
+      "watchFrom": "2026-10-15",
+      "catchUntil": "2026-10-22",
+      "catchDays": 7,
+      "listStatus": "scheduled",
+      "datePrecision": "posted",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:25.014Z",
+        "url": "https://www.fairfieldsc.com/departments/tax-collector",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 5,
+        "listingLinks": [
+          {
+            "text": "2026 Tax Sale Schedule of Events (opens in new tab)",
+            "href": "https://www.fairfieldsc.com/uploads/uploads/2026_Tax_Sale_Schedule_of_Events.pdf"
+          },
+          {
+            "text": "Tax Sale Notice to Bidders of Terms and Conditions (opens in new tab)",
+            "href": "https://www.fairfieldsc.com/uploads/uploads/TS_Notice_to_Bidders_of_Terms.pdf"
+          },
+          {
+            "text": "Forfeited Land Commission",
+            "href": "https://www.fairfieldsc.com/departments/forfeited-land-commission"
+          },
+          {
+            "text": "Tax Sale Overage List & Public Records Notice (opens in new tab)",
+            "href": "https://www.fairfieldsc.com/uploads/uploads/Tax_Sale_Overage_List___Public_Records_Notice.pdf"
+          },
+          {
+            "text": "Tax Sale Overage Claim Form (opens in new tab)",
+            "href": "https://www.fairfieldsc.com/uploads/uploads/2025_Tax_Sale_OVERAGE_CLAIM_FORM.pdf"
+          }
+        ],
+        "mentions2026": true,
+        "leftover2025": false,
+        "mentionsNewspaper": false,
+        "foundDates": [],
+        "hasHtmlTable": false,
+        "suggestedCollapse": "county-pdf",
+        "heads": [
+          {
+            "url": "https://www.fairfieldsc.com/uploads/uploads/2026_Tax_Sale_Schedule_of_Events.pdf",
+            "httpStatus": 200,
+            "lastModified": "Tue, 15 Sep 2026 17:45:58 GMT",
+            "contentType": "application/pdf"
+          }
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "florence",
+      "name": "Florence",
+      "treasurerUrl": "https://www.florencecountysc.gov/offices/delinquent-tax/",
+      "saleDate": "2026-10-05",
+      "saleDates": [
+        "2026-10-05",
+        "2026-10-06"
+      ],
+      "saleNote": "County Complex parking garage, 10 a.m.; continues 6 Oct if needed",
+      "adOutlet": null,
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": "2026-09-14",
+      "catchUntil": "2026-09-21",
+      "catchDays": 7,
+      "listStatus": "posted",
+      "datePrecision": "posted",
+      "windowOpen": true,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:25.031Z",
+        "url": "https://www.florencecountysc.gov/offices/delinquent-tax/",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 8,
+        "listingLinks": [
+          {
+            "text": "2026 Delinquent Tax Sale Registration Form",
+            "href": "https://s3.us-east-1.amazonaws.com/files.florenceco.org/public/DelinquentTax/2026/Bidder%20Registration%20Form%202026.pdf"
+          },
+          {
+            "text": "2026 Buyer's Information Sheet",
+            "href": "https://s3.us-east-1.amazonaws.com/files.florenceco.org/public/DelinquentTax/2026/buyerinfo.pdf"
+          },
+          {
+            "text": "2026 Tax Sale File-Mobile Homes",
+            "href": "https://s3.us-east-1.amazonaws.com/files.florenceco.org/public/DelinquentTax/2026/2026%20Tax%20Sale%20List%20Mobile%20Homes%209-1-26.pdf"
+          },
+          {
+            "text": "2026 Tax Sale File-Real Property",
+            "href": "https://s3.us-east-1.amazonaws.com/files.florenceco.org/public/DelinquentTax/2026/2026%20Tax%20Sale%20List%20Real%209-01-26.pdf"
+          },
+          {
+            "text": "GIS Map for 2026 Tax Sale",
+            "href": "https://flocogis.maps.arcgis.com/apps/instant/basic/index.html?appid=b4d40bf0ec4d4829aceaa520c74949c3"
+          },
+          {
+            "text": "Tax Sale Process",
+            "href": "https://s3.us-east-1.amazonaws.com/files.florenceco.org/public/DelinquentTax/2025/TAX%20SALE%20PROCESS%202025.pdf"
+          },
+          {
+            "text": "GIS Map Instructions",
+            "href": "https://s3.us-east-1.amazonaws.com/files.florenceco.org/public/DelinquentTax/2024/GIS%20Map%20Instructions.pdf"
+          },
+          {
+            "text": "listing file",
+            "href": "https://s3.us-east-1.amazonaws.com/files.florenceco.org/public/DelinquentTax/2022/Florence%20County%20Buyer%27s%20Information%20Sheet%20-%202022.pdf"
+          }
+        ],
+        "mentions2026": true,
+        "leftover2025": false,
+        "mentionsNewspaper": true,
+        "foundDates": [
+          "2026-09-01"
+        ],
+        "hasHtmlTable": false,
+        "suggestedCollapse": "county-pdf",
+        "heads": [
+          {
+            "url": "https://s3.us-east-1.amazonaws.com/files.florenceco.org/public/DelinquentTax/2026/2026%20Tax%20Sale%20List%20Real%209-01-26.pdf",
+            "httpStatus": 200,
+            "lastModified": "Fri, 11 Sep 2026 12:58:16 GMT",
+            "contentType": "application/pdf"
+          }
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "georgetown",
+      "name": "Georgetown",
+      "treasurerUrl": "https://www.gtcountysc.gov/408/Tax-Sale",
+      "saleDate": "2025-11-03",
+      "saleDates": [
+        "2025-11-03"
+      ],
+      "saleNote": null,
+      "adOutlet": null,
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": null,
+      "catchUntil": null,
+      "catchDays": 7,
+      "listStatus": "leftover",
+      "datePrecision": "posted",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:25.174Z",
+        "url": "https://www.gtcountysc.gov/408/Tax-Sale",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 6,
+        "listingLinks": [
+          {
+            "text": "Tax Sale",
+            "href": "https://www.gtcountysc.gov/408/Tax-Sale"
+          },
+          {
+            "text": "Forfeited Land Commission",
+            "href": "https://www.gtcountysc.gov/415/Forfeited-Land-Commission"
+          },
+          {
+            "text": "View a list of properties sold at the 2024 Annual Tax Sale.",
+            "href": "https://www.gtcountysc.gov/DocumentCenter/View/3882"
+          },
+          {
+            "text": "View a list of properties sold at the 2025 Annual Tax Sale.",
+            "href": "https://www.gtcountysc.gov/DocumentCenter/View/3796"
+          },
+          {
+            "text": "2025 Tax Sale List (PDF)",
+            "href": "https://www.gtcountysc.gov/DocumentCenter/View/3625"
+          },
+          {
+            "text": "Tax Sale Policy and Procedures (PDF)",
+            "href": "https://www.gtcountysc.gov/DocumentCenter/View/1382"
+          }
+        ],
+        "mentions2026": false,
+        "leftover2025": true,
+        "mentionsNewspaper": false,
+        "foundDates": [
+          "2025-10-16",
+          "2025-10-31",
+          "2025-11-03"
+        ],
+        "hasHtmlTable": false,
+        "suggestedCollapse": null,
+        "heads": [
+          {
+            "url": "https://www.gtcountysc.gov/DocumentCenter/View/3625",
+            "httpStatus": 404,
+            "lastModified": null,
+            "contentType": "text/html; charset=utf-8"
+          }
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "greenville",
+      "name": "Greenville",
+      "treasurerUrl": "https://www.greenvillecounty.org/TaxCollector/",
+      "saleDate": "2026-10-19",
+      "saleDates": [
+        "2026-10-19",
+        "2026-10-20"
+      ],
+      "saleNote": "Greenville Convention Center, 10 a.m.",
+      "adOutlet": null,
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": "2026-09-28",
+      "catchUntil": "2026-10-05",
+      "catchDays": 7,
+      "listStatus": "posted",
+      "datePrecision": "posted",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:25.252Z",
+        "url": "https://www.greenvillecounty.org/TaxCollector/",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 8,
+        "listingLinks": [
+          {
+            "text": "Tax Sale and Date",
+            "href": "https://www.greenvillecounty.org/appsAS400/Taxsale/"
+          },
+          {
+            "text": "Tax Sale Procedures",
+            "href": "https://www.greenvillecounty.org/TaxCollector/TaxSaleProcedures.aspx"
+          },
+          {
+            "text": "2026 Tax Sale",
+            "href": "https://www.greenvillecounty.org/TaxCollector/pdf/TaxSale.pdf"
+          },
+          {
+            "text": "Bidder Online Registration",
+            "href": "https://app.greenvillecounty.org/BidderRegistration.html"
+          },
+          {
+            "text": "Overage Information",
+            "href": "https://www.greenvillecounty.org/TaxCollector/pdf/taxsaleoverbid.pdf"
+          },
+          {
+            "text": "Claim Form",
+            "href": "https://www.greenvillecounty.org/TaxCollector/pdf/taxsaleclaimform.pdf"
+          },
+          {
+            "text": "Information",
+            "href": "https://www.greenvillecounty.org/TaxCollector/pdf/taxsaleinfo.pdf"
+          },
+          {
+            "text": "Tax Sale and Date",
+            "href": "http://www.greenvillecounty.org/appsAS400/Taxsale/"
+          }
+        ],
+        "mentions2026": true,
+        "leftover2025": false,
+        "mentionsNewspaper": true,
+        "foundDates": [
+          "2026-02-02",
+          "2026-09-04",
+          "2026-09-14",
+          "2026-10-01",
+          "2026-10-16"
+        ],
+        "hasHtmlTable": false,
+        "suggestedCollapse": "county-pdf",
+        "heads": [
+          {
+            "url": "https://www.greenvillecounty.org/appsAS400/Taxsale/",
+            "httpStatus": 200,
+            "lastModified": null,
+            "contentType": "text/html; charset=utf-8"
+          }
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "greenwood",
+      "name": "Greenwood",
+      "treasurerUrl": "https://www.greenwoodcounty-sc.gov/tax-collector",
+      "saleDate": null,
+      "saleDates": [],
+      "saleNote": null,
+      "adOutlet": null,
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": null,
+      "catchUntil": null,
+      "catchDays": 7,
+      "listStatus": "unknown",
+      "datePrecision": "unknown",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:25.363Z",
+        "url": "https://www.greenwoodcounty-sc.gov/tax-collector",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 0,
+        "listingLinks": [],
+        "mentions2026": false,
+        "leftover2025": false,
+        "mentionsNewspaper": false,
+        "foundDates": [],
+        "hasHtmlTable": false,
+        "suggestedCollapse": null,
+        "heads": [],
+        "error": null
+      }
+    },
+    {
+      "id": "hampton",
+      "name": "Hampton",
+      "treasurerUrl": "https://www.hamptoncountysc.org/29/Delinquent-Tax",
+      "saleDate": null,
+      "saleDates": [],
+      "saleNote": "Usually first Monday in October or November",
+      "adOutlet": null,
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": null,
+      "catchUntil": null,
+      "catchDays": 7,
+      "listStatus": "rule",
+      "datePrecision": "implied",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:25.471Z",
+        "url": "https://www.hamptoncountysc.org/29/Delinquent-Tax",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 0,
+        "listingLinks": [],
+        "mentions2026": false,
+        "leftover2025": false,
+        "mentionsNewspaper": true,
+        "foundDates": [],
+        "hasHtmlTable": false,
+        "suggestedCollapse": null,
+        "heads": [],
+        "error": null
+      }
+    },
+    {
+      "id": "horry",
+      "name": "Horry",
+      "treasurerUrl": "https://www.horrycountysc.gov/departments/treasurer/delinquent-tax/",
+      "saleDate": null,
+      "saleDates": [],
+      "saleNote": "Date and place appear in the November newspaper ads (typically early December)",
+      "adOutlet": "Paper of general circulation, three consecutive Thursdays before the sale",
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": "2026-11-01",
+      "catchUntil": "2026-11-08",
+      "catchDays": 7,
+      "listStatus": "posted",
+      "datePrecision": "unknown",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:25.594Z",
+        "url": "https://www.horrycountysc.gov/departments/treasurer/delinquent-tax/",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 1,
+        "listingLinks": [
+          {
+            "text": "Delinquent List 08.19.26.xlsx",
+            "href": "https://www.horrycountysc.gov/media/b5af14ce/delinquent-list-on-website-081926.xlsx"
+          }
+        ],
+        "mentions2026": true,
+        "leftover2025": false,
+        "mentionsNewspaper": true,
+        "foundDates": [],
+        "hasHtmlTable": false,
+        "suggestedCollapse": "xlsx",
+        "heads": [
+          {
+            "url": "https://www.horrycountysc.gov/media/b5af14ce/delinquent-list-on-website-081926.xlsx",
+            "httpStatus": 200,
+            "lastModified": "Fri, 21 Aug 2026 19:57:16 GMT",
+            "contentType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+          }
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "jasper",
+      "name": "Jasper",
+      "treasurerUrl": "https://www.jaspercountysc.gov/services/forfeited-land/",
+      "saleDate": null,
+      "saleDates": [],
+      "saleNote": "Forfeited Land page is post-sale assignments, not the current ad",
+      "adOutlet": null,
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": null,
+      "catchUntil": null,
+      "catchDays": 7,
+      "listStatus": "unknown",
+      "datePrecision": "unknown",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:26.034Z",
+        "url": "https://www.jaspercountysc.gov/services/forfeited-land/",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 7,
+        "listingLinks": [
+          {
+            "text": "Forfeited Land",
+            "href": "https://www.jaspercountysc.gov/services/forfeited-land/"
+          },
+          {
+            "text": "What is the Forfeited Lands Commission",
+            "href": "https://www.jaspercountysc.gov/services/forfeited-land/#collapse_dcf7dfb6-23ca-4b9d-908f-835b931e960a_1"
+          },
+          {
+            "text": "How do properties become a part of the Forfeited Land Commission",
+            "href": "https://www.jaspercountysc.gov/services/forfeited-land/#collapse_dcf7dfb6-23ca-4b9d-908f-835b931e960a_2"
+          },
+          {
+            "text": "Forfeited Land Commission Sales",
+            "href": "https://www.jaspercountysc.gov/services/forfeited-land/#collapse_dcf7dfb6-23ca-4b9d-908f-835b931e960a_3"
+          },
+          {
+            "text": "Forfeited Land",
+            "href": "https://www.jaspercountysc.gov/services/forfeited-land/"
+          },
+          {
+            "text": "Forfeited Land",
+            "href": "https://www.jaspercountysc.gov/services/forfeited-land/"
+          },
+          {
+            "text": "Delinquent Tax Collection",
+            "href": "https://www.jaspercountysc.gov/services/taxes/delinquent-tax-collection/"
+          }
+        ],
+        "mentions2026": false,
+        "leftover2025": false,
+        "mentionsNewspaper": true,
+        "foundDates": [],
+        "hasHtmlTable": false,
+        "suggestedCollapse": null,
+        "heads": [],
+        "error": null
+      }
+    },
+    {
+      "id": "kershaw",
+      "name": "Kershaw",
+      "treasurerUrl": "https://www.kershaw.sc.gov/government/departments-r-z/treasurer/delinquent-matters",
+      "saleDate": null,
+      "saleDates": [],
+      "saleNote": null,
+      "adOutlet": null,
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": null,
+      "catchUntil": null,
+      "catchDays": 7,
+      "listStatus": "unknown",
+      "datePrecision": "unknown",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:26.050Z",
+        "url": "https://www.kershaw.sc.gov/government/departments-r-z/treasurer/delinquent-matters",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 2,
+        "listingLinks": [
+          {
+            "text": "Delinquent Matters",
+            "href": "https://www.kershaw.sc.gov/government/departments-r-z/treasurer/delinquent-matters"
+          },
+          {
+            "text": "Tax Sale Guide",
+            "href": "https://www.kershaw.sc.gov/home/showpublisheddocument/17179/638981316074200000"
+          }
+        ],
+        "mentions2026": false,
+        "leftover2025": false,
+        "mentionsNewspaper": false,
+        "foundDates": [],
+        "hasHtmlTable": false,
+        "suggestedCollapse": null,
+        "heads": [],
+        "error": null
+      }
+    },
+    {
+      "id": "lancaster",
+      "name": "Lancaster",
+      "treasurerUrl": "https://www.lancastercountysc.gov/198/Tax-Sale-Procedures",
+      "saleDate": "2026-11-09",
+      "saleDates": [
+        "2026-11-09"
+      ],
+      "saleNote": "9 a.m., Springdale Recreation Center",
+      "adOutlet": "The Lancaster News",
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": "2026-10-19",
+      "catchUntil": "2026-10-26",
+      "catchDays": 7,
+      "listStatus": "scheduled",
+      "datePrecision": "posted",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:26.397Z",
+        "url": "https://www.lancastercountysc.gov/198/Tax-Sale-Procedures",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 5,
+        "listingLinks": [
+          {
+            "text": "Delinquent Personal Property - Watercraft",
+            "href": "https://www.lancastercountysc.gov/197/Delinquent-Personal-Property---Watercraf"
+          },
+          {
+            "text": "Tax Sale Procedures",
+            "href": "https://www.lancastercountysc.gov/198/Tax-Sale-Procedures"
+          },
+          {
+            "text": "Delinquent Tax Collection",
+            "href": "https://www.lancastercountysc.gov/194/Delinquent-Tax-Collection"
+          },
+          {
+            "text": "HERE Version Options Tax Sale Procedures Headline",
+            "href": "http://www.xpressformsbuilder.com/viewer/e604518b-f214-4871-96f3-b9e3dbb39fd7"
+          },
+          {
+            "text": "www.lancastercountysc.gov/departments/delinquenttax",
+            "href": "http://www.lancastercountysc.gov/departments/delinquenttax"
+          }
+        ],
+        "mentions2026": true,
+        "leftover2025": false,
+        "mentionsNewspaper": true,
+        "foundDates": [
+          "2026-09-08",
+          "2026-11-05",
+          "2026-11-06",
+          "2026-11-09"
+        ],
+        "hasHtmlTable": false,
+        "suggestedCollapse": null,
+        "heads": [],
+        "error": null
+      }
+    },
+    {
+      "id": "laurens",
+      "name": "Laurens",
+      "treasurerUrl": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php",
+      "saleDate": "2025-12-03",
+      "saleDates": [
+        "2025-12-03"
+      ],
+      "saleNote": "Registration for the next sale reopens 1 Nov 2026",
+      "adOutlet": "Laurens County Advertiser and Clinton Chronicle",
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": "2026-11-01",
+      "catchUntil": "2026-11-08",
+      "catchDays": 7,
+      "listStatus": "leftover",
+      "datePrecision": "posted",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:26.544Z",
+        "url": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 8,
+        "listingLinks": [
+          {
+            "text": "Delinquent Taxes",
+            "href": "https://laurenscountysc.gov/departments/treasurer/departments/treasurer/delinquent_taxes.php"
+          },
+          {
+            "text": "Delinquent Tax Sale Registration Packet",
+            "href": "https://laurenscountysc.gov/departments/treasurer/departments/treasurer/delinquent_tax_sale_registration_packet.php"
+          },
+          {
+            "text": "Delinquent Tax Sale Bidder Registration Form",
+            "href": "https://laurenscountysc.gov/departments/treasurer/departments/treasurer/delinquent_tax_sale_bidder_registration_form.php"
+          },
+          {
+            "text": "Tax Sale Information and Registration",
+            "href": "https://laurenscountysc.gov/departments/treasurer/error.html"
+          },
+          {
+            "text": "Tax Sale Overage Claim Form",
+            "href": "https://laurenscountysc.gov/departments/treasurer/error.html"
+          },
+          {
+            "text": "Tax Sale Overage List",
+            "href": "https://laurenscountysc.gov/departments/treasurer/error.html"
+          },
+          {
+            "text": "Tax Sale Frequently Asked Questions",
+            "href": "https://laurenscountysc.gov/departments/treasurer/departments/treasurer/delinquent_taxes.php#faq-questions-13"
+          },
+          {
+            "text": "When will the next Laurens County Tax Sale be held?",
+            "href": "https://laurenscountysc.gov/departments/treasurer/departments/treasurer/delinquent_taxes.php#collapselinks-220-20b0"
+          }
+        ],
+        "mentions2026": false,
+        "leftover2025": true,
+        "mentionsNewspaper": true,
+        "foundDates": [
+          "2025-11-01",
+          "2025-11-28",
+          "2025-12-03"
+        ],
+        "hasHtmlTable": false,
+        "suggestedCollapse": null,
+        "heads": [],
+        "error": null
+      }
+    },
+    {
+      "id": "lee",
+      "name": "Lee",
+      "treasurerUrl": "https://www.leecountysc.org/directory/departments___elected_officials/delinquent_tax.php",
+      "saleDate": "2026-11-02",
+      "saleDates": [
+        "2026-11-02"
+      ],
+      "saleNote": "Normally first Monday in November, courtroom; confirm in the County Observer",
+      "adOutlet": "County Observer",
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": "2026-10-12",
+      "catchUntil": "2026-10-19",
+      "catchDays": 7,
+      "listStatus": "rule",
+      "datePrecision": "implied",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:26.596Z",
+        "url": "https://www.leecountysc.org/directory/departments___elected_officials/delinquent_tax.php",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 2,
+        "listingLinks": [
+          {
+            "text": "Delinquent Tax",
+            "href": "https://www.leecountysc.org/directory/departments___elected_officials/directory/departments___elected_officials/delinquent_tax.php"
+          },
+          {
+            "text": "Delinquent Tax",
+            "href": "https://www.leecountysc.org/directory/departments___elected_officials/directory/departments___elected_officials/index.php"
+          }
+        ],
+        "mentions2026": false,
+        "leftover2025": false,
+        "mentionsNewspaper": false,
+        "foundDates": [],
+        "hasHtmlTable": false,
+        "suggestedCollapse": null,
+        "heads": [],
+        "error": null
+      }
+    },
+    {
+      "id": "lexington",
+      "name": "Lexington",
+      "treasurerUrl": "https://lex-co.sc.gov/treasurer/delinquent-taxes",
+      "saleDate": "2026-11-02",
+      "saleDates": [
+        "2026-11-02"
+      ],
+      "saleNote": "10 a.m., Barr Road Sports Complex",
+      "adOutlet": "Chronicle and Twin City News",
+      "adDates": [
+        "2026-10-15",
+        "2026-10-22",
+        "2026-10-29"
+      ],
+      "listPromised": null,
+      "watchFrom": "2026-10-15",
+      "catchUntil": "2026-10-22",
+      "catchDays": 7,
+      "listStatus": "scheduled",
+      "datePrecision": "posted",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:26.665Z",
+        "url": "https://lex-co.sc.gov/treasurer/delinquent-taxes",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 2,
+        "listingLinks": [
+          {
+            "text": "Tax Sale 2026 Bidder Registration",
+            "href": "https://www.xpressformsbuilder.com/viewer/10973/TaxSale2026BidderRegistration"
+          },
+          {
+            "text": "Forfeited Land Commission",
+            "href": "https://lex-co.sc.gov/departments/treasurer/forfeited-land-commission"
+          }
+        ],
+        "mentions2026": true,
+        "leftover2025": false,
+        "mentionsNewspaper": true,
+        "foundDates": [
+          "2026-09-21",
+          "2026-10-15",
+          "2026-10-22",
+          "2026-10-29",
+          "2026-11-02"
+        ],
+        "hasHtmlTable": false,
+        "suggestedCollapse": null,
+        "heads": [
+          {
+            "url": "https://lex-co.sc.gov/sites/lexco/files/Documents/Lexington%20County/Departments/Treasurer/Tax%20Sale/REAL%20ESTATE%20LISTING.pdf",
+            "httpStatus": 200,
+            "lastModified": "Thu, 16 Nov 2023 13:08:13 GMT",
+            "contentType": "application/pdf"
+          }
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "marion",
+      "name": "Marion",
+      "treasurerUrl": "https://www.marionsc.org/departments/tax_collector/index.php",
+      "saleDate": null,
+      "saleDates": [],
+      "saleNote": null,
+      "adOutlet": null,
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": null,
+      "catchUntil": null,
+      "catchDays": 7,
+      "listStatus": "unknown",
+      "datePrecision": "unknown",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:26.819Z",
+        "url": "https://www.marionsc.org/departments/tax_collector/index.php",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 3,
+        "listingLinks": [
+          {
+            "text": "Delinquent Tax Payments",
+            "href": "https://www.marionsc.org/departments/tax_collector/departments/tax_collector/delinquent_tax_payments.php"
+          },
+          {
+            "text": "Bidder Registration Form",
+            "href": "https://www.marionsc.org/departments/tax_collector/Documents/Departments/Tax%20Collector/BidderForm.doc"
+          },
+          {
+            "text": "Tax Sale Information Form",
+            "href": "https://www.marionsc.org/departments/tax_collector/MARION%20COUNTY%20TAX%20SALE%20INFORMATION%20(1).docx"
+          }
+        ],
+        "mentions2026": false,
+        "leftover2025": false,
+        "mentionsNewspaper": false,
+        "foundDates": [],
+        "hasHtmlTable": false,
+        "suggestedCollapse": null,
+        "heads": [],
+        "error": null
+      }
+    },
+    {
+      "id": "marlboro",
+      "name": "Marlboro",
+      "treasurerUrl": "https://marlborocounty.sc.gov/Documents/Delinquent%20Tax/Tax%20Sale%20-%202026%20Calendar.pdf",
+      "saleDate": "2026-11-09",
+      "saleDates": [
+        "2026-11-09"
+      ],
+      "saleNote": "10:30 a.m., Bennettsville Community Center",
+      "adOutlet": "Herald Advocate",
+      "adDates": [
+        "2026-10-08",
+        "2026-10-15",
+        "2026-10-22"
+      ],
+      "listPromised": null,
+      "watchFrom": "2026-10-08",
+      "catchUntil": "2026-10-15",
+      "catchDays": 7,
+      "listStatus": "scheduled",
+      "datePrecision": "posted",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:26.996Z",
+        "url": "https://cms2.revize.com/revize/marlborocosc/Documents/Delinquent%20Tax/Tax%20Sale%20-%202026%20Calendar.pdf",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 0,
+        "listingLinks": [],
+        "mentions2026": false,
+        "leftover2025": false,
+        "mentionsNewspaper": false,
+        "foundDates": [],
+        "hasHtmlTable": false,
+        "suggestedCollapse": null,
+        "heads": [],
+        "error": null
+      }
+    },
+    {
+      "id": "mccormick",
+      "name": "McCormick",
+      "treasurerUrl": "https://mccormickcountysc.org/departments/treasurer.php",
+      "saleDate": "2026-10-05",
+      "saleDates": [
+        "2026-10-05"
+      ],
+      "saleNote": "First Monday in October",
+      "adOutlet": "The McCormick Messenger",
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": "2026-09-14",
+      "catchUntil": "2026-09-21",
+      "catchDays": 7,
+      "listStatus": "rule",
+      "datePrecision": "implied",
+      "windowOpen": true,
+      "due": true,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:27.020Z",
+        "url": "https://mccormickcountysc.org/departments/treasurer.php",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 0,
+        "listingLinks": [],
+        "mentions2026": false,
+        "leftover2025": false,
+        "mentionsNewspaper": true,
+        "foundDates": [
+          "2025-10-31",
+          "2026-01-15",
+          "2026-01-16",
+          "2026-02-03",
+          "2026-03-17"
+        ],
+        "hasHtmlTable": false,
+        "suggestedCollapse": null,
+        "heads": [],
+        "error": null
+      }
+    },
+    {
+      "id": "newberry",
+      "name": "Newberry",
+      "treasurerUrl": "https://www.newberrycounty.gov/delinquent-tax/tax-sales",
+      "saleDate": "2025-11-03",
+      "saleDates": [
+        "2025-11-03"
+      ],
+      "saleNote": null,
+      "adOutlet": null,
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": null,
+      "catchUntil": null,
+      "catchDays": 7,
+      "listStatus": "leftover",
+      "datePrecision": "posted",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:27.258Z",
+        "url": "https://www.newberrycounty.gov/delinquent-tax/tax-sales",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 8,
+        "listingLinks": [
+          {
+            "text": "Delinquent Tax",
+            "href": "https://www.newberrycounty.gov/delinquent-tax"
+          },
+          {
+            "text": "Forfeited Land Commission",
+            "href": "https://www.newberrycounty.gov/forfeited-land-commission"
+          },
+          {
+            "text": "Delinquent Tax",
+            "href": "https://www.newberrycounty.gov/delinquent-tax"
+          },
+          {
+            "text": "Delinquent Tax",
+            "href": "https://www.newberrycounty.gov/delinquent-tax"
+          },
+          {
+            "text": "Tax Sales",
+            "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+          },
+          {
+            "text": "Tax Sale Information",
+            "href": "https://www.newberrycounty.gov/sites/default/files/uploads/departments/delinquent-tax/tax_sale_info-consolidated.pdf"
+          },
+          {
+            "text": "Forfeited Land Commission",
+            "href": "https://www.newberrycounty.gov/forfeited-land-commission"
+          },
+          {
+            "text": "Forfeited Land Commission Minutes",
+            "href": "https://www.newberrycounty.gov/auditor/department-information/forfeited-land-commission/forfeited-land-commission-minutes"
+          }
+        ],
+        "mentions2026": false,
+        "leftover2025": false,
+        "mentionsNewspaper": false,
+        "foundDates": [],
+        "hasHtmlTable": false,
+        "suggestedCollapse": "county-pdf",
+        "heads": [],
+        "error": null
+      }
+    },
+    {
+      "id": "oconee",
+      "name": "Oconee",
+      "treasurerUrl": "https://oconeesc.com/delinquent-tax/sale-list",
+      "saleDate": "2026-11-09",
+      "saleDates": [
+        "2026-11-09"
+      ],
+      "saleNote": null,
+      "adOutlet": "Seneca Journal Tribune",
+      "adDates": [],
+      "listPromised": "2026-10-21",
+      "watchFrom": "2026-10-21",
+      "catchUntil": "2026-10-28",
+      "catchDays": 7,
+      "listStatus": "scheduled",
+      "datePrecision": "posted",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:27.344Z",
+        "url": "https://oconeesc.com/delinquent-tax/sale-list",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 6,
+        "listingLinks": [
+          {
+            "text": "Delinquent Tax",
+            "href": "https://oconeesc.com/delinquent-tax"
+          },
+          {
+            "text": "Delinquent Tax",
+            "href": "https://oconeesc.com/delinquent-tax"
+          },
+          {
+            "text": "Bidder Registration",
+            "href": "https://oconeesc.com/delinquent-tax/bidder-registration"
+          },
+          {
+            "text": "Tax Sale Information",
+            "href": "https://oconeesc.com/delinquent-tax/tax-sale-information"
+          },
+          {
+            "text": "Delinquent Tax",
+            "href": "https://oconeesc.com/delinquent-tax"
+          },
+          {
+            "text": "Delinquent Tax",
+            "href": "https://oconeesc.com/delinquent-tax"
+          }
+        ],
+        "mentions2026": true,
+        "leftover2025": false,
+        "mentionsNewspaper": true,
+        "foundDates": [
+          "2026-10-21",
+          "2026-10-29",
+          "2026-11-05",
+          "2026-11-09"
+        ],
+        "hasHtmlTable": false,
+        "suggestedCollapse": null,
+        "heads": [],
+        "error": null
+      }
+    },
+    {
+      "id": "orangeburg",
+      "name": "Orangeburg",
+      "treasurerUrl": "https://www.orangeburgcounty.org/362/General-Tax-Sale-Information",
+      "saleDate": "2026-12-14",
+      "saleDates": [
+        "2026-12-14"
+      ],
+      "saleNote": "10 a.m., Orangeburg County Conference Center",
+      "adOutlet": "Times and Democrat",
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": "2026-11-23",
+      "catchUntil": "2026-11-30",
+      "catchDays": 7,
+      "listStatus": "scheduled",
+      "datePrecision": "posted",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:27.357Z",
+        "url": "https://www.orangeburgcounty.org/362/General-Tax-Sale-Information",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 1,
+        "listingLinks": [
+          {
+            "text": "Delinquent Tax",
+            "href": "https://www.orangeburgcounty.org/357/Delinquent-Tax"
+          }
+        ],
+        "mentions2026": false,
+        "leftover2025": false,
+        "mentionsNewspaper": false,
+        "foundDates": [],
+        "hasHtmlTable": false,
+        "suggestedCollapse": null,
+        "heads": [],
+        "error": null
+      }
+    },
+    {
+      "id": "pickens",
+      "name": "Pickens",
+      "treasurerUrl": "https://www.co.pickens.sc.us/departments/delinquent_tax/index.php",
+      "saleDate": "2026-10-13",
+      "saleDates": [
+        "2026-10-13"
+      ],
+      "saleNote": "Performing Arts Center, Liberty",
+      "adOutlet": "Local newspaper and the delinquent-tax page",
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": "2026-09-22",
+      "catchUntil": "2026-09-29",
+      "catchDays": 7,
+      "listStatus": "scheduled",
+      "datePrecision": "posted",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:27.666Z",
+        "url": "https://www.co.pickens.sc.us/departments/delinquent_tax/index.php",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 8,
+        "listingLinks": [
+          {
+            "text": "Delinquent Tax",
+            "href": "https://www.co.pickens.sc.us/departments/delinquent_tax/departments/delinquent_tax/index.php"
+          },
+          {
+            "text": "2025 Delinquent Tax Sale Results",
+            "href": "https://www.co.pickens.sc.us/departments/delinquent_tax/TAX%20SALE%20RESULTS%20FOR%20WEBSITE.pdf?t=202511051005560"
+          },
+          {
+            "text": "2024 Delinquent Tax Sale Results",
+            "href": "https://www.co.pickens.sc.us/departments/delinquent_tax/2024%20Tax%20Sale%20Results%20for%20Web.pdf?t=202410100938370"
+          },
+          {
+            "text": "2023 Delinquent Tax Sale Results",
+            "href": "https://www.co.pickens.sc.us/departments/delinquent_tax/2023%20Tax%20Sale%20Results%20for%20Web.pdf?t=202311271517280"
+          },
+          {
+            "text": "2022 Delinquent Tax Sale Results",
+            "href": "https://www.co.pickens.sc.us/departments/delinquent_tax/document_center/Departments/Delinquent%20Tax/2022%20DELINQUENT%20TAX%20SALE%20RESULTS%20FOR%20WEBSITE.pdf?t=202210260946260"
+          },
+          {
+            "text": "2021 Delinquent Tax Sale Results",
+            "href": "https://www.co.pickens.sc.us/departments/delinquent_tax/TAX%20SALE%20RESULTS%20-%20WEBSITE%20pdf.pdf?t=202111190921480"
+          },
+          {
+            "text": "2020 Delinquent Tax Sale Results",
+            "href": "https://www.co.pickens.sc.us/departments/delinquent_tax/document_center/Departments/Delinquent%20Tax/2020DelinquentTaxSaleListing.pdf?t=202101111621320"
+          },
+          {
+            "text": "2019 Delinquent Tax Sale Results",
+            "href": "https://www.co.pickens.sc.us/departments/delinquent_tax/document_center/Departments/Delinquent%20Tax/2019DelSaleListing.pdf?t=202105111536580"
+          }
+        ],
+        "mentions2026": true,
+        "leftover2025": false,
+        "mentionsNewspaper": true,
+        "foundDates": [
+          "2026-10-13"
+        ],
+        "hasHtmlTable": false,
+        "suggestedCollapse": "county-pdf",
+        "heads": [],
+        "error": null
+      }
+    },
+    {
+      "id": "richland",
+      "name": "Richland",
+      "treasurerUrl": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale",
+      "saleDate": null,
+      "saleDates": [],
+      "saleNote": "2025 tax sale and sealed bid have ended; no 2026 date posted",
+      "adOutlet": null,
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": null,
+      "catchUntil": null,
+      "catchDays": 7,
+      "listStatus": "scheduled",
+      "datePrecision": "unknown",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:27.694Z",
+        "url": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 8,
+        "listingLinks": [
+          {
+            "text": "Delinquent Taxes",
+            "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes"
+          },
+          {
+            "text": "Delinquent Taxes",
+            "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes"
+          },
+          {
+            "text": "Tax Sale Bidder Application",
+            "href": "https://www7.richlandcountysc.gov/TaxSaleBidder/Default.aspx"
+          },
+          {
+            "text": "New Bidder Registration",
+            "href": "https://www7.richlandcountysc.gov/TaxSaleBidder/Default.aspx"
+          },
+          {
+            "text": "FLC Bidder Instructions (DOCX, 19KB)",
+            "href": "https://www.richlandcountysc.gov/files/assets/county/v/1/treasurer/documents/flc-instructions-for-the-submission-of-sealed-bids-december-2-2025.docx"
+          },
+          {
+            "text": "Bidder Registration",
+            "href": "https://www7.richlandcountysc.gov/TaxSaleBidder/Default.aspx"
+          },
+          {
+            "text": "Delinquent Tax Map",
+            "href": "https://richlandmaps.com/apps/delinquent"
+          },
+          {
+            "text": "https://www7.richlandcountysc.gov/TaxSaleBidder/Default.aspx",
+            "href": "https://www7.richlandcountysc.gov/TaxSaleBidder/Default.aspx"
+          }
+        ],
+        "mentions2026": true,
+        "leftover2025": false,
+        "mentionsNewspaper": true,
+        "foundDates": [
+          "2025-10-03",
+          "2025-10-10",
+          "2025-10-24",
+          "2025-10-31",
+          "2025-11-03",
+          "2025-11-24",
+          "2025-12-01",
+          "2025-12-16",
+          "2026-11-02",
+          "2026-11-03",
+          "2026-11-04"
+        ],
+        "hasHtmlTable": false,
+        "suggestedCollapse": null,
+        "heads": [],
+        "error": null
+      }
+    },
+    {
+      "id": "saluda",
+      "name": "Saluda",
+      "treasurerUrl": "https://saludacounty.sc.gov/departments/tax-collector/delinquent-tax-sale",
+      "saleDate": "2026-12-08",
+      "saleDates": [
+        "2026-12-08"
+      ],
+      "saleNote": "10 a.m.",
+      "adOutlet": "Twin City News",
+      "adDates": [
+        "2026-11-19",
+        "2026-11-26",
+        "2026-12-03"
+      ],
+      "listPromised": null,
+      "watchFrom": "2026-11-19",
+      "catchUntil": "2026-11-26",
+      "catchDays": 7,
+      "listStatus": "scheduled",
+      "datePrecision": "posted",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:27.801Z",
+        "url": "https://saludacounty.sc.gov/departments/tax-collector/delinquent-tax-sale",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 1,
+        "listingLinks": [
+          {
+            "text": "Delinquent Tax Collector",
+            "href": "https://saludacounty.sc.gov/departments/tax-collector"
+          }
+        ],
+        "mentions2026": true,
+        "leftover2025": false,
+        "mentionsNewspaper": true,
+        "foundDates": [
+          "2026-11-06",
+          "2026-11-19",
+          "2026-11-26",
+          "2026-12-03",
+          "2026-12-07",
+          "2026-12-08"
+        ],
+        "hasHtmlTable": false,
+        "suggestedCollapse": null,
+        "heads": [],
+        "error": null
+      }
+    },
+    {
+      "id": "spartanburg",
+      "name": "Spartanburg",
+      "treasurerUrl": "https://www.spartanburgcounty.org/640/2025-Tax-Sale-Info",
+      "saleDate": "2026-12-08",
+      "saleDates": [
+        "2026-12-08",
+        "2026-12-09"
+      ],
+      "saleNote": null,
+      "adOutlet": null,
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": "2026-11-17",
+      "catchUntil": "2026-11-24",
+      "catchDays": 7,
+      "listStatus": "scheduled",
+      "datePrecision": "posted",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:28.022Z",
+        "url": "https://www.spartanburgcounty.gov/640/2025-Tax-Sale-Info",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 6,
+        "listingLinks": [
+          {
+            "text": "2025 Tax Sale Info",
+            "href": "https://www.spartanburgcounty.gov/640/2025-Tax-Sale-Info"
+          },
+          {
+            "text": "Forfeited Land Commission",
+            "href": "https://www.spartanburgcounty.gov/388/Forfeited-Land-Commission"
+          },
+          {
+            "text": "Bidder Registration Procedures",
+            "href": "https://www.spartanburgcounty.gov/1205/Bidder-Registration-Procedures"
+          },
+          {
+            "text": "Notice to Bidders of Terms and Conditions",
+            "href": "https://www.spartanburgcounty.gov/1206/Notice-to-Bidders-of-Terms-and-Condition"
+          },
+          {
+            "text": "Bidder Registration Procedures",
+            "href": "https://www.spartanburgcounty.gov/1205/Bidder-Registration-Procedures"
+          },
+          {
+            "text": "Notice to Bidders of Terms and Conditions",
+            "href": "https://www.spartanburgcounty.gov/1206/12127/Notice-to-Bidders-of-Terms-and-Condition?activeLiveTab=widgets"
+          }
+        ],
+        "mentions2026": false,
+        "leftover2025": true,
+        "mentionsNewspaper": false,
+        "foundDates": [],
+        "hasHtmlTable": false,
+        "suggestedCollapse": null,
+        "heads": [
+          {
+            "url": "https://www.spartanburgcounty.gov/178/Tax-Collector",
+            "httpStatus": 200,
+            "lastModified": "Wed, 16 Sep 2026 18:57:29 GMT",
+            "contentType": "text/html; charset=utf-8"
+          }
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "sumter",
+      "name": "Sumter",
+      "treasurerUrl": "https://www.sumtercountysc.gov/departments/s_-_z/treasurer/delinquent_tax.php",
+      "saleDate": "2026-03-09",
+      "saleDates": [
+        "2026-03-09"
+      ],
+      "saleNote": null,
+      "adOutlet": null,
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": "2026-02-16",
+      "catchUntil": "2026-02-23",
+      "catchDays": 7,
+      "listStatus": "held",
+      "datePrecision": "posted",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:28.107Z",
+        "url": "https://www.sumtercountysc.gov/departments/s_-_z/treasurer/delinquent_tax.php",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 1,
+        "listingLinks": [
+          {
+            "text": "Delinquent Tax",
+            "href": "https://www.sumtercountysc.gov/departments/s_-_z/treasurer/departments/s_-_z/treasurer/delinquent_tax.php"
+          }
+        ],
+        "mentions2026": true,
+        "leftover2025": false,
+        "mentionsNewspaper": true,
+        "foundDates": [
+          "2026-02-20",
+          "2026-03-06",
+          "2026-03-09"
+        ],
+        "hasHtmlTable": false,
+        "suggestedCollapse": null,
+        "heads": [],
+        "error": null
+      }
+    },
+    {
+      "id": "union",
+      "name": "Union",
+      "treasurerUrl": "https://gearupunionsc.com/departments/delinquent-tax-office/",
+      "saleDate": "2026-11-10",
+      "saleDates": [
+        "2026-11-10"
+      ],
+      "saleNote": "Second Tuesday in November, courthouse 2nd floor",
+      "adOutlet": "Union County News",
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": "2026-10-20",
+      "catchUntil": "2026-10-27",
+      "catchDays": 7,
+      "listStatus": "rule",
+      "datePrecision": "implied",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:28.220Z",
+        "url": "https://gearupunionsc.com/departments/delinquent-tax-office/",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 0,
+        "listingLinks": [],
+        "mentions2026": true,
+        "leftover2025": false,
+        "mentionsNewspaper": true,
+        "foundDates": [
+          "2025-11-03",
+          "2026-01-14"
+        ],
+        "hasHtmlTable": false,
+        "suggestedCollapse": null,
+        "heads": [],
+        "error": null
+      }
+    },
+    {
+      "id": "williamsburg",
+      "name": "Williamsburg",
+      "treasurerUrl": "https://www.williamsburgcounty.sc.gov/325/Delinquent-Tax-Sale",
+      "saleDate": "2025-12-03",
+      "saleDates": [
+        "2025-12-03"
+      ],
+      "saleNote": "2026 information will be added at the appropriate time",
+      "adOutlet": null,
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": null,
+      "catchUntil": null,
+      "catchDays": 7,
+      "listStatus": "leftover",
+      "datePrecision": "posted",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:28.264Z",
+        "url": "https://www.williamsburgcounty.sc.gov/325/Delinquent-Tax-Sale",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 4,
+        "listingLinks": [
+          {
+            "text": "Delinquent Tax Sale",
+            "href": "https://www.williamsburgcounty.sc.gov/325/Delinquent-Tax-Sale"
+          },
+          {
+            "text": "Delinquent Tax Payment",
+            "href": "https://www.williamsburgcounty.sc.gov/549/Delinquent-Tax-Payment"
+          },
+          {
+            "text": "Tax Sale Procedures",
+            "href": "https://www.williamsburgcounty.sc.gov/326/Tax-Sale-Procedures"
+          },
+          {
+            "text": "Tax Sale Forms",
+            "href": "https://www.williamsburgcounty.sc.gov/488/Tax-Sale-Forms"
+          }
+        ],
+        "mentions2026": false,
+        "leftover2025": true,
+        "mentionsNewspaper": false,
+        "foundDates": [
+          "2025-12-03"
+        ],
+        "hasHtmlTable": false,
+        "suggestedCollapse": null,
+        "heads": [],
+        "error": null
+      }
+    },
+    {
+      "id": "york",
+      "name": "York",
+      "treasurerUrl": "https://www.yorkcountysc.gov/216/Tax-Collection",
+      "saleDate": "2026-10-12",
+      "saleDates": [
+        "2026-10-12",
+        "2026-10-13"
+      ],
+      "saleNote": "9 a.m., York County Fire Training Center; continues 13 Oct if needed",
+      "adOutlet": "The Herald",
+      "adDates": [],
+      "listPromised": null,
+      "watchFrom": "2026-09-21",
+      "catchUntil": "2026-09-28",
+      "catchDays": 7,
+      "listStatus": "scheduled",
+      "datePrecision": "posted",
+      "windowOpen": false,
+      "due": false,
+      "salePassed": false,
+      "lastScan": {
+        "at": "2026-09-16T18:57:28.482Z",
+        "url": "https://www.yorkcountysc.gov/216/Tax-Collection",
+        "httpStatus": 200,
+        "blocked": false,
+        "blockReason": null,
+        "listingLinkCount": 3,
+        "listingLinks": [
+          {
+            "text": "Tax Sale Fact Sheet",
+            "href": "https://www.yorkcountysc.gov/DocumentCenter/View/5241/Tax-Sale-Fact-Sheet"
+          },
+          {
+            "text": "2026 Tax Sale Information",
+            "href": "https://www.yorkcountysc.gov/DocumentCenter/View/3590/2026-Tax-Sale-Information"
+          },
+          {
+            "text": "2025 York County Delinquent Tax Sales Dashboar",
+            "href": "https://experience.arcgis.com/experience/ef9243d9330c4891ba724689f2eb1502"
+          }
+        ],
+        "mentions2026": true,
+        "leftover2025": false,
+        "mentionsNewspaper": false,
+        "foundDates": [],
+        "hasHtmlTable": false,
+        "suggestedCollapse": null,
+        "heads": [
+          {
+            "url": "https://www.yorkcountysc.gov/DocumentCenter/View/3590/2026-Tax-Sale-Information",
+            "httpStatus": 200,
+            "lastModified": "Wed, 16 Sep 2026 18:57:29 GMT",
+            "contentType": "application/pdf"
+          }
+        ],
+        "error": null
+      }
+    }
+  ]
+}

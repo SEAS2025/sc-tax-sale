@@ -1,0 +1,51 @@
+name: Scan 2026 ads
+
+on:
+  schedule:
+    - cron: "15 11 * * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - "engine/ads.js"
+      - "engine/ads-calendar.js"
+      - "engine/repeat.js"
+      - "engine/listings-catalog.js"
+      - "engine/cli.js"
+      - ".github/workflows/scan-ads.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install pdftotext
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils
+      - name: Test
+        run: npm test
+      - name: Scan official pages and rebuild 5-year file
+        run: node engine/cli.js scan --write
+        # Daily for every county. Counties stay "due" for 7 days after their
+        # ad / list-promised date so a late posting is still picked up.
+      - name: Commit snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add counties/ads.json site/data/ads.json counties/repeat.json site/data/repeat.json
+          if git diff --cached --quiet; then
+            echo "No ad-calendar or 5-year-file change"
+          else
+            git commit -m "Refresh ad scan and statewide 5-year file"
+            git push
+          fi
+      - name: Deploy Pages
+        if: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx wrangler pages deploy site --project-name=sc-tax-sale

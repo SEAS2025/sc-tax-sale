@@ -12,6 +12,8 @@ Optional only. The last seven unknown counties are classified without these.
 | --- | --- | --- | --- |
 | Anderson | login | https://acpass.andersoncountysc.org/loginreg3/login.php | ACPASS is a payment portal. Public sale page is enough. Listings promised **30 Sep 2026**. |
 | Laurens | subscribe / PDF | https://1543.newstogo.us/editionviewer/default.aspx?Edition=a1d4f6a3-9c80-4cc6-8436-26eab0597187 | Nov 12 2025 *Delinquent Tax Notices*. Download if you want the names. Do not commit the file. |
+| Berkeley | HTTP 403 to scanner | https://berkeleycountysc.gov/dept/delinquent-tax-collector/ | Daily `scan` cannot read this page. Human browse already classified it. Re-open if the 2026 ad appears. |
+| Chester | HTTP 403 to scanner | https://chestercountysc.gov/departments/tax-and-finance-departments/tax-collector | Same as Berkeley. Ads last three weeks of October. |
 
 ## Cleared this session (agent can keep going)
 

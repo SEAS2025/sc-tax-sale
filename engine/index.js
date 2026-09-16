@@ -8,6 +8,10 @@ const htmlTable = require("./adapters/families/html-table");
 const countyPdf = require("./adapters/families/county-pdf");
 const xlsx = require("./adapters/families/xlsx");
 const { geocodeLexingtonTms, parseLexingtonTms } = require("./geocode/lexington-tms");
+const ads = require("./ads");
+const adsCalendar = require("./ads-calendar");
+const repeat = require("./repeat");
+const listingsCatalog = require("./listings-catalog");
 
 function wrapFamily(id, parseFileText) {
   return {
@@ -57,4 +61,8 @@ module.exports = {
   getAdapter,
   geocodeLexingtonTms,
   parseLexingtonTms,
+  ads,
+  adsCalendar,
+  repeat,
+  listingsCatalog,
 };

@@ -2,7 +2,7 @@
 
 South Carolina delinquent tax sale analysis for all 46 counties. Southeast Aerial Systems.
 
-All 46 counties are live with a family adapter. There is no statewide file: counties use HTML tables, PDFs, spreadsheets, or a page watcher until a list appears. Haywood County, North Carolina is an out-of-state extra and is not part of SC pricing. Sale-cycle files stay local.
+All 46 counties are live with a family adapter. The daily scanner watches official pages and, after each promised ad or list date, keeps that county in a seven-day catch window so a late posting is still seen. It rebuilds one statewide 5-year file: parcel IDs that appear on the newest hosted list and on a list from about five years earlier. Haywood County, North Carolina is an out-of-state extra and is not part of SC pricing. Sale-cycle PDFs stay local; owner names are not stored.
 
 This is public-record research, not legal advice.
 
@@ -33,9 +33,15 @@ The original analysis app was a Base44 React project. This repo does not publish
 npm test
 node engine/cli.js counties
 node engine/cli.js geocode 000600-06-119
+node engine/cli.js scan --write
+node engine/cli.js repeat --write
+node engine/cli.js repeat --xlsx
+node engine/cli.js repeat --pdf
 ```
 
-Sale lists stay on your machine. See `docs/ENGINE.md`.
+`scan` refreshes the 2026 ad calendar (`site/data/ads.json`) and rebuilds the statewide 5-year file (`site/data/repeat.json`) unless you pass `--ads-only`. A daily GitHub Action runs the same command against all 46 counties. After a promised ad or list date the county stays **due** for seven days so a late posting is still caught. When a county posts a new list, the next scan downloads it, intersects parcel IDs with the 2020–2022 archive, and updates the file. `--due` limits a manual fetch to that seven-day catch window. `repeat --xlsx` writes the county-organized workbook (identifiers and listing specs, no owner names) to `inbox/repeat/` and `~/Downloads`. `repeat --pdf` prints the same file as a landscape report.
+
+Sale-cycle PDFs stay on your machine. The public file is identifiers and amounts only. See `docs/ENGINE.md`.
 
 ## Deploy
 

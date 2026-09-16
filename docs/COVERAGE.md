@@ -117,3 +117,5 @@ New counties add a normalizer in `engine/ids/`, not a new product.
 ## Current registry after this pass
 
 See `counties/sc.json`. All 46 counties are `live` with a family adapter. That is not a statewide download of owner names.
+
+2026 sale dates and newspaper ads (checked 16 September 2026, official pages only) are in `docs/ADS_2026.md`. The public table is `site/data/ads.json`, refreshed by `node engine/cli.js scan --write`.

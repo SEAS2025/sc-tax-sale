@@ -22,7 +22,16 @@ node engine/cli.js ingest greenville path/to/local.html
 node engine/cli.js ingest charleston path/to/extracted.txt
 node engine/cli.js ingest horry path/to/local.xlsx
 node engine/cli.js watch bamberg --file path/to/saved-page.html
+node engine/cli.js scan --write
+node engine/cli.js scan --due --write
+node engine/cli.js repeat --write
+node engine/cli.js repeat --xlsx
+node engine/cli.js repeat --pdf
 ```
+
+`scan` fetches each official treasurer page (and known listing URLs via HEAD). It writes `counties/ads.json` and `site/data/ads.json`: sale dates, ad windows, listing hrefs, HTTP status. Unless `--ads-only`, it then runs `repeat`. The daily Action scans all 46 counties. `--due` limits a manual fetch to counties inside the seven-day catch window after their watch / list-promised / first-ad date, so a late posting is still picked up. `--seed` rewrites the calendar and keeps the last scan facts.
+
+`repeat` is the statewide 5-year file. It downloads official leftover and current listing files, extracts parcel IDs (no owner names), intersects them with hosted 2020–2022 lists, and writes `counties/repeat.json` plus `site/data/repeat.json`. A changed `Last-Modified` or a newly discovered href (including Florence’s public S3 prefix) rebuilds that county. `repeat --xlsx` writes a county-organized workbook of those matches (identifiers and listing specs only) to `inbox/repeat/` and `~/Downloads`. `repeat --pdf` prints the same file as a designed landscape report. Sale-cycle PDFs stay in `inbox/`. GitHub Action `.github/workflows/scan-ads.yml` runs this daily and deploys Pages when `CLOUDFLARE_API_TOKEN` is set.
 
 `ingest` picks the adapter from `sourceFamily` (`html-table`, `county-pdf`, `xlsx`, `realad-pdf`). `county-pdf` reads extracted text, not the PDF binary. `watch` looks for listing links on a local HTML file or the county `treasurerUrl`. It does not download sale files. A login wall or captcha is recorded as blocked.
 

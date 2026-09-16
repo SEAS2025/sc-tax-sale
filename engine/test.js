@@ -295,6 +295,225 @@ test("CLI families, ingest, and watch do not print owner names", () => {
   assert.equal(watch.includes("EXAMPLE OWNER"), false);
 });
 
+test("2026 ad calendar covers all 46 counties and scan never stores owner names", () => {
+  const { ads, adsCalendar } = require("./index");
+  const seeds = adsCalendar.listSeeds();
+  assert.equal(seeds.length, 46);
+  for (const county of listCounties()) {
+    assert.ok(adsCalendar.getSeed(county.id), county.id);
+  }
+  assert.equal(adsCalendar.getSeed("aiken").saleDate, "2026-11-02");
+  assert.equal(adsCalendar.getSeed("colleton").listStatus, "held");
+  assert.equal(adsCalendar.getSeed("florence").listStatus, "posted");
+
+  const html = fs.readFileSync(path.join(__dirname, "fixtures", "ads-scan-sample.html"), "utf8");
+  const facts = ads.extractFacts(html, "https://example.invalid/tax-sale");
+  assert.equal(facts.foundDates.includes("2026-10-19"), true);
+  assert.equal(facts.foundDates.includes("2026-09-30"), true);
+  assert.equal(facts.listingLinks.some((link) => /2026-Tax-Sale-Listing/.test(link.href)), true);
+  assert.equal(JSON.stringify(facts).includes("EXAMPLE OWNER"), false);
+
+  assert.equal(ads.isDue(adsCalendar.getSeed("anderson"), "2026-09-30"), true);
+  assert.equal(ads.isDue(adsCalendar.getSeed("anderson"), "2026-09-16"), false);
+  assert.equal(ads.isDue(adsCalendar.getSeed("anderson"), "2026-10-07"), true);
+  assert.equal(ads.isDue(adsCalendar.getSeed("anderson"), "2026-10-08"), false);
+  assert.equal(ads.isDue(adsCalendar.getSeed("aiken"), "2026-10-16"), true);
+  assert.equal(ads.isDue(adsCalendar.getSeed("aiken"), "2026-10-23"), true);
+  assert.equal(ads.isDue(adsCalendar.getSeed("aiken"), "2026-10-24"), false);
+  assert.equal(ads.windowOpen(adsCalendar.getSeed("beaufort"), "2026-09-16"), true);
+  assert.equal(ads.CATCH_DAYS, 7);
+
+  const snapshot = ads.buildSnapshot(listCounties(), {
+    anderson: { ...facts, at: "2026-09-16T18:00:00.000Z", url: "https://example.invalid/tax-sale", httpStatus: 200, heads: [] },
+  }, new Date("2026-09-16T18:00:00.000Z"));
+  assert.equal(snapshot.counties.length, 46);
+  const anderson = snapshot.counties.find((row) => row.id === "anderson");
+  assert.equal(anderson.listStatus, "posted");
+  assert.equal(anderson.saleDate, "2026-10-19");
+  assert.equal(anderson.catchDays, 7);
+  assert.equal(anderson.catchUntil, "2026-10-07");
+  assert.equal(JSON.stringify(snapshot).includes("EXAMPLE OWNER"), false);
+
+  const cli = execFileSync(process.execPath, [
+    path.join(ROOT, "engine", "cli.js"),
+    "scan",
+    "--county",
+    "anderson",
+    "--file",
+    path.join(ROOT, "engine", "fixtures", "ads-scan-sample.html"),
+  ], { cwd: ROOT, encoding: "utf8" });
+  const scanned = JSON.parse(cli);
+  assert.equal(scanned.county.listStatus, "posted");
+  assert.equal(cli.includes("EXAMPLE OWNER"), false);
+});
+
+test("statewide 5-year file intersects identifiers only and covers all 46 counties", () => {
+  const { extractIds, intersect } = require("./extract-ids");
+  const { repeat, listingsCatalog } = require("./index");
+
+  const recent = extractIds("004200-04-007 $100.00 EXAMPLE OWNER 006400-05-045 $50.00");
+  const historic = extractIds("004200-04-007 $80.00 EXAMPLE OWNER");
+  const both = intersect(recent, historic);
+  assert.equal(both.length, 1);
+  assert.equal(both[0].tms, "004200-04-007");
+  assert.equal(both[0].amountRecent, 100);
+  assert.equal(JSON.stringify(both).includes("EXAMPLE OWNER"), false);
+
+  const horry = extractIds("PIN 39307010208 $120.00");
+  assert.equal(horry.ids.includes("39307010208"), true);
+
+  const windows = repeat.yearWindows(2026);
+  assert.deepEqual(windows.recent, [2024, 2025, 2026]);
+  assert.deepEqual(windows.historic, [2020, 2021, 2022]);
+  assert.equal(listingsCatalog.looksLikeListing("https://example.invalid/2026-Tax-Sale-Listing.pdf"), true);
+  assert.equal(listingsCatalog.looksLikeListing("https://example.invalid/Bidder-Instructions-2026.pdf"), false);
+  assert.equal(repeat.guessExt("https://example.invalid/RP-Tax-Sale-Listing.pdf", "application/pdf"), ".pdf");
+  assert.equal(repeat.guessExt("https://www.greenvillecounty.org/appsAS400/Taxsale/", "text/html"), ".html");
+
+  const snapshot = repeat.buildSnapshot(listCounties(), {
+    lexington: {
+      id: "lexington",
+      name: "Lexington",
+      recent: { year: 2024, url: "https://example.invalid/2024.pdf", idCount: 2 },
+      historic: { year: 2021, url: "https://example.invalid/2021.pdf", idCount: 1 },
+      bothCount: 1,
+      both: [{ tms: "004200-04-007", amountRecent: 100, amountHistoric: 80 }],
+      changed: true,
+      files: [],
+    },
+  }, new Date("2026-09-16T18:00:00.000Z"));
+  assert.equal(snapshot.counties.length, 46);
+  assert.equal(snapshot.bothCount, 1);
+  assert.equal(snapshot.withBoth, 1);
+  assert.equal(JSON.stringify(snapshot).includes("EXAMPLE OWNER"), false);
+  const pub = repeat.publicSnapshot(snapshot);
+  assert.equal(pub.both[0].id, "lexington");
+  assert.equal(pub.bothCount, 1);
+});
+
+test("listing specs and 5-year workbook keep identifiers only", () => {
+  const specs = require("./specs");
+  const exportRepeat = require("./export-repeat");
+  const xlsx = require("./adapters/families/xlsx");
+  const { repeat } = require("./index");
+  const ctx = "004200-04-007  2.50 AC  DIST 06  TAX YEARS 2018 2019 2020  $1,234.56  123 MAIN ST  EXAMPLE OWNER";
+  const got = specs.specsFromContext(ctx);
+  assert.equal(got.acres, 2.5);
+  assert.equal(specs.parseAcres("AHRENS OLIVIA .80 ACRES 2 BLDG 02 11-026-131"), 0.8);
+  assert.equal(specs.parseAcres("AUSTIN SAM B 052-00-02-014 1.1 0 $1,284.41"), 1.1);
+  assert.equal(specs.parseAcres("$ 118,200.00          0.08   $39072.01"), 0.08);
+  assert.equal(specs.parseAcres("2.50 ± AC"), 2.5);
+  assert.equal(specs.parseAcres("3.2 H/A"), 3.2);
+  assert.equal(specs.parseAcres("139 HIDDEN ACRES LN 1 005100-05-149"), null);
+  assert.equal(got.district, "06");
+  assert.match(got.taxYears, /2018/);
+  assert.equal(got.situs.toUpperCase(), "123 MAIN ST");
+  assert.equal(got.amount, 1234.56);
+  assert.equal(JSON.stringify(got).includes("EXAMPLE OWNER"), false);
+  assert.equal(specs.specsFromContext("049-00-01-015 $100.00 12 GETHERS LINDA MACK ST").situs, "");
+
+  const book = path.join(os.tmpdir(), "sc-tax-sale-repeat-book.xlsx");
+  xlsx.writeWorkbook(book, [
+    { name: "Statewide", headers: ["County", "Identifier"], rows: [["Lexington", "004200-04-007"]] },
+    { name: "Lexington", headers: ["County", "Identifier"], rows: [["Lexington", "004200-04-007"]] },
+  ]);
+  const names = execFileSync("unzip", ["-p", book, "xl/workbook.xml"], { encoding: "utf8" });
+  assert.match(names, /Statewide/);
+  assert.match(names, /Lexington/);
+  assert.equal(xlsx.colRef(26), "AA");
+
+  const snapshot = repeat.buildSnapshot(listCounties(), {
+    lexington: {
+      id: "lexington",
+      name: "Lexington",
+      recent: { year: 2024, url: "https://example.invalid/2024.pdf", idCount: 1 },
+      historic: { year: 2021, url: "https://example.invalid/2021.pdf", idCount: 1 },
+      bothCount: 1,
+      both: [{ tms: "004200-04-007", amountRecent: 1234.56, amountHistoric: 80 }],
+      changed: false,
+    },
+  }, new Date("2026-09-16T18:00:00.000Z"));
+  const rows = exportRepeat.buildRows(snapshot);
+  assert.equal(rows.length, 1);
+  assert.equal(rows[0].county, "Lexington");
+  assert.equal(rows[0].tms, "004200-04-007");
+  assert.equal(JSON.stringify(exportRepeat.buildSheets(snapshot, rows)).includes("EXAMPLE OWNER"), false);
+
+  const exportPdf = require("./export-repeat-pdf");
+  const html = exportPdf.renderHtml(snapshot, rows);
+  assert.match(html, /Lexington/);
+  assert.match(html, /004200-04-007/);
+  assert.equal(html.includes("EXAMPLE OWNER"), false);
+
+  assert.equal(exportPdf.isTargetAcreage(2), true);
+  assert.equal(exportPdf.isTargetAcreage(6), true);
+  assert.equal(exportPdf.isTargetAcreage(0.5), false);
+  assert.equal(exportPdf.isTargetAcreage(7), false);
+  const sorted = exportPdf.sortCountyRows([
+    { tms: "C", acres: null, amountRecent: 1 },
+    { tms: "B", acres: 12, amountRecent: 1 },
+    { tms: "A", acres: 2, amountRecent: 1 },
+  ]);
+  assert.deepEqual(sorted.map((row) => row.tms), ["A", "B", "C"]);
+  rows[0].acres = 2;
+  const marked = exportPdf.renderHtml(snapshot, rows);
+  assert.match(marked, /row-target/);
+  assert.match(marked, /November 2, 2026/);
+  assert.match(marked, /785-8345/);
+  assert.match(marked, /Acres/);
+});
+
+test("5-year PDF sorts by acres, highlights 1-6, and prints county sale facts", () => {
+  const specs = require("./specs");
+  const exportRepeat = require("./export-repeat");
+  const exportPdf = require("./export-repeat-pdf");
+  const { repeat } = require("./index");
+  const recent = new Map([
+    ["004200-04-007", Object.assign(specs.emptySpecs(), { acres: 3 })],
+    ["006400-05-045", Object.assign(specs.emptySpecs(), { acres: 10 })],
+    ["004300-07-041", specs.emptySpecs()],
+    ["002730-03-004", Object.assign(specs.emptySpecs(), { acres: 0.5 })],
+  ]);
+  const snapshot = repeat.buildSnapshot(listCounties(), {
+    lexington: {
+      id: "lexington",
+      name: "Lexington",
+      recent: { year: 2024, url: "https://example.invalid/2024.pdf", idCount: 4 },
+      historic: { year: 2021, url: "https://example.invalid/2021.pdf", idCount: 4 },
+      bothCount: 4,
+      both: [
+        { tms: "004200-04-007", amountRecent: 100, amountHistoric: 80 },
+        { tms: "006400-05-045", amountRecent: 200, amountHistoric: 90 },
+        { tms: "004300-07-041", amountRecent: 50, amountHistoric: 40 },
+        { tms: "002730-03-004", amountRecent: 75, amountHistoric: 60 },
+      ],
+      changed: false,
+      _specsRecent: recent,
+    },
+  }, new Date("2026-09-16T18:00:00.000Z"));
+  const rows = exportRepeat.buildRows(snapshot);
+  assert.deepEqual(rows.map((row) => row.tms), [
+    "002730-03-004",
+    "004200-04-007",
+    "006400-05-045",
+    "004300-07-041",
+  ]);
+  assert.equal(exportPdf.isTargetAcreage(3), true);
+  assert.equal(exportPdf.isTargetAcreage(1), true);
+  assert.equal(exportPdf.isTargetAcreage(6), true);
+  assert.equal(exportPdf.isTargetAcreage(0.5), false);
+  assert.equal(exportPdf.isTargetAcreage(10), false);
+  assert.equal(exportPdf.rowClass({ acres: 3 }), "row-target");
+  assert.equal(exportPdf.rowClass({ acres: 10 }), "");
+  const html = exportPdf.renderHtml(snapshot, rows);
+  assert.match(html, /row-target/);
+  assert.match(html, /November 2, 2026/);
+  assert.match(html, /Acres/);
+  assert.match(html, /\(803\) 785-8345/);
+  assert.equal(html.includes("EXAMPLE OWNER"), false);
+  assert.equal(/\bowner_name\b/i.test(html), false);
+});
+
 test("inquiry draft lists identifiers and amounts, not a fake payment link", () => {
   const text = fs.readFileSync(path.join(__dirname, "fixtures", "lexington-sample.csv"), "utf8");
   const draft = beaufort.draftInquiry(text, { count: 2, countyName: "Beaufort County", identifierLabel: "PIN" });

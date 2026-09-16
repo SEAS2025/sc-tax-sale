@@ -1,0 +1,5398 @@
+{
+  "season": 2026,
+  "generatedAt": "2026-09-16T19:41:01.184Z",
+  "recentYears": [
+    2024,
+    2025,
+    2026
+  ],
+  "historicYears": [
+    2020,
+    2021,
+    2022
+  ],
+  "source": "Official leftover and current sale lists crossed with hosted 2020–2022 lists. Identifiers only.",
+  "note": "Parcel identifiers and amounts only. Owner names are not stored.",
+  "bothCount": 976,
+  "withBoth": 5,
+  "withRecent": 12,
+  "withHistoric": 7,
+  "changedCount": 7,
+  "counties": [
+    {
+      "id": "abbeville",
+      "name": "Abbeville",
+      "recent": null,
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "aiken",
+      "name": "Aiken",
+      "recent": null,
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "allendale",
+      "name": "Allendale",
+      "recent": null,
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "anderson",
+      "name": "Anderson",
+      "recent": null,
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "bamberg",
+      "name": "Bamberg",
+      "recent": {
+        "year": 2025,
+        "url": "https://www.bambergcounty.sc.gov/sites/default/files/uploads/2025-tax-sale-list.pdf",
+        "idCount": 8235
+      },
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": true
+    },
+    {
+      "id": "barnwell",
+      "name": "Barnwell",
+      "recent": null,
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "beaufort",
+      "name": "Beaufort",
+      "recent": null,
+      "historic": {
+        "year": 2022,
+        "url": "local:full_2022_structured.json",
+        "idCount": 2245
+      },
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "berkeley",
+      "name": "Berkeley",
+      "recent": null,
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "calhoun",
+      "name": "Calhoun",
+      "recent": {
+        "year": 2025,
+        "url": "https://calhouncounty.sc.gov/sites/calhouncounty/files/Documents/2025%20week%203%20newspaper%20ad.pdf",
+        "idCount": 268
+      },
+      "historic": {
+        "year": 2022,
+        "url": "https://calhouncounty.sc.gov/sites/calhouncounty/files/Documents/Calhoun%20County/Departments/Tax%20Collector/SaleAds/2022/CCTC-2022_Sale_WK1_REAL.pdf",
+        "idCount": 243
+      },
+      "bothCount": 48,
+      "both": [
+        {
+          "tms": "049-00-01-015",
+          "amountRecent": 1546.44,
+          "amountHistoric": null
+        },
+        {
+          "tms": "131-04-03-002",
+          "amountRecent": 1492.5,
+          "amountHistoric": null
+        },
+        {
+          "tms": "126-00-00-049",
+          "amountRecent": 1489.36,
+          "amountHistoric": null
+        },
+        {
+          "tms": "052-00-02-014",
+          "amountRecent": 1284.41,
+          "amountHistoric": null
+        },
+        {
+          "tms": "072-00-00-012",
+          "amountRecent": 1206.72,
+          "amountHistoric": null
+        },
+        {
+          "tms": "157-03-00-001",
+          "amountRecent": 1072.79,
+          "amountHistoric": null
+        },
+        {
+          "tms": "118-15-05-006",
+          "amountRecent": 948.03,
+          "amountHistoric": null
+        },
+        {
+          "tms": "121-00-02-039",
+          "amountRecent": 929.73,
+          "amountHistoric": null
+        },
+        {
+          "tms": "118-09-01-013",
+          "amountRecent": 904.06,
+          "amountHistoric": null
+        },
+        {
+          "tms": "093-00-01-014",
+          "amountRecent": 845.27,
+          "amountHistoric": null
+        },
+        {
+          "tms": "080-00-02-029",
+          "amountRecent": 823.86,
+          "amountHistoric": null
+        },
+        {
+          "tms": "120-00-01-058",
+          "amountRecent": 759.11,
+          "amountHistoric": null
+        },
+        {
+          "tms": "181-00-02-052",
+          "amountRecent": 684.91,
+          "amountHistoric": null
+        },
+        {
+          "tms": "044-00-00-040",
+          "amountRecent": 638.59,
+          "amountHistoric": null
+        },
+        {
+          "tms": "008-00-00-032",
+          "amountRecent": 608.73,
+          "amountHistoric": null
+        },
+        {
+          "tms": "219-00-03-039",
+          "amountRecent": 607.8,
+          "amountHistoric": null
+        },
+        {
+          "tms": "120-00-01-049",
+          "amountRecent": 585.89,
+          "amountHistoric": null
+        },
+        {
+          "tms": "120-00-01-043",
+          "amountRecent": 573.29,
+          "amountHistoric": null
+        },
+        {
+          "tms": "117-00-01-003",
+          "amountRecent": 567.71,
+          "amountHistoric": null
+        },
+        {
+          "tms": "118-12-00-013",
+          "amountRecent": 508.9,
+          "amountHistoric": null
+        },
+        {
+          "tms": "072-00-00-034",
+          "amountRecent": 490.55,
+          "amountHistoric": null
+        },
+        {
+          "tms": "069-00-04-029",
+          "amountRecent": 462.59,
+          "amountHistoric": null
+        },
+        {
+          "tms": "093-00-03-036",
+          "amountRecent": 459.72,
+          "amountHistoric": null
+        },
+        {
+          "tms": "077-00-04-102",
+          "amountRecent": 441.03,
+          "amountHistoric": null
+        },
+        {
+          "tms": "118-08-05-009",
+          "amountRecent": 383.33,
+          "amountHistoric": null
+        },
+        {
+          "tms": "074-00-02-024",
+          "amountRecent": 381.68,
+          "amountHistoric": null
+        },
+        {
+          "tms": "093-00-02-009",
+          "amountRecent": 366.93,
+          "amountHistoric": null
+        },
+        {
+          "tms": "078-00-02-046",
+          "amountRecent": 364.93,
+          "amountHistoric": null
+        },
+        {
+          "tms": "201-00-00-004",
+          "amountRecent": 363.89,
+          "amountHistoric": null
+        },
+        {
+          "tms": "011-00-00-019",
+          "amountRecent": 363.45,
+          "amountHistoric": null
+        },
+        {
+          "tms": "070-00-01-040",
+          "amountRecent": 357.67,
+          "amountHistoric": null
+        },
+        {
+          "tms": "080-00-02-028",
+          "amountRecent": 355,
+          "amountHistoric": null
+        },
+        {
+          "tms": "176-00-02-043",
+          "amountRecent": 326.84,
+          "amountHistoric": null
+        },
+        {
+          "tms": "023-00-02-060",
+          "amountRecent": 300.68,
+          "amountHistoric": null
+        },
+        {
+          "tms": "176-00-02-028",
+          "amountRecent": 296.02,
+          "amountHistoric": null
+        },
+        {
+          "tms": "072-00-00-033",
+          "amountRecent": 280.96,
+          "amountHistoric": null
+        },
+        {
+          "tms": "176-00-02-070",
+          "amountRecent": 274.3,
+          "amountHistoric": null
+        },
+        {
+          "tms": "063-00-00-041",
+          "amountRecent": 265.03,
+          "amountHistoric": null
+        },
+        {
+          "tms": "099-00-01-042",
+          "amountRecent": 240.43,
+          "amountHistoric": null
+        },
+        {
+          "tms": "079-00-03-045",
+          "amountRecent": 240.43,
+          "amountHistoric": null
+        },
+        {
+          "tms": "070-00-04-065",
+          "amountRecent": 240.43,
+          "amountHistoric": null
+        },
+        {
+          "tms": "070-00-04-011",
+          "amountRecent": 209.6,
+          "amountHistoric": null
+        },
+        {
+          "tms": "118-15-08-025",
+          "amountRecent": 200.64,
+          "amountHistoric": null
+        },
+        {
+          "tms": "219-00-05-035",
+          "amountRecent": 188.03,
+          "amountHistoric": null
+        },
+        {
+          "tms": "069-00-01-017",
+          "amountRecent": 178.62,
+          "amountHistoric": null
+        },
+        {
+          "tms": "090-00-00-029",
+          "amountRecent": 157.49,
+          "amountHistoric": null
+        },
+        {
+          "tms": "074-00-01-056",
+          "amountRecent": 135.5,
+          "amountHistoric": null
+        },
+        {
+          "tms": "118-07-05-010",
+          "amountRecent": 89.44,
+          "amountHistoric": null
+        }
+      ],
+      "changed": false
+    },
+    {
+      "id": "charleston",
+      "name": "Charleston",
+      "recent": {
+        "year": 2025,
+        "url": "https://www.charlestoncounty.org/departments/delinquent-tax/files/RP-Tax-Sale-Listing.pdf",
+        "idCount": 811
+      },
+      "historic": {
+        "year": 2021,
+        "url": "https://web.archive.org/web/20211209042201id_/https://www.charlestoncounty.org/departments/delinquent-tax/files/RP-Tax-Sale-Listing.pdf",
+        "idCount": 876
+      },
+      "bothCount": 118,
+      "both": [
+        {
+          "tms": "0970000118",
+          "amountRecent": 2285.7,
+          "amountHistoric": null
+        },
+        {
+          "tms": "3060000655",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4691000012",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "3341500106",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4720300036",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "7580000014",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "3521200021",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "7010000104",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4111600298",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4700300069",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "6140000275",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "0980000265",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "2490000011",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "5770000075",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "0530000110",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "3071000073",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "5370600170",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1860000019",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4661600027",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1260000136",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "3340400098",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "5560000289",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "5560000410",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4720900239",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "7120000054",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "7120000066",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "7120000121",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "7120000123",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4270300113",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4691000174",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4180500150",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "5560000045",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "3951400153",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "0230000296",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "0230000049",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "6920000022",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4111100268",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4691000180",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1630000090",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "3010000436",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1620000314",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4631201109",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "3500300158",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "0980000157",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4101100051",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "0700000178",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "3970500441",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4711300135",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "3400000047",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4691000076",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4660800369",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "3281300025",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4110600032",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "5591400027",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "3521300110",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "0530000155",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4700200041",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4691100140",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4691600254",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4691600255",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4700300177",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "0520000010",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1260000011",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4660800464",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1630000008",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4860500039",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1200000080",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1870000255",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1630000161",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4840000059",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "5940600015",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4241000082",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "5710800290",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4040200169",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1590000005",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "5370900029",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4700300329",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4590504065",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "3341100037",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4701400224",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4701400225",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4640100046",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "3340400007",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1200000048",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "3951100139",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "3100600059",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "2810000028",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4710200013",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1860000140",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "3110000018",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4181000131",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4110800124",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4660800419",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4280800078",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "3580800071",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "3580800084",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "3070000068",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4710700062",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4690900109",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "0760000291",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "0590000379",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "2870000066",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "2870000342",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4691200277",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "6810000035",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4180600101",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4180600102",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "0590000033",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "0990000101",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1871500017",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1871500018",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4781600069",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1620000157",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "5321600285",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "0970000107",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4280700161",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "8020000042",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "0590000064",
+          "amountRecent": null,
+          "amountHistoric": null
+        }
+      ],
+      "changed": true
+    },
+    {
+      "id": "cherokee",
+      "name": "Cherokee",
+      "recent": null,
+      "historic": {
+        "year": 2021,
+        "url": "https://cherokeecountysc.gov/wp-content/uploads/2021/12/Bidder-List-Update-12-3-21-PDF.pdf",
+        "idCount": 111
+      },
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "chester",
+      "name": "Chester",
+      "recent": null,
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "chesterfield",
+      "name": "Chesterfield",
+      "recent": null,
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "clarendon",
+      "name": "Clarendon",
+      "recent": null,
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "colleton",
+      "name": "Colleton",
+      "recent": {
+        "year": 2026,
+        "url": "https://www.colletoncounty.org/sites/default/files/uploads/del_tax/taxsalelist-01-29.pdf",
+        "idCount": 374
+      },
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "darlington",
+      "name": "Darlington",
+      "recent": null,
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "dillon",
+      "name": "Dillon",
+      "recent": {
+        "year": 2026,
+        "url": "https://www.dilloncountysc.org/Documents/Departments/Treasurer/PAPER.XLS",
+        "idCount": 854
+      },
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "dorchester",
+      "name": "Dorchester",
+      "recent": null,
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "edgefield",
+      "name": "Edgefield",
+      "recent": null,
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "fairfield",
+      "name": "Fairfield",
+      "recent": null,
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "florence",
+      "name": "Florence",
+      "recent": {
+        "year": 2026,
+        "url": "https://s3.us-east-1.amazonaws.com/files.florenceco.org/public/DelinquentTax/2026/2026%20Tax%20Sale%20List%20Real%209-01-26.pdf",
+        "idCount": 1434
+      },
+      "historic": {
+        "year": 2021,
+        "url": "https://s3.us-east-1.amazonaws.com/files.florenceco.org/public/DelinquentTax/2021/2021%20Delinquent%20Tax%20Sale%20List%20-%20Real%20Property%20-%20Website%20-%20Week%201.pdf",
+        "idCount": 1710
+      },
+      "bothCount": 369,
+      "both": [
+        {
+          "tms": "1012-01-215",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "101-01-194",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "351-02-067",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80022-05-013",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90084-04-008",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90118-03-005",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90115-09-005",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "247-01-029",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80012-01-020",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90059-12-005",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90099-03-006",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80004-12-049",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "521-03-008",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80010-10-025",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "70011-04-004",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "103-01-257",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "111-01-007",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "111-01-036",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "111-01-039",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "125-01-009",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "187-03-066",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1812-01-066",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "21105-03-010",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "21105-03-028",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "441-05-197",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "249-01-038",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "286-02-003",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1472-01-021",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1682-05-009",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "418-02-079",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90096-01-005",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80010-06-004",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1731-01-091",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90084-09-002",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90056-14-005",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "146-01-020",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "146-01-021",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90074-03-017",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "141-31-058",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "211-01-058",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "279-01-038",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "70011-09-004",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4610-03-008",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "510-04-040",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "400-02-034",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "400-02-050",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "375-02-026",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "70012-12-001",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80004-10-006",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "60007-19-009",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "266-31-033",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "373-02-007",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "70012-20-018",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "175-01-201",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "145-01-051",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "60007-13-009",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "44114-05-085",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "60007-11-002",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "311-01-079",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "380-02-053",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "372-02-055",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "261-03-005",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "295-31-030",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "295-31-034",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "198-31-048",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "104-01-007",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "174-01-058",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90102-15-004",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90118-10-005",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90118-13-005",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "348-02-075",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "348-02-076",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "133-01-036",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "3721-02-055",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90073-02-011",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1941-02-014",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80029-04-011",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90059-01-001",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90099-06-004",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "104-01-149",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "406-02-011",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "376-02-027",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "376-02-058",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4361-05-026",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "378-02-031",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90099-11-007",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90128-02-017",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80003-06-004",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "103-01-045",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90074-11-017",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1762-01-056",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90118-07-001",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "309-01-058",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "316-02-071",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90005-03-001",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "70013-09-007",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90115-03-012",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80002-06-006",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90044-05-001",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "350-02-050",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "189-03-070",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "191-03-078",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "327-31-065",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "357-31-026",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "327-31-062",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "327-31-063",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "327-31-064",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "357-31-002",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "143-31-039",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "193-31-034",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "60001-01-007",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "60001-01-008",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "60008-01-007",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80009-02-011",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1802-05-009",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80004-12-016",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "166-31-179",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "101-01-665",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "381-02-025",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "381-02-022",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "381-02-016",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80004-10-005",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "141-31-045",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90085-14-007",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90085-15-015",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90115-11-020",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "106-01-145",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "60007-12-007",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90151-04-005",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90044-09-019",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90060-07-010",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90060-02-006",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90061-06-023",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80018-01-001",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1812-01-377",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90103-17-023",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90087-04-007",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80010-10-001",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80010-06-005",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "227-03-091",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "127-01-207",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80004-12-014",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "2501-01-001",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "126-01-136",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "70011-10-048",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90103-10-006",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1942-31-024",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80005-01-001",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "187-03-037",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80005-07-006",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80005-07-014",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80010-05-006",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80026-01-057",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "359-05-005",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "248-01-096",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90059-10-005",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "297-31-022",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "423-05-083",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80019-02-002",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "70014-01-090",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "205-01-049",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "187-03-082",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90059-04-002",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "4530-03-003",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "70010-01-022",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "70011-10-018",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "70006-05-011",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90072-10-013",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90121-03-002",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "208-01-027",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "982-01-067",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "247-01-015",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "247-01-099",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "70010-01-053",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "250-01-111",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90075-03-016",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "308-01-122",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90059-07-001",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80012-01-016",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80016-10-002",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "127-01-147",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "70011-10-029",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "70011-10-057",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "70011-10-069",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "70015-01-003",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90106-01-041",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "70015-01-008",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "70011-10-070",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "418-02-050",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "70012-06-001",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90084-09-023",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80012-01-014",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "122-01-028",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90074-10-018",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90114-02-005",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "21105-01-005",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "100-01-119",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "206-01-058",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90103-13-005",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90104-02-001",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90104-02-002",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90104-02-005",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90104-02-013",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90104-02-020",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90104-02-021",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90104-02-024",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "104-01-059",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90084-08-014",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80008-21-032",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "343-02-008",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "372-02-103",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "402-02-030",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "175-01-172",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "309-01-020",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90102-15-003",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90102-16-020",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90102-16-021",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "196-03-012",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "305-01-073",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "389-05-136",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90059-07-019",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90059-07-018",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1251-01-018",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90152-01-018",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "251-01-025",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "10119-01-031",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90061-05-019",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "168-31-020",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90084-09-027",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "102-01-073",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1812-01-265",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80018-06-001",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80018-06-040",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80018-06-009",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90071-10-001",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90099-07-003",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "7517-01-051",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1472-01-037",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "122-01-148",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90044-10-034",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "127-01-089",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "70013-08-001",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "70013-08-002",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90059-02-008",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80015-07-012",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90059-03-006",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1012-01-097",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "18020-01-005",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90072-14-022",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80002-07-007",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90074-10-016",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80026-01-017",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80009-05-014",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1682-08-005",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90130-01-006",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "316-02-021",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "316-02-070",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90118-14-014",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "50002-04-019",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "258-02-015",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "106-01-238",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90060-09-008",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "104-01-150",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90113-01-094",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90115-05-002",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "173-01-067",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90061-05-018",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90071-04-001",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90141-02-001",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "154-01-128",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "432-05-159",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "510-04-060",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90050-07-013",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "105-01-006",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90100-16-010",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "348-02-078",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "400-02-015",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "157-03-056",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "143-31-040",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80016-11-001",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "135-03-022",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "135-03-035",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "192-03-038",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "192-03-039",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90061-06-015",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "204-01-106",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90073-01-004",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "183-01-025",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80009-06-006",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80018-01-005",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90113-01-011",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90059-16-021",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "410-05-015",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "410-05-051",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "70010-01-043",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90118-17-006",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "352-02-018",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "180-01-097",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90099-09-005",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "238-01-010",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "2371-01-025",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "2381-01-014",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "2381-01-015",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "2381-01-016",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "2381-01-017",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "2381-01-020",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "2381-01-021",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "2381-02-002",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "2382-01-016",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "2382-01-017",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "2383-03-010",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "2383-03-011",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "2383-03-013",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "2384-04-008",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "2384-04-009",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "2384-04-011",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "2384-04-015",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "161-03-068",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90035-01-035",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "70010-01-018",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "106-01-053",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80028-04-011",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90055-07-016",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90084-04-001",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "220-03-048",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90127-01-032",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90127-01-038",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90127-01-039",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90127-01-044",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "373-02-105",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90068-04-006",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90023-01-043",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90068-04-001",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80017-04-014",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "127-01-169",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "131-01-166",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90031-02-019",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90046-06-011",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "432-05-108",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "183-01-058",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80003-02-036",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90127-01-017",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "198-31-102",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "183-01-061",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "183-01-043",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "2501-01-007",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90095-03-011",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80004-11-006",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90085-19-012",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "136-03-069",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90118-03-006",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90115-06-005",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "410-05-065",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "279-01-114",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90118-15-014",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1762-01-060",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90019-02-011",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90115-10-011",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "106-01-196",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "116-31-096",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1211-01-078",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90044-09-028",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "80010-13-009",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90059-18-016",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "203-01-069",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "152-01-072",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "121-01-008",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90084-10-011",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "90104-09-011",
+          "amountRecent": null,
+          "amountHistoric": null
+        }
+      ],
+      "changed": true
+    },
+    {
+      "id": "georgetown",
+      "name": "Georgetown",
+      "recent": {
+        "year": 2025,
+        "url": "https://www.gtcountysc.gov/DocumentCenter/View/3625/2025-Tax-Sale-List-PDF?bidId=",
+        "idCount": 280
+      },
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": true
+    },
+    {
+      "id": "greenville",
+      "name": "Greenville",
+      "recent": {
+        "year": 2026,
+        "url": "https://www.greenvillecounty.org/appsAS400/Taxsale/",
+        "idCount": 1995
+      },
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": true
+    },
+    {
+      "id": "greenwood",
+      "name": "Greenwood",
+      "recent": null,
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "hampton",
+      "name": "Hampton",
+      "recent": null,
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "horry",
+      "name": "Horry",
+      "recent": {
+        "year": 2026,
+        "url": "https://www.horrycountysc.gov/media/b5af14ce/delinquent-list-on-website-081926.xlsx",
+        "idCount": 5776
+      },
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "jasper",
+      "name": "Jasper",
+      "recent": null,
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "kershaw",
+      "name": "Kershaw",
+      "recent": null,
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "lancaster",
+      "name": "Lancaster",
+      "recent": null,
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "laurens",
+      "name": "Laurens",
+      "recent": null,
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "lee",
+      "name": "Lee",
+      "recent": null,
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "lexington",
+      "name": "Lexington",
+      "recent": {
+        "year": 2024,
+        "url": "https://lex-co.sc.gov/sites/lexco/files/Documents/Lexington%20County/Departments/Treasurer/Tax%20Sale/REALAD%20%233%20WEB%202024%2010-31-2024.pdf",
+        "idCount": 1182
+      },
+      "historic": {
+        "year": 2021,
+        "url": "https://lex-co.sc.gov/sites/lexco/files/Documents/Lexington%20County/Departments/Treasurer/Tax%20Sale/REAL%20ESTATE%20ADVERTISEMENT%20%232%202021.pdf",
+        "idCount": 1025
+      },
+      "bothCount": 271,
+      "both": [
+        {
+          "tms": "004200-04-007",
+          "amountRecent": 32890.06,
+          "amountHistoric": 59597.34
+        },
+        {
+          "tms": "006400-05-045",
+          "amountRecent": 16650.15,
+          "amountHistoric": 29907.97
+        },
+        {
+          "tms": "004300-07-041",
+          "amountRecent": 13262.77,
+          "amountHistoric": 23973.23
+        },
+        {
+          "tms": "004635-02-001",
+          "amountRecent": 8585.28,
+          "amountHistoric": 15242.58
+        },
+        {
+          "tms": "002730-03-004",
+          "amountRecent": 6891.35,
+          "amountHistoric": 6929.77
+        },
+        {
+          "tms": "004200-04-091",
+          "amountRecent": 6186.96,
+          "amountHistoric": 11083
+        },
+        {
+          "tms": "001817-01-011",
+          "amountRecent": 5886.87,
+          "amountHistoric": 10442.62
+        },
+        {
+          "tms": "004300-07-022",
+          "amountRecent": 5572.04,
+          "amountHistoric": 10197.17
+        },
+        {
+          "tms": "002821-02-001",
+          "amountRecent": 5242.07,
+          "amountHistoric": 9276.98
+        },
+        {
+          "tms": "006500-05-209",
+          "amountRecent": 4999.72,
+          "amountHistoric": 8926.11
+        },
+        {
+          "tms": "003631-08-006",
+          "amountRecent": 4908.25,
+          "amountHistoric": 13101.94
+        },
+        {
+          "tms": "002827-03-015",
+          "amountRecent": 4554.43,
+          "amountHistoric": 1292.9
+        },
+        {
+          "tms": "004619-01-006",
+          "amountRecent": 4237.64,
+          "amountHistoric": 11364.7
+        },
+        {
+          "tms": "008900-04-007",
+          "amountRecent": 3137.49,
+          "amountHistoric": 5532.18
+        },
+        {
+          "tms": "010900-01-021",
+          "amountRecent": 3088.39,
+          "amountHistoric": 5736.94
+        },
+        {
+          "tms": "001100-07-005",
+          "amountRecent": 3082.97,
+          "amountHistoric": 5395.05
+        },
+        {
+          "tms": "011717-06-003",
+          "amountRecent": 2770.78,
+          "amountHistoric": 4057.94
+        },
+        {
+          "tms": "005717-01-019",
+          "amountRecent": 2677.4,
+          "amountHistoric": 4647.63
+        },
+        {
+          "tms": "000723-02-022",
+          "amountRecent": 2649.08,
+          "amountHistoric": 4582.65
+        },
+        {
+          "tms": "006500-05-128",
+          "amountRecent": 2614.35,
+          "amountHistoric": 3442.33
+        },
+        {
+          "tms": "007029-03-018",
+          "amountRecent": 2584.53,
+          "amountHistoric": 4497.82
+        },
+        {
+          "tms": "007821-02-001",
+          "amountRecent": 2520.97,
+          "amountHistoric": 4414.17
+        },
+        {
+          "tms": "004631-01-010",
+          "amountRecent": 2520.02,
+          "amountHistoric": 4365.31
+        },
+        {
+          "tms": "004327-01-035",
+          "amountRecent": 2513.07,
+          "amountHistoric": 4414.48
+        },
+        {
+          "tms": "007118-02-011",
+          "amountRecent": 2508.37,
+          "amountHistoric": 4360.74
+        },
+        {
+          "tms": "011900-01-042",
+          "amountRecent": 2503.18,
+          "amountHistoric": 4617.78
+        },
+        {
+          "tms": "011900-02-212",
+          "amountRecent": 2468.49,
+          "amountHistoric": 4550.95
+        },
+        {
+          "tms": "000717-03-003",
+          "amountRecent": 2428.99,
+          "amountHistoric": 4447.74
+        },
+        {
+          "tms": "004643-10-021",
+          "amountRecent": 2421.89,
+          "amountHistoric": 4189.36
+        },
+        {
+          "tms": "006100-02-065",
+          "amountRecent": 2382.98,
+          "amountHistoric": 3890.25
+        },
+        {
+          "tms": "004222-03-091",
+          "amountRecent": 2343.34,
+          "amountHistoric": 4109.09
+        },
+        {
+          "tms": "008098-04-032",
+          "amountRecent": 2214.55,
+          "amountHistoric": 3858.54
+        },
+        {
+          "tms": "002630-01-016",
+          "amountRecent": 2180.76,
+          "amountHistoric": 4073.32
+        },
+        {
+          "tms": "004322-06-008",
+          "amountRecent": 2173.86,
+          "amountHistoric": 3797.32
+        },
+        {
+          "tms": "006400-05-053",
+          "amountRecent": 2083.07,
+          "amountHistoric": 3627.03
+        },
+        {
+          "tms": "004326-05-018",
+          "amountRecent": 2066.46,
+          "amountHistoric": 928.75
+        },
+        {
+          "tms": "005000-03-098",
+          "amountRecent": 2032.45,
+          "amountHistoric": 3709.82
+        },
+        {
+          "tms": "010100-02-263",
+          "amountRecent": 1998.66,
+          "amountHistoric": 3652.02
+        },
+        {
+          "tms": "006400-04-050",
+          "amountRecent": 1926.13,
+          "amountHistoric": 1614.52
+        },
+        {
+          "tms": "004631-01-011",
+          "amountRecent": 1863.64,
+          "amountHistoric": 3188.11
+        },
+        {
+          "tms": "010900-06-052",
+          "amountRecent": 1843.72,
+          "amountHistoric": 3265.16
+        },
+        {
+          "tms": "007021-03-015",
+          "amountRecent": 1785.12,
+          "amountHistoric": 3058.65
+        },
+        {
+          "tms": "007644-01-023",
+          "amountRecent": 1756.44,
+          "amountHistoric": 3264.68
+        },
+        {
+          "tms": "005725-03-008",
+          "amountRecent": 1746.33,
+          "amountHistoric": 1625.84
+        },
+        {
+          "tms": "007318-01-006",
+          "amountRecent": 1704.52,
+          "amountHistoric": 2939.26
+        },
+        {
+          "tms": "012000-05-003",
+          "amountRecent": 1704.5,
+          "amountHistoric": 3089.18
+        },
+        {
+          "tms": "005118-01-011",
+          "amountRecent": 1698.91,
+          "amountHistoric": 2929.05
+        },
+        {
+          "tms": "005596-02-052",
+          "amountRecent": 1698.89,
+          "amountHistoric": 2929.01
+        },
+        {
+          "tms": "013023-10-044",
+          "amountRecent": 1693.04,
+          "amountHistoric": 2974.83
+        },
+        {
+          "tms": "001126-01-001",
+          "amountRecent": 1665.77,
+          "amountHistoric": 3069.63
+        },
+        {
+          "tms": "010400-05-007",
+          "amountRecent": 1661.2,
+          "amountHistoric": 2795.27
+        },
+        {
+          "tms": "003625-07-013",
+          "amountRecent": 1637.85,
+          "amountHistoric": 2960.03
+        },
+        {
+          "tms": "007718-03-003",
+          "amountRecent": 1568.99,
+          "amountHistoric": 2806.77
+        },
+        {
+          "tms": "006697-02-049",
+          "amountRecent": 1540.53,
+          "amountHistoric": 2641.35
+        },
+        {
+          "tms": "006400-02-049",
+          "amountRecent": 1522.44,
+          "amountHistoric": 2869.67
+        },
+        {
+          "tms": "004000-04-038",
+          "amountRecent": 1500.85,
+          "amountHistoric": 2569.28
+        },
+        {
+          "tms": "005724-09-016",
+          "amountRecent": 1500.65,
+          "amountHistoric": 2554.76
+        },
+        {
+          "tms": "013000-01-035",
+          "amountRecent": 1498.24,
+          "amountHistoric": 2694.4
+        },
+        {
+          "tms": "007842-03-003",
+          "amountRecent": 1494.06,
+          "amountHistoric": 2552.18
+        },
+        {
+          "tms": "005731-05-001",
+          "amountRecent": 1476.09,
+          "amountHistoric": 913.49
+        },
+        {
+          "tms": "007017-07-015",
+          "amountRecent": 1475.46,
+          "amountHistoric": 2392.94
+        },
+        {
+          "tms": "007833-07-007",
+          "amountRecent": 1457.16,
+          "amountHistoric": 2485.25
+        },
+        {
+          "tms": "004621-03-034",
+          "amountRecent": 1427.03,
+          "amountHistoric": 2472.8
+        },
+        {
+          "tms": "011000-01-238",
+          "amountRecent": 1415.83,
+          "amountHistoric": 2536.66
+        },
+        {
+          "tms": "006500-04-088",
+          "amountRecent": 1410.4,
+          "amountHistoric": 2404.93
+        },
+        {
+          "tms": "006547-02-032",
+          "amountRecent": 1382.14,
+          "amountHistoric": 2353.59
+        },
+        {
+          "tms": "008923-02-033",
+          "amountRecent": 1375.92,
+          "amountHistoric": 2337.97
+        },
+        {
+          "tms": "008618-01-002",
+          "amountRecent": 1341.48,
+          "amountHistoric": 1238.39
+        },
+        {
+          "tms": "006400-04-030",
+          "amountRecent": 1320.13,
+          "amountHistoric": 2240.85
+        },
+        {
+          "tms": "004644-05-020",
+          "amountRecent": 1305.06,
+          "amountHistoric": 2186.48
+        },
+        {
+          "tms": "011017-01-013",
+          "amountRecent": 1291.88,
+          "amountHistoric": 2299.54
+        },
+        {
+          "tms": "004325-01-006",
+          "amountRecent": 1263.17,
+          "amountHistoric": 2140.34
+        },
+        {
+          "tms": "008900-03-036",
+          "amountRecent": 1210.81,
+          "amountHistoric": 2143.45
+        },
+        {
+          "tms": "008500-04-050",
+          "amountRecent": 1207.09,
+          "amountHistoric": 2085.82
+        },
+        {
+          "tms": "003619-08-005",
+          "amountRecent": 1203.41,
+          "amountHistoric": 2164.44
+        },
+        {
+          "tms": "004667-01-006",
+          "amountRecent": 1201.15,
+          "amountHistoric": 2055.87
+        },
+        {
+          "tms": "000600-01-127",
+          "amountRecent": 1199.08,
+          "amountHistoric": 2003.55
+        },
+        {
+          "tms": "001930-01-020",
+          "amountRecent": 1194.03,
+          "amountHistoric": 2187.31
+        },
+        {
+          "tms": "004623-07-010",
+          "amountRecent": 1193.11,
+          "amountHistoric": 3194.83
+        },
+        {
+          "tms": "005521-03-023",
+          "amountRecent": 1186.18,
+          "amountHistoric": 2146.47
+        },
+        {
+          "tms": "005736-01-012",
+          "amountRecent": 1185.6,
+          "amountHistoric": 1972.24
+        },
+        {
+          "tms": "007030-01-013",
+          "amountRecent": 1176.71,
+          "amountHistoric": 1882.6
+        },
+        {
+          "tms": "005727-02-023",
+          "amountRecent": 1164.92,
+          "amountHistoric": 1948.35
+        },
+        {
+          "tms": "005717-01-006",
+          "amountRecent": 1152.12,
+          "amountHistoric": 1965.26
+        },
+        {
+          "tms": "005817-06-014",
+          "amountRecent": 1140.73,
+          "amountHistoric": 1904.57
+        },
+        {
+          "tms": "001417-02-002",
+          "amountRecent": 1128.8,
+          "amountHistoric": 1697.15
+        },
+        {
+          "tms": "007027-03-009",
+          "amountRecent": 1108.36,
+          "amountHistoric": 1840.37
+        },
+        {
+          "tms": "007118-01-008",
+          "amountRecent": 1090.75,
+          "amountHistoric": 1808.59
+        },
+        {
+          "tms": "006022-05-003",
+          "amountRecent": 1073.01,
+          "amountHistoric": 1701.24
+        },
+        {
+          "tms": "011900-02-213",
+          "amountRecent": 1054.29,
+          "amountHistoric": 1844.95
+        },
+        {
+          "tms": "005521-02-012",
+          "amountRecent": 1011.68,
+          "amountHistoric": 1804.45
+        },
+        {
+          "tms": "005718-10-023",
+          "amountRecent": 1009.73,
+          "amountHistoric": 1667.95
+        },
+        {
+          "tms": "007033-02-008",
+          "amountRecent": 1002.67,
+          "amountHistoric": 1650.06
+        },
+        {
+          "tms": "007898-06-004",
+          "amountRecent": 999.34,
+          "amountHistoric": 1655.11
+        },
+        {
+          "tms": "008300-06-057",
+          "amountRecent": 996.02,
+          "amountHistoric": 132.16
+        },
+        {
+          "tms": "003400-03-002",
+          "amountRecent": 995.38,
+          "amountHistoric": 1772.37
+        },
+        {
+          "tms": "006100-02-089",
+          "amountRecent": 984.64,
+          "amountHistoric": 1466.29
+        },
+        {
+          "tms": "011025-02-001",
+          "amountRecent": 976.8,
+          "amountHistoric": 1696.71
+        },
+        {
+          "tms": "010000-02-146",
+          "amountRecent": 976.09,
+          "amountHistoric": 1695.57
+        },
+        {
+          "tms": "007119-03-004",
+          "amountRecent": 973.23,
+          "amountHistoric": 1597.04
+        },
+        {
+          "tms": "004629-02-015",
+          "amountRecent": 937.55,
+          "amountHistoric": 1569.1
+        },
+        {
+          "tms": "006540-01-029",
+          "amountRecent": 936.03,
+          "amountHistoric": 1656.09
+        },
+        {
+          "tms": "004628-04-012",
+          "amountRecent": 933.46,
+          "amountHistoric": 1561.52
+        },
+        {
+          "tms": "003900-01-071",
+          "amountRecent": 930.06,
+          "amountHistoric": 1532.23
+        },
+        {
+          "tms": "005749-11-011",
+          "amountRecent": 897.25,
+          "amountHistoric": 1518.16
+        },
+        {
+          "tms": "008900-05-017",
+          "amountRecent": 892.96,
+          "amountHistoric": 1467.06
+        },
+        {
+          "tms": "006535-01-005",
+          "amountRecent": 878.01,
+          "amountHistoric": 1544.93
+        },
+        {
+          "tms": "006629-03-003",
+          "amountRecent": 868.75,
+          "amountHistoric": 1524.12
+        },
+        {
+          "tms": "005746-04-004",
+          "amountRecent": 866.4,
+          "amountHistoric": 1437.81
+        },
+        {
+          "tms": "010025-01-030",
+          "amountRecent": 857.8,
+          "amountHistoric": 1469.1
+        },
+        {
+          "tms": "005625-02-006",
+          "amountRecent": 853.56,
+          "amountHistoric": 1451.36
+        },
+        {
+          "tms": "010900-06-100",
+          "amountRecent": 847.21,
+          "amountHistoric": 1448.92
+        },
+        {
+          "tms": "004646-06-002",
+          "amountRecent": 840.87,
+          "amountHistoric": 1390.6
+        },
+        {
+          "tms": "011919-03-021",
+          "amountRecent": 838.79,
+          "amountHistoric": 1472.24
+        },
+        {
+          "tms": "010118-01-015",
+          "amountRecent": 836.65,
+          "amountHistoric": 1428.82
+        },
+        {
+          "tms": "006200-05-132",
+          "amountRecent": 833.8,
+          "amountHistoric": 1143.91
+        },
+        {
+          "tms": "005645-01-014",
+          "amountRecent": 827.14,
+          "amountHistoric": 1442.74
+        },
+        {
+          "tms": "007529-02-004",
+          "amountRecent": 822.75,
+          "amountHistoric": 1337.25
+        },
+        {
+          "tms": "011600-02-074",
+          "amountRecent": 817.21,
+          "amountHistoric": 1327.13
+        },
+        {
+          "tms": "002829-05-009",
+          "amountRecent": 817.16,
+          "amountHistoric": 1412.98
+        },
+        {
+          "tms": "010717-02-014",
+          "amountRecent": 816.9,
+          "amountHistoric": 1326.65
+        },
+        {
+          "tms": "011900-01-156",
+          "amountRecent": 810.93,
+          "amountHistoric": 1379.58
+        },
+        {
+          "tms": "007896-04-008",
+          "amountRecent": 807.35,
+          "amountHistoric": 1306.97
+        },
+        {
+          "tms": "004327-03-020",
+          "amountRecent": 805.02,
+          "amountHistoric": 1306.69
+        },
+        {
+          "tms": "008418-01-014",
+          "amountRecent": 777.43,
+          "amountHistoric": 1254.93
+        },
+        {
+          "tms": "011727-01-004",
+          "amountRecent": 773.31,
+          "amountHistoric": 1321.21
+        },
+        {
+          "tms": "013500-05-043",
+          "amountRecent": 760.49,
+          "amountHistoric": 1049.42
+        },
+        {
+          "tms": "007918-06-015",
+          "amountRecent": 758.11,
+          "amountHistoric": 1280.14
+        },
+        {
+          "tms": "005200-01-022",
+          "amountRecent": 758.02,
+          "amountHistoric": 1307.27
+        },
+        {
+          "tms": "007732-01-004",
+          "amountRecent": 755.57,
+          "amountHistoric": 1213.05
+        },
+        {
+          "tms": "008417-02-001",
+          "amountRecent": 749.08,
+          "amountHistoric": 743.7
+        },
+        {
+          "tms": "010036-01-016",
+          "amountRecent": 733.08,
+          "amountHistoric": 1230.78
+        },
+        {
+          "tms": "012600-02-138",
+          "amountRecent": 726.83,
+          "amountHistoric": 1162.9
+        },
+        {
+          "tms": "004419-01-012",
+          "amountRecent": 725.47,
+          "amountHistoric": 1243.32
+        },
+        {
+          "tms": "013023-03-003",
+          "amountRecent": 724.18,
+          "amountHistoric": 1187.49
+        },
+        {
+          "tms": "008900-03-031",
+          "amountRecent": 723.6,
+          "amountHistoric": 1211.84
+        },
+        {
+          "tms": "009021-01-014",
+          "amountRecent": 715.81,
+          "amountHistoric": 1196.94
+        },
+        {
+          "tms": "009019-01-011",
+          "amountRecent": 702.84,
+          "amountHistoric": 1172.64
+        },
+        {
+          "tms": "004200-03-138",
+          "amountRecent": 702.56,
+          "amountHistoric": 1099.73
+        },
+        {
+          "tms": "009519-01-004",
+          "amountRecent": 698.21,
+          "amountHistoric": 1111.02
+        },
+        {
+          "tms": "004326-06-010",
+          "amountRecent": 685.72,
+          "amountHistoric": 1089.69
+        },
+        {
+          "tms": "006696-03-039",
+          "amountRecent": 683.3,
+          "amountHistoric": 1102.18
+        },
+        {
+          "tms": "010800-04-052",
+          "amountRecent": 681.54,
+          "amountHistoric": 1080.64
+        },
+        {
+          "tms": "007017-07-026",
+          "amountRecent": 679.29,
+          "amountHistoric": 1028.37
+        },
+        {
+          "tms": "007100-05-002",
+          "amountRecent": 675.34,
+          "amountHistoric": 1049.85
+        },
+        {
+          "tms": "004326-03-017",
+          "amountRecent": 673.63,
+          "amountHistoric": 1067.78
+        },
+        {
+          "tms": "005628-02-016",
+          "amountRecent": 669.85,
+          "amountHistoric": 1059.5
+        },
+        {
+          "tms": "004642-03-004",
+          "amountRecent": 656.37,
+          "amountHistoric": 1049.94
+        },
+        {
+          "tms": "006000-03-055",
+          "amountRecent": 655.98,
+          "amountHistoric": 1025.9
+        },
+        {
+          "tms": "006619-02-001",
+          "amountRecent": 647.26,
+          "amountHistoric": 1018.48
+        },
+        {
+          "tms": "006524-07-014",
+          "amountRecent": 644.91,
+          "amountHistoric": 1085.38
+        },
+        {
+          "tms": "008900-03-078",
+          "amountRecent": 641.08,
+          "amountHistoric": 1005.51
+        },
+        {
+          "tms": "010924-02-015",
+          "amountRecent": 640.15,
+          "amountHistoric": 994.81
+        },
+        {
+          "tms": "008098-04-007",
+          "amountRecent": 637.28,
+          "amountHistoric": 998.62
+        },
+        {
+          "tms": "009721-01-031",
+          "amountRecent": 635.36,
+          "amountHistoric": 1066.5
+        },
+        {
+          "tms": "009400-05-062",
+          "amountRecent": 630.46,
+          "amountHistoric": 1050.88
+        },
+        {
+          "tms": "004519-04-013",
+          "amountRecent": 624.38,
+          "amountHistoric": 1022.13
+        },
+        {
+          "tms": "013022-11-005",
+          "amountRecent": 622.6,
+          "amountHistoric": 990.93
+        },
+        {
+          "tms": "013000-02-116",
+          "amountRecent": 619.68,
+          "amountHistoric": 1013.73
+        },
+        {
+          "tms": "013500-01-011",
+          "amountRecent": 612,
+          "amountHistoric": 1020.88
+        },
+        {
+          "tms": "010122-01-010",
+          "amountRecent": 609.87,
+          "amountHistoric": 994.81
+        },
+        {
+          "tms": "008900-03-079",
+          "amountRecent": 604.26,
+          "amountHistoric": 938.72
+        },
+        {
+          "tms": "010100-03-182",
+          "amountRecent": 604.1,
+          "amountHistoric": 983.92
+        },
+        {
+          "tms": "010100-03-183",
+          "amountRecent": 604.1,
+          "amountHistoric": 983.92
+        },
+        {
+          "tms": "010100-03-254",
+          "amountRecent": 604.1,
+          "amountHistoric": 983.92
+        },
+        {
+          "tms": "005749-02-009",
+          "amountRecent": 594.73,
+          "amountHistoric": 984.31
+        },
+        {
+          "tms": "008100-02-047",
+          "amountRecent": 593.16,
+          "amountHistoric": 831.38
+        },
+        {
+          "tms": "007300-03-014",
+          "amountRecent": 590.89,
+          "amountHistoric": 916
+        },
+        {
+          "tms": "005424-03-007",
+          "amountRecent": 588.63,
+          "amountHistoric": 975.16
+        },
+        {
+          "tms": "007300-05-042",
+          "amountRecent": 585.34,
+          "amountHistoric": 905.94
+        },
+        {
+          "tms": "007300-01-008",
+          "amountRecent": 579.43,
+          "amountHistoric": 956.85
+        },
+        {
+          "tms": "008921-02-011",
+          "amountRecent": 574.55,
+          "amountHistoric": 884.84
+        },
+        {
+          "tms": "009900-02-004",
+          "amountRecent": 573.96,
+          "amountHistoric": 885.23
+        },
+        {
+          "tms": "012700-01-065",
+          "amountRecent": 568.39,
+          "amountHistoric": 875.12
+        },
+        {
+          "tms": "008733-02-014",
+          "amountRecent": 567.39,
+          "amountHistoric": 871.86
+        },
+        {
+          "tms": "008819-01-002",
+          "amountRecent": 559.76,
+          "amountHistoric": 858.04
+        },
+        {
+          "tms": "007000-06-015",
+          "amountRecent": 554.98,
+          "amountHistoric": 811.04
+        },
+        {
+          "tms": "012600-02-213",
+          "amountRecent": 544.92,
+          "amountHistoric": 889.19
+        },
+        {
+          "tms": "004643-01-005",
+          "amountRecent": 542.25,
+          "amountHistoric": 818.41
+        },
+        {
+          "tms": "005918-04-008",
+          "amountRecent": 533.79,
+          "amountHistoric": 774.59
+        },
+        {
+          "tms": "004644-05-004",
+          "amountRecent": 530.1,
+          "amountHistoric": 816.75
+        },
+        {
+          "tms": "010717-02-012",
+          "amountRecent": 528.64,
+          "amountHistoric": 1152.07
+        },
+        {
+          "tms": "010800-04-047",
+          "amountRecent": 526.74,
+          "amountHistoric": 853.61
+        },
+        {
+          "tms": "005750-08-013",
+          "amountRecent": 522.35,
+          "amountHistoric": 787.63
+        },
+        {
+          "tms": "005117-01-004",
+          "amountRecent": 519.71,
+          "amountHistoric": 839.98
+        },
+        {
+          "tms": "009940-01-010",
+          "amountRecent": 517.51,
+          "amountHistoric": 782.69
+        },
+        {
+          "tms": "009940-01-123",
+          "amountRecent": 517.51,
+          "amountHistoric": 782.69
+        },
+        {
+          "tms": "012500-02-055",
+          "amountRecent": 510.5,
+          "amountHistoric": 806.43
+        },
+        {
+          "tms": "005598-02-072",
+          "amountRecent": 510.09,
+          "amountHistoric": 3291
+        },
+        {
+          "tms": "004643-12-022",
+          "amountRecent": 503.87,
+          "amountHistoric": 749.6
+        },
+        {
+          "tms": "007998-01-015",
+          "amountRecent": 501.06,
+          "amountHistoric": 751.53
+        },
+        {
+          "tms": "011019-01-012",
+          "amountRecent": 500.72,
+          "amountHistoric": 786.17
+        },
+        {
+          "tms": "004000-04-049",
+          "amountRecent": 500.57,
+          "amountHistoric": 751.9
+        },
+        {
+          "tms": "001518-07-004",
+          "amountRecent": 498.74,
+          "amountHistoric": 794.84
+        },
+        {
+          "tms": "012000-04-013",
+          "amountRecent": 490.87,
+          "amountHistoric": 767.18
+        },
+        {
+          "tms": "011021-01-017",
+          "amountRecent": 490.87,
+          "amountHistoric": 767.18
+        },
+        {
+          "tms": "011726-01-012",
+          "amountRecent": 489.41,
+          "amountHistoric": 731.59
+        },
+        {
+          "tms": "006699-02-059",
+          "amountRecent": 489.16,
+          "amountHistoric": 731.2
+        },
+        {
+          "tms": "010921-01-001",
+          "amountRecent": 483.29,
+          "amountHistoric": 720.59
+        },
+        {
+          "tms": "002200-01-012",
+          "amountRecent": 480.54,
+          "amountHistoric": 703.2
+        },
+        {
+          "tms": "005200-04-004",
+          "amountRecent": 480.27,
+          "amountHistoric": 762.64
+        },
+        {
+          "tms": "008928-02-006",
+          "amountRecent": 478.79,
+          "amountHistoric": 711.18
+        },
+        {
+          "tms": "005727-02-020",
+          "amountRecent": 476.2,
+          "amountHistoric": 842.06
+        },
+        {
+          "tms": "013717-04-005",
+          "amountRecent": 475.34,
+          "amountHistoric": 677.62
+        },
+        {
+          "tms": "007999-02-055",
+          "amountRecent": 471.45,
+          "amountHistoric": 697.83
+        },
+        {
+          "tms": "004643-01-004",
+          "amountRecent": 469.93,
+          "amountHistoric": 688.71
+        },
+        {
+          "tms": "007024-10-014",
+          "amountRecent": 469.42,
+          "amountHistoric": 664.03
+        },
+        {
+          "tms": "002828-08-008",
+          "amountRecent": 463.87,
+          "amountHistoric": 679.75
+        },
+        {
+          "tms": "011825-01-013",
+          "amountRecent": 449.69,
+          "amountHistoric": 659.48
+        },
+        {
+          "tms": "011000-03-098",
+          "amountRecent": 447.36,
+          "amountHistoric": 708.76
+        },
+        {
+          "tms": "005765-02-004",
+          "amountRecent": 444.68,
+          "amountHistoric": 647.29
+        },
+        {
+          "tms": "005765-02-008",
+          "amountRecent": 444.68,
+          "amountHistoric": 647.29
+        },
+        {
+          "tms": "007797-02-117",
+          "amountRecent": 441.59,
+          "amountHistoric": 643.77
+        },
+        {
+          "tms": "007999-05-014",
+          "amountRecent": 441.59,
+          "amountHistoric": 643.77
+        },
+        {
+          "tms": "000600-01-122",
+          "amountRecent": 430.98,
+          "amountHistoric": 662.64
+        },
+        {
+          "tms": "009719-02-001",
+          "amountRecent": 427.2,
+          "amountHistoric": 618.55
+        },
+        {
+          "tms": "004631-02-012",
+          "amountRecent": 419.53,
+          "amountHistoric": 221.72
+        },
+        {
+          "tms": "007919-05-015",
+          "amountRecent": 414.73,
+          "amountHistoric": 621.26
+        },
+        {
+          "tms": "011900-01-099",
+          "amountRecent": 410.66,
+          "amountHistoric": 4246.62
+        },
+        {
+          "tms": "004644-07-005",
+          "amountRecent": 401.6,
+          "amountHistoric": 566.18
+        },
+        {
+          "tms": "005764-05-011",
+          "amountRecent": 395.57,
+          "amountHistoric": 558.6
+        },
+        {
+          "tms": "007718-03-014",
+          "amountRecent": 393.74,
+          "amountHistoric": 556.99
+        },
+        {
+          "tms": "012200-04-003",
+          "amountRecent": 391.41,
+          "amountHistoric": 974.52
+        },
+        {
+          "tms": "004617-04-003",
+          "amountRecent": 390.14,
+          "amountHistoric": 550.44
+        },
+        {
+          "tms": "013020-11-003",
+          "amountRecent": 380.33,
+          "amountHistoric": 541.76
+        },
+        {
+          "tms": "007999-02-090",
+          "amountRecent": 364.38,
+          "amountHistoric": 503.69
+        },
+        {
+          "tms": "004643-03-004",
+          "amountRecent": 354.76,
+          "amountHistoric": 482.19
+        },
+        {
+          "tms": "006696-02-080",
+          "amountRecent": 349.33,
+          "amountHistoric": 505.66
+        },
+        {
+          "tms": "011400-02-004",
+          "amountRecent": 347.37,
+          "amountHistoric": 501.96
+        },
+        {
+          "tms": "004327-01-016",
+          "amountRecent": 342.75,
+          "amountHistoric": 490.11
+        },
+        {
+          "tms": "007100-02-062",
+          "amountRecent": 336.92,
+          "amountHistoric": 436.24
+        },
+        {
+          "tms": "005598-02-115",
+          "amountRecent": 332.33,
+          "amountHistoric": 472.6
+        },
+        {
+          "tms": "005599-05-017",
+          "amountRecent": 332.33,
+          "amountHistoric": 472.6
+        },
+        {
+          "tms": "007400-01-013",
+          "amountRecent": 322.72,
+          "amountHistoric": 453.6
+        },
+        {
+          "tms": "006000-03-062",
+          "amountRecent": 320.35,
+          "amountHistoric": 421.67
+        },
+        {
+          "tms": "007923-01-064",
+          "amountRecent": 299.49,
+          "amountHistoric": 400.92
+        },
+        {
+          "tms": "008700-04-130",
+          "amountRecent": 299.48,
+          "amountHistoric": 408.16
+        },
+        {
+          "tms": "004647-22-001",
+          "amountRecent": 299.43,
+          "amountHistoric": 382.95
+        },
+        {
+          "tms": "007997-01-001",
+          "amountRecent": 296.27,
+          "amountHistoric": 414.24
+        },
+        {
+          "tms": "009100-01-045",
+          "amountRecent": 293.32,
+          "amountHistoric": 389.09
+        },
+        {
+          "tms": "006027-05-008",
+          "amountRecent": 293.22,
+          "amountHistoric": 355.78
+        },
+        {
+          "tms": "007923-01-011",
+          "amountRecent": 282.94,
+          "amountHistoric": 356.06
+        },
+        {
+          "tms": "007923-01-043",
+          "amountRecent": 282.94,
+          "amountHistoric": 356.06
+        },
+        {
+          "tms": "007820-03-019",
+          "amountRecent": 279.08,
+          "amountHistoric": 349.07
+        },
+        {
+          "tms": "007320-01-012",
+          "amountRecent": 265.4,
+          "amountHistoric": 1182.75
+        },
+        {
+          "tms": "013023-09-020",
+          "amountRecent": 262.13,
+          "amountHistoric": 322.66
+        },
+        {
+          "tms": "009927-01-014",
+          "amountRecent": 246.84,
+          "amountHistoric": 304.95
+        },
+        {
+          "tms": "013500-01-009",
+          "amountRecent": 245.22,
+          "amountHistoric": 296.73
+        },
+        {
+          "tms": "014100-02-068",
+          "amountRecent": 244.73,
+          "amountHistoric": 333.71
+        },
+        {
+          "tms": "011000-01-239",
+          "amountRecent": 239.92,
+          "amountHistoric": 321.64
+        },
+        {
+          "tms": "010027-01-012",
+          "amountRecent": 237.95,
+          "amountHistoric": 317.88
+        },
+        {
+          "tms": "012518-01-015",
+          "amountRecent": 236.97,
+          "amountHistoric": 285.64
+        },
+        {
+          "tms": "012900-01-104",
+          "amountRecent": 235.17,
+          "amountHistoric": 276.18
+        },
+        {
+          "tms": "010925-01-007",
+          "amountRecent": 227.52,
+          "amountHistoric": 767.98
+        },
+        {
+          "tms": "010800-01-191",
+          "amountRecent": 215.77,
+          "amountHistoric": 243.95
+        },
+        {
+          "tms": "005528-04-010",
+          "amountRecent": 211.72,
+          "amountHistoric": 259.07
+        },
+        {
+          "tms": "009931-01-010",
+          "amountRecent": 209.42,
+          "amountHistoric": 1113.38
+        },
+        {
+          "tms": "009900-01-089",
+          "amountRecent": 203.82,
+          "amountHistoric": 230.54
+        },
+        {
+          "tms": "007726-01-050",
+          "amountRecent": 202.15,
+          "amountHistoric": 214.72
+        },
+        {
+          "tms": "009600-02-150",
+          "amountRecent": 198.74,
+          "amountHistoric": 204.13
+        },
+        {
+          "tms": "008098-04-021",
+          "amountRecent": 198.02,
+          "amountHistoric": 245.97
+        },
+        {
+          "tms": "010000-02-219",
+          "amountRecent": 195.11,
+          "amountHistoric": 219.22
+        },
+        {
+          "tms": "013718-03-001",
+          "amountRecent": 182.33,
+          "amountHistoric": 189.31
+        },
+        {
+          "tms": "008420-01-002",
+          "amountRecent": 181.29,
+          "amountHistoric": 187.7
+        },
+        {
+          "tms": "007300-01-016",
+          "amountRecent": 172.49,
+          "amountHistoric": 155.89
+        },
+        {
+          "tms": "004337-02-043",
+          "amountRecent": 167.85,
+          "amountHistoric": 147.51
+        },
+        {
+          "tms": "004000-03-081",
+          "amountRecent": 166.95,
+          "amountHistoric": 145.83
+        },
+        {
+          "tms": "007622-01-054",
+          "amountRecent": 166.95,
+          "amountHistoric": 145.83
+        },
+        {
+          "tms": "000716-01-090",
+          "amountRecent": 165.48,
+          "amountHistoric": 142.7
+        },
+        {
+          "tms": "006823-01-052",
+          "amountRecent": 162.27,
+          "amountHistoric": 137.19
+        },
+        {
+          "tms": "006898-01-056",
+          "amountRecent": 161.07,
+          "amountHistoric": 135.11
+        }
+      ],
+      "changed": false
+    },
+    {
+      "id": "marion",
+      "name": "Marion",
+      "recent": null,
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "marlboro",
+      "name": "Marlboro",
+      "recent": null,
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "mccormick",
+      "name": "McCormick",
+      "recent": null,
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "newberry",
+      "name": "Newberry",
+      "recent": null,
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "oconee",
+      "name": "Oconee",
+      "recent": {
+        "year": 2026,
+        "url": "https://oconeesc.com/delinquent-tax/sale-list",
+        "idCount": 11
+      },
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": true
+    },
+    {
+      "id": "orangeburg",
+      "name": "Orangeburg",
+      "recent": null,
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "pickens",
+      "name": "Pickens",
+      "recent": null,
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "richland",
+      "name": "Richland",
+      "recent": null,
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "saluda",
+      "name": "Saluda",
+      "recent": null,
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "spartanburg",
+      "name": "Spartanburg",
+      "recent": null,
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "sumter",
+      "name": "Sumter",
+      "recent": null,
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "union",
+      "name": "Union",
+      "recent": null,
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    },
+    {
+      "id": "williamsburg",
+      "name": "Williamsburg",
+      "recent": {
+        "year": 2025,
+        "url": "https://williamsburgcounty.sc.gov/DocumentCenter/View/2202/DELINQUENT-TAX-SALE",
+        "idCount": 882
+      },
+      "historic": {
+        "year": 2020,
+        "url": "https://www.williamsburgcounty.sc.gov/DocumentCenter/View/855/2020-REAL-DEL-TAX-UNPAID-RECORDS-rev",
+        "idCount": 1522
+      },
+      "bothCount": 170,
+      "both": [
+        {
+          "tms": "11-026-131",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-444-111",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-227-103",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "11-054-007",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "18-054-013",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-033-028",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "18-030-071",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-380-043",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-175-090",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-105-042",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "18-058-092",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-061-038",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-428-072",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-428-073",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-253-092",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-279-110",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-200-245",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-084-009",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-105-031",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-334-030",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "15-008-001",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "18-032-023",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-080-076",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "11-036-026.03",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-132-097",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "12-004-014.01",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "12-019-041",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-211-053",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-157-055",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-249-062",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-035-049",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-408-030",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "18-034-106",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "08-015-047",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-103-370",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-471-020",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-052-104",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-478-098",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-036-037",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-201-134",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-224-125",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-423-089",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-452-033",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-078-042",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "07-014-075",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "07-015-021",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-441-031",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-035-020",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "11-021-043",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "18-035-107",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-199-194",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-200-290",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-199-145",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-224-112",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-200-215",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-177-186",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-161-030",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-237-032",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-104-064",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "15-003-019",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-103-359",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "07-013-159",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-102-073",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-103-204",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-452-142",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-428-095",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "24-018-099",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "18-071-030",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-199-168",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "11-037-123",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-156-026",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "18-035-070",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-152-007",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-307-035",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-307-036",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-232-058",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-374-044",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-361-145",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "07-008-019",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "11-038-065",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "11-054-006",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "11-054-010",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "18-030-011",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "18-030-016",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "18-030-017",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "18-030-019",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "18-046-005",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "18-046-019",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "18-046-024",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-081-057",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "18-079-025",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-061-117",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-119-050",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "19-006-015",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "24-019-115",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-362-033",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "18-035-241",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-102-024",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-307-055",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-200-180",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-064-002",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-177-075",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "18-069-042",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-259-011",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-416-022",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "08-015-229",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "11-023-025",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "18-035-114",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-120-035",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "11-037-129",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "11-038-107",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-220-062",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-220-076",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-084-063",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-444-003",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-286-028",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-419-124",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-478-023",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-184-010",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-231-016",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-175-252",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-231-163",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-437-021",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-441-019",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-478-004.01",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-435-056",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-076-037",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-200-297",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "11-014-013",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "07-014-008",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-064-010",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "07-013-018",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-279-142",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "12-011-003",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "11-026-025",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "18-058-066",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "18-058-028",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "18-058-067",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "18-058-105",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-061-135",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-277-021",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-052-009",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-438-004",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-223-076",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "11-023-046",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-468-091",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-253-029",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-035-030",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "11-022-109",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-177-065",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-388-024",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-107-050",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-159-014",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "07-014-014",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-437-008",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-284-189",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "11-026-061",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-286-024",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-119-096",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-119-053",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-177-105",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-363-066",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "18-052-068",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "18-035-285",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-061-108",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-279-138",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-279-149",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-279-157",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "45-279-166",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "18-052-038",
+          "amountRecent": null,
+          "amountHistoric": null
+        }
+      ],
+      "changed": true
+    },
+    {
+      "id": "york",
+      "name": "York",
+      "recent": null,
+      "historic": null,
+      "bothCount": 0,
+      "both": [],
+      "changed": false
+    }
+  ]
+}

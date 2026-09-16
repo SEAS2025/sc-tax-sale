@@ -13,7 +13,7 @@
     <div class="mast-inner">
       <p class="brand-kicker">Southeast Aerial Systems</p>
       <h1>SC Tax Sale Atlas</h1>
-      <p class="lede">South Carolina delinquent tax sale analysis. Forty-six counties, each with a live family adapter. There is no statewide file — counties publish HTML tables, PDFs, spreadsheets, or newspaper ads. No invented endpoints, and no owner lists published here.</p>
+      <p class="lede">South Carolina delinquent tax sale analysis. The scanner watches all 46 treasurer pages every day. After a county’s ad or promised-list date it keeps scanning that page for seven days so a late posting is still caught. When a list appears, it rebuilds one statewide file: parcels on the newest ad and on a list from about five years ago. Identifiers and amounts only — no owner names.</p>
       <div class="mast-actions">
         <a class="btn primary" href="mailto:southeastaerialsystems@gmail.com?subject=SC%20Tax%20Sale%20Atlas%20waitlist">Join the waitlist</a>
         <a class="btn ghost" href="#pricing">See pricing</a>
@@ -23,23 +23,24 @@
       <p class="plat-label">Registry</p>
       <dl id="stat-board">
         <div><dt>Counties</dt><dd id="stat-counties">46</dd></div>
-        <div><dt>Live</dt><dd id="stat-live">1</dd></div>
-        <div><dt>Researched</dt><dd id="stat-researched">1</dd></div>
-        <div><dt>Unknown</dt><dd id="stat-unknown">44</dd></div>
+        <div><dt>5-yr matches</dt><dd id="stat-repeat">0</dd></div>
+        <div><dt>Windows open</dt><dd id="stat-windows">0</dd></div>
+        <div><dt>2026 lists</dt><dd id="stat-posted">0</dd></div>
       </dl>
-      <p class="plat-note">Counts load from the county registry. Parcel totals are not shown — they have not been verified for publication.</p>
+      <p class="plat-note" id="scan-note">Daily scan of all 46 pages. A county stays due for seven days after its promised date.</p>
     </aside>
   </header>
 
   <section class="band" id="coverage">
     <div class="section-head">
       <h2>46-county coverage</h2>
-      <p>The schematic is a working map from the original analysis screen, not a surveyed boundary file. Color follows registry status.</p>
+      <p>The schematic is a working map from the original analysis screen, not a surveyed boundary file. Color follows this year’s ad scan: posted list, open window, scheduled date, or still waiting.</p>
     </div>
     <div class="legend" aria-hidden="true">
-      <span><i class="swatch live"></i> Live — family adapter wired</span>
-      <span><i class="swatch researched"></i> Page classified, adapter pending</span>
-      <span><i class="swatch unknown"></i> In registry, page not opened</span>
+      <span><i class="swatch live"></i> 2026 list posted</span>
+      <span><i class="swatch researched"></i> Ad window open</span>
+      <span><i class="swatch scheduled"></i> Date posted, list later</span>
+      <span><i class="swatch unknown"></i> Waiting / leftover 2025</span>
     </div>
     <div class="atlas">
       <div class="map-wrap">
@@ -53,6 +54,61 @@
         <article id="county-detail" class="detail" hidden></article>
       </div>
     </div>
+  </section>
+
+  <section class="band" id="ads">
+    <div class="section-head">
+      <h2>2026 sale ads</h2>
+      <p id="ads-lead">Each county sets its own sale date, then advertises for three weeks. The scanner checks official pages every day and keeps a county marked due for seven days after the promised ad or list date so a late posting is still picked up. Owner names stay off this site.</p>
+    </div>
+    <div class="ad-filters" id="ad-filters">
+      <button type="button" data-filter="due" class="is-on">Due now</button>
+      <button type="button" data-filter="posted">Lists posted</button>
+      <button type="button" data-filter="upcoming">Upcoming</button>
+      <button type="button" data-filter="held">Already held</button>
+      <button type="button" data-filter="all">All 46</button>
+    </div>
+    <div class="ad-table-wrap">
+      <table class="ad-table" id="ad-table">
+        <thead>
+          <tr>
+            <th>County</th>
+            <th>Sale</th>
+            <th>Advertisement</th>
+            <th>List</th>
+            <th>Last scan</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="band" id="repeat">
+    <div class="section-head">
+      <h2>Statewide 5-year file</h2>
+      <p id="repeat-lead">One file, rebuilt whenever the scanner sees a new listing. A parcel is in the file when its ID is on the newest hosted list and on a hosted list from about five years earlier. Owner names stay off this site.</p>
+    </div>
+    <div class="ad-filters" id="repeat-filters">
+      <button type="button" data-repeat-filter="both" class="is-on">In both years</button>
+      <button type="button" data-repeat-filter="recent">Newest list only</button>
+      <button type="button" data-repeat-filter="waiting">Waiting for a pair</button>
+      <button type="button" data-repeat-filter="all">All 46</button>
+    </div>
+    <div class="ad-table-wrap">
+      <table class="ad-table" id="repeat-table">
+        <thead>
+          <tr>
+            <th>County</th>
+            <th>Newest list</th>
+            <th>~5-year list</th>
+            <th>In both</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <article id="repeat-ids" class="detail" hidden></article>
   </section>
 
   <section class="band tight" id="status">
@@ -90,13 +146,13 @@
   <section class="band" id="engine">
     <div class="section-head">
       <h2>What the engine actually does</h2>
-      <p>A parameterized county adapter, not a scraped statewide database.</p>
+      <p>A parameterized county adapter plus a daily list scanner. After each promised date it follows up for seven days, then writes one statewide 5-year file.</p>
     </div>
     <ol class="steps">
       <li><strong>Registry.</strong> <code>counties/sc.json</code> names all 46 counties, Census FIPS, and only the URLs that were verified.</li>
-      <li><strong>Lexington.</strong> Reads a local CSV with columns <code>tms</code>, <code>owner_location_2025_REALAD</code>, <code>owner_location_2022_list</code>, <code>amount_2025_REALAD</code>, <code>amount_2022_list</code>. Geocodes by TMS section grid. Summaries omit owner names.</li>
-      <li><strong>Beaufort.</strong> Parses treasurer PDF text for PINs and amounts. Drafts a treasurer inquiry from a file you already have.</li>
-      <li><strong>Every other county.</strong> <code>ingest</code> and <code>watch</code> use that county’s family adapter. Owner lists never go in git.</li>
+      <li><strong>Scan.</strong> Each day the engine re-reads official treasurer pages. After a promised ad or list date it keeps that county in a seven-day catch window so a late posting is still seen. Owner names are never stored.</li>
+      <li><strong>5-year file.</strong> <code>repeat</code> downloads a newly posted list, intersects parcel IDs with a 2020–2022 archive, and writes <code>site/data/repeat.json</code>.</li>
+      <li><strong>Ingest.</strong> Family adapters still collapse a local HTML table, PDF, or spreadsheet when you drop a file in <code>inbox/</code>.</li>
     </ol>
   </section>
 

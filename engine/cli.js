@@ -2,7 +2,7 @@
 "use strict";
 
 const fs = require("fs");
-const { registry, getAdapter, geocodeLexingtonTms, families } = require("./index");
+const { registry, getAdapter, geocodeLexingtonTms, families, ads, repeat } = require("./index");
 
 function usage() {
   console.log(`sc-tax-sale
@@ -16,10 +16,14 @@ function usage() {
   node engine/cli.js families
   node engine/cli.js ingest <county-id> <file> [--family <id>]
   node engine/cli.js watch <county-id> [--file <html>]
+  node engine/cli.js scan [--write] [--due] [--seed] [--ads-only] [--county <id>] [--file <html>]
+  node engine/cli.js repeat [--write] [--xlsx] [--pdf] [--out <file>] [--county <id>]
 
 ingest and parse-csv print counts only. They do not print owner names.
 watch records listing links on a public page. It does not download sale files.
-Every county has a family adapter. Sale-cycle files stay in inbox/.
+scan refreshes the 2026 ad calendar and, unless --ads-only, rebuilds the statewide 5-year file.
+repeat downloads newly posted lists, intersects parcel IDs with ~5-year archives, and writes site/data/repeat.json.
+Every county has a family adapter. Sale-cycle PDFs stay in inbox/.
 `);
 }
 
@@ -167,6 +171,120 @@ if (cmd === "watch") {
     }, null, 2));
     process.exit(0);
   }).catch((err) => {
+    console.error(err.message);
+    process.exit(1);
+  });
+  return;
+}
+
+if (cmd === "scan") {
+  const write = process.argv.includes("--write");
+  const dueOnly = process.argv.includes("--due");
+  const seedOnly = process.argv.includes("--seed");
+  const adsOnly = process.argv.includes("--ads-only");
+  const countyFlag = process.argv.indexOf("--county");
+  const fileFlag = process.argv.indexOf("--file");
+  const countyId = countyFlag >= 0 ? process.argv[countyFlag + 1] : (a && a[0] !== "-" ? a : null);
+  const counties = registry.listCounties();
+  const run = async () => {
+    let scans = {};
+    if (fileFlag >= 0) {
+      const id = countyId || "bamberg";
+      const county = registry.getCounty(id);
+      if (!county) {
+        console.error("Unknown county");
+        process.exit(1);
+      }
+      scans[county.id] = await ads.scanCounty(county, {
+        html: fs.readFileSync(process.argv[fileFlag + 1], "utf8"),
+        pageUrl: county.treasurerUrl,
+      });
+    } else if (seedOnly) {
+      const prevPath = ads.snapshotPaths().site;
+      if (fs.existsSync(prevPath)) {
+        const prev = JSON.parse(fs.readFileSync(prevPath, "utf8"));
+        (prev.counties || []).forEach((row) => {
+          if (row.lastScan) scans[row.id] = row.lastScan;
+        });
+      }
+    } else {
+      scans = await ads.scanCounties(counties, { countyId, dueOnly });
+    }
+    const snapshot = ads.buildSnapshot(counties, scans);
+    if (write) ads.writeSnapshot(snapshot);
+    const pub = ads.publicSnapshot(snapshot);
+    let repeatPub = null;
+    if (!adsOnly && fileFlag < 0 && !seedOnly) {
+      const repeatSnap = await repeat.run(counties, {
+        ads: snapshot,
+        previous: repeat.loadPrevious(),
+        countyId,
+      });
+      if (write) repeat.writeSnapshot(repeatSnap);
+      repeatPub = repeat.publicSnapshot(repeatSnap);
+    }
+    if (countyId) {
+      const row = snapshot.counties.find((c) => c.id === countyId);
+      console.log(JSON.stringify({ ...pub, county: row, repeat: repeatPub }, null, 2));
+    } else {
+      console.log(JSON.stringify({ ...pub, repeat: repeatPub }, null, 2));
+    }
+  };
+  run().catch((err) => {
+    console.error(err.message);
+    process.exit(1);
+  });
+  return;
+}
+
+if (cmd === "repeat") {
+  const write = process.argv.includes("--write");
+  const wantXlsx = process.argv.includes("--xlsx");
+  const wantPdf = process.argv.includes("--pdf");
+  const outFlag = process.argv.indexOf("--out");
+  const outPath = outFlag >= 0 ? process.argv[outFlag + 1] : null;
+  const countyFlag = process.argv.indexOf("--county");
+  const countyId = countyFlag >= 0 ? process.argv[countyFlag + 1] : (a && a[0] !== "-" ? a : null);
+  const adsPath = require("path").join(__dirname, "..", "site", "data", "ads.json");
+  const adsSnap = fs.existsSync(adsPath) ? JSON.parse(fs.readFileSync(adsPath, "utf8")) : { counties: [] };
+  const exportRepeat = require("./export-repeat");
+  const exportPdf = require("./export-repeat-pdf");
+  const finish = async (snapshot) => {
+    if (write) repeat.writeSnapshot(snapshot);
+    let xlsxPath = null;
+    let pdfPath = null;
+    if (wantXlsx) {
+      const exported = await exportRepeat.writeFromSnapshot(snapshot, {
+        dest: outPath && /\.xlsx$/i.test(outPath) ? outPath : null,
+      });
+      xlsxPath = exported.dest;
+    }
+    if (wantPdf) {
+      const exported = await exportPdf.writeFromSnapshot(snapshot, {
+        dest: outPath && /\.pdf$/i.test(outPath) ? outPath : null,
+      });
+      pdfPath = exported.dest;
+    }
+    console.log(JSON.stringify({ ...repeat.publicSnapshot(snapshot), xlsx: xlsxPath, pdf: pdfPath }, null, 2));
+  };
+  if ((wantXlsx || wantPdf) && !write && !countyId) {
+    const existing = repeat.loadPrevious();
+    const siteSnap = fs.existsSync(repeat.snapshotPaths().site)
+      ? JSON.parse(fs.readFileSync(repeat.snapshotPaths().site, "utf8"))
+      : existing;
+    if (siteSnap && siteSnap.bothCount) {
+      finish(siteSnap).catch((err) => {
+        console.error(err.message);
+        process.exit(1);
+      });
+      return;
+    }
+  }
+  repeat.run(registry.listCounties(), {
+    ads: adsSnap,
+    previous: repeat.loadPrevious(),
+    countyId,
+  }).then(finish).catch((err) => {
     console.error(err.message);
     process.exit(1);
   });
