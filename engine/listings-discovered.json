@@ -67,5 +67,21 @@
       "source": "wayback-prefix",
       "confirmedAt": "2026-09-16"
     }
+  ],
+  "berkeley": [
+    {
+      "url": "https://web.archive.org/web/20201110023344id_/https://berkeleycountysc.gov/delinquent-tax-sale-list/",
+      "year": 2020,
+      "idCount": 727,
+      "source": "wayback:berkeleycountysc.gov",
+      "confirmedAt": "2026-09-16"
+    },
+    {
+      "url": "https://web.archive.org/web/20221203101514id_/https://berkeleycountysc.gov/real-estate-tax-sale-listing/",
+      "year": 2022,
+      "idCount": 480,
+      "source": "wayback:berkeleycountysc.gov",
+      "confirmedAt": "2026-09-16"
+    }
   ]
 }
