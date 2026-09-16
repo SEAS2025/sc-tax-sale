@@ -1,0 +1,6 @@
+2025 Real Property Tax Sale Listing
+PIN Class Owner Situs Appraisal Assessed Acres Total Due
+1000000001 RES EXAMPLE OWNER A 1 Synthetic Street 100000 4000 0.25 $1,234.56
+1000000002 VAC EXAMPLE OWNER B 2 Synthetic Street 50000 2000 1.10 $890.00
+1000000003 COM EXAMPLE OWNER C 3 Synthetic Street 200000 8000 0.50 $2,100.00
+S.C. Code 30-2-50 prohibits use of this list for commercial solicitation.

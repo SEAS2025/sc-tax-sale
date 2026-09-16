@@ -1,6 +1,7 @@
 "use strict";
 
 const registry = require("./registry");
+const families = require("./families");
 const lexington = require("./adapters/lexington");
 const beaufort = require("./adapters/beaufort");
 const { geocodeLexingtonTms, parseLexingtonTms } = require("./geocode/lexington-tms");
@@ -27,6 +28,7 @@ function getAdapter(countyId) {
 
 module.exports = {
   registry,
+  families,
   adapters,
   getAdapter,
   geocodeLexingtonTms,

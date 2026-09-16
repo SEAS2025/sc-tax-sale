@@ -134,7 +134,7 @@ const RESEARCHED = {
     listingSampleUrl:
       "https://www.charlestoncounty.org/departments/delinquent-tax/files/RP-Tax-Sale-Listing.pdf?v=0",
     notes:
-      "Family county-pdf. 2025 listing PDF uses 10-digit PINs. 2026 sale advertised to begin 9 Nov 2026. PDF cites S.C. Code 30-2-50. No adapter yet. Do not commit the listing.",
+      "Family county-pdf. 2025 listing PDF uses 10-digit PINs. 2026 sale advertised to begin 9 Nov 2026. PDF cites S.C. Code 30-2-50. Ingest extracted text with `ingest charleston`. Do not commit the listing.",
   },
   greenville: {
     status: "researched",
@@ -144,7 +144,7 @@ const RESEARCHED = {
     treasurerUrl: "https://www.greenvillecounty.org/TaxCollector/",
     listingUrl: "https://www.greenvillecounty.org/appsAS400/Taxsale/",
     notes:
-      "Family html-table. Live HTML columns Item #, Map #, Name, Amount Due. Map numbers are 13-digit, sometimes with a letter prefix. HTTP 200 on 16 Sep 2026. No adapter yet. Do not scrape into git.",
+      "Family html-table. Live HTML columns Item #, Map #, Name, Amount Due. Map numbers are 13-digit, sometimes with a letter prefix. HTTP 200 on 16 Sep 2026. Ingest a saved table with `ingest greenville`. Do not scrape into git.",
   },
   horry: {
     status: "researched",
@@ -154,7 +154,7 @@ const RESEARCHED = {
     treasurerUrl:
       "https://www.horrycountysc.gov/departments/treasurer/delinquent-tax/",
     notes:
-      "Family xlsx. Treasurer page (HTTP 200) advertises Delinquent List 08.19.26.xlsx. Column map not recorded; do not commit the spreadsheet.",
+      "Family xlsx. Treasurer page (HTTP 200) advertises Delinquent List 08.19.26.xlsx. Ingest a local workbook with `ingest horry`. Column map is header-based. Do not commit the spreadsheet.",
   },
   bamberg: {
     status: "researched",

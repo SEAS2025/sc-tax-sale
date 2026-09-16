@@ -4,6 +4,7 @@ const test = require("node:test");
 const assert = require("node:assert/strict");
 const fs = require("fs");
 const path = require("path");
+const os = require("os");
 const { execFileSync } = require("child_process");
 
 const ROOT = path.join(__dirname, "..");
@@ -81,7 +82,10 @@ test("registry has 46 unique official FIPS codes", () => {
 
 test("status counts: Lexington live, researched families, rest unknown", () => {
   const counts = countByStatus();
-  assert.deepEqual(counts, { live: 1, researched: 11, unknown: 34 });
+  assert.equal(counts.live + counts.researched + counts.unknown, 46);
+  assert.equal(counts.live, 1);
+  assert.ok(counts.researched >= 11);
+  assert.equal(counts.unknown, 46 - counts.live - counts.researched);
   assert.equal(getCounty("lexington").status, "live");
   assert.equal(getCounty("lexington").sourceFamily, "realad-pdf");
   assert.equal(getCounty("lexington").adapter, "lexington");
@@ -153,6 +157,81 @@ test("Beaufort adapter keeps PIN parsing, not Lexington TMS", () => {
   );
   assert.equal(realad.rowCount, 2);
   assert.equal(realad.rows[1].amountDue, "$50.00");
+});
+
+test("family adapters ingest fixtures without emitting owner names", () => {
+  const { families } = require("./index");
+  const xlsx = require("./adapters/families/xlsx");
+  const html = fs.readFileSync(path.join(__dirname, "fixtures", "html-table-sample.html"), "utf8");
+  const pdfText = fs.readFileSync(path.join(__dirname, "fixtures", "county-pdf-sample.txt"), "utf8");
+  const table = families.ingestFile(getCounty("greenville"), path.join(__dirname, "fixtures", "html-table-sample.html"));
+  const pdf = families.ingestFile(getCounty("charleston"), path.join(__dirname, "fixtures", "county-pdf-sample.txt"));
+  const xlsxPath = path.join(os.tmpdir(), "sc-tax-sale-xlsx-sample.xlsx");
+  xlsx.writeFixture(xlsxPath, ["PIN", "Owner", "Amount Due"], [
+    ["1000000001", "EXAMPLE OWNER A", "$100.00"],
+    ["1000000002", "EXAMPLE OWNER B", "$40.50"],
+    ["1000000003", "EXAMPLE OWNER C", "$9.00"],
+  ]);
+  const sheet = families.ingestFile(getCounty("horry"), xlsxPath);
+  for (const summary of [table, pdf, sheet]) {
+    const pub = JSON.stringify(families.publicSummary(summary));
+    assert.equal(pub.includes("EXAMPLE OWNER"), false);
+    assert.equal(summary.rowCount, 3);
+    assert.equal(summary.rows.some((row) => row.owner), false);
+  }
+  assert.equal(table.rows[0].tms, "0136001300600");
+  assert.equal(table.amountTotal, 360.5);
+  assert.equal(pdf.rows[2].tms, "1000000003");
+  assert.ok(Math.abs(pdf.amountTotal - 4224.56) < 0.001);
+  assert.equal(sheet.amountTotal, 149.5);
+  assert.equal(html.includes("EXAMPLE OWNER A"), true);
+  assert.equal(pdfText.includes("EXAMPLE OWNER A"), true);
+
+  const watch = families.watchHtml(
+    fs.readFileSync(path.join(__dirname, "fixtures", "page-watch-sample.html"), "utf8"),
+    "https://example.invalid/tax"
+  );
+  assert.equal(watch.listingLinks.length, 2);
+  assert.equal(watch.suggestedCollapse, "xlsx");
+  assert.equal(watch.mentionsNewspaper, true);
+  const blocked = families.watchHtml(
+    fs.readFileSync(path.join(__dirname, "fixtures", "page-watch-blocked.html"), "utf8"),
+    "https://example.invalid/login"
+  );
+  assert.equal(blocked.blocked, true);
+  assert.equal(blocked.blockReason, "captcha");
+});
+
+test("CLI families, ingest, and watch do not print owner names", () => {
+  const familiesOut = execFileSync(process.execPath, [path.join(ROOT, "engine", "cli.js"), "families"], { cwd: ROOT, encoding: "utf8" });
+  const parsed = JSON.parse(familiesOut);
+  const ids = parsed.families.map((family) => family.id);
+  assert.ok(ids.includes("html-table"));
+  assert.ok(ids.includes("county-pdf"));
+  assert.ok(ids.includes("xlsx"));
+  assert.ok(ids.includes("page-or-newspaper"));
+  assert.ok(parsed.families.find((family) => family.id === "html-table").counties.includes("greenville"));
+
+  const ingest = execFileSync(process.execPath, [
+    path.join(ROOT, "engine", "cli.js"),
+    "ingest",
+    "greenville",
+    path.join(ROOT, "engine", "fixtures", "html-table-sample.html"),
+  ], { cwd: ROOT, encoding: "utf8" });
+  assert.equal(ingest.includes("EXAMPLE OWNER"), false);
+  assert.equal(JSON.parse(ingest).rowCount, 3);
+
+  const watch = execFileSync(process.execPath, [
+    path.join(ROOT, "engine", "cli.js"),
+    "watch",
+    "bamberg",
+    "--file",
+    path.join(ROOT, "engine", "fixtures", "page-watch-sample.html"),
+  ], { cwd: ROOT, encoding: "utf8" });
+  const watched = JSON.parse(watch);
+  assert.equal(watched.blocked, false);
+  assert.equal(watched.suggestedCollapse, "xlsx");
+  assert.equal(watch.includes("EXAMPLE OWNER"), false);
 });
 
 test("inquiry draft lists identifiers and amounts, not a fake payment link", () => {

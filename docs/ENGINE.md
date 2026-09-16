@@ -14,7 +14,17 @@ node engine/cli.js parse-beaufort-text 2022 path/to/extracted.txt
 node engine/cli.js inquiry beaufort path/to/local.csv 10
 ```
 
-`parse-csv` prints counts and totals only. It does not print owner names. Do not commit treasurer CSVs or PDFs. `out/` is gitignored.
+`parse-csv` and `ingest` print counts and totals only. They do not print owner names. Do not commit treasurer CSVs, spreadsheets, or PDFs. `out/`, `inbox/`, and `.crawl-html/` are gitignored.
+
+```bash
+node engine/cli.js families
+node engine/cli.js ingest greenville path/to/local.html
+node engine/cli.js ingest charleston path/to/extracted.txt
+node engine/cli.js ingest horry path/to/local.xlsx
+node engine/cli.js watch bamberg --file path/to/saved-page.html
+```
+
+`ingest` picks the adapter from `sourceFamily` (`html-table`, `county-pdf`, `xlsx`, `realad-pdf`). `county-pdf` reads extracted text, not the PDF binary. `watch` looks for listing links on a local HTML file or the county `treasurerUrl`. It does not download sale files. A login wall or captcha is recorded as blocked.
 
 ## Lexington
 
@@ -43,5 +53,5 @@ There is no statewide feed. See `docs/COVERAGE.md`. Ingest by source family (`re
 | Status | Meaning here |
 | --- | --- |
 | live | Adapter plus verified official pages. Lexington only. The sale file is not stored in git. |
-| researched | Official pages and a local parser. Beaufort only. Not a live feed. |
+| researched | Official page and source family verified. A family adapter may exist. Not a redistributed sale file. |
 | unknown | Name, FIPS, and census center only. |

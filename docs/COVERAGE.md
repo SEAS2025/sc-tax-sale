@@ -84,8 +84,8 @@ New counties add a normalizer in `engine/ids/`, not a new product.
 
 ## Order of work (effort, not politics)
 
-1. **Family adapters** for `html-table`, `county-pdf`, `xlsx` — three parsers, not forty-four.
-2. **Greenville, Charleston, Horry next.** Lists exist in those three families *now*. That is the proof the family model works.
+1. **Family adapters** for `html-table`, `county-pdf` (text extract), `xlsx`, and `page-watch` are in `engine/adapters/families/`. CLI: `families`, `ingest`, `watch`.
+2. **Greenville, Charleston, Horry** are the proof counties for those ingest families. Do not store their live listings in git.
 3. **CivicPlus watcher** for Spartanburg / Lancaster / Dorchester / Sumter / Bamberg as their 2026 ads open.
 4. **REALAD PDF** counties as treasurers post Dropbox/PDFs (Beaufort pattern).
 5. **Newspaper OCR** last, for counties that never put a file on the website.
