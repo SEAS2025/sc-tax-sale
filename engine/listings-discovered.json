@@ -83,5 +83,21 @@
       "source": "wayback:berkeleycountysc.gov",
       "confirmedAt": "2026-09-16"
     }
+  ],
+  "clarendon": [
+    {
+      "url": "https://web.archive.org/web/20241108200109id_/https://www.clarendoncountygov.org/wp-content/uploads/2024/10/2024-Notice-of-Delinquent-Tax-Sale.pdf",
+      "year": 2024,
+      "idCount": 667,
+      "source": "wayback:clarendoncountygov.org",
+      "confirmedAt": "2026-09-16"
+    },
+    {
+      "url": "https://web.archive.org/web/20241201194756id_/https://www.clarendoncountygov.org/wp-content/uploads/2024/11/2024-Notice-of-Delinquent-Tax-Sale-Week-3.pdf",
+      "year": 2024,
+      "idCount": 692,
+      "source": "wayback:clarendoncountygov.org",
+      "confirmedAt": "2026-09-16"
+    }
   ]
 }
