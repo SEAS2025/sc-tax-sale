@@ -36,6 +36,10 @@ Lexington (live) and Beaufort (parser ready). Text extract, then a layout-specif
 
 2026 Charleston sale is advertised to begin 9 November 2026; the 2025 PDF is the layout sample.
 
+**Georgetown** (browsed 16 Sep 2026) posts a 2025 list at `https://www.gtcountysc.gov/DocumentCenter/View/3625` from [Tax Sale](https://www.gtcountysc.gov/408/Tax-Sale). Headers include `TaxMapNumber` (dashed, like `01-0117-008-00-00`) and `CountyItemNumber`. Not the Charleston 10-digit layout. PDF not stored.
+
+**Cherokee** links a one-page scan, `https://cherokeecountysc.gov/wp-content/uploads/2026/08/TAX-SALE-TAB.pdf`, from [Delinquent Tax](https://cherokeecountysc.gov/delinquent-tax/). No text layer, so it was not parsed.
+
 ### 4. `xlsx` — spreadsheet download
 
 **Horry** treasurer page `https://www.horrycountysc.gov/departments/treasurer/delinquent-tax/` (HTTP 200) advertises `Delinquent List 08.19.26.xlsx`. One sheet-to-canonical adapter covers every county that uses Excel. Column names will still need a per-file map the first time.
@@ -56,6 +60,8 @@ The county page is real, but the file is missing, behind bidder registration, or
 | Aiken | [Delinquent Tax Sale](https://www.aikencountysc.gov/309/Delinquent-Tax-Sale) | 2 Nov 2026; Aiken Standard; bidder instructions PDF, no parcel list |
 | Anderson | [Tax Sale](https://www.andersoncountysc.org/tax-sale/) | 19 Oct 2026; listings promised from 30 Sep 2026; 2025 FLC PDFs posted |
 | Abbeville | [Delinquent Tax Collector](https://abbevillecountysc.com/delinquent-tax-collector/) | First Monday in November; The Press and Banner |
+| Calhoun | [Tax Collector](https://calhouncounty.sc.gov/departments/tax-collector) | Office conducts sales. No current file. |
+| York | [Tax Collection](https://www.yorkcountysc.gov/216/Tax-Collection) | Sale 12 Oct 2026. 2025 Experience Builder dashboard linked from the page. |
 
 These counties need a **page watcher**, not a parser, until a file appears. Then they collapse into family 2, 3, or 4.
 

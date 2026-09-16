@@ -1,0 +1,383 @@
+{
+  "id": "anderson",
+  "browsedAt": "2026-09-16T17:18:18.599Z",
+  "seedUrls": [
+    "https://www.andersoncountysc.org"
+  ],
+  "seedSource": "https://www.sccounties.org/county-information",
+  "pages": [
+    {
+      "url": "https://www.andersoncountysc.org",
+      "finalUrl": "https://www.andersoncountysc.org/",
+      "status": 200,
+      "title": "Experience, Excel, Enjoy - Anderson County South Carolina",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": [
+        {
+          "headers": [
+            "S SUNDAY",
+            "M MONDAY",
+            "T TUESDAY",
+            "W WEDNESDAY",
+            "T THURSDAY",
+            "F FRIDAY",
+            "S SATURDAY"
+          ],
+          "rowCount": 6
+        }
+      ]
+    },
+    {
+      "url": "https://www.andersoncountysc.org/departments-a-z/treasurer/",
+      "finalUrl": "https://www.andersoncountysc.org/departments-a-z/treasurer/",
+      "status": 200,
+      "title": "Treasurer and Taxable Assets - Anderson County South Carolina",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.andersoncountysc.org/tax-sale/",
+      "finalUrl": "https://www.andersoncountysc.org/http-anderson-postingpro-net-agreement-aspxstscpy2021cid4acceptscookies1/",
+      "status": 200,
+      "title": "Tax Sale - Anderson County South Carolina",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [
+        "October 19, 2026",
+        "September 30, 2026"
+      ],
+      "tables": []
+    },
+    {
+      "url": "https://www.andersoncountysc.org/",
+      "finalUrl": "https://www.andersoncountysc.org/",
+      "status": 200,
+      "title": "Experience, Excel, Enjoy - Anderson County South Carolina",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": [
+        {
+          "headers": [
+            "S SUNDAY",
+            "M MONDAY",
+            "T TUESDAY",
+            "W WEDNESDAY",
+            "T THURSDAY",
+            "F FRIDAY",
+            "S SATURDAY"
+          ],
+          "rowCount": 6
+        }
+      ]
+    },
+    {
+      "url": "https://www.andersoncountysc.org/departments-a-z/accessibility/",
+      "finalUrl": "https://www.andersoncountysc.org/departments-a-z/accessibility/",
+      "status": 200,
+      "title": "Accessibility and ADA - Anderson County South Carolina",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [
+        "March 15, 2016"
+      ],
+      "tables": []
+    },
+    {
+      "url": "https://www.andersoncountysc.org/departments-a-z/anderson-county-transportation-committee/",
+      "finalUrl": "https://www.andersoncountysc.org/departments-a-z/actc/",
+      "status": 200,
+      "title": "Anderson County Transportation Committee - Anderson County",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.andersoncountysc.org/departments-a-z/assessor/",
+      "finalUrl": "https://www.andersoncountysc.org/departments-a-z/assessor/",
+      "status": 200,
+      "title": "Assessor and Real Property - Anderson County South Carolina",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": [
+        {
+          "headers": [],
+          "rowCount": 10
+        },
+        {
+          "headers": [],
+          "rowCount": 9
+        },
+        {
+          "headers": [],
+          "rowCount": 5
+        },
+        {
+          "headers": [],
+          "rowCount": 5
+        },
+        {
+          "headers": [],
+          "rowCount": 7
+        }
+      ]
+    },
+    {
+      "url": "https://www.andersoncountysc.org/departments-a-z/auditor/",
+      "finalUrl": "https://www.andersoncountysc.org/departments-a-z/auditor/",
+      "status": 200,
+      "title": "Auditor and Tax Information - Anderson County South Carolina",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://acpass.andersoncountysc.org/paymytax.htm",
+      "finalUrl": "https://acpass.andersoncountysc.org/loginreg3/login.php",
+      "status": 200,
+      "title": "Login Form",
+      "blocked": true,
+      "blockReason": "login",
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://acpass.andersoncountysc.org/indexp.htm",
+      "finalUrl": "https://acpass.andersoncountysc.org/indexp.htm",
+      "status": 200,
+      "title": "Anderson County Public Access: Disclaimer",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": [
+        {
+          "headers": [],
+          "rowCount": 3
+        },
+        {
+          "headers": [],
+          "rowCount": 13
+        },
+        {
+          "headers": [],
+          "rowCount": 8
+        }
+      ]
+    }
+  ],
+  "candidateLinks": [
+    {
+      "text": "4% Tax Assessment",
+      "href": "https://www.andersoncountysc.org/departments-a-z/assessor/",
+      "kind": "html",
+      "foundOn": "https://www.andersoncountysc.org/"
+    },
+    {
+      "text": "Tax Sale",
+      "href": "https://www.andersoncountysc.org/departments-a-z/treasurer/",
+      "kind": "html",
+      "foundOn": "https://www.andersoncountysc.org/"
+    },
+    {
+      "text": "My taxes",
+      "href": "https://acpass.andersoncountysc.org/paymytax.htm",
+      "kind": "html",
+      "foundOn": "https://www.andersoncountysc.org/"
+    },
+    {
+      "text": "Pay My Taxes",
+      "href": "https://acpass.andersoncountysc.org/indexp.htm",
+      "kind": "html",
+      "foundOn": "https://www.andersoncountysc.org/"
+    },
+    {
+      "text": "2026 Tax Sale Information",
+      "href": "https://www.andersoncountysc.org/tax-sale/",
+      "kind": "html",
+      "foundOn": "https://www.andersoncountysc.org/"
+    },
+    {
+      "text": "ATAX Committee Meeting",
+      "href": "https://www.andersoncountysc.org/event/atax-committee-meeting-2/",
+      "kind": "html",
+      "foundOn": "https://www.andersoncountysc.org/"
+    },
+    {
+      "text": "2026 Tax Sale FAQ",
+      "href": "https://www.andersoncountysc.org/wp-content/uploads/2026/09/2026-FAQ.pdf",
+      "kind": "pdf",
+      "foundOn": "https://www.andersoncountysc.org/http-anderson-postingpro-net-agreement-aspxstscpy2021cid4acceptscookies1/"
+    },
+    {
+      "text": "2025 FLC Real Estate Listing",
+      "href": "https://www.andersoncountysc.org/wp-content/uploads/2026/09/2025-FLC-RE.pdf",
+      "kind": "pdf",
+      "foundOn": "https://www.andersoncountysc.org/http-anderson-postingpro-net-agreement-aspxstscpy2021cid4acceptscookies1/"
+    },
+    {
+      "text": "2025 FLC Mobile Home Listing",
+      "href": "https://www.andersoncountysc.org/wp-content/uploads/2026/09/2025-FLC-MH.pdf",
+      "kind": "pdf",
+      "foundOn": "https://www.andersoncountysc.org/http-anderson-postingpro-net-agreement-aspxstscpy2021cid4acceptscookies1/"
+    },
+    {
+      "text": "Property Tax Estimator",
+      "href": "http://acpass.andersoncountysc.org/taxestbld.cgi",
+      "kind": "html",
+      "foundOn": "https://www.andersoncountysc.org/departments-a-z/assessor/"
+    },
+    {
+      "text": "2024 Rollback Book- Provided as an estimate Only",
+      "href": "https://www.andersoncountysc.org/wp-content/uploads/2025/02/AG-PROPERTY-LISTING-2024.pdf",
+      "kind": "pdf",
+      "foundOn": "https://www.andersoncountysc.org/departments-a-z/assessor/"
+    },
+    {
+      "text": "Property Tax Exemption Application for Individuals (PT-401-I)",
+      "href": "https://www.andersoncountysc.org/wp-content/uploads/2022/10/Property-Tax-Exemption_PT401I-Form.pdf",
+      "kind": "pdf",
+      "foundOn": "https://www.andersoncountysc.org/departments-a-z/auditor/"
+    },
+    {
+      "text": "Property Tax Exemption Application for Organizations (PT-401-O)",
+      "href": "https://www.andersoncountysc.org/wp-content/uploads/2022/10/Property-Tax-Exemption-Application_PT401O-Form.pdf",
+      "kind": "pdf",
+      "foundOn": "https://www.andersoncountysc.org/departments-a-z/auditor/"
+    },
+    {
+      "text": "2023 Tax Levy Sheet",
+      "href": "https://www.andersoncountysc.org/wp-content/uploads/2023/10/Anderson-County-2023-Levy-Sheet.pdf",
+      "kind": "pdf",
+      "foundOn": "https://www.andersoncountysc.org/departments-a-z/auditor/"
+    },
+    {
+      "text": "2022 Tax Levy Sheet",
+      "href": "https://www.andersoncountysc.org/wp-content/uploads/2022/10/Anderson-County-2022-Levy-Sheet.pdf",
+      "kind": "pdf",
+      "foundOn": "https://www.andersoncountysc.org/departments-a-z/auditor/"
+    },
+    {
+      "text": "2021 Tax Levy Sheet",
+      "href": "https://www.andersoncountysc.org/wp-content/uploads/2021/11/Levy-Sheet-2021.pdf",
+      "kind": "pdf",
+      "foundOn": "https://www.andersoncountysc.org/departments-a-z/auditor/"
+    },
+    {
+      "text": "2020 Tax Levy Sheet",
+      "href": "https://www.andersoncountysc.org/wp-content/uploads/2021/02/Levy-Sheet-2020.pdf",
+      "kind": "pdf",
+      "foundOn": "https://www.andersoncountysc.org/departments-a-z/auditor/"
+    },
+    {
+      "text": "2019 Tax Levy Sheet",
+      "href": "https://www.andersoncountysc.org/wp-content/uploads/2021/02/Levy-Sheet-2019.pdf",
+      "kind": "pdf",
+      "foundOn": "https://www.andersoncountysc.org/departments-a-z/auditor/"
+    },
+    {
+      "text": "2018 Tax Levy Sheet",
+      "href": "https://www.andersoncountysc.org/wp-content/uploads/2021/02/2018-tax-levy-sheet.pdf",
+      "kind": "pdf",
+      "foundOn": "https://www.andersoncountysc.org/departments-a-z/auditor/"
+    },
+    {
+      "text": "2017 Tax Levy Sheet",
+      "href": "https://www.andersoncountysc.org/wp-content/uploads/2021/02/2017-tax-levy-sheet.pdf",
+      "kind": "pdf",
+      "foundOn": "https://www.andersoncountysc.org/departments-a-z/auditor/"
+    },
+    {
+      "text": "2016 Tax Levy Sheet",
+      "href": "https://www.andersoncountysc.org/wp-content/uploads/2021/02/2016-tax-levy-sheet.pdf",
+      "kind": "pdf",
+      "foundOn": "https://www.andersoncountysc.org/departments-a-z/auditor/"
+    },
+    {
+      "text": "2015 Tax Levy Sheet",
+      "href": "https://www.andersoncountysc.org/wp-content/uploads/2021/02/2015-tax-levy-sheet.pdf",
+      "kind": "pdf",
+      "foundOn": "https://www.andersoncountysc.org/departments-a-z/auditor/"
+    },
+    {
+      "text": "2014 Tax Levy Sheet",
+      "href": "https://www.andersoncountysc.org/wp-content/uploads/2021/02/2014-tax-levy-sheet.pdf",
+      "kind": "pdf",
+      "foundOn": "https://www.andersoncountysc.org/departments-a-z/auditor/"
+    }
+  ],
+  "followed": [
+    {
+      "url": "https://acpass.andersoncountysc.org/loginreg3/login.php",
+      "blocked": true,
+      "blockReason": "login",
+      "title": "Login Form",
+      "saleDates": []
+    },
+    {
+      "url": "https://acpass.andersoncountysc.org/indexp.htm",
+      "blocked": false,
+      "blockReason": null,
+      "title": "Anderson County Public Access: Disclaimer",
+      "saleDates": []
+    }
+  ],
+  "blocked": [],
+  "arcgis": [],
+  "qpublic": [],
+  "wayback": [
+    {
+      "error": "The operation was aborted due to timeout"
+    }
+  ],
+  "suggestedFamily": "county-pdf",
+  "treasurerUrl": "https://www.andersoncountysc.org/departments-a-z/treasurer/",
+  "listingSampleUrl": "https://www.andersoncountysc.org/wp-content/uploads/2026/09/2026-FAQ.pdf",
+  "notes": "23 listing-like link(s)."
+}

@@ -1,0 +1,433 @@
+{
+  "id": "georgetown",
+  "browsedAt": "2026-09-16T17:20:49.944Z",
+  "seedUrls": [
+    "http://www.gtcountysc.gov"
+  ],
+  "seedSource": "https://www.sccounties.org/county-information",
+  "pages": [
+    {
+      "url": "http://www.gtcountysc.gov",
+      "finalUrl": "https://www.gtcountysc.gov/",
+      "status": 200,
+      "title": "Georgetown County, SC | Official Website",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": true,
+      "saleDates": [],
+      "tables": [
+        {
+          "headers": [
+            "SUN",
+            "MON",
+            "TUE",
+            "WED",
+            "THU",
+            "FRI",
+            "SAT"
+          ],
+          "rowCount": 6
+        }
+      ]
+    },
+    {
+      "url": "https://www.gtcountysc.gov/286/Tax-Collector",
+      "finalUrl": "https://www.gtcountysc.gov/286/Tax-Collector",
+      "status": 200,
+      "title": "Tax Collector | Georgetown County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": true,
+      "civicplus": true,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.gtcountysc.gov/415/Forfeited-Land-Commission",
+      "finalUrl": "https://www.gtcountysc.gov/415/Forfeited-Land-Commission",
+      "status": 200,
+      "title": "Forfeited Land Commission | Georgetown County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": true,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.gtcountysc.gov/27/Departments",
+      "finalUrl": "https://www.gtcountysc.gov/27/Departments",
+      "status": 200,
+      "title": "Departments | Georgetown County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": true,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.gtcountysc.gov/list.aspx",
+      "finalUrl": "https://www.gtcountysc.gov/list.aspx",
+      "status": 200,
+      "title": "Notify Me • Georgetown County, SC • CivicEngage",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": true,
+      "saleDates": [],
+      "tables": [
+        {
+          "headers": [
+            "METHOD",
+            "LIST NAME",
+            "DESCRIPTION"
+          ],
+          "rowCount": 11
+        },
+        {
+          "headers": [
+            "METHOD",
+            "LIST NAME",
+            "DESCRIPTION"
+          ],
+          "rowCount": 2
+        },
+        {
+          "headers": [
+            "METHOD",
+            "LIST NAME",
+            "DESCRIPTION"
+          ],
+          "rowCount": 29
+        },
+        {
+          "headers": [
+            "METHOD",
+            "LIST NAME",
+            "DESCRIPTION"
+          ],
+          "rowCount": 2
+        },
+        {
+          "headers": [
+            "METHOD",
+            "LIST NAME",
+            "DESCRIPTION"
+          ],
+          "rowCount": 30
+        }
+      ]
+    },
+    {
+      "url": "https://www.gtcountysc.gov/CivicAlerts.aspx?CID=1",
+      "finalUrl": "https://www.gtcountysc.gov/m/newsflash?cat=1",
+      "status": 200,
+      "title": "News Flash • Georgetown County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": true,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "http://www.gtcountysc.gov/Search/Results?searchPhrase=tax+sale",
+      "finalUrl": "https://www.gtcountysc.gov/Search/Results?searchPhrase=tax+sale",
+      "status": 200,
+      "title": null,
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": true,
+      "saleDates": [
+        "November 3, 2025"
+      ],
+      "tables": []
+    },
+    {
+      "url": "https://www.gtcountysc.gov/254/Tax-Services-Information",
+      "finalUrl": "https://www.gtcountysc.gov/254/Tax-Services-Information",
+      "status": 200,
+      "title": "Tax Services & Information | Georgetown County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": true,
+      "civicplus": true,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.gtcountysc.gov/CivicAlerts.aspx?AID=759",
+      "finalUrl": "https://www.gtcountysc.gov/m/newsflash/home/detail/759",
+      "status": 200,
+      "title": "Application period for A-Tax grants opens Saturday • Georgetown County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": true,
+      "civicplus": true,
+      "saleDates": [
+        "August 08, 2026",
+        "August 12, 2026"
+      ],
+      "tables": []
+    },
+    {
+      "url": "https://www.gtcountysc.gov/CivicAlerts.aspx?AID=763",
+      "finalUrl": "https://www.gtcountysc.gov/m/newsflash/home/detail/763",
+      "status": 200,
+      "title": "Local Option Sales Tax referendum headed to November ballot • Georgetown County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": true,
+      "saleDates": [
+        "August 12, 2026"
+      ],
+      "tables": []
+    }
+  ],
+  "candidateLinks": [
+    {
+      "text": "Tax Collector",
+      "href": "https://www.gtcountysc.gov/286/Tax-Collector",
+      "kind": "html",
+      "foundOn": "https://www.gtcountysc.gov/"
+    },
+    {
+      "text": "Forfeited Land Commission",
+      "href": "https://www.gtcountysc.gov/415/Forfeited-Land-Commission",
+      "kind": "html",
+      "foundOn": "https://www.gtcountysc.gov/"
+    },
+    {
+      "text": "Tax Services",
+      "href": "https://www.gtcountysc.gov/254/Tax-Services-Information",
+      "kind": "html",
+      "foundOn": "https://www.gtcountysc.gov/"
+    },
+    {
+      "text": "Application period for A-Tax grants opens Saturday",
+      "href": "https://www.gtcountysc.gov/CivicAlerts.aspx?AID=759",
+      "kind": "aspx",
+      "foundOn": "https://www.gtcountysc.gov/"
+    },
+    {
+      "text": "Local Option Sales Tax referendum headed to November ballot",
+      "href": "https://www.gtcountysc.gov/CivicAlerts.aspx?AID=763",
+      "kind": "aspx",
+      "foundOn": "https://www.gtcountysc.gov/"
+    },
+    {
+      "text": "Application period for A-Tax grants opens tomorrow",
+      "href": "https://www.gtcountysc.gov/CivicAlerts.aspx?AID=760",
+      "kind": "aspx",
+      "foundOn": "https://www.gtcountysc.gov/"
+    },
+    {
+      "text": "Tax Sale",
+      "href": "https://www.gtcountysc.gov/408/Tax-Sale",
+      "kind": "html",
+      "foundOn": "https://www.gtcountysc.gov/286/Tax-Collector"
+    },
+    {
+      "text": "Visit the Georgetown County tax website",
+      "href": "https://georgetowncountysctax.com/#/",
+      "kind": "html",
+      "foundOn": "https://www.gtcountysc.gov/286/Tax-Collector"
+    },
+    {
+      "text": "Contact the Tax Collector",
+      "href": "https://www.gtcountysc.gov/formcenter/Contact-Us-24/Contact-Us-80",
+      "kind": "html",
+      "foundOn": "https://www.gtcountysc.gov/286/Tax-Collector"
+    },
+    {
+      "text": "Foreclosure Sales",
+      "href": "https://www.gtcountysc.gov/223/Foreclosure-Sales",
+      "kind": "html",
+      "foundOn": "https://www.gtcountysc.gov/27/Departments"
+    },
+    {
+      "text": "Incentives and Taxes",
+      "href": "https://www.gtcountysc.gov/480/Incentives-and-Taxes",
+      "kind": "html",
+      "foundOn": "https://www.gtcountysc.gov/27/Departments"
+    },
+    {
+      "text": "Local Accommodations & Hospitality Tax Reporting",
+      "href": "https://www.gtcountysc.gov/351/Hospitality-Accommodations-Tax",
+      "kind": "html",
+      "foundOn": "https://www.gtcountysc.gov/27/Departments"
+    },
+    {
+      "text": "State Accommodations Tax Grants",
+      "href": "https://www.gtcountysc.gov/282/State-Accommodations-Tax-Grants",
+      "kind": "html",
+      "foundOn": "https://www.gtcountysc.gov/27/Departments"
+    },
+    {
+      "text": "Capital Projects Sales Tax (CPST)",
+      "href": "https://www.gtcountysc.gov/442/Capital-Projects-Sales-Tax-CPST",
+      "kind": "html",
+      "foundOn": "https://www.gtcountysc.gov/27/Departments"
+    },
+    {
+      "text": "Tax Services & Information Submenu",
+      "href": "https://www.gtcountysc.gov/27/Departments#",
+      "kind": "html",
+      "foundOn": "https://www.gtcountysc.gov/27/Departments"
+    },
+    {
+      "text": "Tax Information",
+      "href": "https://www.gtcountysc.gov/434/Tax-Information",
+      "kind": "html",
+      "foundOn": "https://www.gtcountysc.gov/27/Departments"
+    },
+    {
+      "text": "Tax Relief & Exemptions",
+      "href": "https://www.gtcountysc.gov/279/Tax-Relief-Exemptions",
+      "kind": "html",
+      "foundOn": "https://www.gtcountysc.gov/27/Departments"
+    },
+    {
+      "text": "Property Tax Calculator",
+      "href": "https://www.gtcountysc.gov/385/Property-Tax-Calculator",
+      "kind": "html",
+      "foundOn": "https://www.gtcountysc.gov/27/Departments"
+    },
+    {
+      "text": "Local Option Sales Tax referendum headed to November ballot",
+      "href": "https://www.gtcountysc.gov/m/newsflash/Home/Detail/763",
+      "kind": "html",
+      "foundOn": "https://www.gtcountysc.gov/m/newsflash?cat=1"
+    },
+    {
+      "text": "Application period for A-Tax grants opens tomorrow",
+      "href": "https://www.gtcountysc.gov/m/newsflash/Home/Detail/760",
+      "kind": "html",
+      "foundOn": "https://www.gtcountysc.gov/m/newsflash?cat=1"
+    },
+    {
+      "text": "www.gtcountysc.gov/atax",
+      "href": "https://www.gtcountysc.gov/atax",
+      "kind": "html",
+      "foundOn": "https://www.gtcountysc.gov/m/newsflash?cat=1"
+    },
+    {
+      "text": "Application period for A-Tax grants opens Saturday",
+      "href": "https://www.gtcountysc.gov/m/newsflash/Home/Detail/759",
+      "kind": "html",
+      "foundOn": "https://www.gtcountysc.gov/m/newsflash?cat=1"
+    },
+    {
+      "text": "Forfeited Land Commission",
+      "href": "https://www.gtcountysc.gov/415/forfeited-land-commission",
+      "kind": "html",
+      "foundOn": "https://www.gtcountysc.gov/Search/Results?searchPhrase=tax+sale"
+    },
+    {
+      "text": "Properties Sold at Tax Sale 2024 (PDF)",
+      "href": "https://www.gtcountysc.gov/DocumentCenter/View/3882",
+      "kind": "html",
+      "foundOn": "https://www.gtcountysc.gov/Search/Results?searchPhrase=tax+sale"
+    },
+    {
+      "text": "Tax Sale Policy and Procedures (PDF)",
+      "href": "https://www.gtcountysc.gov/DocumentCenter/View/1382",
+      "kind": "html",
+      "foundOn": "https://www.gtcountysc.gov/Search/Results?searchPhrase=tax+sale"
+    },
+    {
+      "text": "How much would I save on my property taxes if the LOST were passed?",
+      "href": "https://www.gtcountysc.gov/m/FAQ#question-468",
+      "kind": "html",
+      "foundOn": "https://www.gtcountysc.gov/Search/Results?searchPhrase=tax+sale"
+    },
+    {
+      "text": "Properties Sold At Tax Sale 11-03-2025 (PDF)",
+      "href": "https://www.gtcountysc.gov/DocumentCenter/View/3796",
+      "kind": "html",
+      "foundOn": "https://www.gtcountysc.gov/Search/Results?searchPhrase=tax+sale"
+    },
+    {
+      "text": "2025 Tax Sale List (PDF)",
+      "href": "https://www.gtcountysc.gov/DocumentCenter/View/3625",
+      "kind": "html",
+      "foundOn": "https://www.gtcountysc.gov/Search/Results?searchPhrase=tax+sale"
+    },
+    {
+      "text": "Proposed Taxes for 2024 Referendum",
+      "href": "https://www.gtcountysc.gov/440/proposed-taxes-for-2024-referendum",
+      "kind": "html",
+      "foundOn": "https://www.gtcountysc.gov/Search/Results?searchPhrase=tax+sale"
+    }
+  ],
+  "followed": [
+    {
+      "url": "https://www.gtcountysc.gov/254/Tax-Services-Information",
+      "blocked": false,
+      "blockReason": null,
+      "title": "Tax Services & Information | Georgetown County, SC",
+      "saleDates": []
+    },
+    {
+      "url": "https://www.gtcountysc.gov/m/newsflash/home/detail/759",
+      "blocked": false,
+      "blockReason": null,
+      "title": "Application period for A-Tax grants opens Saturday • Georgetown County, SC",
+      "saleDates": [
+        "August 08, 2026",
+        "August 12, 2026"
+      ]
+    },
+    {
+      "url": "https://www.gtcountysc.gov/m/newsflash/home/detail/763",
+      "blocked": false,
+      "blockReason": null,
+      "title": "Local Option Sales Tax referendum headed to November ballot • Georgetown County, SC",
+      "saleDates": [
+        "August 12, 2026"
+      ]
+    }
+  ],
+  "blocked": [],
+  "arcgis": [],
+  "qpublic": [
+    {
+      "text": "Search Property Records",
+      "href": "https://www.qpublic.net/sc/georgetown/",
+      "note": "Assessor lookup, not a sale list. Not scraped."
+    }
+  ],
+  "wayback": [
+    {
+      "error": "wayback HTTP 503"
+    }
+  ],
+  "suggestedFamily": "page-or-newspaper",
+  "treasurerUrl": "https://www.gtcountysc.gov/286/Tax-Collector",
+  "listingSampleUrl": null,
+  "notes": "qPublic/Beacon link seen; not used as the sale universe. 29 listing-like link(s)."
+}

@@ -1,0 +1,337 @@
+{
+  "id": "cherokee",
+  "browsedAt": "2026-09-16T17:19:47.739Z",
+  "seedUrls": [
+    "https://www.cherokeecountysc.gov"
+  ],
+  "seedSource": "https://www.sccounties.org/county-information",
+  "pages": [
+    {
+      "url": "https://www.cherokeecountysc.gov",
+      "finalUrl": "https://cherokeecountysc.gov/",
+      "status": 200,
+      "title": "Cherokee County",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://cherokeecountysc.gov/delinquent-tax/",
+      "finalUrl": "https://cherokeecountysc.gov/delinquent-tax/",
+      "status": 200,
+      "title": "Delinquent Tax | Cherokee County",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://cherokeecountysc.gov/delinquent-tax/tax-collection-and-tax-sale-procedures/",
+      "finalUrl": "https://cherokeecountysc.gov/delinquent-tax/tax-collection-and-tax-sale-procedures/",
+      "status": 200,
+      "title": "Tax Collection and Tax Sale Procedures | Cherokee County",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": [
+        {
+          "headers": [
+            "Month of Redemption Period Property Redeemed",
+            "Interest"
+          ],
+          "rowCount": 5
+        }
+      ]
+    },
+    {
+      "url": "https://cherokeecountysc.gov/treasurer/",
+      "finalUrl": "https://cherokeecountysc.gov/treasurer/",
+      "status": 200,
+      "title": "Treasurer | Cherokee County",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [
+        "January 15, 2026",
+        "February 2, 2026",
+        "March 16, 2026"
+      ],
+      "tables": []
+    },
+    {
+      "url": "https://cherokeecountysc.gov/county-council-administration/meeting-agendas-approved-minutes/",
+      "finalUrl": "https://cherokeecountysc.gov/county-council-administration/meeting-agendas-approved-minutes/",
+      "status": 200,
+      "title": "Meeting Agendas & Approved Minutes | Cherokee County",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [
+        "January 5, 2026",
+        "January 20, 2026",
+        "February 5, 2026",
+        "February 17, 2026",
+        "March 2, 2026",
+        "March 16, 2026"
+      ],
+      "tables": [
+        {
+          "headers": [
+            "Agenda",
+            "Meeting Minutes"
+          ],
+          "rowCount": 25
+        },
+        {
+          "headers": [
+            "Agenda",
+            "Meeting Minutes"
+          ],
+          "rowCount": 29
+        },
+        {
+          "headers": [
+            "Agenda",
+            "Meeting Minutes"
+          ],
+          "rowCount": 35
+        },
+        {
+          "headers": [
+            "Agenda",
+            "Meeting Minutes"
+          ],
+          "rowCount": 37
+        },
+        {
+          "headers": [
+            "Agenda",
+            "Meeting Minutes"
+          ],
+          "rowCount": 33
+        },
+        {
+          "headers": [
+            "Agenda",
+            "Meeting Minutes"
+          ],
+          "rowCount": 33
+        },
+        {
+          "headers": [
+            "Agenda",
+            "Meeting Minutes"
+          ],
+          "rowCount": 25
+        },
+        {
+          "headers": [
+            "Agenda",
+            "Meeting Minutes"
+          ],
+          "rowCount": 27
+        }
+      ]
+    },
+    {
+      "url": "https://cherokeecountysc.gov/accommodations-tax/",
+      "finalUrl": "https://cherokeecountysc.gov/accommodations-tax/",
+      "status": 200,
+      "title": "Accommodations Tax | Cherokee County",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": true,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://cherokeecountysc.gov/auditor/vehicle-tax-information/",
+      "finalUrl": "https://cherokeecountysc.gov/auditor/vehicle-tax-information/",
+      "status": 200,
+      "title": "Vehicle Tax Information | Cherokee County",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": [
+        {
+          "headers": [
+            "Year of Vehicle",
+            "Number of Miles Needed to Qualify"
+          ],
+          "rowCount": 16
+        }
+      ]
+    },
+    {
+      "url": "https://cherokeecountysc.gov/hospitality-tax/",
+      "finalUrl": "https://cherokeecountysc.gov/hospitality-tax/",
+      "status": 200,
+      "title": "Hospitality Tax | Cherokee County",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [
+        "January 1, 2022"
+      ],
+      "tables": []
+    }
+  ],
+  "candidateLinks": [
+    {
+      "text": "Accommodations Tax",
+      "href": "https://cherokeecountysc.gov/accommodations-tax/",
+      "kind": "html",
+      "foundOn": "https://cherokeecountysc.gov/"
+    },
+    {
+      "text": "Vehicle Tax Information",
+      "href": "https://cherokeecountysc.gov/auditor/vehicle-tax-information/",
+      "kind": "html",
+      "foundOn": "https://cherokeecountysc.gov/"
+    },
+    {
+      "text": "Delinquent Tax",
+      "href": "https://cherokeecountysc.gov/delinquent-tax/",
+      "kind": "html",
+      "foundOn": "https://cherokeecountysc.gov/"
+    },
+    {
+      "text": "Tax Collection and Tax Sale Procedures",
+      "href": "https://cherokeecountysc.gov/delinquent-tax/tax-collection-and-tax-sale-procedures/",
+      "kind": "html",
+      "foundOn": "https://cherokeecountysc.gov/"
+    },
+    {
+      "text": "Hospitality Tax",
+      "href": "https://cherokeecountysc.gov/hospitality-tax/",
+      "kind": "html",
+      "foundOn": "https://cherokeecountysc.gov/"
+    },
+    {
+      "text": "Hospitality Tax Calculator",
+      "href": "https://cherokeecountysc.gov/hospitality-tax/hospitality-tax-calculator/",
+      "kind": "html",
+      "foundOn": "https://cherokeecountysc.gov/"
+    },
+    {
+      "text": "Hospitality Tax FAQs",
+      "href": "https://cherokeecountysc.gov/hospitality-tax/hospitality-tax-faqs/",
+      "kind": "html",
+      "foundOn": "https://cherokeecountysc.gov/"
+    },
+    {
+      "text": "Pay Taxes?",
+      "href": "https://cherokeecountysc.gov/treasurer/",
+      "kind": "html",
+      "foundOn": "https://cherokeecountysc.gov/"
+    },
+    {
+      "text": "www.cherokeecountysctax.com",
+      "href": "https://www.cherokeecountysctax.com/#/",
+      "kind": "html",
+      "foundOn": "https://cherokeecountysc.gov/delinquent-tax/"
+    },
+    {
+      "text": "Delinquent Tax Sale",
+      "href": "https://cherokeecountysc.gov/wp-content/uploads/2026/08/TAX-SALE-TAB.pdf",
+      "kind": "pdf",
+      "foundOn": "https://cherokeecountysc.gov/delinquent-tax/"
+    },
+    {
+      "text": "Tax Sale Bidders",
+      "href": "https://cherokeecountysc.gov/wp-content/uploads/2026/08/TAX-SALE-BIDDERS.pdf",
+      "kind": "pdf",
+      "foundOn": "https://cherokeecountysc.gov/delinquent-tax/"
+    },
+    {
+      "text": "Pay your taxes here",
+      "href": "https://www.cherokeecountysctax.com/taxes.html#/",
+      "kind": "html",
+      "foundOn": "https://cherokeecountysc.gov/treasurer/"
+    },
+    {
+      "text": "Property Tax Calculator",
+      "href": "https://www.cherokeecountysctax.com/calc#/",
+      "kind": "html",
+      "foundOn": "https://cherokeecountysc.gov/treasurer/"
+    },
+    {
+      "text": "Vehicle Tax Estimator",
+      "href": "https://www.cherokeecountysctax.com/#/vcalc",
+      "kind": "html",
+      "foundOn": "https://cherokeecountysc.gov/treasurer/"
+    },
+    {
+      "text": "Find out more information on our Auditor Vehicle Tax Information page.",
+      "href": "https://cherokeecountysc.gov/auditor/vehicle-tax-info/",
+      "kind": "html",
+      "foundOn": "https://cherokeecountysc.gov/treasurer/"
+    }
+  ],
+  "followed": [
+    {
+      "url": "https://cherokeecountysc.gov/accommodations-tax/",
+      "blocked": false,
+      "blockReason": null,
+      "title": "Accommodations Tax | Cherokee County",
+      "saleDates": []
+    },
+    {
+      "url": "https://cherokeecountysc.gov/auditor/vehicle-tax-information/",
+      "blocked": false,
+      "blockReason": null,
+      "title": "Vehicle Tax Information | Cherokee County",
+      "saleDates": []
+    },
+    {
+      "url": "https://cherokeecountysc.gov/hospitality-tax/",
+      "blocked": false,
+      "blockReason": null,
+      "title": "Hospitality Tax | Cherokee County",
+      "saleDates": [
+        "January 1, 2022"
+      ]
+    }
+  ],
+  "blocked": [],
+  "arcgis": [],
+  "qpublic": [],
+  "wayback": [
+    {
+      "error": "The operation was aborted due to timeout"
+    }
+  ],
+  "suggestedFamily": "county-pdf",
+  "treasurerUrl": "https://cherokeecountysc.gov/delinquent-tax/",
+  "listingSampleUrl": "https://cherokeecountysc.gov/wp-content/uploads/2026/08/TAX-SALE-TAB.pdf",
+  "notes": "15 listing-like link(s)."
+}

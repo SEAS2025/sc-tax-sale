@@ -1,0 +1,323 @@
+{
+  "id": "aiken",
+  "browsedAt": "2026-09-16T17:21:32.967Z",
+  "seedUrls": [
+    "http://www.aikencountysc.gov"
+  ],
+  "seedSource": "https://www.sccounties.org/county-information",
+  "pages": [
+    {
+      "url": "http://www.aikencountysc.gov",
+      "finalUrl": "https://www.aikencountysc.gov/",
+      "status": 200,
+      "title": "Aiken County, SC | Official Website",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": true,
+      "saleDates": [
+        "September 18, 2026"
+      ],
+      "tables": [
+        {
+          "headers": [
+            "S",
+            "M",
+            "T",
+            "W",
+            "T",
+            "F",
+            "S"
+          ],
+          "rowCount": 6
+        },
+        {
+          "headers": [
+            "S",
+            "M",
+            "T",
+            "W",
+            "T",
+            "F",
+            "S"
+          ],
+          "rowCount": 6
+        }
+      ]
+    },
+    {
+      "url": "https://www.aikencountysc.gov/CivicAlerts.aspx?AID=58",
+      "finalUrl": "https://www.aikencountysc.gov/m/newsflash/home/detail/58",
+      "status": 200,
+      "title": "2026 Tax Sale • Aiken County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": true,
+      "saleDates": [
+        "September 02, 2026",
+        "November 2, 2026",
+        "September 18, 2026",
+        "October 16, 2026",
+        "July 07, 2026",
+        "March 27, 2026"
+      ],
+      "tables": []
+    },
+    {
+      "url": "https://www.aikencountysc.gov/35/Departments",
+      "finalUrl": "https://www.aikencountysc.gov/35/Departments",
+      "status": 200,
+      "title": "Departments | Aiken County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": true,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.aikencountysc.gov/CivicAlerts.aspx?CID=1",
+      "finalUrl": "https://www.aikencountysc.gov/m/newsflash?cat=1",
+      "status": 200,
+      "title": "News Flash • Aiken County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": true,
+      "saleDates": [
+        "November 2, 2026",
+        "September 18, 2026",
+        "October 16, 2026",
+        "September 02, 2026",
+        "July 07, 2026"
+      ],
+      "tables": []
+    },
+    {
+      "url": "https://www.aikencountysc.gov/#taba309ea0e-fca4-4637-974c-052b07e89c1a_1",
+      "finalUrl": "https://www.aikencountysc.gov/#taba309ea0e-fca4-4637-974c-052b07e89c1a_1",
+      "status": 200,
+      "title": "Aiken County, SC | Official Website",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": true,
+      "saleDates": [
+        "September 18, 2026"
+      ],
+      "tables": [
+        {
+          "headers": [
+            "S",
+            "M",
+            "T",
+            "W",
+            "T",
+            "F",
+            "S"
+          ],
+          "rowCount": 6
+        },
+        {
+          "headers": [
+            "S",
+            "M",
+            "T",
+            "W",
+            "T",
+            "F",
+            "S"
+          ],
+          "rowCount": 6
+        }
+      ]
+    },
+    {
+      "url": "https://www.aikencountysc.gov/309/Delinquent-Tax-Sale",
+      "finalUrl": "https://www.aikencountysc.gov/309/Delinquent-Tax-Sale",
+      "status": 200,
+      "title": "Delinquent Tax Sale | Aiken County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": true,
+      "saleDates": [
+        "November 2, 2026",
+        "September 18, 2026",
+        "October 16, 2026"
+      ],
+      "tables": []
+    },
+    {
+      "url": "http://www.aikencountysc.gov/Search/Results?searchPhrase=tax+sale",
+      "finalUrl": "https://www.aikencountysc.gov/Search/Results?searchPhrase=tax+sale",
+      "status": 200,
+      "title": null,
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": true,
+      "saleDates": [
+        "May 28, 2026",
+        "September 18, 2026"
+      ],
+      "tables": []
+    },
+    {
+      "url": "https://www.aikencountysc.gov/273/Delinquent-Tax-Collector",
+      "finalUrl": "https://www.aikencountysc.gov/273/Delinquent-Tax-Collector",
+      "status": 200,
+      "title": "Delinquent Tax Collector | Aiken County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": true,
+      "civicplus": true,
+      "saleDates": [],
+      "tables": []
+    }
+  ],
+  "candidateLinks": [
+    {
+      "text": "2026 Tax Sale",
+      "href": "https://www.aikencountysc.gov/CivicAlerts.aspx?AID=58",
+      "kind": "aspx",
+      "foundOn": "https://www.aikencountysc.gov/"
+    },
+    {
+      "text": "Tax Sale",
+      "href": "https://sc-aikencounty.civicplus.com/309/Delinquent-Tax-Sale",
+      "kind": "html",
+      "foundOn": "https://www.aikencountysc.gov/"
+    },
+    {
+      "text": "2026 Tax Sale",
+      "href": "https://www.aikencountysc.gov/309/Delinquent-Tax-Sale",
+      "kind": "html",
+      "foundOn": "https://www.aikencountysc.gov/m/newsflash/home/detail/58"
+    },
+    {
+      "text": "Delinquent Tax Collector",
+      "href": "https://www.aikencountysc.gov/273/Delinquent-Tax-Collector",
+      "kind": "html",
+      "foundOn": "https://www.aikencountysc.gov/35/Departments"
+    },
+    {
+      "text": "Delinquent Tax Collector submenu",
+      "href": "https://www.aikencountysc.gov/35/Departments#",
+      "kind": "html",
+      "foundOn": "https://www.aikencountysc.gov/35/Departments"
+    },
+    {
+      "text": "Delinquent Real Property Taxes",
+      "href": "https://www.aikencountysc.gov/310/Delinquent-Real-Property-Taxes",
+      "kind": "html",
+      "foundOn": "https://www.aikencountysc.gov/35/Departments"
+    },
+    {
+      "text": "Forfeited Land Commission",
+      "href": "https://www.aikencountysc.gov/386/Forfeited-Land-Commission",
+      "kind": "html",
+      "foundOn": "https://www.aikencountysc.gov/35/Departments"
+    },
+    {
+      "text": "2026 Tax Sale",
+      "href": "https://www.aikencountysc.gov/m/newsflash/Home/Detail/58",
+      "kind": "html",
+      "foundOn": "https://www.aikencountysc.gov/m/newsflash?cat=1"
+    },
+    {
+      "text": "Skip To Main Content",
+      "href": "https://www.aikencountysc.gov/309/Delinquent-Tax-Sale#mainWrapTS",
+      "kind": "html",
+      "foundOn": "https://www.aikencountysc.gov/309/Delinquent-Tax-Sale"
+    },
+    {
+      "text": "Skip to Main Content",
+      "href": "https://www.aikencountysc.gov/309/Delinquent-Tax-Sale#cc5f8c90dc-b4cb-431b-90ee-10648f8df655",
+      "kind": "html",
+      "foundOn": "https://www.aikencountysc.gov/309/Delinquent-Tax-Sale"
+    },
+    {
+      "text": "Delinquent Real Property Taxes submenu",
+      "href": "https://www.aikencountysc.gov/309/Delinquent-Tax-Sale#",
+      "kind": "html",
+      "foundOn": "https://www.aikencountysc.gov/309/Delinquent-Tax-Sale"
+    },
+    {
+      "text": "2026 Delinquent Tax Sale Bidder Instructions (PDF)",
+      "href": "https://www.aikencountysc.gov/DocumentCenter/View/2540/Bidder-Instructions-2026",
+      "kind": "html",
+      "foundOn": "https://www.aikencountysc.gov/309/Delinquent-Tax-Sale"
+    },
+    {
+      "text": "Tax Sale Redemption Facts",
+      "href": "https://www.aikencountysc.gov/DocumentCenter/View/2198",
+      "kind": "html",
+      "foundOn": "https://www.aikencountysc.gov/Search/Results?searchPhrase=tax+sale"
+    },
+    {
+      "text": "2026 Tax Sale",
+      "href": "https://www.aikencountysc.gov/m/NewsFlash/Home/Detail/58",
+      "kind": "html",
+      "foundOn": "https://www.aikencountysc.gov/Search/Results?searchPhrase=tax+sale"
+    }
+  ],
+  "followed": [
+    {
+      "url": "https://sc-aikencounty.civicplus.com/309/Delinquent-Tax-Sale",
+      "skipped": "off-host"
+    },
+    {
+      "url": "https://www.aikencountysc.gov/273/Delinquent-Tax-Collector",
+      "blocked": false,
+      "blockReason": null,
+      "title": "Delinquent Tax Collector | Aiken County, SC",
+      "saleDates": []
+    }
+  ],
+  "blocked": [],
+  "arcgis": [],
+  "qpublic": [
+    {
+      "text": "County Map",
+      "href": "https://qpublic.schneidercorp.com/Application.aspx?App=AikenCountySC&PageType=Search",
+      "note": "Assessor lookup, not a sale list. Not scraped."
+    },
+    {
+      "text": "County Map",
+      "href": "https://qpublic.schneidercorp.com/Application.aspx?App=AikenCountySC&PageType=Search",
+      "note": "Assessor lookup, not a sale list. Not scraped."
+    },
+    {
+      "text": "County Map",
+      "href": "https://qpublic.schneidercorp.com/Application.aspx?App=AikenCountySC&PageType=Search",
+      "note": "Assessor lookup, not a sale list. Not scraped."
+    }
+  ],
+  "wayback": [
+    {
+      "error": "wayback HTTP 503"
+    }
+  ],
+  "suggestedFamily": "page-or-newspaper",
+  "treasurerUrl": "https://www.aikencountysc.gov/273/Delinquent-Tax-Collector",
+  "listingSampleUrl": null,
+  "notes": "qPublic/Beacon link seen; not used as the sale universe. 14 listing-like link(s)."
+}

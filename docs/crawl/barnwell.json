@@ -1,0 +1,93 @@
+{
+  "id": "barnwell",
+  "browsedAt": "2026-09-16T17:22:39.389Z",
+  "seedUrls": [
+    "https://www.barnwellcountysc.us"
+  ],
+  "seedSource": "https://www.sccounties.org/county-information",
+  "pages": [
+    {
+      "url": "https://www.barnwellcountysc.us",
+      "finalUrl": "https://www.barnwellcountysc.us/",
+      "status": 200,
+      "title": "Barnwell, SC | Official Website",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": true,
+      "saleDates": [],
+      "tables": [
+        {
+          "headers": [
+            "S",
+            "M",
+            "T",
+            "W",
+            "T",
+            "F",
+            "S"
+          ],
+          "rowCount": 6
+        },
+        {
+          "headers": [
+            "S",
+            "M",
+            "T",
+            "W",
+            "T",
+            "F",
+            "S"
+          ],
+          "rowCount": 6
+        }
+      ]
+    },
+    {
+      "url": "https://www.barnwellcountysc.us/27/Departments",
+      "finalUrl": "https://www.barnwellcountysc.us/27/Departments",
+      "status": 200,
+      "title": "Departments | Barnwell, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": true,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.barnwellcountysc.us/Search/Results?searchPhrase=tax+sale",
+      "finalUrl": "https://www.barnwellcountysc.us/Search/Results?searchPhrase=tax+sale",
+      "status": 200,
+      "title": null,
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": true,
+      "saleDates": [
+        "May 15, 2023"
+      ],
+      "tables": []
+    }
+  ],
+  "candidateLinks": [],
+  "followed": [],
+  "blocked": [],
+  "arcgis": [],
+  "qpublic": [],
+  "wayback": [
+    {
+      "error": "wayback HTTP 503"
+    }
+  ],
+  "suggestedFamily": "page-or-newspaper",
+  "treasurerUrl": null,
+  "listingSampleUrl": null,
+  "notes": "No treasurer or tax-sale page confirmed from the homepage links."
+}

@@ -218,6 +218,41 @@ const RESEARCHED = {
     notes:
       "Family page-or-newspaper. Browsed 16 Sep 2026. Sale 19 Oct 2026 at the Civic Center of Anderson. Page says property listings will be posted on that site beginning 30 Sep 2026. 2025 Forfeited Land Commission real-estate and mobile-home PDFs are on the same page (post-sale, not the current sale universe). acpass login wall was not bypassed.",
   },
+  georgetown: {
+    status: "researched",
+    sourceFamily: "county-pdf",
+    identifier: "tax-map",
+    identifierFormat: "dashed, e.g. 01-0117-008-00-00",
+    treasurerUrl: "https://www.gtcountysc.gov/408/Tax-Sale",
+    listingSampleUrl: "https://www.gtcountysc.gov/DocumentCenter/View/3625",
+    notes:
+      "Family county-pdf. Browsed 16 Sep 2026. Document Center has 2025 Tax Sale List (View/3625), properties sold 11-03-2025 (View/3796), and 2024 sold (View/3882). First page headers include TaxMapNumber and CountyItemNumber. Dashed map samples look like 01-0117-008-00-00. PDF not stored. The county-pdf text adapter still keys off 10-digit PINs (Charleston); Georgetown needs a dashed-map text fixture before ingest.",
+  },
+  cherokee: {
+    status: "researched",
+    sourceFamily: "county-pdf",
+    treasurerUrl: "https://cherokeecountysc.gov/delinquent-tax/",
+    listingSampleUrl:
+      "https://cherokeecountysc.gov/wp-content/uploads/2026/08/TAX-SALE-TAB.pdf",
+    notes:
+      "Family county-pdf. Browsed 16 Sep 2026. Delinquent Tax page links a one-page TAX-SALE-TAB.pdf (Aug 2026) and a bidder PDF. Page 1 has no text layer, so it was not parsed. Not stored in git.",
+  },
+  calhoun: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl: "https://calhouncounty.sc.gov/departments/tax-collector",
+    notes:
+      "Family page-or-newspaper. Browsed 16 Sep 2026. Delinquent tax collector page says the office plans and conducts tax sales. No current listing file. Assessor rollback and 2012–2018 sales PDFs are not the tax-sale ad.",
+  },
+  york: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl: "https://www.yorkcountysc.gov/216/Tax-Collection",
+    gisUrl:
+      "https://experience.arcgis.com/experience/ef9243d9330c4891ba724689f2eb1502",
+    notes:
+      "Family page-or-newspaper. Browsed 16 Sep 2026. Tax Collection page links a 2026 fact sheet (sale 12 Oct 2026, in person, no parcel file) and an Experience Builder item titled 2025 York County Delinquent Tax Sales Dashboard. That item URL was on the county page; no MapServer was invented. Fact sheet PDF not stored.",
+  },
   abbeville: {
     status: "researched",
     sourceFamily: "page-or-newspaper",

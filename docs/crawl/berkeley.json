@@ -1,0 +1,161 @@
+{
+  "id": "berkeley",
+  "browsedAt": "2026-09-16T17:18:52.196Z",
+  "seedUrls": [
+    "https://www.berkeleycountysc.gov"
+  ],
+  "seedSource": "https://www.sccounties.org/county-information",
+  "pages": [
+    {
+      "url": "https://www.berkeleycountysc.gov",
+      "finalUrl": "https://berkeleycountysc.gov/",
+      "status": 200,
+      "title": "Berkeley County Government – Investing in Tomorrow TODAY",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [
+        "September 15, 2026",
+        "August 26, 2026",
+        "August 25, 2026",
+        "August 19, 2026"
+      ],
+      "tables": []
+    },
+    {
+      "url": "https://berkeleycountysc.gov/dept/",
+      "finalUrl": "https://berkeleycountysc.gov/dept/",
+      "status": 403,
+      "title": "Just a moment...",
+      "blocked": true,
+      "blockReason": "captcha",
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://agendas.berkeleycountysc.gov/meeting_list.php",
+      "finalUrl": "https://agendas.berkeleycountysc.gov/meeting_list.php",
+      "status": 403,
+      "title": "Just a moment...",
+      "blocked": true,
+      "blockReason": "captcha",
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://berkeleycountysc.gov/newsroom/",
+      "finalUrl": "https://berkeleycountysc.gov/newsroom/",
+      "status": 403,
+      "title": "Just a moment...",
+      "blocked": true,
+      "blockReason": "captcha",
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://berkeleycountysc.gov/news/",
+      "finalUrl": null,
+      "status": null,
+      "title": null,
+      "blocked": false,
+      "blockReason": null,
+      "error": "page.goto: Timeout 30000ms exceeded.",
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://berkeleycountysc.gov/pay-taxes/",
+      "finalUrl": null,
+      "status": null,
+      "title": null,
+      "blocked": false,
+      "blockReason": null,
+      "error": "page.goto: Timeout 30000ms exceeded.",
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    }
+  ],
+  "candidateLinks": [
+    {
+      "text": "Pay Taxes",
+      "href": "https://berkeleycountysc.paystar.io/app",
+      "kind": "html",
+      "foundOn": "https://berkeleycountysc.gov/"
+    },
+    {
+      "text": "Employment & Job Listings",
+      "href": "https://www.governmentjobs.com/careers/berkeleycountysc",
+      "kind": "html",
+      "foundOn": "https://berkeleycountysc.gov/"
+    },
+    {
+      "text": "→ Pay Property Taxes",
+      "href": "https://berkeleycountysc.gov/pay-taxes/",
+      "kind": "html",
+      "foundOn": "https://berkeleycountysc.gov/"
+    }
+  ],
+  "followed": [
+    {
+      "url": "https://berkeleycountysc.paystar.io/app",
+      "skipped": "off-host"
+    },
+    {
+      "url": "https://www.governmentjobs.com/careers/berkeleycountysc",
+      "skipped": "off-host"
+    },
+    {
+      "url": "https://berkeleycountysc.gov/pay-taxes/",
+      "blocked": false,
+      "blockReason": null,
+      "title": null,
+      "saleDates": []
+    }
+  ],
+  "blocked": [
+    {
+      "url": "https://berkeleycountysc.gov/dept/",
+      "reason": "captcha"
+    },
+    {
+      "url": "https://agendas.berkeleycountysc.gov/meeting_list.php",
+      "reason": "captcha"
+    },
+    {
+      "url": "https://berkeleycountysc.gov/newsroom/",
+      "reason": "captcha"
+    }
+  ],
+  "arcgis": [],
+  "qpublic": [],
+  "wayback": [
+    {
+      "error": "wayback HTTP 503"
+    }
+  ],
+  "suggestedFamily": "page-or-newspaper",
+  "treasurerUrl": null,
+  "listingSampleUrl": null,
+  "notes": "Blocked walls: captcha at https://berkeleycountysc.gov/dept/; captcha at https://agendas.berkeleycountysc.gov/meeting_list.php; captcha at https://berkeleycountysc.gov/newsroom/ No treasurer or tax-sale page confirmed from the homepage links. 3 listing-like link(s)."
+}

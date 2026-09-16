@@ -1,0 +1,204 @@
+{
+  "id": "abbeville",
+  "browsedAt": "2026-09-16T17:21:58.046Z",
+  "seedUrls": [
+    "https://abbevillecountysc.com"
+  ],
+  "seedSource": "https://www.sccounties.org/county-information",
+  "pages": [
+    {
+      "url": "https://abbevillecountysc.com",
+      "finalUrl": "https://abbevillecountysc.com/",
+      "status": 200,
+      "title": "Abbeville County, South Carolina – Easy Access to Abbeville County Government Resources",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://abbevillecountysc.com/delinquent-tax-collector/",
+      "finalUrl": "https://abbevillecountysc.com/delinquent-tax-collector/",
+      "status": 200,
+      "title": "Delinquent Tax Collector – Abbeville County, South Carolina",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://abbevillecountysc.com/treasurer/",
+      "finalUrl": "https://abbevillecountysc.com/treasurer/",
+      "status": 200,
+      "title": "Treasurer – Abbeville County, South Carolina",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://abbevillecountysc.com/departments/",
+      "finalUrl": "https://abbevillecountysc.com/departments/",
+      "status": 200,
+      "title": "Departments – Abbeville County, South Carolina",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://abbevillecountysc.com/agendas-minutes/",
+      "finalUrl": "https://abbevillecountysc.com/agendas-minutes/",
+      "status": 200,
+      "title": "Agendas & Minutes – Abbeville County, South Carolina",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://abbevillecountysc.com/news/",
+      "finalUrl": "https://abbevillecountysc.com/news/",
+      "status": 200,
+      "title": "News – Abbeville County, South Carolina",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [
+        "October 21, 2025",
+        "February 1, 2026",
+        "June 23, 2025",
+        "June 17, 2025",
+        "November 4, 2024",
+        "October 15, 2024"
+      ],
+      "tables": []
+    },
+    {
+      "url": "https://abbevillecountysc.com/delinquent-tax-collector/?s=",
+      "finalUrl": "https://abbevillecountysc.com/delinquent-tax-collector/?s=",
+      "status": 403,
+      "title": "ERROR: The request could not be satisfied",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://abbevillecountysc.com/treasurer/forfeited-land-commission/",
+      "finalUrl": "https://abbevillecountysc.com/treasurer/forfeited-land-commission/",
+      "status": 200,
+      "title": "Forfeited Land Commission – Abbeville County, South Carolina",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": true,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    }
+  ],
+  "candidateLinks": [
+    {
+      "text": "Delinquent Tax Collector",
+      "href": "https://abbevillecountysc.com/delinquent-tax-collector/",
+      "kind": "html",
+      "foundOn": "https://abbevillecountysc.com/"
+    },
+    {
+      "text": "Delinquent Tax Collector",
+      "href": "https://abbevillecountysc.com/delinquent-tax-collector/#top",
+      "kind": "html",
+      "foundOn": "https://abbevillecountysc.com/delinquent-tax-collector/"
+    },
+    {
+      "text": "Click to open the search input field",
+      "href": "https://abbevillecountysc.com/delinquent-tax-collector/?s=",
+      "kind": "html",
+      "foundOn": "https://abbevillecountysc.com/delinquent-tax-collector/"
+    },
+    {
+      "text": "Menu Menu",
+      "href": "https://abbevillecountysc.com/delinquent-tax-collector/#",
+      "kind": "html",
+      "foundOn": "https://abbevillecountysc.com/delinquent-tax-collector/"
+    },
+    {
+      "text": "Forfeited Land Commission",
+      "href": "https://abbevillecountysc.com/treasurer/forfeited-land-commission/",
+      "kind": "html",
+      "foundOn": "https://abbevillecountysc.com/treasurer/"
+    },
+    {
+      "text": "Delinquent Tax Collector",
+      "href": "https://abbevillecountysc.com/departments/delinquent-tax-collector/",
+      "kind": "html",
+      "foundOn": "https://abbevillecountysc.com/treasurer/"
+    }
+  ],
+  "followed": [
+    {
+      "url": "https://abbevillecountysc.com/treasurer/forfeited-land-commission/",
+      "blocked": false,
+      "blockReason": null,
+      "title": "Forfeited Land Commission – Abbeville County, South Carolina",
+      "saleDates": []
+    }
+  ],
+  "blocked": [],
+  "arcgis": [],
+  "qpublic": [
+    {
+      "text": "",
+      "href": "https://qpublic.schneidercorp.com/Application.aspx?AppID=613&LayerID=10508&PageTypeID=2&PageID=4483",
+      "note": "Assessor lookup, not a sale list. Not scraped."
+    },
+    {
+      "text": "GIS Mapping",
+      "href": "https://qpublic.schneidercorp.com/Application.aspx?AppID=613&LayerID=10508&PageTypeID=2&PageID=4483",
+      "note": "Assessor lookup, not a sale list. Not scraped."
+    },
+    {
+      "text": "GIS MAPPING",
+      "href": "https://qpublic.schneidercorp.com/Application.aspx?AppID=613&LayerID=10508&PageTypeID=2&PageID=4483",
+      "note": "Assessor lookup, not a sale list. Not scraped."
+    }
+  ],
+  "wayback": [
+    {
+      "error": "wayback HTTP 503"
+    }
+  ],
+  "suggestedFamily": "page-or-newspaper",
+  "treasurerUrl": "https://abbevillecountysc.com/delinquent-tax-collector/",
+  "listingSampleUrl": null,
+  "notes": "qPublic/Beacon link seen; not used as the sale universe. 6 listing-like link(s)."
+}

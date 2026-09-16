@@ -126,6 +126,10 @@ Opened or cited while classifying source families. No GIS URLs added. No listing
 | Aiken | page-or-newspaper | https://www.aikencountysc.gov/309/Delinquent-Tax-Sale (200). 2 Nov 2026; Aiken Standard ads. Bidder-instructions PDF only. |
 | Anderson | page-or-newspaper | https://www.andersoncountysc.org/tax-sale/ (200). Sale 19 Oct 2026; listings promised 30 Sep 2026. 2025 FLC PDFs are post-sale. |
 | Abbeville | page-or-newspaper | https://abbevillecountysc.com/delinquent-tax-collector/ (200). Press and Banner ads. No file. |
+| Georgetown | county-pdf | https://www.gtcountysc.gov/408/Tax-Sale (200). 2025 list DocumentCenter/View/3625. Dashed tax map. File not stored. |
+| Cherokee | county-pdf | https://cherokeecountysc.gov/delinquent-tax/ (200). Scan PDF, no text layer. |
+| Calhoun | page-or-newspaper | https://calhouncounty.sc.gov/departments/tax-collector (200). No current listing. |
+| York | page-or-newspaper | https://www.yorkcountysc.gov/216/Tax-Collection (200). Sale 12 Oct 2026. Experience item on the page: experience/ef9243d9330c4891ba724689f2eb1502. |
 
 qPublic/Beacon (`qpublic.schneidercorp.com`) is an assessor GIS portal for many SC counties. It is not a tax-sale list.
 

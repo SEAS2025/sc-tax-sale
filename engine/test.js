@@ -99,6 +99,10 @@ test("status counts: Lexington live, researched families, rest unknown", () => {
   assert.equal(getCounty("aiken").status, "researched");
   assert.equal(getCounty("aiken").sourceFamily, "page-or-newspaper");
   assert.equal(getCounty("aiken").treasurerUrl.includes("/309/Delinquent-Tax-Sale"), true);
+  assert.equal(getCounty("georgetown").sourceFamily, "county-pdf");
+  assert.equal(getCounty("georgetown").listingSampleUrl.includes("DocumentCenter/View/3625"), true);
+  assert.equal(getCounty("york").gisUrl.includes("experience.arcgis.com"), true);
+  assert.equal(getCounty("york").gisUrl.includes("MapServer"), false);
 });
 
 test("registry does not republish the owner CSV or Base44 secrets", () => {

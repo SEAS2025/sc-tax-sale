@@ -196,15 +196,15 @@
         33.67478,
         -80.780347
       ],
-      "status": "unknown",
-      "sourceFamily": null,
+      "status": "researched",
+      "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
       "adapter": null,
       "geocode": null,
-      "treasurerUrl": null,
+      "treasurerUrl": "https://calhouncounty.sc.gov/departments/tax-collector",
       "gisUrl": null,
-      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026. Delinquent tax collector page says the office plans and conducts tax sales. No current listing file. Assessor rollback and 2012–2018 sales PDFs are not the tax-sale ad."
     },
     {
       "id": "charleston",
@@ -239,15 +239,16 @@
         35.049796,
         -81.607647
       ],
-      "status": "unknown",
-      "sourceFamily": null,
+      "status": "researched",
+      "sourceFamily": "county-pdf",
       "identifier": null,
       "identifierFormat": null,
       "adapter": null,
       "geocode": null,
-      "treasurerUrl": null,
+      "treasurerUrl": "https://cherokeecountysc.gov/delinquent-tax/",
       "gisUrl": null,
-      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+      "notes": "Family county-pdf. Browsed 16 Sep 2026. Delinquent Tax page links a one-page TAX-SALE-TAB.pdf (Aug 2026) and a bidder PDF. Page 1 has no text layer, so it was not parsed. Not stored in git.",
+      "listingSampleUrl": "https://cherokeecountysc.gov/wp-content/uploads/2026/08/TAX-SALE-TAB.pdf"
     },
     {
       "id": "chester",
@@ -470,15 +471,16 @@
         33.417531,
         -79.296333
       ],
-      "status": "unknown",
-      "sourceFamily": null,
-      "identifier": null,
-      "identifierFormat": null,
+      "status": "researched",
+      "sourceFamily": "county-pdf",
+      "identifier": "tax-map",
+      "identifierFormat": "dashed, e.g. 01-0117-008-00-00",
       "adapter": null,
       "geocode": null,
-      "treasurerUrl": null,
+      "treasurerUrl": "https://www.gtcountysc.gov/408/Tax-Sale",
       "gisUrl": null,
-      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+      "notes": "Family county-pdf. Browsed 16 Sep 2026. Document Center has 2025 Tax Sale List (View/3625), properties sold 11-03-2025 (View/3796), and 2024 sold (View/3882). First page headers include TaxMapNumber and CountyItemNumber. Dashed map samples look like 01-0117-008-00-00. PDF not stored. The county-pdf text adapter still keys off 10-digit PINs (Charleston); Georgetown needs a dashed-map text fixture before ingest.",
+      "listingSampleUrl": "https://www.gtcountysc.gov/DocumentCenter/View/3625"
     },
     {
       "id": "greenville",
@@ -990,15 +992,15 @@
         34.970188,
         -81.183187
       ],
-      "status": "unknown",
-      "sourceFamily": null,
+      "status": "researched",
+      "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
       "adapter": null,
       "geocode": null,
-      "treasurerUrl": null,
-      "gisUrl": null,
-      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+      "treasurerUrl": "https://www.yorkcountysc.gov/216/Tax-Collection",
+      "gisUrl": "https://experience.arcgis.com/experience/ef9243d9330c4891ba724689f2eb1502",
+      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026. Tax Collection page links a 2026 fact sheet (sale 12 Oct 2026, in person, no parcel file) and an Experience Builder item titled 2025 York County Delinquent Tax Sales Dashboard. That item URL was on the county page; no MapServer was invented. Fact sheet PDF not stored."
     }
   ]
 }

@@ -1,0 +1,306 @@
+{
+  "id": "calhoun",
+  "browsedAt": "2026-09-16T17:19:17.729Z",
+  "seedUrls": [
+    "https://calhouncounty.sc.gov"
+  ],
+  "seedSource": "https://www.sccounties.org/county-information",
+  "pages": [
+    {
+      "url": "https://calhouncounty.sc.gov",
+      "finalUrl": "https://calhouncounty.sc.gov/",
+      "status": 200,
+      "title": "Home | Calhoun County",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": true,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://calhouncounty.sc.gov/departments/treasurer",
+      "finalUrl": "https://calhouncounty.sc.gov/departments/treasurer",
+      "status": 200,
+      "title": "Treasurer | Calhoun County",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://calhouncounty.sc.gov/departments",
+      "finalUrl": "https://calhouncounty.sc.gov/departments",
+      "status": 200,
+      "title": "Departments | Calhoun County",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://calhouncounty.sc.gov/departments/addressing",
+      "finalUrl": "https://calhouncounty.sc.gov/departments/addressing",
+      "status": 200,
+      "title": "Addressing | Calhoun County",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://calhouncounty.sc.gov/departments/administration",
+      "finalUrl": "https://calhouncounty.sc.gov/departments/administration",
+      "status": 200,
+      "title": "Administration | Calhoun County",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [
+        "August 24, 2026",
+        "August 10, 2026",
+        "July 13, 2026",
+        "June 29, 2026",
+        "June 22, 2026",
+        "June 8, 2026"
+      ],
+      "tables": []
+    },
+    {
+      "url": "https://calhouncounty.sc.gov/departments/animal-control",
+      "finalUrl": "https://calhouncounty.sc.gov/departments/animal-control",
+      "status": 200,
+      "title": "Animal Control | Calhoun County",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://calhouncounty.sc.gov/departments/assessor",
+      "finalUrl": "https://calhouncounty.sc.gov/departments/assessor",
+      "status": 200,
+      "title": "Assessor | Calhoun County",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://calhouncounty.sc.gov/departments/auditor",
+      "finalUrl": "https://calhouncounty.sc.gov/departments/auditor",
+      "status": 200,
+      "title": "Auditor | Calhoun County",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://calhouncounty.sc.gov/departments/building-and-planning",
+      "finalUrl": "https://calhouncounty.sc.gov/departments/building-and-planning",
+      "status": 200,
+      "title": "Building and Planning | Calhoun County",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://calhouncounty.sc.gov/departments/tax-collector",
+      "finalUrl": "https://calhouncounty.sc.gov/departments/tax-collector",
+      "status": 200,
+      "title": "Tax Collector | Calhoun County",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    }
+  ],
+  "candidateLinks": [
+    {
+      "text": "Agency Listing",
+      "href": "https://sc.gov/agency-listing",
+      "kind": "html",
+      "foundOn": "https://calhouncounty.sc.gov/"
+    },
+    {
+      "text": "Pay Taxes Online?",
+      "href": "http://calhountreasurer.qpaybill.com/",
+      "kind": "html",
+      "foundOn": "https://calhouncounty.sc.gov/"
+    },
+    {
+      "text": "Tax Collector",
+      "href": "https://calhouncounty.sc.gov/departments/tax-collector",
+      "kind": "html",
+      "foundOn": "https://calhouncounty.sc.gov/departments"
+    },
+    {
+      "text": "See Rollback Taxes",
+      "href": "https://calhouncounty.sc.gov/sites/calhouncounty/files/Documents/Calhoun%20County/Departments/Assessor/CALHOUN-RollbackExplained_04012025.pdf",
+      "kind": "pdf",
+      "foundOn": "https://calhouncounty.sc.gov/departments/assessor"
+    },
+    {
+      "text": "2012 Sales List",
+      "href": "https://calhouncounty.sc.gov/sites/calhouncounty/files/Documents/Calhoun%20County/Departments/CALHOUNSALES2012FINAL.pdf",
+      "kind": "pdf",
+      "foundOn": "https://calhouncounty.sc.gov/departments/assessor"
+    },
+    {
+      "text": "2013 Sales List",
+      "href": "https://calhouncounty.sc.gov/sites/calhouncounty/files/Documents/Calhoun%20County/Departments/CALHOUNSALES13YE.pdf",
+      "kind": "pdf",
+      "foundOn": "https://calhouncounty.sc.gov/departments/assessor"
+    },
+    {
+      "text": "2014 Sales List",
+      "href": "https://calhouncounty.sc.gov/sites/calhouncounty/files/Documents/Calhoun%20County/Departments/CALHOUNSALES2014YE.pdf",
+      "kind": "pdf",
+      "foundOn": "https://calhouncounty.sc.gov/departments/assessor"
+    },
+    {
+      "text": "2015 Sales List",
+      "href": "https://calhouncounty.sc.gov/sites/calhouncounty/files/Documents/Calhoun%20County/Departments/CalhounSales2015YEFinal.pdf",
+      "kind": "pdf",
+      "foundOn": "https://calhouncounty.sc.gov/departments/assessor"
+    },
+    {
+      "text": "2016 Sales List",
+      "href": "https://calhouncounty.sc.gov/sites/calhouncounty/files/Documents/Calhoun%20County/Departments/CALHOUN-2016_Sales.pdf",
+      "kind": "pdf",
+      "foundOn": "https://calhouncounty.sc.gov/departments/assessor"
+    },
+    {
+      "text": "2017 Sales List",
+      "href": "https://calhouncounty.sc.gov/sites/calhouncounty/files/Documents/Calhoun%20County/Departments/CALHOUN-2017_Sales.pdf",
+      "kind": "pdf",
+      "foundOn": "https://calhouncounty.sc.gov/departments/assessor"
+    },
+    {
+      "text": "2018 Sales List",
+      "href": "https://calhouncounty.sc.gov/sites/calhouncounty/files/Documents/Copy%20of%20CALHOUNSALES%202018%20FINAL.pdf",
+      "kind": "pdf",
+      "foundOn": "https://calhouncounty.sc.gov/departments/assessor"
+    },
+    {
+      "text": "2019 Sales List",
+      "href": "https://calhouncounty.sc.gov/sites/calhouncounty/files/Documents/CALHOUNSALES%202019%20-%20FINAL.pdf",
+      "kind": "pdf",
+      "foundOn": "https://calhouncounty.sc.gov/departments/assessor"
+    },
+    {
+      "text": "2020 Sales List",
+      "href": "https://calhouncounty.sc.gov/sites/calhouncounty/files/Documents/Calhoun%20County/Departments/Assessor/CALHOUNSALES2020Final.pdf",
+      "kind": "pdf",
+      "foundOn": "https://calhouncounty.sc.gov/departments/assessor"
+    },
+    {
+      "text": "2021 Sales List",
+      "href": "https://calhouncounty.sc.gov/sites/calhouncounty/files/Documents/Calhoun%20County/Departments/Assessor/SalesLists/CALHOUN-SALES2021Final.pdf",
+      "kind": "pdf",
+      "foundOn": "https://calhouncounty.sc.gov/departments/assessor"
+    },
+    {
+      "text": "2022 Sales List",
+      "href": "https://calhouncounty.sc.gov/sites/calhouncounty/files/Documents/Calhoun%20County/Departments/Assessor/SalesLists/2022/CALHOUN-SALES2022_Final-04182023.pdf",
+      "kind": "pdf",
+      "foundOn": "https://calhouncounty.sc.gov/departments/assessor"
+    },
+    {
+      "text": "2023 Sales List",
+      "href": "https://calhouncounty.sc.gov/sites/calhouncounty/files/Documents/Calhoun%20County/Departments/Assessor/SalesLists/2023/CALHOUN-SALES2023_FINAL-04022024.pdf",
+      "kind": "pdf",
+      "foundOn": "https://calhouncounty.sc.gov/departments/assessor"
+    },
+    {
+      "text": "2024 Sales List (Updated December 8, 2025)",
+      "href": "https://calhouncounty.sc.gov/sites/calhouncounty/files/Documents/Calhoun%20County/Departments/Assessor/SalesLists/2024/CALHOUNSALES2024FINALv2.pdf",
+      "kind": "pdf",
+      "foundOn": "https://calhouncounty.sc.gov/departments/assessor"
+    },
+    {
+      "text": "2025 Sales List",
+      "href": "https://calhouncounty.sc.gov/sites/calhouncounty/files/Documents/Calhoun%20County/Departments/Assessor/SalesLists/2025/CALHOUN-SALES2025_TO_07252025.pdf",
+      "kind": "pdf",
+      "foundOn": "https://calhouncounty.sc.gov/departments/assessor"
+    }
+  ],
+  "followed": [
+    {
+      "url": "https://sc.gov/agency-listing",
+      "skipped": "off-host"
+    },
+    {
+      "url": "http://calhountreasurer.qpaybill.com/",
+      "skipped": "off-host"
+    },
+    {
+      "url": "https://calhouncounty.sc.gov/departments/tax-collector",
+      "blocked": false,
+      "blockReason": null,
+      "title": "Tax Collector | Calhoun County",
+      "saleDates": []
+    },
+    {
+      "url": "https://calhouncounty.sc.gov/sites/calhouncounty/files/Documents/Calhoun%20County/Departments/Assessor/CALHOUN-RollbackExplained_04012025.pdf",
+      "kind": "pdf",
+      "note": "Listing file recorded, not downloaded into git."
+    },
+    {
+      "url": "https://calhouncounty.sc.gov/sites/calhouncounty/files/Documents/Calhoun%20County/Departments/CALHOUNSALES2012FINAL.pdf",
+      "kind": "pdf",
+      "note": "Listing file recorded, not downloaded into git."
+    }
+  ],
+  "blocked": [],
+  "arcgis": [],
+  "qpublic": [],
+  "wayback": [
+    {
+      "error": "The operation was aborted due to timeout"
+    }
+  ],
+  "suggestedFamily": "county-pdf",
+  "treasurerUrl": "https://calhouncounty.sc.gov/departments/tax-collector",
+  "listingSampleUrl": "https://calhouncounty.sc.gov/sites/calhouncounty/files/Documents/Calhoun%20County/Departments/Assessor/CALHOUN-RollbackExplained_04012025.pdf",
+  "notes": "18 listing-like link(s)."
+}

@@ -1,0 +1,421 @@
+{
+  "id": "york",
+  "browsedAt": "2026-09-16T17:20:10.105Z",
+  "seedUrls": [
+    "https://www.yorkcountysc.gov"
+  ],
+  "seedSource": "https://www.sccounties.org/county-information",
+  "pages": [
+    {
+      "url": "https://www.yorkcountysc.gov",
+      "finalUrl": "https://www.yorkcountysc.gov/",
+      "status": 200,
+      "title": "York, SC | Official Website",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": true,
+      "saleDates": [],
+      "tables": [
+        {
+          "headers": [
+            "S",
+            "M",
+            "T",
+            "W",
+            "T",
+            "F",
+            "S"
+          ],
+          "rowCount": 6
+        }
+      ]
+    },
+    {
+      "url": "https://www.yorkcountysc.gov/27/Departments",
+      "finalUrl": "https://www.yorkcountysc.gov/27/Departments",
+      "status": 200,
+      "title": "County Departments | York, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": true,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.yorkcountysc.gov/directory",
+      "finalUrl": "https://www.yorkcountysc.gov/m/directory",
+      "status": 200,
+      "title": "Staff Directory • York County, SC • CivicEngage",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": true,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.yorkcountysc.gov/375/County-Council",
+      "finalUrl": "https://www.yorkcountysc.gov/375/County-Council",
+      "status": 200,
+      "title": "County Council | York, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": true,
+      "civicplus": true,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.yorkcountysc.gov/CivicAlerts.aspx?AID=740",
+      "finalUrl": "https://www.yorkcountysc.gov/m/newsflash/home/detail/740",
+      "status": 200,
+      "title": "A New Resident-Focused Digital Newsletter Helps You Connect with the County • York County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": true,
+      "saleDates": [
+        "August 28, 2026"
+      ],
+      "tables": []
+    },
+    {
+      "url": "https://www.yorkcountysc.gov/CivicAlerts.aspx?AID=735",
+      "finalUrl": "https://www.yorkcountysc.gov/m/newsflash/home/detail/735",
+      "status": 200,
+      "title": "News from our Partners: Octapharma selects York County for its first US manufacturing site • York County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": true,
+      "civicplus": true,
+      "saleDates": [
+        "July 29, 2026"
+      ],
+      "tables": []
+    },
+    {
+      "url": "https://www.yorkcountysc.gov/CivicAlerts.aspx?CID=1",
+      "finalUrl": "https://www.yorkcountysc.gov/m/newsflash?cat=1",
+      "status": 200,
+      "title": "News Flash • York County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": true,
+      "saleDates": [
+        "September 10, 2026"
+      ],
+      "tables": []
+    },
+    {
+      "url": "https://www.yorkcountysc.gov/Search/Results?searchPhrase=tax+sale",
+      "finalUrl": "https://www.yorkcountysc.gov/Search/Results?searchPhrase=tax+sale",
+      "status": 200,
+      "title": null,
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": true,
+      "saleDates": [
+        "May 20, 2026",
+        "October 13, 2026"
+      ],
+      "tables": []
+    },
+    {
+      "url": "https://www.yorkcountysc.gov/693/Online-Payments",
+      "finalUrl": "https://www.yorkcountysc.gov/693/Online-Payments",
+      "status": 200,
+      "title": "Online Payments | York, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": true,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.yorkcountysc.gov/216/Tax-Collection",
+      "finalUrl": "https://www.yorkcountysc.gov/216/Tax-Collection",
+      "status": 200,
+      "title": "Tax Collection | York, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": true,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.yorkcountysc.gov/CivicAlerts.aspx?AID=724",
+      "finalUrl": "https://www.yorkcountysc.gov/m/newsflash/home/detail/724",
+      "status": 200,
+      "title": "York County’s Approved Budget Balances a Tax Reduction, with Improvements in Government Services • York County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": true,
+      "saleDates": [
+        "June 03, 2026",
+        "July 1, 2026"
+      ],
+      "tables": []
+    },
+    {
+      "url": "https://www.yorkcountysc.gov/DocumentCenter/View/7612/How-to-Estimate-Real-Estate-Taxes-PDF",
+      "finalUrl": null,
+      "status": null,
+      "title": null,
+      "blocked": false,
+      "blockReason": null,
+      "error": "page.goto: Download is starting",
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.yorkcountysc.gov/155/Rollback-Tax-Calculator",
+      "finalUrl": "https://www.yorkcountysc.gov/155/Rollback-Tax-Calculator",
+      "status": 200,
+      "title": "Rollback Tax Calculator | York, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": true,
+      "saleDates": [],
+      "tables": []
+    }
+  ],
+  "candidateLinks": [
+    {
+      "text": "PAY A BILL Make Payments Online for Taxes, Water & Sewer, and More",
+      "href": "https://www.yorkcountysc.gov/693/Online-Payments",
+      "kind": "html",
+      "foundOn": "https://www.yorkcountysc.gov/"
+    },
+    {
+      "text": "TAX PAYMENTS & INFORMATION Learn More",
+      "href": "https://www.yorkcountysc.gov/216/Tax-Collection",
+      "kind": "html",
+      "foundOn": "https://www.yorkcountysc.gov/"
+    },
+    {
+      "text": "York County’s Approved Budget Balances a Tax Reduction, with Improvements in Government Services",
+      "href": "https://www.yorkcountysc.gov/CivicAlerts.aspx?AID=724",
+      "kind": "aspx",
+      "foundOn": "https://www.yorkcountysc.gov/"
+    },
+    {
+      "text": "How To Estimate Real Estate Taxes",
+      "href": "https://www.yorkcountysc.gov/DocumentCenter/View/7612/How-to-Estimate-Real-Estate-Taxes-PDF",
+      "kind": "html",
+      "foundOn": "https://www.yorkcountysc.gov/27/Departments"
+    },
+    {
+      "text": "Rollback Tax Calculator",
+      "href": "https://www.yorkcountysc.gov/155/Rollback-Tax-Calculator",
+      "kind": "html",
+      "foundOn": "https://www.yorkcountysc.gov/27/Departments"
+    },
+    {
+      "text": "Watercraft Taxes",
+      "href": "https://www.yorkcountysc.gov/163/Watercraft-Taxes",
+      "kind": "html",
+      "foundOn": "https://www.yorkcountysc.gov/27/Departments"
+    },
+    {
+      "text": "Hospitality Tax",
+      "href": "https://www.yorkcountysc.gov/1010/Hospitality-Tax",
+      "kind": "html",
+      "foundOn": "https://www.yorkcountysc.gov/27/Departments"
+    },
+    {
+      "text": "Fire Tax District Boards",
+      "href": "https://www.yorkcountysc.gov/968/Fire-Tax-District-Boards",
+      "kind": "html",
+      "foundOn": "https://www.yorkcountysc.gov/27/Departments"
+    },
+    {
+      "text": "Fire Tax District Boards submenu",
+      "href": "https://www.yorkcountysc.gov/27/Departments#",
+      "kind": "html",
+      "foundOn": "https://www.yorkcountysc.gov/27/Departments"
+    },
+    {
+      "text": "Bethel Fire Tax District Board",
+      "href": "https://www.yorkcountysc.gov/AgendaCenter/Bethel-Fire-Tax-District-12",
+      "kind": "html",
+      "foundOn": "https://www.yorkcountysc.gov/27/Departments"
+    },
+    {
+      "text": "Bethesda Fire Tax District Board",
+      "href": "https://www.yorkcountysc.gov/AgendaCenter/Bethesda-Fire-Tax-District-14",
+      "kind": "html",
+      "foundOn": "https://www.yorkcountysc.gov/27/Departments"
+    },
+    {
+      "text": "Flint Hill Fire Tax District Board",
+      "href": "https://www.yorkcountysc.gov/AgendaCenter/Flint-Hill-Fire-Tax-District-15",
+      "kind": "html",
+      "foundOn": "https://www.yorkcountysc.gov/27/Departments"
+    },
+    {
+      "text": "Lesslie Fire Tax District Board",
+      "href": "https://www.yorkcountysc.gov/AgendaCenter/Lesslie-Fire-Tax-District-16",
+      "kind": "html",
+      "foundOn": "https://www.yorkcountysc.gov/27/Departments"
+    },
+    {
+      "text": "Newport Fire Tax District Board",
+      "href": "https://www.yorkcountysc.gov/AgendaCenter/Newport-Fire-Tax-District-17",
+      "kind": "html",
+      "foundOn": "https://www.yorkcountysc.gov/27/Departments"
+    },
+    {
+      "text": "Oakdale Fire Tax District Board",
+      "href": "https://www.yorkcountysc.gov/AgendaCenter/Oakdale-Fire-Tax-District-18",
+      "kind": "html",
+      "foundOn": "https://www.yorkcountysc.gov/27/Departments"
+    },
+    {
+      "text": "Riverview Fire Tax District Board",
+      "href": "https://www.yorkcountysc.gov/AgendaCenter/Riverview-Fire-Tax-District-19",
+      "kind": "html",
+      "foundOn": "https://www.yorkcountysc.gov/27/Departments"
+    },
+    {
+      "text": "Property Tax Installment Pre-Payment Program",
+      "href": "https://www.yorkcountysc.gov/220/Property-Tax-Installment-Pre-Payment-Pro",
+      "kind": "html",
+      "foundOn": "https://www.yorkcountysc.gov/27/Departments"
+    },
+    {
+      "text": "Tax Collection -York",
+      "href": "https://www.yorkcountysc.gov/m/directory/department?did=28",
+      "kind": "html",
+      "foundOn": "https://www.yorkcountysc.gov/m/directory"
+    },
+    {
+      "text": "Tax Collection - Rock Hill",
+      "href": "https://www.yorkcountysc.gov/m/directory/department?did=102",
+      "kind": "html",
+      "foundOn": "https://www.yorkcountysc.gov/m/directory"
+    },
+    {
+      "text": "York County’s Approved Budget Balances a Tax Reduction, with Improvements in Government Services",
+      "href": "https://www.yorkcountysc.gov/m/newsflash/Home/Detail/724",
+      "kind": "html",
+      "foundOn": "https://www.yorkcountysc.gov/m/newsflash/home/detail/740"
+    },
+    {
+      "text": "How can I find out which properties will be sold at the delinquent tax sale?",
+      "href": "https://www.yorkcountysc.gov/m/FAQ#question-184",
+      "kind": "html",
+      "foundOn": "https://www.yorkcountysc.gov/Search/Results?searchPhrase=tax+sale"
+    },
+    {
+      "text": "2026 Tax Sale Information",
+      "href": "https://www.yorkcountysc.gov/DocumentCenter/View/3590",
+      "kind": "html",
+      "foundOn": "https://www.yorkcountysc.gov/Search/Results?searchPhrase=tax+sale"
+    },
+    {
+      "text": "Tax Sale Fact Sheet",
+      "href": "https://www.yorkcountysc.gov/DocumentCenter/View/5241",
+      "kind": "html",
+      "foundOn": "https://www.yorkcountysc.gov/Search/Results?searchPhrase=tax+sale"
+    },
+    {
+      "text": "How do I figure out how much my taxes will be on a new vehicle I am purchasing?",
+      "href": "https://www.yorkcountysc.gov/m/FAQ#question-94",
+      "kind": "html",
+      "foundOn": "https://www.yorkcountysc.gov/Search/Results?searchPhrase=tax+sale"
+    }
+  ],
+  "followed": [
+    {
+      "url": "https://www.yorkcountysc.gov/693/Online-Payments",
+      "blocked": false,
+      "blockReason": null,
+      "title": "Online Payments | York, SC",
+      "saleDates": []
+    },
+    {
+      "url": "https://www.yorkcountysc.gov/216/Tax-Collection",
+      "blocked": false,
+      "blockReason": null,
+      "title": "Tax Collection | York, SC",
+      "saleDates": []
+    },
+    {
+      "url": "https://www.yorkcountysc.gov/m/newsflash/home/detail/724",
+      "blocked": false,
+      "blockReason": null,
+      "title": "York County’s Approved Budget Balances a Tax Reduction, with Improvements in Government Services • York County, SC",
+      "saleDates": [
+        "June 03, 2026",
+        "July 1, 2026"
+      ]
+    },
+    {
+      "url": "https://www.yorkcountysc.gov/DocumentCenter/View/7612/How-to-Estimate-Real-Estate-Taxes-PDF",
+      "blocked": false,
+      "blockReason": null,
+      "title": null,
+      "saleDates": []
+    },
+    {
+      "url": "https://www.yorkcountysc.gov/155/Rollback-Tax-Calculator",
+      "blocked": false,
+      "blockReason": null,
+      "title": "Rollback Tax Calculator | York, SC",
+      "saleDates": []
+    }
+  ],
+  "blocked": [],
+  "arcgis": [],
+  "qpublic": [
+    {
+      "text": "Assessor GIS Property Search",
+      "href": "https://qpublic.schneidercorp.com/Application.aspx?App=YorkCountySC&Layer=Parcels&PageType=Search",
+      "note": "Assessor lookup, not a sale list. Not scraped."
+    }
+  ],
+  "wayback": [
+    {
+      "error": "wayback HTTP 503"
+    }
+  ],
+  "suggestedFamily": "page-or-newspaper",
+  "treasurerUrl": "https://www.yorkcountysc.gov/Search/Results?searchPhrase=tax+sale",
+  "listingSampleUrl": null,
+  "notes": "qPublic/Beacon link seen; not used as the sale universe. 24 listing-like link(s)."
+}

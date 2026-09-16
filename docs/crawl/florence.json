@@ -1,0 +1,81 @@
+{
+  "id": "florence",
+  "browsedAt": "2026-09-16T17:21:28.015Z",
+  "seedUrls": [
+    "http://www.florenceco.org"
+  ],
+  "seedSource": "https://www.sccounties.org/county-information",
+  "pages": [
+    {
+      "url": "http://www.florenceco.org",
+      "finalUrl": "https://www.florencecountysc.gov/",
+      "status": 200,
+      "title": "Florence County SC - Index",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.florenceco.org/offices/hr/",
+      "finalUrl": "https://www.florencecountysc.gov/offices/hr/",
+      "status": 200,
+      "title": "Florence County SC - HR",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [
+        "October 15, 2026"
+      ],
+      "tables": []
+    }
+  ],
+  "candidateLinks": [
+    {
+      "text": "Pay Taxes Link - Icon",
+      "href": "https://taxes.paystar.io/florence-county-tax",
+      "kind": "html",
+      "foundOn": "https://www.florencecountysc.gov/"
+    },
+    {
+      "text": "2025 Tax Information",
+      "href": "https://www.florenceco.org/offices/hr/",
+      "kind": "html",
+      "foundOn": "https://www.florencecountysc.gov/"
+    }
+  ],
+  "followed": [
+    {
+      "url": "https://taxes.paystar.io/florence-county-tax",
+      "skipped": "off-host"
+    },
+    {
+      "url": "https://www.florencecountysc.gov/offices/hr/",
+      "blocked": false,
+      "blockReason": null,
+      "title": "Florence County SC - HR",
+      "saleDates": [
+        "October 15, 2026"
+      ]
+    }
+  ],
+  "blocked": [],
+  "arcgis": [],
+  "qpublic": [],
+  "wayback": [
+    {
+      "error": "The operation was aborted due to timeout"
+    }
+  ],
+  "suggestedFamily": "unknown",
+  "treasurerUrl": null,
+  "listingSampleUrl": null,
+  "notes": "No treasurer or tax-sale page confirmed from the homepage links. 2 listing-like link(s)."
+}
