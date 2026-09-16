@@ -52,6 +52,20 @@
       "idCount": 479,
       "source": "wayback-exact",
       "confirmedAt": "2026-09-16"
+    },
+    {
+      "url": "https://web.archive.org/web/20220522034419id_/https://oconeesc.com/delinquent-tax/sale-list",
+      "year": 2022,
+      "idCount": 11,
+      "source": "wayback-exact",
+      "confirmedAt": "2026-09-16"
+    },
+    {
+      "url": "https://web.archive.org/web/20200930061953id_/https://oconeesc.com/delinquent-tax/tax-sale-information",
+      "year": 2020,
+      "idCount": 8,
+      "source": "wayback-prefix",
+      "confirmedAt": "2026-09-16"
     }
   ]
 }
