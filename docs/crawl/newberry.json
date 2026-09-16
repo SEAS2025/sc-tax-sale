@@ -1,0 +1,1176 @@
+{
+  "id": "newberry",
+  "browsedAt": "2026-09-16T17:32:33.868Z",
+  "seedUrls": [
+    "https://www.newberrycounty.net/"
+  ],
+  "seedSource": "https://www.sccounties.org/county-information",
+  "pages": [
+    {
+      "url": "https://www.newberrycounty.net/",
+      "finalUrl": "https://www.newberrycounty.gov/",
+      "status": 200,
+      "title": "Newberry County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [
+        "September 11, 2001",
+        "September 7, 2026"
+      ],
+      "tables": []
+    },
+    {
+      "url": "https://www.newberrycounty.gov/delinquent-tax",
+      "finalUrl": "https://www.newberrycounty.gov/delinquent-tax",
+      "status": 200,
+      "title": "Delinquent Tax | Newberry County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [
+        "November 3, 2025"
+      ],
+      "tables": []
+    },
+    {
+      "url": "https://www.newberrycounty.gov/#mm-5",
+      "finalUrl": "https://www.newberrycounty.gov/#mm-5",
+      "status": 200,
+      "title": "Newberry County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [
+        "September 11, 2001",
+        "September 7, 2026"
+      ],
+      "tables": []
+    },
+    {
+      "url": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection",
+      "finalUrl": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection",
+      "status": 200,
+      "title": "Setoff Debt Collection | Newberry County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.newberrycounty.gov/delinquent-tax/tax-sales",
+      "finalUrl": "https://www.newberrycounty.gov/delinquent-tax/tax-sales",
+      "status": 200,
+      "title": "Tax Sales | Newberry County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.newberrycounty.gov/treasurer",
+      "finalUrl": "https://www.newberrycounty.gov/treasurer",
+      "status": 200,
+      "title": "Treasurer | Newberry County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": true,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.newberrycounty.gov/forfeited-land-commission",
+      "finalUrl": "https://www.newberrycounty.gov/forfeited-land-commission",
+      "status": 200,
+      "title": "Forfeited Land Commission | Newberry County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.newberrycounty.gov/auditor/department-information/forfeited-land-commission/forfeited-land-commission-minutes",
+      "finalUrl": "https://www.newberrycounty.gov/auditor/department-information/forfeited-land-commission/forfeited-land-commission-minutes",
+      "status": 200,
+      "title": "Forfeited Land Commission Minutes | Newberry County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [
+        "April 2, 2019"
+      ],
+      "tables": []
+    }
+  ],
+  "candidateLinks": [
+    {
+      "text": "Delinquent Tax",
+      "href": "https://www.newberrycounty.gov/delinquent-tax",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/"
+    },
+    {
+      "text": "Forfeited Land Commission",
+      "href": "https://www.newberrycounty.gov/forfeited-land-commission",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/"
+    },
+    {
+      "text": "Forfeited Land Commission",
+      "href": "https://www.newberrycounty.gov/#mm-8",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/"
+    },
+    {
+      "text": "Forfeited Land Commission Minutes",
+      "href": "https://www.newberrycounty.gov/auditor/department-information/forfeited-land-commission/forfeited-land-commission-minutes",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/"
+    },
+    {
+      "text": "Delinquent Tax",
+      "href": "https://www.newberrycounty.gov/#mm-5",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/"
+    },
+    {
+      "text": "Setoff Debt Collection",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/"
+    },
+    {
+      "text": "Tax Sales",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/"
+    },
+    {
+      "text": "County CouncilOpen submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-2",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "DepartmentsOpen submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-5",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Online ServicesOpen submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-49",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "FOIA RequestOpen submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-50",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Close submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-1",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-3",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-4",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-6",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-7",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-10",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-11",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-12",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-14",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-15",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-23",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-24",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-25",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-27",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-28",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-29",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-32",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-34",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-35",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-37",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-38",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-39",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-45",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-46",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-47",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-8",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-9",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-13",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Locate HereOpen submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-16",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Business ResourcesOpen submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-17",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Live in Newberry CountyOpen submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-18",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Data CenterOpen submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-20",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "NewsOpen submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-21",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Contact UsOpen submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-22",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-19",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-26",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-30",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-31",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-33",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-36",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-40",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-41",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-42",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-43",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-44",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-48",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Skip to main content",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#main-content",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "Close menu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax#mm-0",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax"
+    },
+    {
+      "text": "County CouncilOpen submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-2",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "DepartmentsOpen submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-5",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Online ServicesOpen submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-49",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "FOIA RequestOpen submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-50",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Close submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-1",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-3",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-4",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-6",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-7",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-10",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-11",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-12",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-14",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-15",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-23",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-24",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-25",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-27",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-28",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-29",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-32",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-34",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-35",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-37",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-38",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-39",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-45",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-46",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-47",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-8",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-9",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-13",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Locate HereOpen submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-16",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Business ResourcesOpen submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-17",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Live in Newberry CountyOpen submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-18",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Data CenterOpen submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-20",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "NewsOpen submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-21",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Contact UsOpen submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-22",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-19",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-26",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-30",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-31",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-33",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-36",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-40",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-41",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-42",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-43",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-44",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-48",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Skip to main content",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#main-content",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "Close menu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection#mm-0",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/setoff-debt-collection"
+    },
+    {
+      "text": "County CouncilOpen submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-2",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "DepartmentsOpen submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-5",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Online ServicesOpen submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-49",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "FOIA RequestOpen submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-50",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Close submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-1",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-3",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-4",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-6",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-7",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-10",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-11",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-12",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-14",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-15",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-23",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-24",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-25",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-27",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-28",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-29",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-32",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-34",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-35",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-37",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-38",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-39",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-45",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-46",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-47",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-8",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-9",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-13",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Locate HereOpen submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-16",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Business ResourcesOpen submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-17",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Live in Newberry CountyOpen submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-18",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Data CenterOpen submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-20",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "NewsOpen submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-21",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Contact UsOpen submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-22",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-19",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-26",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-30",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-31",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-33",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-36",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-40",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-41",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-42",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-43",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-44",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-48",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Skip to main content",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#main-content",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "TAX SALE INFORMATION",
+      "href": "https://www.newberrycounty.gov/sites/default/files/uploads/departments/delinquent-tax/tax_sale_info-consolidated.pdf",
+      "kind": "pdf",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Close menu",
+      "href": "https://www.newberrycounty.gov/delinquent-tax/tax-sales#mm-0",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/delinquent-tax/tax-sales"
+    },
+    {
+      "text": "Forfeited Land Commission",
+      "href": "https://www.newberrycounty.gov/treasurer#mm-8",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/treasurer"
+    },
+    {
+      "text": "Delinquent Tax",
+      "href": "https://www.newberrycounty.gov/treasurer#mm-5",
+      "kind": "html",
+      "foundOn": "https://www.newberrycounty.gov/treasurer"
+    }
+  ],
+  "followed": [
+    {
+      "url": "https://www.newberrycounty.gov/forfeited-land-commission",
+      "blocked": false,
+      "blockReason": null,
+      "title": "Forfeited Land Commission | Newberry County, SC",
+      "saleDates": []
+    },
+    {
+      "url": "https://www.newberrycounty.gov/auditor/department-information/forfeited-land-commission/forfeited-land-commission-minutes",
+      "blocked": false,
+      "blockReason": null,
+      "title": "Forfeited Land Commission Minutes | Newberry County, SC",
+      "saleDates": [
+        "April 2, 2019"
+      ]
+    }
+  ],
+  "blocked": [],
+  "arcgis": [],
+  "qpublic": [
+    {
+      "text": "Real Property Search (opens in a new tab)",
+      "href": "https://qpublic.schneidercorp.com/Application.aspx?AppID=868&LayerID=16446&PageTypeID=2&PageID=7247",
+      "note": "Assessor lookup, not a sale list. Not scraped."
+    },
+    {
+      "text": "PROPERTY SEARCH",
+      "href": "https://qpublic.schneidercorp.com/Application.aspx?AppID=868&amp;LayerID=16446&amp;PageTypeID=1",
+      "note": "Assessor lookup, not a sale list. Not scraped."
+    },
+    {
+      "text": "Real Property Search (opens in a new tab)",
+      "href": "https://qpublic.schneidercorp.com/Application.aspx?AppID=868&LayerID=16446&PageTypeID=2&PageID=7247",
+      "note": "Assessor lookup, not a sale list. Not scraped."
+    }
+  ],
+  "wayback": [
+    {
+      "error": "The operation was aborted due to timeout"
+    }
+  ],
+  "suggestedFamily": "county-pdf",
+  "treasurerUrl": "https://www.newberrycounty.gov/delinquent-tax",
+  "listingSampleUrl": "https://www.newberrycounty.gov/sites/default/files/uploads/departments/delinquent-tax/tax_sale_info-consolidated.pdf",
+  "notes": "qPublic/Beacon link seen; not used as the sale universe. 166 listing-like link(s)."
+}

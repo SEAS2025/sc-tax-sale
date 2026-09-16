@@ -144,6 +144,9 @@ Opened or cited while classifying source families. No GIS URLs added. No listing
 | Kershaw | page-or-newspaper | https://www.kershaw.sc.gov/government/departments-r-z/treasurer/delinquent-matters |
 | Jasper | page-or-newspaper | https://www.jaspercountysc.gov/services/forfeited-land/ post-sale assignments. |
 | Marion | page-or-newspaper | https://www.marionsc.org/departments/tax_collector/index.php. Information form docx, not stored. |
+| Pickens | page-or-newspaper | https://www.co.pickens.sc.us/departments/delinquent_tax/index.php. Sale 13 Oct 2026. Newspaper plus the page. |
+| Newberry | page-or-newspaper | https://www.newberrycounty.gov/delinquent-tax/tax-sales. Procedures PDF. Page still shows 3 Nov 2025. |
+| Clarendon | page-or-newspaper | https://www.clarendoncountysc.gov/our-government/treasurer/. Redirect from the SCAC host. No list. |
 
 qPublic/Beacon (`qpublic.schneidercorp.com`) is an assessor GIS portal for many SC counties. It is not a tax-sale list.
 

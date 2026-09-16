@@ -315,6 +315,27 @@ const RESEARCHED = {
     notes:
       "Family page-or-newspaper. Browsed 16 Sep 2026. Forfeited Land page describes post-sale assignments that did not meet the minimum bid. No current sale list file. Agenda PDFs are meetings, not the ad.",
   },
+  pickens: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl: "https://www.co.pickens.sc.us/departments/delinquent_tax/index.php",
+    notes:
+      "Family page-or-newspaper. Browsed 16 Sep 2026. Next sale Tuesday 13 Oct 2026 at the Performing Arts Center in Liberty. List is in the local newspaper and on this page for three weeks before the sale; an unofficial list is posted the Friday before. Results PDFs for prior sales are on the site and were not stored.",
+  },
+  newberry: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl: "https://www.newberrycounty.gov/delinquent-tax/tax-sales",
+    notes:
+      "Family page-or-newspaper. Browsed 16 Sep 2026 after the county site redirected from newberrycounty.net. Tax sales page and a procedures PDF (tax_sale_info-consolidated.pdf) exist. The delinquent-tax page still lists a sale on 3 Nov 2025. No current parcel file stored.",
+  },
+  clarendon: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl: "https://www.clarendoncountysc.gov/our-government/treasurer/",
+    notes:
+      "Family page-or-newspaper. SCAC homepage redirected from clarendoncountygov.org to clarendoncountysc.gov. Treasurer page opened 16 Sep 2026. No tax-sale list linked.",
+  },
   oconee: {
     status: "researched",
     sourceFamily: "html-table",

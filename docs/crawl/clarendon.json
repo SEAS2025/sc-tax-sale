@@ -1,0 +1,94 @@
+{
+  "id": "clarendon",
+  "browsedAt": "2026-09-16T17:32:17.149Z",
+  "seedUrls": [
+    "http://www.clarendoncountygov.org"
+  ],
+  "seedSource": "https://www.sccounties.org/county-information",
+  "pages": [
+    {
+      "url": "http://www.clarendoncountygov.org",
+      "finalUrl": "https://www.clarendoncountysc.gov/",
+      "status": 200,
+      "title": "Home | Clarendon County",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.clarendoncountysc.gov/our-government/treasurer/",
+      "finalUrl": "https://www.clarendoncountysc.gov/our-government/treasurer/",
+      "status": 200,
+      "title": "Treasurer | Clarendon County SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.clarendoncountysc.gov/our-government/county-council-agendas-and-minutes/",
+      "finalUrl": "https://www.clarendoncountysc.gov/our-government/county-council-agendas-and-minutes/",
+      "status": 200,
+      "title": "County Council Agendas and Minutes | Clarendon County SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.clarendoncountysc.gov/our-government/bvrecc-agendas-and-minutes/",
+      "finalUrl": "https://www.clarendoncountysc.gov/our-government/bvrecc-agendas-and-minutes/",
+      "status": 200,
+      "title": "BVR&ECC Agendas and Minutes | Clarendon County SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.clarendoncountysc.gov/news",
+      "finalUrl": "https://www.clarendoncountysc.gov/news",
+      "status": 200,
+      "title": "News | Clarendon County SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    }
+  ],
+  "candidateLinks": [],
+  "followed": [],
+  "blocked": [],
+  "arcgis": [],
+  "qpublic": [],
+  "wayback": [
+    {
+      "error": "The operation was aborted due to timeout"
+    }
+  ],
+  "suggestedFamily": "page-or-newspaper",
+  "treasurerUrl": "https://www.clarendoncountysc.gov/our-government/treasurer/",
+  "listingSampleUrl": null,
+  "notes": ""
+}

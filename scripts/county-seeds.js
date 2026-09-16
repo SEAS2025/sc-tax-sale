@@ -75,7 +75,10 @@ const SEEDS = {
   newberry: ["https://www.newberrycounty.net/"],
   oconee: ["https://oconeesc.com/"],
   orangeburg: ["https://www.orangeburgcounty.org/"],
-  pickens: ["https://www.pickenscountysc.gov"],
+  pickens: [
+    "https://www.pickenscountysc.gov",
+    "https://www.co.pickens.sc.us/departments/delinquent_tax/index.php",
+  ],
   richland: [
     "http://www.richlandcountysc.gov/",
     "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale",

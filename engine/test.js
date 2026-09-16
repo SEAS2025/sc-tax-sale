@@ -106,6 +106,8 @@ test("status counts: Lexington live, researched families, rest unknown", () => {
   assert.equal(getCounty("oconee").sourceFamily, "html-table");
   assert.equal(getCounty("saluda").treasurerUrl.includes("delinquent-tax-sale"), true);
   assert.equal(getCounty("colleton").sourceFamily, "county-pdf");
+  assert.equal(getCounty("pickens").treasurerUrl.includes("co.pickens.sc.us"), true);
+  assert.equal(getCounty("oconee").listingUrl.includes("sale-list"), true);
 });
 
 test("registry does not republish the owner CSV or Base44 secrets", () => {

@@ -1,0 +1,363 @@
+{
+  "id": "pickens",
+  "browsedAt": "2026-09-16T17:31:51.093Z",
+  "seedUrls": [
+    "https://www.pickenscountysc.gov",
+    "https://www.co.pickens.sc.us/departments/delinquent_tax/index.php"
+  ],
+  "seedSource": "https://www.sccounties.org/county-information",
+  "pages": [
+    {
+      "url": "https://www.pickenscountysc.gov",
+      "finalUrl": "https://www.co.pickens.sc.us/",
+      "status": 200,
+      "title": "Welcome to Pickens County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [
+        "March 20, 2026"
+      ],
+      "tables": []
+    },
+    {
+      "url": "https://www.co.pickens.sc.us/departments/delinquent_tax/index.php",
+      "finalUrl": "https://www.co.pickens.sc.us/departments/delinquent_tax/index.php",
+      "status": 200,
+      "title": "Welcome to Pickens County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": true,
+      "civicplus": false,
+      "saleDates": [
+        "October 13, 2026"
+      ],
+      "tables": []
+    },
+    {
+      "url": "https://www.co.pickens.sc.us/departments/treasurer/index.php",
+      "finalUrl": "https://www.co.pickens.sc.us/departments/treasurer/index.php",
+      "status": 200,
+      "title": "Welcome to Pickens County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.co.pickens.sc.us/departments/index.php",
+      "finalUrl": "https://www.co.pickens.sc.us/departments/index.php",
+      "status": 200,
+      "title": "Welcome to Pickens County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.co.pickens.sc.us/#",
+      "finalUrl": "https://www.co.pickens.sc.us/#",
+      "status": 200,
+      "title": "Welcome to Pickens County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [
+        "March 20, 2026"
+      ],
+      "tables": []
+    },
+    {
+      "url": "https://www.co.pickens.sc.us/newslist.php",
+      "finalUrl": "https://www.co.pickens.sc.us/newslist.php",
+      "status": 200,
+      "title": "Welcome to Pickens County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [
+        "March 20, 2026"
+      ],
+      "tables": []
+    },
+    {
+      "url": "https://www.co.pickens.sc.us/news_detail_T8_R151.php",
+      "finalUrl": "https://www.co.pickens.sc.us/news_detail_T8_R151.php",
+      "status": 200,
+      "title": "Pickens County passes FEMA exercise",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.co.pickens.sc.us/i_want_to/apply_for/documents___forms/delinquent_tax.php",
+      "finalUrl": "https://www.co.pickens.sc.us/i_want_to/apply_for/documents___forms/delinquent_tax.php",
+      "status": 200,
+      "title": "Welcome to Pickens County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.co.pickens.sc.us/document_center/Departments/Delinquent%20Tax/BIDDER%20REGISTRATION%20FORM.docx?t=202510031027080",
+      "finalUrl": null,
+      "status": null,
+      "title": null,
+      "blocked": false,
+      "blockReason": null,
+      "error": "page.goto: Download is starting",
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.co.pickens.sc.us/TAX%20SALE%20RESULTS%20FOR%20WEBSITE.pdf?t=202511051005560",
+      "finalUrl": null,
+      "status": null,
+      "title": null,
+      "blocked": false,
+      "blockReason": null,
+      "error": "page.goto: Download is starting",
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.co.pickens.sc.us/2024%20Tax%20Sale%20Results%20for%20Web.pdf?t=202410100938370",
+      "finalUrl": null,
+      "status": null,
+      "title": null,
+      "blocked": false,
+      "blockReason": null,
+      "error": "page.goto: Download is starting",
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.co.pickens.sc.us/2023%20Tax%20Sale%20Results%20for%20Web.pdf?t=202311271517280",
+      "finalUrl": null,
+      "status": null,
+      "title": null,
+      "blocked": false,
+      "blockReason": null,
+      "error": "page.goto: Download is starting",
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    }
+  ],
+  "candidateLinks": [
+    {
+      "text": "Delinquent Tax",
+      "href": "https://www.co.pickens.sc.us/departments/delinquent_tax/index.php",
+      "kind": "html",
+      "foundOn": "https://www.co.pickens.sc.us/"
+    },
+    {
+      "text": "Documents & Forms",
+      "href": "https://www.co.pickens.sc.us/i_want_to/apply_for/documents___forms/delinquent_tax.php",
+      "kind": "html",
+      "foundOn": "https://www.co.pickens.sc.us/departments/delinquent_tax/index.php"
+    },
+    {
+      "text": "ORIGINAL & SIGNED Bidder Registration Form",
+      "href": "https://www.co.pickens.sc.us/document_center/Departments/Delinquent%20Tax/BIDDER%20REGISTRATION%20FORM.docx?t=202510031027080",
+      "kind": "html",
+      "foundOn": "https://www.co.pickens.sc.us/departments/delinquent_tax/index.php"
+    },
+    {
+      "text": "2025 Delinquent Tax Sale Results",
+      "href": "https://www.co.pickens.sc.us/TAX%20SALE%20RESULTS%20FOR%20WEBSITE.pdf?t=202511051005560",
+      "kind": "pdf",
+      "foundOn": "https://www.co.pickens.sc.us/departments/delinquent_tax/index.php"
+    },
+    {
+      "text": "2024 Delinquent Tax Sale Results",
+      "href": "https://www.co.pickens.sc.us/2024%20Tax%20Sale%20Results%20for%20Web.pdf?t=202410100938370",
+      "kind": "pdf",
+      "foundOn": "https://www.co.pickens.sc.us/departments/delinquent_tax/index.php"
+    },
+    {
+      "text": "2023 Delinquent Tax Sale Results",
+      "href": "https://www.co.pickens.sc.us/2023%20Tax%20Sale%20Results%20for%20Web.pdf?t=202311271517280",
+      "kind": "pdf",
+      "foundOn": "https://www.co.pickens.sc.us/departments/delinquent_tax/index.php"
+    },
+    {
+      "text": "2022 Delinquent Tax Sale Results",
+      "href": "https://www.co.pickens.sc.us/document_center/Departments/Delinquent%20Tax/2022%20DELINQUENT%20TAX%20SALE%20RESULTS%20FOR%20WEBSITE.pdf?t=202210260946260",
+      "kind": "pdf",
+      "foundOn": "https://www.co.pickens.sc.us/departments/delinquent_tax/index.php"
+    },
+    {
+      "text": "2021 Delinquent Tax Sale Results",
+      "href": "https://www.co.pickens.sc.us/TAX%20SALE%20RESULTS%20-%20WEBSITE%20pdf.pdf?t=202111190921480",
+      "kind": "pdf",
+      "foundOn": "https://www.co.pickens.sc.us/departments/delinquent_tax/index.php"
+    },
+    {
+      "text": "2020 Delinquent Tax Sale Results",
+      "href": "https://www.co.pickens.sc.us/document_center/Departments/Delinquent%20Tax/2020DelinquentTaxSaleListing.pdf?t=202101111621320",
+      "kind": "pdf",
+      "foundOn": "https://www.co.pickens.sc.us/departments/delinquent_tax/index.php"
+    },
+    {
+      "text": "2019 Delinquent Tax Sale Results",
+      "href": "https://www.co.pickens.sc.us/document_center/Departments/Delinquent%20Tax/2019DelSaleListing.pdf?t=202105111536580",
+      "kind": "pdf",
+      "foundOn": "https://www.co.pickens.sc.us/departments/delinquent_tax/index.php"
+    },
+    {
+      "text": "2018 Delinquent Tax Sale Results",
+      "href": "https://www.co.pickens.sc.us/document_center/Departments/Delinquent%20Tax/2018DelSaleListing.pdf?t=202011152031280",
+      "kind": "pdf",
+      "foundOn": "https://www.co.pickens.sc.us/departments/delinquent_tax/index.php"
+    },
+    {
+      "text": "2017 Delinquent Tax Sale Results",
+      "href": "https://www.co.pickens.sc.us/document_center/Departments/Delinquent%20Tax/2017DelSaleListing.pdf?t=202011152031280",
+      "kind": "pdf",
+      "foundOn": "https://www.co.pickens.sc.us/departments/delinquent_tax/index.php"
+    },
+    {
+      "text": "2016 Delinquent Tax Sale Results",
+      "href": "https://www.co.pickens.sc.us/document_center/Departments/Delinquent%20Tax/2016DelSaleListing.pdf?t=202011152031270",
+      "kind": "pdf",
+      "foundOn": "https://www.co.pickens.sc.us/departments/delinquent_tax/index.php"
+    },
+    {
+      "text": "2015 Delinquent Tax Sale Results",
+      "href": "https://www.co.pickens.sc.us/document_center/Departments/Delinquent%20Tax/2015DelTaxSaleListing.pdf?t=202011152031270",
+      "kind": "pdf",
+      "foundOn": "https://www.co.pickens.sc.us/departments/delinquent_tax/index.php"
+    },
+    {
+      "text": "2014 Delinquent Tax Sale Results",
+      "href": "https://www.co.pickens.sc.us/document_center/Departments/Delinquent%20Tax/2014DelTaxSaleListing.pdf?t=202011152031270",
+      "kind": "pdf",
+      "foundOn": "https://www.co.pickens.sc.us/departments/delinquent_tax/index.php"
+    },
+    {
+      "text": "Facebook",
+      "href": "https://www.facebook.com/sharer/sharer.php?u=http://www.co.pickens.sc.us/departments/delinquent_tax/index.php",
+      "kind": "html",
+      "foundOn": "https://www.co.pickens.sc.us/departments/delinquent_tax/index.php"
+    },
+    {
+      "text": "Twitter",
+      "href": "https://www.twitter.com/intent/tweet?url=http://www.co.pickens.sc.us/departments/delinquent_tax/index.php",
+      "kind": "html",
+      "foundOn": "https://www.co.pickens.sc.us/departments/delinquent_tax/index.php"
+    },
+    {
+      "text": "Reddit",
+      "href": "https://www.reddit.com/submit?url=http://www.co.pickens.sc.us/departments/delinquent_tax/index.php",
+      "kind": "html",
+      "foundOn": "https://www.co.pickens.sc.us/departments/delinquent_tax/index.php"
+    },
+    {
+      "text": "Login",
+      "href": "https://cms5.revize.com/revize/security/index.jsp?webspace=pickenscountysc&filename=/departments/delinquent_tax/index.php",
+      "kind": "html",
+      "foundOn": "https://www.co.pickens.sc.us/departments/delinquent_tax/index.php"
+    },
+    {
+      "text": "Overage Claim Form",
+      "href": "https://www.co.pickens.sc.us/document_center/I%20WAnt%20To/Document%20&%20Forms/Delinquent%20Tax/Overage%20Claim%20Form%20pdf.pdf?t=202110141147060",
+      "kind": "pdf",
+      "foundOn": "https://www.co.pickens.sc.us/i_want_to/apply_for/documents___forms/delinquent_tax.php"
+    },
+    {
+      "text": "Bidder Registration Form",
+      "href": "https://www.co.pickens.sc.us/document_center/I%20WAnt%20To/Document%20&%20Forms/Delinquent%20Tax/BIDDER%20REGISTRATION%20FORM%20.pdf?t=202110271623510",
+      "kind": "pdf",
+      "foundOn": "https://www.co.pickens.sc.us/i_want_to/apply_for/documents___forms/delinquent_tax.php"
+    },
+    {
+      "text": "Facebook",
+      "href": "https://www.facebook.com/sharer/sharer.php?u=http://www.co.pickens.sc.us/i_want_to/apply_for/documents___forms/delinquent_tax.php",
+      "kind": "html",
+      "foundOn": "https://www.co.pickens.sc.us/i_want_to/apply_for/documents___forms/delinquent_tax.php"
+    },
+    {
+      "text": "Twitter",
+      "href": "https://www.twitter.com/intent/tweet?url=http://www.co.pickens.sc.us/i_want_to/apply_for/documents___forms/delinquent_tax.php",
+      "kind": "html",
+      "foundOn": "https://www.co.pickens.sc.us/i_want_to/apply_for/documents___forms/delinquent_tax.php"
+    },
+    {
+      "text": "Reddit",
+      "href": "https://www.reddit.com/submit?url=http://www.co.pickens.sc.us/i_want_to/apply_for/documents___forms/delinquent_tax.php",
+      "kind": "html",
+      "foundOn": "https://www.co.pickens.sc.us/i_want_to/apply_for/documents___forms/delinquent_tax.php"
+    },
+    {
+      "text": "Login",
+      "href": "https://cms5.revize.com/revize/security/index.jsp?webspace=pickenscountysc&filename=/i_want_to/apply_for/documents___forms/delinquent_tax.php",
+      "kind": "html",
+      "foundOn": "https://www.co.pickens.sc.us/i_want_to/apply_for/documents___forms/delinquent_tax.php"
+    }
+  ],
+  "followed": [
+    {
+      "url": "https://www.co.pickens.sc.us/TAX%20SALE%20RESULTS%20FOR%20WEBSITE.pdf?t=202511051005560",
+      "kind": "pdf",
+      "note": "Listing file recorded, not downloaded into git."
+    },
+    {
+      "url": "https://www.co.pickens.sc.us/2024%20Tax%20Sale%20Results%20for%20Web.pdf?t=202410100938370",
+      "kind": "pdf",
+      "note": "Listing file recorded, not downloaded into git."
+    }
+  ],
+  "blocked": [],
+  "arcgis": [],
+  "qpublic": [],
+  "wayback": [
+    {
+      "error": "wayback HTTP 503"
+    }
+  ],
+  "suggestedFamily": "county-pdf",
+  "treasurerUrl": "https://www.co.pickens.sc.us/departments/delinquent_tax/index.php",
+  "listingSampleUrl": "https://www.co.pickens.sc.us/TAX%20SALE%20RESULTS%20FOR%20WEBSITE.pdf?t=202511051005560",
+  "notes": "25 listing-like link(s)."
+}

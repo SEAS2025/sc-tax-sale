@@ -160,6 +160,12 @@ async function openPage(page, url, report, htmlDir) {
     const file = path.join(htmlDir, "page-" + report.pages.length + ".html");
     fs.writeFileSync(file, html);
     entry.links = await readLinks(page);
+    if (report && entry.finalUrl) {
+      const landed = hostOf(entry.finalUrl);
+      if (landed && report.seedHosts && !report.seedHosts.includes(landed)) {
+        report.seedHosts.push(landed);
+      }
+    }
   } catch (err) {
     entry.error = String(err.message || err).split("\n")[0].slice(0, 240);
     entry.links = [];
@@ -169,13 +175,13 @@ async function openPage(page, url, report, htmlDir) {
 }
 
 function scoreNav(link) {
-  let last = "";
+  let path = "";
   try {
-    last = decodeURIComponent(new URL(link.href).pathname).split("/").filter(Boolean).pop() || "";
+    path = decodeURIComponent(new URL(link.href).pathname);
   } catch (_err) {
-    last = "";
+    path = String(link.href || "").split("?")[0];
   }
-  const blob = (link.text || "") + " " + last.replace(/[-_]/g, " ");
+  const blob = (link.text || "") + " " + path.replace(/[-_]/g, " ");
   if (/delinquent|tax sale/i.test(blob)) return 100;
   if (/tax collector|treasurer/i.test(blob)) return 80;
   if (/document center|related information/i.test(blob)) return 60;
