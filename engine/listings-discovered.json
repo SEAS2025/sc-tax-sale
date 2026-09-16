@@ -99,5 +99,28 @@
       "source": "wayback:clarendoncountygov.org",
       "confirmedAt": "2026-09-16"
     }
+  ],
+  "fairfield": [
+    {
+      "url": "https://web.archive.org/web/20211027134349id_/https://www.fairfieldsc.com/uploads/general/2-1-2021-TAX-SALE-LISTING.pdf",
+      "year": 2021,
+      "idCount": 190,
+      "source": "wayback:fairfieldsc.com",
+      "confirmedAt": "2026-09-16"
+    },
+    {
+      "url": "https://web.archive.org/web/20211206063042id_/https://www.fairfieldsc.com/uploads/general/11-1-21-TAX-SALE-INFO-FOR-PAPER-3.pdf",
+      "year": 2021,
+      "idCount": 238,
+      "source": "wayback:fairfieldsc.com",
+      "confirmedAt": "2026-09-16"
+    },
+    {
+      "url": "https://web.archive.org/web/20251117184457id_/https://www.fairfieldsc.com/uploads/uploads/11-3-2025_Tax_Sale_Listing.pdf",
+      "year": 2025,
+      "idCount": 300,
+      "source": "wayback:fairfieldsc.com",
+      "confirmedAt": "2026-09-16"
+    }
   ]
 }
