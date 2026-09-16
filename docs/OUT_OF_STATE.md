@@ -8,14 +8,14 @@ They are not counted by `engine/test.js`, are not part of SC pricing, and are no
 
 Public records only. No login, captcha, or paywall was bypassed. **No obituaries, death notices, or any owner-name source were used.** The published lists do carry a `LIABLE OWNER` column; that column is located only so it can be dropped, and no owner value is written to any snapshot, JSON file, document, or PDF.
 
-Generated 2026-09-16T22:41:15.667Z by `engine/out-of-state.js` (driver: `scripts/hunt-out-of-state.sh`).
+Generated 2026-09-16T22:48:48.058Z by `engine/out-of-state.js` (driver: `scripts/hunt-out-of-state.sh`).
 
 ## Status of this run
 
 - `verify`: 2026-09-16T22:38:51.681Z
 - `land`: 2026-09-16T22:39:09.196Z
 - `lists`: 2026-09-16T22:41:15.641Z
-- `wayback`: not completed in this run
+- `wayback`: 2026-09-16T22:48:48.034Z
 - `pair`: not completed in this run
 - `pdf`: not completed in this run
 
@@ -83,6 +83,7 @@ Statute text verified over the network:
 | 2022 | 3163 | 3153 | n/a | html-table | registry:listing | read ok |
 | 2023 | 3088 | 3082 | n/a | html-table | registry:listing | read ok |
 | 2025 | 2837 | 2824 | n/a | html-table | registry:listing | read ok |
+| 2019 | 0 | 0 | 0 | html-table | wayback:haywoodcountync.gov | only-0-parcels-in-parcel-column |
 
 **Parcels per tax year.**
 
@@ -93,6 +94,8 @@ _No tax year produced a readable parcel column._
 _Fewer than two tax years are readable, so there is nothing to intersect._
 
 **No pair — a genuine zero, not a parsing failure.** Nothing is reported for this county. Sources responded, but no published page exposed a readable parcel column. Across every page fetched for this county there were 0 identifier-shaped tokens in total, so the pages genuinely do not carry parcel data — they are navigation and document-index pages.
+
+**Wayback CDX.** `haywoodcountync.gov|delinquent` — Internet Archive is temporarily offline (service-wide outage).
 
 ## Coconino County, AZ
 
@@ -142,6 +145,8 @@ _Fewer than two tax years are readable, so there is nothing to intersect._
 
 **No pair — a genuine zero, not a parsing failure.** Nothing is reported for this county. Sources responded, but no published page exposed a readable parcel column. Across every page fetched for this county there were 0 identifier-shaped tokens in total, so the pages genuinely do not carry parcel data — they are navigation and document-index pages.
 
+**Wayback CDX.** `coconino.az.gov|tax-lien` — Internet Archive is temporarily offline (service-wide outage); `coconino.az.gov|taxlien` — Internet Archive is temporarily offline (service-wide outage); `coconino.arizonataxsale.com|*` — Internet Archive is temporarily offline (service-wide outage).
+
 **Limitations.**
 
 - The county pages that responded are navigation and Document Center index pages. They carry no parcel table and no assessor parcel numbers at all, so the zero here is a real absence of published data rather than a reader that failed.
@@ -178,6 +183,14 @@ Statute text verified over the network:
 | — | 0 | 0 | 0 | html-table | registry:office | only-0-parcels-in-parcel-column |
 | — | 0 | 0 | 0 | html-table | registry:office | only-0-parcels-in-parcel-column |
 | — | 0 | 0 | 0 | html-table | registry:auction | only-0-parcels-in-parcel-column |
+| 2018 | 0 | 0 | 0 | html-table | wayback:mohave.arizonataxsale.com | only-0-parcels-in-parcel-column |
+| 2020 | 0 | 0 | 0 | html-table | wayback:mohave.arizonataxsale.com | only-0-parcels-in-parcel-column |
+| 2023 | 0 | 0 | 0 | html-table | wayback:mohave.arizonataxsale.com | only-0-parcels-in-parcel-column |
+| 2023 | 0 | 0 | 0 | html-table | wayback:mohave.arizonataxsale.com | only-0-parcels-in-parcel-column |
+| 2023 | 0 | 0 | 0 | html-table | wayback:mohave.arizonataxsale.com | only-0-parcels-in-parcel-column |
+| 2023 | 0 | 0 | 0 | html-table | wayback:mohave.arizonataxsale.com | only-0-parcels-in-parcel-column |
+| 2019 | 0 | 0 | 0 | html-table | wayback:mohave.arizonataxsale.com | only-0-parcels-in-parcel-column |
+| 2018 | 0 | 0 | 0 | html-table | wayback:mohave.arizonataxsale.com | only-0-parcels-in-parcel-column |
 
 **Parcels per tax year.**
 
