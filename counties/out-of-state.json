@@ -1,0 +1,125 @@
+{
+  "note": "Out-of-state delinquent-property tracks. These counties are NOT part of the 46-county South Carolina registry in counties/sc.json, are not counted by engine/test.js, and are not included in SC pricing.",
+  "scope": "Public records only. Parcel identifiers and amounts only. Owner names are never stored or published. Obituaries, death notices, and any owner-name source are out of scope.",
+  "candidateNote": "candidateUrls are probe targets, not claims. engine/out-of-state.js verifies each one over the network and only the ones that actually respond are recorded in docs/OUT_OF_STATE.md.",
+  "counties": [
+    {
+      "id": "haywood-nc",
+      "name": "Haywood",
+      "state": "NC",
+      "fips": "37087",
+      "focus": "Maggie Valley, Waynesville, Clyde, Canton",
+      "inScPricing": false,
+      "regime": "foreclosure",
+      "regimeNote": "North Carolina does not sell tax lien certificates. G.S. 105-369 requires the tax collector to report and advertise tax liens on real property annually; collection ends in a tax foreclosure sale under G.S. 105-374 (mortgage style) or G.S. 105-375 (in rem).",
+      "statuteUrls": [
+        "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_105/GS_105-369.html",
+        "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_105/GS_105-374.html",
+        "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_105/GS_105-375.html"
+      ],
+      "idKinds": ["nc-pin", "nc-pin-suffix"],
+      "candidateUrls": [
+        { "url": "https://www.haywoodcountync.gov/274/Tax-Collections", "role": "office" },
+        { "url": "https://www.haywoodcountync.gov/337/Tax-Foreclosures", "role": "office" },
+        { "url": "https://www.haywoodcountync.gov/Bids.aspx?CatID=17&txtSort=Category&showAllBids=&Status=open", "role": "notices" },
+        { "url": "https://www.haywoodcountync.gov/Bids.aspx?CatID=17&txtSort=Category&showAllBids=True", "role": "notices" },
+        { "url": "https://taxes.haywoodcountync.gov/", "role": "search" },
+        { "url": "https://www.themountaineer.com/news/haywood-county-delinquent-property-taxes-searchable-database/table_aacb7d88-cdf3-11ed-86d6-63fe99f2cb89.html", "role": "listing", "year": 2022 },
+        { "url": "https://www.themountaineer.com/news/haywood-county-delinquent-property-taxes-2023/table_b947921c-ecb9-11ee-be16-d3009a61771d.html", "role": "listing", "year": 2023 },
+        { "url": "https://www.themountaineer.com/haywood-county-delinquent-tax-listings-2025/table_5350fa1b-a3ce-47a1-bff2-52bec243d9ce.html", "role": "listing", "year": 2025 }
+      ],
+      "waybackTargets": [
+        { "host": "haywoodcountync.gov", "match": "delinquent" },
+        { "host": "haywoodcountync.gov", "match": "foreclos" },
+        { "host": "themountaineer.com", "match": "delinquent" }
+      ]
+    },
+    {
+      "id": "coconino-az",
+      "name": "Coconino",
+      "state": "AZ",
+      "fips": "04005",
+      "focus": "Grand Canyon Village, Tusayan, Williams, Flagstaff",
+      "inScPricing": false,
+      "regime": "lien-certificate",
+      "regimeNote": "Arizona counties sell tax lien certificates at an annual auction, normally in February. A.R.S. 42-18106 requires the county treasurer to prepare a delinquent tax list; 42-18109 requires publication in a newspaper of general circulation; 42-18112 sets the sale. A certificate holder may begin judicial foreclosure after three years under A.R.S. 42-18152, so a parcel that is still delinquent five years later has normally carried liens across several sales.",
+      "statuteUrls": [
+        "https://www.azleg.gov/ars/42/18106.htm",
+        "https://www.azleg.gov/ars/42/18109.htm",
+        "https://www.azleg.gov/ars/42/18112.htm",
+        "https://www.azleg.gov/ars/42/18152.htm"
+      ],
+      "idKinds": ["az-apn"],
+      "candidateUrls": [
+        { "url": "https://www.coconino.az.gov/166/Treasurer", "role": "office" },
+        { "url": "https://www.coconino.az.gov/treasurer", "role": "office" },
+        { "url": "https://www.coconino.az.gov/165/Tax-Lien-Sale", "role": "office" },
+        { "url": "https://treasurer.coconino.az.gov/", "role": "office" },
+        { "url": "https://coconino.arizonataxsale.com/", "role": "auction" },
+        { "url": "https://www.coconino.az.gov/DocumentCenter", "role": "docs" },
+        { "url": "https://publicnoticeads.com/az/", "role": "notices" }
+      ],
+      "waybackTargets": [
+        { "host": "coconino.az.gov", "match": "delinquent" },
+        { "host": "coconino.az.gov", "match": "tax-lien" },
+        { "host": "coconino.az.gov", "match": "taxlien" },
+        { "host": "coconino.arizonataxsale.com", "match": "" }
+      ]
+    },
+    {
+      "id": "mohave-az",
+      "name": "Mohave",
+      "state": "AZ",
+      "fips": "04015",
+      "focus": "Grand Canyon West / Peach Springs side, Kingman, Lake Havasu",
+      "inScPricing": false,
+      "regime": "lien-certificate",
+      "regimeNote": "Same Arizona statutory cadence as Coconino: annual February tax lien certificate auction under A.R.S. Title 42, Chapter 18, with the delinquent list published in a newspaper of general circulation.",
+      "statuteUrls": [
+        "https://www.azleg.gov/ars/42/18106.htm",
+        "https://www.azleg.gov/ars/42/18109.htm",
+        "https://www.azleg.gov/ars/42/18112.htm"
+      ],
+      "idKinds": ["az-apn"],
+      "candidateUrls": [
+        { "url": "https://www.mohave.gov/", "role": "office" },
+        { "url": "https://www.mohavecounty.us/ContentPage.aspx?id=95&cid=444", "role": "office" },
+        { "url": "https://www.mohave.gov/ContentPage.aspx?id=95&cid=444", "role": "office" },
+        { "url": "https://mohave.arizonataxsale.com/", "role": "auction" },
+        { "url": "https://publicnoticeads.com/az/", "role": "notices" }
+      ],
+      "waybackTargets": [
+        { "host": "mohavecounty.us", "match": "delinquent" },
+        { "host": "mohavecounty.us", "match": "tax" },
+        { "host": "mohave.arizonataxsale.com", "match": "" }
+      ]
+    },
+    {
+      "id": "yavapai-az",
+      "name": "Yavapai",
+      "state": "AZ",
+      "fips": "04025",
+      "focus": "Checked for Grand Canyon relevance only. Yavapai County does not reach the Grand Canyon rim; its northern boundary sits well south of the park.",
+      "inScPricing": false,
+      "regime": "lien-certificate",
+      "regimeNote": "Same Arizona statutory cadence. Included only to confirm or rule out Grand Canyon coverage.",
+      "statuteUrls": [
+        "https://www.azleg.gov/ars/42/18112.htm"
+      ],
+      "idKinds": ["az-apn"],
+      "candidateUrls": [
+        { "url": "https://www.yavapaiaz.gov/Departments/Treasurer", "role": "office" },
+        { "url": "https://www.yavapaiaz.gov/", "role": "office" },
+        { "url": "https://yavapai.arizonataxsale.com/", "role": "auction" }
+      ],
+      "waybackTargets": [
+        { "host": "yavapaiaz.gov", "match": "delinquent" }
+      ]
+    }
+  ],
+  "landOwnershipProbes": [
+    { "url": "https://www.nps.gov/grca/learn/management/statistics.htm", "note": "Grand Canyon National Park acreage, federal land not on any county tax roll." },
+    { "url": "https://www.coconino.az.gov/2418/Comprehensive-Plan", "note": "Coconino County land ownership breakdown." },
+    { "url": "https://land.az.gov/", "note": "Arizona State Land Department trust land, also off the county tax roll." }
+  ]
+}

@@ -1,5 +1,8 @@
 "use strict";
 
+const fs = require("fs");
+const path = require("path");
+
 /**
  * Known official listing files (URL + sale year). The scanner merges these
  * with hrefs found on treasurer pages and with Florence's public S3 prefix.
@@ -86,8 +89,31 @@ function looksLikeListing(url, text) {
   return LIST_FILE.test(blob);
 }
 
+/**
+ * scripts/hunt.js appends confirmed official URLs here after downloading each
+ * one and counting real parcel identifiers in it. Keeping the machine finds in
+ * their own file lets an unattended crawl add sources without rewriting the
+ * hand-curated SEEDS above.
+ */
+const DISCOVERED_FILE = path.join(__dirname, "listings-discovered.json");
+
+function discovered() {
+  try {
+    return JSON.parse(fs.readFileSync(DISCOVERED_FILE, "utf8"));
+  } catch (_err) {
+    return {};
+  }
+}
+
 function seedsFor(id) {
-  return (SEEDS[id] || []).map((row) => ({ url: row.url, year: row.year || null }));
+  const rows = (SEEDS[id] || []).map((row) => ({ url: row.url, year: row.year || null }));
+  const seen = new Set(rows.map((row) => row.url));
+  for (const row of discovered()[id] || []) {
+    if (!row || !row.url || seen.has(row.url)) continue;
+    seen.add(row.url);
+    rows.push({ url: row.url, year: row.year || null });
+  }
+  return rows;
 }
 
 function yearHintMap(id) {
