@@ -8,13 +8,13 @@ They are not counted by `engine/test.js`, are not part of SC pricing, and are no
 
 Public records only. No login, captcha, or paywall was bypassed. **No obituaries, death notices, or any owner-name source were used.** Parcel identifiers and amounts only — owner names are never stored or published.
 
-Generated 2026-09-16T21:19:11.466Z by `engine/out-of-state.js` (driver: `scripts/hunt-out-of-state.sh`).
+Generated 2026-09-16T21:19:27.207Z by `engine/out-of-state.js` (driver: `scripts/hunt-out-of-state.sh`).
 Recent window 2026/2025/2024 · historic window 2020/2021/2022.
 
 ## Status of this run
 
 - `verify`: completed 2026-09-16T21:19:11.463Z
-- `land`: not completed in this run
+- `land`: completed 2026-09-16T21:19:27.204Z
 - `lists`: not completed in this run
 - `wayback`: not completed in this run
 - `pair`: not completed in this run
@@ -159,7 +159,12 @@ A large share of the land around the Grand Canyon is federal (National Park Serv
 
 Sources probed for this statement:
 
-_Land-ownership probes have not run yet._
+- <https://www.nps.gov/grca/learn/management/statistics.htm> — HTTP 200 verified. Grand Canyon National Park acreage, federal land not on any county tax roll.
+  - quoted from that page: 1,218,375 acres
+  - quoted from that page: 1,904 square miles
+  - quoted from that page: 7.5% of park
+- <https://www.coconino.az.gov/2418/Comprehensive-Plan> — HTTP 200 not reachable. Coconino County land ownership breakdown.
+- <https://land.az.gov/> — HTTP 200 verified. Arizona State Land Department trust land, also off the county tax roll.
 
 ## Method and limits
 
