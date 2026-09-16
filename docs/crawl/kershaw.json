@@ -1,0 +1,203 @@
+{
+  "id": "kershaw",
+  "browsedAt": "2026-09-16T21:31:19.329Z",
+  "seedUrls": [
+    "https://www.kershaw.sc.gov/"
+  ],
+  "seedSource": "https://www.sccounties.org/county-information",
+  "pages": [
+    {
+      "url": "https://www.kershaw.sc.gov/",
+      "finalUrl": "https://www.kershaw.sc.gov/",
+      "status": 200,
+      "title": "Kershaw County, SC | Home",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.kershaw.sc.gov/government/departments-r-z/treasurer",
+      "finalUrl": "https://www.kershaw.sc.gov/government/departments-r-z/treasurer",
+      "status": 200,
+      "title": "Treasurer | Kershaw County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": [
+        {
+          "headers": [
+            "STAFF",
+            "PHONE",
+            "EMAIL"
+          ],
+          "rowCount": 9
+        }
+      ]
+    },
+    {
+      "url": "https://www.kershaw.sc.gov/government/elected-officials/treasurer",
+      "finalUrl": "https://www.kershaw.sc.gov/government/departments-r-z/treasurer",
+      "status": 200,
+      "title": "Treasurer | Kershaw County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": [
+        {
+          "headers": [
+            "STAFF",
+            "PHONE",
+            "EMAIL"
+          ],
+          "rowCount": 9
+        }
+      ]
+    },
+    {
+      "url": "https://www.kershaw.sc.gov/government",
+      "finalUrl": "https://www.kershaw.sc.gov/government",
+      "status": 200,
+      "title": "Departments | Kershaw County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.kershaw.sc.gov/government/departments-a-g",
+      "finalUrl": "https://www.kershaw.sc.gov/government/departments-a-g",
+      "status": 200,
+      "title": "Departments A-G | Kershaw County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": [
+        {
+          "headers": [
+            "STAFF",
+            "TITLE",
+            "DEPARTMENTS",
+            "PHONE",
+            "EMAIL"
+          ],
+          "rowCount": 21
+        }
+      ]
+    },
+    {
+      "url": "https://www.kershaw.sc.gov/government/departments-h-q",
+      "finalUrl": "https://www.kershaw.sc.gov/government/departments-h-q",
+      "status": 200,
+      "title": "Departments H-Q | Kershaw County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": [
+        {
+          "headers": [
+            "STAFF",
+            "TITLE",
+            "DEPARTMENTS",
+            "PHONE",
+            "EMAIL"
+          ],
+          "rowCount": 21
+        }
+      ]
+    },
+    {
+      "url": "https://www.kershaw.sc.gov/government/departments-r-z/treasurer/delinquent-matters",
+      "finalUrl": "https://www.kershaw.sc.gov/government/departments-r-z/treasurer/delinquent-matters",
+      "status": 200,
+      "title": "Delinquent Matters | Kershaw County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.kershaw.sc.gov/home/showpublisheddocument/17179/638981316074200000",
+      "finalUrl": null,
+      "status": null,
+      "title": null,
+      "blocked": false,
+      "blockReason": null,
+      "error": "page.goto: Download is starting",
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    }
+  ],
+  "candidateLinks": [
+    {
+      "text": "Delinquent Matters",
+      "href": "https://www.kershaw.sc.gov/government/departments-r-z/treasurer/delinquent-matters",
+      "kind": "html",
+      "foundOn": "https://www.kershaw.sc.gov/government/departments-r-z/treasurer"
+    },
+    {
+      "text": "Skip to Main Content",
+      "href": "https://www.kershaw.sc.gov/government/departments-r-z/treasurer/delinquent-matters#pagebody",
+      "kind": "html",
+      "foundOn": "https://www.kershaw.sc.gov/government/departments-r-z/treasurer/delinquent-matters"
+    },
+    {
+      "text": "Tax Sale Guide",
+      "href": "https://www.kershaw.sc.gov/home/showpublisheddocument/17179/638981316074200000",
+      "kind": "html",
+      "foundOn": "https://www.kershaw.sc.gov/government/departments-r-z/treasurer/delinquent-matters"
+    }
+  ],
+  "followed": [
+    {
+      "url": "https://www.kershaw.sc.gov/home/showpublisheddocument/17179/638981316074200000",
+      "blocked": false,
+      "blockReason": null,
+      "title": null,
+      "saleDates": []
+    }
+  ],
+  "blocked": [],
+  "arcgis": [],
+  "qpublic": [],
+  "wayback": [
+    {
+      "error": "The operation was aborted due to timeout"
+    }
+  ],
+  "suggestedFamily": "page-or-newspaper",
+  "treasurerUrl": "https://www.kershaw.sc.gov/government/departments-r-z/treasurer/delinquent-matters",
+  "listingSampleUrl": null,
+  "notes": "3 listing-like link(s)."
+}

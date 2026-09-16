@@ -1,0 +1,144 @@
+{
+  "id": "chester",
+  "browsedAt": "2026-09-16T21:28:05.292Z",
+  "seedUrls": [
+    "https://www.chestercountysc.gov",
+    "https://chestercountysc.gov/departments/tax-and-finance-departments/tax-collector/"
+  ],
+  "seedSource": "https://www.sccounties.org/county-information",
+  "pages": [
+    {
+      "url": "https://www.chestercountysc.gov",
+      "finalUrl": "https://www.chestercountysc.gov/",
+      "status": 520,
+      "title": "chestercountysc.gov | 520: Web server is returning an unknown error",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://chestercountysc.gov/departments/tax-and-finance-departments/tax-collector/",
+      "finalUrl": "https://chestercountysc.gov/departments/tax-and-finance-departments/tax-collector/",
+      "status": 200,
+      "title": "Tax Collector – Chester County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://chestercountysc.gov/departments/tax-and-finance-departments/treasurer/",
+      "finalUrl": "https://chestercountysc.gov/departments/tax-and-finance-departments/treasurer/",
+      "status": 403,
+      "title": "Just a moment...",
+      "blocked": true,
+      "blockReason": "captcha",
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://chestercountysc.gov/boards/tax-and-assessment/forfeited-land-commission/",
+      "finalUrl": null,
+      "status": null,
+      "title": null,
+      "blocked": false,
+      "blockReason": null,
+      "error": "page.goto: Timeout 30000ms exceeded.",
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://chestercountysc.gov/boards/tax-and-assessment/forfeited-land-commission",
+      "finalUrl": null,
+      "status": null,
+      "title": null,
+      "blocked": false,
+      "blockReason": null,
+      "error": "page.goto: Timeout 30000ms exceeded.",
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    }
+  ],
+  "candidateLinks": [
+    {
+      "text": "Forfeited Land Commission",
+      "href": "https://chestercountysc.gov/boards/tax-and-assessment/forfeited-land-commission/",
+      "kind": "html",
+      "foundOn": "https://chestercountysc.gov/departments/tax-and-finance-departments/tax-collector/"
+    },
+    {
+      "text": "Forfeited Land Auction",
+      "href": "https://terryhowe.com/",
+      "kind": "html",
+      "foundOn": "https://chestercountysc.gov/departments/tax-and-finance-departments/tax-collector/"
+    },
+    {
+      "text": "Forfeited Land Commission",
+      "href": "https://chestercountysc.gov/boards/tax-and-assessment/forfeited-land-commission",
+      "kind": "html",
+      "foundOn": "https://chestercountysc.gov/departments/tax-and-finance-departments/tax-collector/"
+    }
+  ],
+  "followed": [
+    {
+      "url": "https://chestercountysc.gov/boards/tax-and-assessment/forfeited-land-commission/",
+      "blocked": false,
+      "blockReason": null,
+      "title": null,
+      "saleDates": []
+    },
+    {
+      "url": "https://terryhowe.com/",
+      "skipped": "off-host"
+    },
+    {
+      "url": "https://chestercountysc.gov/boards/tax-and-assessment/forfeited-land-commission",
+      "blocked": false,
+      "blockReason": null,
+      "title": null,
+      "saleDates": []
+    }
+  ],
+  "blocked": [
+    {
+      "url": "https://chestercountysc.gov/departments/tax-and-finance-departments/treasurer/",
+      "reason": "captcha"
+    }
+  ],
+  "arcgis": [],
+  "qpublic": [
+    {
+      "text": "GIS Mapping",
+      "href": "https://beacon.schneidercorp.com/",
+      "note": "Assessor lookup, not a sale list. Not scraped."
+    }
+  ],
+  "wayback": [
+    {
+      "error": "wayback HTTP 503"
+    }
+  ],
+  "suggestedFamily": "page-or-newspaper",
+  "treasurerUrl": "https://chestercountysc.gov/departments/tax-and-finance-departments/tax-collector/",
+  "listingSampleUrl": null,
+  "notes": "Blocked walls: captcha at https://chestercountysc.gov/departments/tax-and-finance-departments/treasurer/ qPublic/Beacon link seen; not used as the sale universe. 3 listing-like link(s)."
+}

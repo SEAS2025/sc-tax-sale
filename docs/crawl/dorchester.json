@@ -1,0 +1,265 @@
+{
+  "id": "dorchester",
+  "browsedAt": "2026-09-16T21:29:41.866Z",
+  "seedUrls": [
+    "https://www.dorchestercountysc.gov/",
+    "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax"
+  ],
+  "seedSource": "https://www.sccounties.org/county-information",
+  "pages": [
+    {
+      "url": "https://www.dorchestercountysc.gov/",
+      "finalUrl": "https://www.dorchestercountysc.gov/",
+      "status": 200,
+      "title": "Dorchester County, SC website | Home",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax",
+      "finalUrl": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax",
+      "status": 200,
+      "title": "Delinquent Tax | Dorchester County, SC website",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.dorchestercountysc.gov/how-do-i/find/delinquent-tax-lookup",
+      "finalUrl": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax/search-and-pay-taxes-online",
+      "status": 200,
+      "title": "Delinquent Tax Lookup Disclaimer | Dorchester County, SC website",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.dorchestercountysc.gov/government/property-tax-services/treasurer-s-office",
+      "finalUrl": "https://www.dorchestercountysc.gov/government/property-tax-services/treasurer-s-office",
+      "status": 200,
+      "title": "Treasurer's Office | Dorchester County, SC website",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.dorchestercountysc.gov/how-do-i/contact/county-departments",
+      "finalUrl": "https://www.dorchestercountysc.gov/government",
+      "status": 200,
+      "title": "Government | Dorchester County, SC website",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": [
+        {
+          "headers": [
+            "DEPARTMENT",
+            "PHONE",
+            "EMAIL"
+          ],
+          "rowCount": 60
+        }
+      ]
+    },
+    {
+      "url": "https://www.dorchestercountysc.gov/services/advanced-components/news-list",
+      "finalUrl": "https://www.dorchestercountysc.gov/services/advanced-components/news-list",
+      "status": 200,
+      "title": "News & Notices | Dorchester County, SC website",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.dorchestercountysc.gov/government/county-council/agendas-minutes",
+      "finalUrl": "https://www.dorchestercountysc.gov/government/county-council/agendas-minutes",
+      "status": 200,
+      "title": "County Council Agendas & Minutes | Dorchester County, SC website",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax/common-terms-faq",
+      "finalUrl": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax/common-terms-faq",
+      "status": 200,
+      "title": "Common Terms & FAQ | Dorchester County, SC website",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax/search-and-pay-taxes-online",
+      "finalUrl": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax/search-and-pay-taxes-online",
+      "status": 200,
+      "title": "Delinquent Tax Lookup Disclaimer | Dorchester County, SC website",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax/delinquent-property-locator-map",
+      "finalUrl": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax/delinquent-property-locator-map",
+      "status": 200,
+      "title": "Delinquent Property Locator | Dorchester County, SC website",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    }
+  ],
+  "candidateLinks": [
+    {
+      "text": "Delinquent Tax",
+      "href": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax",
+      "kind": "html",
+      "foundOn": "https://www.dorchestercountysc.gov/"
+    },
+    {
+      "text": "Delinquent Tax Lookup",
+      "href": "https://www.dorchestercountysc.gov/how-do-i/find/delinquent-tax-lookup",
+      "kind": "html",
+      "foundOn": "https://www.dorchestercountysc.gov/"
+    },
+    {
+      "text": "Skip to Main Content",
+      "href": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax#pagebody",
+      "kind": "html",
+      "foundOn": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax"
+    },
+    {
+      "text": "Common Terms & FAQ",
+      "href": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax/common-terms-faq",
+      "kind": "html",
+      "foundOn": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax"
+    },
+    {
+      "text": "Search and Pay Taxes Online",
+      "href": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax/search-and-pay-taxes-online",
+      "kind": "html",
+      "foundOn": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax"
+    },
+    {
+      "text": "Delinquent Property Locator Map",
+      "href": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax/delinquent-property-locator-map",
+      "kind": "html",
+      "foundOn": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax"
+    },
+    {
+      "text": "Tax Grid",
+      "href": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax/tax-grid",
+      "kind": "html",
+      "foundOn": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax"
+    },
+    {
+      "text": "Delinquent Real Estate Property List",
+      "href": "https://www.dorchestercountysc.gov/?splash=https%3a%2f%2fas400.dorchestercounty.net%2fwebapps%2fdtx000200.pgm&____isexternal=true",
+      "kind": "html",
+      "foundOn": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax"
+    },
+    {
+      "text": "Delinquent Mobile Home Property List",
+      "href": "https://www.dorchestercountysc.gov/?splash=https%3a%2f%2fas400.dorchestercounty.net%2fwebapps%2fdtx000201.pgm&____isexternal=true",
+      "kind": "html",
+      "foundOn": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax"
+    },
+    {
+      "text": "To view the Notice and Instructions to Bidders for the Tax Sale, please click this link.",
+      "href": "https://www.dorchestercountysc.gov/home/showpublisheddocument/27342/639249945092730000",
+      "kind": "html",
+      "foundOn": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax"
+    },
+    {
+      "text": "Skip to Main Content",
+      "href": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax/search-and-pay-taxes-online#pagebody",
+      "kind": "html",
+      "foundOn": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax/search-and-pay-taxes-online"
+    },
+    {
+      "text": "https://dorchestercountyscdelinquenttax.billtrax.com/welcome",
+      "href": "https://dorchestercountyscdelinquenttax.billtrax.com/welcome",
+      "kind": "html",
+      "foundOn": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax/search-and-pay-taxes-online"
+    },
+    {
+      "text": "Forfeited Land Commission",
+      "href": "https://www.dorchestercountysc.gov/government/property-tax-services/auditor/forfeited-land-commission",
+      "kind": "html",
+      "foundOn": "https://www.dorchestercountysc.gov/government/property-tax-services/treasurer-s-office"
+    },
+    {
+      "text": "Skip to Main Content",
+      "href": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax/common-terms-faq#pagebody",
+      "kind": "html",
+      "foundOn": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax/common-terms-faq"
+    },
+    {
+      "text": "Skip to Main Content",
+      "href": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax/delinquent-property-locator-map#pagebody",
+      "kind": "html",
+      "foundOn": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax/delinquent-property-locator-map"
+    }
+  ],
+  "followed": [],
+  "blocked": [],
+  "arcgis": [],
+  "qpublic": [],
+  "wayback": [
+    {
+      "error": "wayback HTTP 503"
+    }
+  ],
+  "suggestedFamily": "page-or-newspaper",
+  "treasurerUrl": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax",
+  "listingSampleUrl": null,
+  "notes": "15 listing-like link(s)."
+}

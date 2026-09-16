@@ -1,0 +1,596 @@
+{
+  "id": "richland",
+  "browsedAt": "2026-09-16T21:30:32.318Z",
+  "seedUrls": [
+    "http://www.richlandcountysc.gov/",
+    "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale"
+  ],
+  "seedSource": "https://www.sccounties.org/county-information",
+  "pages": [
+    {
+      "url": "http://www.richlandcountysc.gov/",
+      "finalUrl": "https://www.richlandcountysc.gov/Home",
+      "status": 200,
+      "title": "Home | Richland County SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": true,
+      "civicplus": false,
+      "saleDates": [
+        "September 11, 2026",
+        "September 03, 2026",
+        "November 3, 2026",
+        "September 02, 2026",
+        "September 16, 2026"
+      ],
+      "tables": []
+    },
+    {
+      "url": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale",
+      "finalUrl": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale",
+      "status": 200,
+      "title": "Tax Sale | Richland County SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [
+        "November 2, 2026",
+        "November 3, 2026"
+      ],
+      "tables": []
+    },
+    {
+      "url": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes",
+      "finalUrl": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes",
+      "status": 200,
+      "title": "Delinquent Taxes | Richland County SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Forfeited-Land-Available",
+      "finalUrl": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Forfeited-Land-Available",
+      "status": 200,
+      "title": "Forfeited Land Available | Richland County SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.richlandcountysc.gov/Government/Elected-Offices/Treasurer",
+      "finalUrl": "https://www.richlandcountysc.gov/Government/Elected-Offices/Treasurer",
+      "status": 200,
+      "title": "Treasurer | Richland County SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.richlandcountysc.gov/Government/Organization/Departments/Treasurer",
+      "finalUrl": "https://www.richlandcountysc.gov/Government/Organization/Departments/Treasurer",
+      "status": 200,
+      "title": "Treasurer | Richland County SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.richlandcountysc.gov/Government/Organization/Departments",
+      "finalUrl": "https://www.richlandcountysc.gov/Government/Organization/Departments",
+      "status": 200,
+      "title": "Departments | Richland County SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?oc_lang=en-US",
+      "finalUrl": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766542222370",
+      "status": 200,
+      "title": "Tax Sale | Richland County SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [
+        "November 2, 2026",
+        "November 3, 2026"
+      ],
+      "tables": []
+    },
+    {
+      "url": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?oc_lang=es",
+      "finalUrl": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766568585939",
+      "status": 200,
+      "title": "Venta de impuestos | Condado de Richland, Carolina del Sur",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?oc_lang=vi",
+      "finalUrl": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766607199854",
+      "status": 200,
+      "title": "Bán đấu giá thuế | Quận Richland, Nam Carolina",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?oc_lang=tl",
+      "finalUrl": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766643541922",
+      "status": 200,
+      "title": "Pagbebenta ng Buwis | Richland County SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?oc_lang=hi",
+      "finalUrl": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766678002786",
+      "status": 200,
+      "title": "कर बिक्री | रिचलैंड काउंटी, दक्षिण कैरोलिना",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    }
+  ],
+  "candidateLinks": [
+    {
+      "text": "Delinquent Taxes",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Home"
+    },
+    {
+      "text": "Forfeited Land Available",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Forfeited-Land-Available",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Home"
+    },
+    {
+      "text": "Tax Sale",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Home"
+    },
+    {
+      "text": "Skip to main content",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale#main-content",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale"
+    },
+    {
+      "text": "English (United States) Select this as your preferred language",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?oc_lang=en-US",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale"
+    },
+    {
+      "text": "Spanish Select this as your preferred language",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?oc_lang=es",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale"
+    },
+    {
+      "text": "Vietnamese Select this as your preferred language",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?oc_lang=vi",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale"
+    },
+    {
+      "text": "Tagalog (Filipino) Select this as your preferred language",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?oc_lang=tl",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale"
+    },
+    {
+      "text": "Hindi Select this as your preferred language",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?oc_lang=hi",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale"
+    },
+    {
+      "text": "Korean Select this as your preferred language",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?oc_lang=ko",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale"
+    },
+    {
+      "text": "German Select this as your preferred language",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?oc_lang=de",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale"
+    },
+    {
+      "text": "Chinese (Simplified) Select this as your preferred language",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?oc_lang=zh-CN",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale"
+    },
+    {
+      "text": "Russian Select this as your preferred language",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?oc_lang=ru",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale"
+    },
+    {
+      "text": "Portuguese Select this as your preferred language",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?oc_lang=pt",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale"
+    },
+    {
+      "text": "Gujarati Select this as your preferred language",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?oc_lang=gu",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale"
+    },
+    {
+      "text": "https://www7.richlandcountysc.gov/TaxSaleBidder/Default.aspx",
+      "href": "https://www7.richlandcountysc.gov/TaxSaleBidder/Default.aspx",
+      "kind": "aspx",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale"
+    },
+    {
+      "text": "Facebook",
+      "href": "https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.richlandcountysc.gov%2fProperty-Business%2fTaxes%2fDelinquent-Taxes%2fTax-Sale",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale"
+    },
+    {
+      "text": "Print",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale#",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale"
+    },
+    {
+      "text": "Back to top",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale#body-top",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale"
+    },
+    {
+      "text": "Skip to main content",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes#main-content",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes"
+    },
+    {
+      "text": "English (United States) Select this as your preferred language",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes?oc_lang=en-US",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes"
+    },
+    {
+      "text": "Spanish Select this as your preferred language",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes?oc_lang=es",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes"
+    },
+    {
+      "text": "Vietnamese Select this as your preferred language",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes?oc_lang=vi",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes"
+    },
+    {
+      "text": "Tagalog (Filipino) Select this as your preferred language",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes?oc_lang=tl",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes"
+    },
+    {
+      "text": "Hindi Select this as your preferred language",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes?oc_lang=hi",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes"
+    },
+    {
+      "text": "Korean Select this as your preferred language",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes?oc_lang=ko",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes"
+    },
+    {
+      "text": "German Select this as your preferred language",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes?oc_lang=de",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes"
+    },
+    {
+      "text": "Chinese (Simplified) Select this as your preferred language",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes?oc_lang=zh-CN",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes"
+    },
+    {
+      "text": "Russian Select this as your preferred language",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes?oc_lang=ru",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes"
+    },
+    {
+      "text": "Portuguese Select this as your preferred language",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes?oc_lang=pt",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes"
+    },
+    {
+      "text": "Gujarati Select this as your preferred language",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes?oc_lang=gu",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes"
+    },
+    {
+      "text": "Facebook",
+      "href": "https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.richlandcountysc.gov%2fProperty-Business%2fTaxes%2fDelinquent-Taxes",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes"
+    },
+    {
+      "text": "Print",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes#",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes"
+    },
+    {
+      "text": "Back to top",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes#body-top",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes"
+    },
+    {
+      "text": "Skip to main content",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Forfeited-Land-Available#main-content",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Forfeited-Land-Available"
+    },
+    {
+      "text": "English (United States) Select this as your preferred language",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Forfeited-Land-Available?oc_lang=en-US",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Forfeited-Land-Available"
+    },
+    {
+      "text": "Spanish Select this as your preferred language",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Forfeited-Land-Available?oc_lang=es",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Forfeited-Land-Available"
+    },
+    {
+      "text": "Vietnamese Select this as your preferred language",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Forfeited-Land-Available?oc_lang=vi",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Forfeited-Land-Available"
+    },
+    {
+      "text": "Tagalog (Filipino) Select this as your preferred language",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Forfeited-Land-Available?oc_lang=tl",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Forfeited-Land-Available"
+    },
+    {
+      "text": "Hindi Select this as your preferred language",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Forfeited-Land-Available?oc_lang=hi",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Forfeited-Land-Available"
+    },
+    {
+      "text": "Korean Select this as your preferred language",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Forfeited-Land-Available?oc_lang=ko",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Forfeited-Land-Available"
+    },
+    {
+      "text": "German Select this as your preferred language",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Forfeited-Land-Available?oc_lang=de",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Forfeited-Land-Available"
+    },
+    {
+      "text": "Chinese (Simplified) Select this as your preferred language",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Forfeited-Land-Available?oc_lang=zh-CN",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Forfeited-Land-Available"
+    },
+    {
+      "text": "Russian Select this as your preferred language",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Forfeited-Land-Available?oc_lang=ru",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Forfeited-Land-Available"
+    },
+    {
+      "text": "Portuguese Select this as your preferred language",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Forfeited-Land-Available?oc_lang=pt",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Forfeited-Land-Available"
+    },
+    {
+      "text": "Gujarati Select this as your preferred language",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Forfeited-Land-Available?oc_lang=gu",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Forfeited-Land-Available"
+    },
+    {
+      "text": "FLC Properties Listing(XLSX, 12KB)",
+      "href": "https://www.richlandcountysc.gov/files/assets/county/v/7/treasurer/documents/copy-of-flc-owned-property-8-5-2026.xlsx",
+      "kind": "xlsx",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Forfeited-Land-Available"
+    },
+    {
+      "text": "Facebook",
+      "href": "https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.richlandcountysc.gov%2fProperty-Business%2fTaxes%2fDelinquent-Taxes%2fForfeited-Land-Available",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Forfeited-Land-Available"
+    },
+    {
+      "text": "Print",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Forfeited-Land-Available#",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Forfeited-Land-Available"
+    },
+    {
+      "text": "Back to top",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Forfeited-Land-Available#body-top",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Forfeited-Land-Available"
+    },
+    {
+      "text": "Skip to main content",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766542222370#main-content",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766542222370"
+    },
+    {
+      "text": "Print",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766542222370#",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766542222370"
+    },
+    {
+      "text": "Back to top",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766542222370#body-top",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766542222370"
+    },
+    {
+      "text": "Saltar al contenido principal",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766568585939#main-content",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766568585939"
+    },
+    {
+      "text": "Imprimir",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766568585939#",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766568585939"
+    },
+    {
+      "text": "Volver arriba",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766568585939#body-top",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766568585939"
+    },
+    {
+      "text": "Chuyển đến nội dung chính",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766607199854#main-content",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766607199854"
+    },
+    {
+      "text": "In",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766607199854#",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766607199854"
+    },
+    {
+      "text": "Trở lại đầu trang",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766607199854#body-top",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766607199854"
+    },
+    {
+      "text": "Laktawan ang pangunahing nilalaman",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766643541922#main-content",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766643541922"
+    },
+    {
+      "text": "I-print",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766643541922#",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766643541922"
+    },
+    {
+      "text": "Balik sa itaas",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766643541922#body-top",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766643541922"
+    },
+    {
+      "text": "मुख्य सामग्री पर जाएं",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766678002786#main-content",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766678002786"
+    },
+    {
+      "text": "छाप",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766678002786#",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766678002786"
+    },
+    {
+      "text": "शीर्ष पर वापस जाएं",
+      "href": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766678002786#body-top",
+      "kind": "html",
+      "foundOn": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale?lang_update=639251766678002786"
+    }
+  ],
+  "followed": [],
+  "blocked": [],
+  "arcgis": [],
+  "qpublic": [],
+  "wayback": [
+    {
+      "error": "The operation was aborted due to timeout"
+    }
+  ],
+  "suggestedFamily": "xlsx",
+  "treasurerUrl": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale",
+  "listingSampleUrl": "https://www.richlandcountysc.gov/files/assets/county/v/7/treasurer/documents/copy-of-flc-owned-property-8-5-2026.xlsx",
+  "notes": "65 listing-like link(s)."
+}
