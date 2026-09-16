@@ -60,6 +60,7 @@
         }
       ],
       "identifierNote": "Haywood publishes the North Carolina grid PIN with its hyphens stripped, for example 8614733009 for 8614-73-3009. The canonical form kept in this repo is that digits-only 10-character string, applied to both sides of every intersection.",
+      "accessNote": "The advertisement itself is a public record: G.S. 105-369 requires the tax collector to advertise these liens, and the newspaper is the statutory place of publication. Worth stating plainly, though: the newspaper's table pages carry an isAccessibleForFree=false marker and a subscriber-hide wrapper in their markup, even though the server returned the complete table in an ordinary unauthenticated GET. Nothing was bypassed to read them — no login, no cookie, no captcha, no paywall-defeating script, and no reader-mode trick. The 2017 advertisement pages are plain public PDF assets linked directly from the article. If the county publishes the advertisement itself, that county copy is the better primary source and should replace these pages here.",
       "noAcreage": true,
       "waybackTargets": [
         { "host": "haywoodcountync.gov", "match": "delinquent" },

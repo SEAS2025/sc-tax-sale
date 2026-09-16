@@ -8,7 +8,7 @@ They are not counted by `engine/test.js`, are not part of SC pricing, and are no
 
 Public records only. No login, captcha, or paywall was bypassed. **No obituaries, death notices, or any owner-name source were used.** The published lists do carry a `LIABLE OWNER` column; that column is located only so it can be dropped, and no owner value is written to any snapshot, JSON file, document, or PDF.
 
-Generated 2026-09-16T23:03:42.024Z by `engine/out-of-state.js` (driver: `scripts/hunt-out-of-state.sh`).
+Generated 2026-09-16T23:07:40.097Z by `engine/out-of-state.js` (driver: `scripts/hunt-out-of-state.sh`).
 
 ## Status of this run
 
@@ -56,6 +56,8 @@ Statute text verified over the network:
 - <https://www.haywoodcountync.gov/Bids.aspx?CatID=17&txtSort=Category&showAllBids=True> — HTTP 404 — page not found
 
 **Identifier format.** Haywood publishes the North Carolina grid PIN with its hyphens stripped, for example 8614733009 for 8614-73-3009. The canonical form kept in this repo is that digits-only 10-character string, applied to both sides of every intersection.
+
+**How these pages were accessed.** The advertisement itself is a public record: G.S. 105-369 requires the tax collector to advertise these liens, and the newspaper is the statutory place of publication. Worth stating plainly, though: the newspaper's table pages carry an isAccessibleForFree=false marker and a subscriber-hide wrapper in their markup, even though the server returned the complete table in an ordinary unauthenticated GET. Nothing was bypassed to read them — no login, no cookie, no captcha, no paywall-defeating script, and no reader-mode trick. The 2017 advertisement pages are plain public PDF assets linked directly from the article. If the county publishes the advertisement itself, that county copy is the better primary source and should replace these pages here.
 
 **Files read.**
 

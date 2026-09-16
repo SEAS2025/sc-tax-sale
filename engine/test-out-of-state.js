@@ -424,6 +424,7 @@ test("the findings document reports true spans, the AZ zero, and the archive out
   assert.match(doc, /No obituaries, death notices/);
   assert.match(doc, /federal \(National Park Service, U\.S\. Forest Service\) or tribal/);
   assert.match(doc, /read by column, not by pattern/);
+  assert.match(doc, /Nothing was bypassed to read them/, "the access caveat must be stated");
   fs.rmSync(tmp, { recursive: true, force: true });
 });
 

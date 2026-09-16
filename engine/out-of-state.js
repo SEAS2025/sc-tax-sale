@@ -912,6 +912,10 @@ function writeDoc(registry, state, destPath) {
       out.push("**Identifier format.** " + county.identifierNote);
       out.push("");
     }
+    if (county.accessNote) {
+      out.push("**How these pages were accessed.** " + county.accessNote);
+      out.push("");
+    }
     out.push("**Files read.**");
     out.push("");
     out.push(listTable(cs));
