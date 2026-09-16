@@ -7,12 +7,14 @@
 #
 # Runs end to end with no interactive agent: verifies official treasurer and
 # tax-collector URLs, fetches published delinquent and tax-lien lists, queries
-# the Wayback CDX API (throttled, with backoff) for the ~5-years-back side,
-# extracts parcel identifiers, pairs recent against historic, rewrites
-# docs/OUT_OF_STATE.md, and builds the PDF when real paired data exists.
+# the Wayback CDX API (throttled, with backoff) for older captures, reads each
+# list by column position, intersects every pair of tax years, rewrites
+# docs/OUT_OF_STATE.md, and builds the PDF when real paired data exists. The
+# report is named for the year span actually found, never for a wished-for one.
 #
 # Public records only. No login, captcha, or paywall is bypassed. No obituary
-# or owner-name source is read. Identifiers and amounts only.
+# or owner-name source is read. Identifiers and amounts only — the published
+# lists do carry an owner column, and it is dropped.
 #
 # Launch detached so it survives an SSH disconnect:
 #   cd ~/Projects/sc-tax-sale && setsid nohup bash scripts/hunt-out-of-state.sh \
@@ -33,6 +35,7 @@ OWNED=(
   "scripts/hunt-out-of-state.sh"
   "engine/out-of-state.js"
   "engine/out-of-state-ids.js"
+  "engine/out-of-state-tables.js"
   "engine/out-of-state-pdf.js"
   "engine/test-out-of-state.js"
 )
@@ -50,11 +53,11 @@ sync_repo() {
   timeout 90 git fetch origin --quiet 2>&1 | tail -3
 }
 
-# Pushing is opt-in. The clone on this host carries a commit from the South
-# Carolina track that has not been published yet, and pushing this branch would
-# publish it too. Default is commit-only; the laptop pulls from this host.
+# Only the owned paths above are ever staged, so a push publishes this track's
+# commits and nothing the South Carolina agent has in flight. Set OOS_PUSH=0 to
+# commit locally without publishing.
 maybe_push() {
-  [ "${OOS_PUSH:-0}" = "1" ] || { say "git: push disabled (set OOS_PUSH=1 to publish)"; return 0; }
+  [ "${OOS_PUSH:-1}" = "1" ] || { say "git: push disabled (OOS_PUSH=0)"; return 0; }
   if timeout 120 "${GIT_AS[@]}" -c credential.helper='!gh auth git-credential' push origin "HEAD:$BRANCH" 2>&1 | tail -3; then
     say "git: pushed to origin/$BRANCH"
   else
@@ -103,6 +106,14 @@ guard_no_raw_files() {
 
 say "repo=$REPO branch=$BRANCH node=$(node --version 2>/dev/null) pid=$$"
 mkdir -p inbox/out-of-state inbox/repeat
+
+# The run is resumable: state.json carries what has already been fetched, so a
+# reboot picks up where it left off. After a reader change that state is stale,
+# and OOS_RESET=1 sets it aside so every list is read again from scratch.
+if [ "${OOS_RESET:-0}" = "1" ] && [ -f inbox/out-of-state/state.json ]; then
+  mv inbox/out-of-state/state.json "inbox/out-of-state/state.$(date -u +%Y%m%d%H%M%S).json"
+  say "state: previous run set aside, reading every list again"
+fi
 
 sync_repo
 
@@ -173,10 +184,12 @@ node --test engine/test-out-of-state.js 2>&1 | tail -25
 say "tests: South Carolina suite must stay intact"
 npm test 2>&1 | tail -12
 
+# The report file name states the real year span that was found, so it is
+# globbed rather than hard-coded to a five-year name.
 say "artifacts:"
 ls -la docs/OUT_OF_STATE.md 2>/dev/null
-ls -la inbox/repeat/Out-of-state-5-year-delinquent.* 2>/dev/null
-ls -la "$HOME/Downloads/Out-of-state-5-year-delinquent.pdf" 2>/dev/null
+ls -la inbox/repeat/*delinquent.pdf inbox/repeat/*delinquent.html 2>/dev/null
+ls -la "$HOME"/Downloads/*delinquent.pdf 2>/dev/null
 
 checkpoint "Out-of-state: final findings for Haywood NC and Coconino/Mohave AZ."
 guard_no_raw_files

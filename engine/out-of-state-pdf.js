@@ -1,33 +1,53 @@
 "use strict";
 
 /**
- * Designed PDF for the out-of-state 5-year delinquent file.
+ * Designed PDF for the out-of-state repeat-delinquent file.
  *
  * Same visual language as engine/export-repeat-pdf.js — cover, one chapter per
- * county, acres column, gold highlight at 1–6 acres, acres sorted smallest
- * first — but written to its own file so it never overwrites the South
- * Carolina report and never edits a module the SC track owns.
+ * county, gold highlight on the rows that matter most, county-office links —
+ * but written to its own file so it never overwrites the South Carolina report
+ * and never edits a module the SC track owns.
  *
- * Identifiers, listing specs, and official office URLs only. Owner names are
- * never written.
+ * Honesty rules baked in here:
+ *   - The file name and the cover state the *real* number of tax years between
+ *     the two lists. A three-year gap is never printed as five.
+ *   - An acres column and its 1–6 acre highlight appear only when the source
+ *     list actually published acreage. The Haywood advertisement does not, so
+ *     for Haywood the highlight falls on parcels advertised in every readable
+ *     year instead, and no acreage is invented.
+ *   - Identifiers, amounts, and official office links only. Owner names are
+ *     never written, and the rendered HTML is checked for owner-shaped rows
+ *     before it is printed.
  */
 
 const fs = require("fs");
 const os = require("os");
 const path = require("path");
 const { execFileSync } = require("child_process");
-const { mergeSpecs, sanitizeRow } = require("./specs");
+const { sanitizeRow } = require("./specs");
 const scPdf = require("./export-repeat-pdf");
 
 const ROOT = path.join(__dirname, "..");
-const FILENAME = "Out-of-state-5-year-delinquent.pdf";
 
-function defaultDest() {
-  return path.join(ROOT, "inbox", "repeat", FILENAME);
+/** File name follows what was actually found, never the label we wished for. */
+function fileNameFor(snapshot) {
+  const counties = (snapshot && snapshot.counties) || [];
+  if (!counties.length) return "Out-of-state-repeat-delinquent.pdf";
+  const states = [...new Set(counties.map((row) => row.stateCode))];
+  const scope = counties.length === 1
+    ? counties[0].name + "-" + counties[0].stateCode
+    : (states.length === 1 ? states[0] : "Out-of-state");
+  const span = snapshot.span;
+  if (snapshot.isFiveYear) return scope + "-5-year-delinquent.pdf";
+  return scope + "-" + span + "-year-repeat-delinquent.pdf";
 }
 
-function downloadsDest() {
-  return path.join(process.env.HOME || os.homedir(), "Downloads", FILENAME);
+function defaultDest(snapshot) {
+  return path.join(ROOT, "inbox", "repeat", fileNameFor(snapshot));
+}
+
+function downloadsDest(snapshot) {
+  return path.join(process.env.HOME || os.homedir(), "Downloads", fileNameFor(snapshot));
 }
 
 function escapeHtml(value) {
@@ -71,18 +91,19 @@ function hasValue(value) {
   return value != null && value !== "";
 }
 
-function acresSortValue(value) {
-  const n = Number(value);
-  return value == null || value === "" || !Number.isFinite(n) ? Number.POSITIVE_INFINITY : n;
+function spanWords(span) {
+  const words = ["", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"];
+  return words[span] || String(span);
 }
+
+/* --------------------------------------------------------------- row build */
 
 function buildRows(snapshot) {
   const rows = [];
   for (const county of snapshot.counties || []) {
-    const specsRecent = county._specsRecent || new Map();
-    const specsHistoric = county._specsHistoric || new Map();
+    const readable = county.readableYears || [];
     for (const pair of county.both || []) {
-      const specs = mergeSpecs(specsRecent.get(pair.tms), specsHistoric.get(pair.tms));
+      const advertised = pair.advertisedYears || [];
       rows.push(sanitizeRow({
         county: county.name,
         countyId: county.id,
@@ -93,36 +114,54 @@ function buildRows(snapshot) {
         historicYear: county.historic && county.historic.year,
         recentUrl: county.recent && county.recent.url,
         historicUrl: county.historic && county.historic.url,
-        amountRecent: pair.amountRecent != null ? pair.amountRecent : specs.amount,
+        amountRecent: pair.amountRecent,
         amountHistoric: pair.amountHistoric,
-        taxYears: specs.taxYears,
-        acres: specs.acres,
-        district: specs.district,
-        class: specs.class,
-        item: specs.item,
-        situs: specs.situs,
-        legal: specs.legal,
+        advertisedYears: advertised.join(", "),
+        advertisedCount: advertised.length,
+        everyYear: readable.length > 0 && advertised.length === readable.length,
+        acres: pair.acres == null ? null : pair.acres,
       }));
     }
   }
   return rows;
 }
 
-function visibleColumns(list) {
+function hasAcreage(list) {
+  return list.some((row) => hasValue(row.acres));
+}
+
+/** Highlight 1–6 acres when acreage exists; otherwise the most persistent rows. */
+function isHighlightRow(row, withAcres) {
+  if (withAcres) return scPdf.isTargetAcreage(row.acres);
+  return Boolean(row.everyYear);
+}
+
+function sortRows(list, withAcres) {
+  return list.slice().sort((a, b) => {
+    if (withAcres) {
+      const aa = hasValue(a.acres) && Number.isFinite(Number(a.acres)) ? Number(a.acres) : Number.POSITIVE_INFINITY;
+      const bb = hasValue(b.acres) && Number.isFinite(Number(b.acres)) ? Number(b.acres) : Number.POSITIVE_INFINITY;
+      if (aa !== bb) return aa - bb;
+    } else if (a.advertisedCount !== b.advertisedCount) {
+      return b.advertisedCount - a.advertisedCount;
+    }
+    return (b.amountRecent || 0) - (a.amountRecent || 0) || String(a.tms).localeCompare(String(b.tms));
+  });
+}
+
+function visibleColumns(list, withAcres) {
   const first = list[0] || {};
   const cols = [{ id: "tms", label: "Parcel identifier", cls: "c-id" }];
-  if (list.some((row) => hasValue(row.amountRecent))) {
-    cols.push({ id: "amountRecent", label: "Due " + (first.recentYear || "new"), cls: "c-amt num", money: true });
-  }
   if (list.some((row) => hasValue(row.amountHistoric))) {
-    cols.push({ id: "amountHistoric", label: "Due " + (first.historicYear || "old"), cls: "c-amt num", money: true });
+    cols.push({ id: "amountHistoric", label: "Advertised " + (first.historicYear || "older"), cls: "c-amt num", money: true });
   }
-  if (list.some((row) => hasValue(row.taxYears))) cols.push({ id: "taxYears", label: "Tax years", cls: "c-tax" });
-  cols.push({ id: "acres", label: "Acres", cls: "c-ac num", acres: true });
-  if (list.some((row) => hasValue(row.district))) cols.push({ id: "district", label: "Dist.", cls: "c-dist" });
-  if (list.some((row) => hasValue(row.class))) cols.push({ id: "class", label: "Class", cls: "c-cls" });
-  if (list.some((row) => hasValue(row.situs))) cols.push({ id: "situs", label: "Situs", cls: "c-sit" });
-  if (list.some((row) => hasValue(row.legal))) cols.push({ id: "legal", label: "Lot / legal", cls: "c-leg" });
+  if (list.some((row) => hasValue(row.amountRecent))) {
+    cols.push({ id: "amountRecent", label: "Advertised " + (first.recentYear || "newer"), cls: "c-amt num", money: true });
+  }
+  if (withAcres) cols.push({ id: "acres", label: "Acres", cls: "c-ac num", acres: true });
+  if (list.some((row) => hasValue(row.advertisedYears))) {
+    cols.push({ id: "advertisedYears", label: "Tax years advertised", cls: "c-tax" });
+  }
   return cols;
 }
 
@@ -147,18 +186,17 @@ function shortSource(url) {
 function officeFacts(countyId, state) {
   const cs = (state && state.counties && state.counties[countyId]) || {};
   const office = (cs.verified || []).filter((row) => row.role === "office" || row.role === "auction");
-  return {
-    urls: office.map((row) => row.url),
-    statutes: (cs.verified || []).filter((row) => row.role === "statute").map((row) => row.url),
-  };
+  return { urls: office.map((row) => row.url) };
 }
 
 function regimeLine(stateCode) {
   if (stateCode === "NC") {
-    return "North Carolina does not sell tax lien certificates. G.S. 105-369 requires the collector to advertise tax liens on real property each year (normally March–June); collection ends in a foreclosure sale under G.S. 105-374 or 105-375. Bid at the courthouse sale, with a 10-day upset-bid period.";
+    return "North Carolina does not sell tax lien certificates. G.S. 105-369 requires the collector to advertise tax liens on real property each year, under an order of the board of commissioners; collection ends in a foreclosure sale under G.S. 105-374 or 105-375. Sales are held at the courthouse with a ten-day upset-bid period.";
   }
-  return "Arizona counties sell tax lien certificates at an annual auction, normally in February, under A.R.S. Title 42, Chapter 18, with the delinquent list published in a newspaper of general circulation. A certificate holder may begin judicial foreclosure after three years (A.R.S. 42-18152), so a parcel still delinquent five years later has normally carried liens across several sales.";
+  return "Arizona counties sell tax lien certificates at an annual auction, normally in February, under A.R.S. Title 42, Chapter 18, with the delinquent list published in a newspaper of general circulation. A certificate holder may begin judicial foreclosure after three years (A.R.S. 42-18152).";
 }
+
+/* ------------------------------------------------------------------- print */
 
 function printCss() {
   return `
@@ -218,40 +256,47 @@ function printCss() {
     .id { font-family: "Liberation Mono", "DejaVu Sans Mono", ui-monospace, monospace; font-size: 8pt; font-weight: 650; white-space: nowrap; }
     .num { font-variant-numeric: tabular-nums; }
     .empty { color: #b3aa9a; }
-    .c-id { width: 16%; } .c-amt { width: 11%; } .c-tax { width: 12%; } .c-ac { width: 7%; }
-    .c-dist { width: 7%; } .c-cls { width: 8%; } .c-sit { width: 22%; } .c-leg { width: 17%; }
+    .c-id { width: 20%; } .c-amt { width: 16%; } .c-tax { width: 26%; } .c-ac { width: 10%; }
     .sources { margin: 0.05in 0 0; color: #c8c0b0; font-size: 7.5pt; }
   `;
 }
 
 function renderHtml(snapshot, rows, state) {
+  const withAcres = hasAcreage(rows);
   const byCounty = new Map();
   for (const row of rows) {
     if (!byCounty.has(row.county)) byCounty.set(row.county, []);
     byCounty.get(row.county).push(row);
   }
-  for (const [name, list] of byCounty) byCounty.set(name, scPdf.sortCountyRows(list));
-  const highlight = rows.filter((row) => scPdf.isTargetAcreage(row.acres)).length;
+  for (const [name, list] of byCounty) byCounty.set(name, sortRows(list, withAcres));
+  const highlight = rows.filter((row) => isHighlightRow(row, withAcres)).length;
+  const spanText = snapshot.span === 5
+    ? "Five-year delinquent file"
+    : spanWords(snapshot.span) + "-year repeat-delinquent file";
 
   const cards = (snapshot.counties || []).map((county) => {
     const list = byCounty.get(county.name) || [];
-    const marked = list.filter((row) => scPdf.isTargetAcreage(row.acres)).length;
-    return `<article class="card"><strong>${escapeHtml(county.name)} ${escapeHtml(county.stateCode)}</strong><em>${list.length}</em><small>${escapeHtml(String(county.recent && county.recent.year || "—"))} × ${escapeHtml(String(county.historic && county.historic.year || "—"))} · ${marked} of ${list.length} at 1–6 ac<br>${escapeHtml(shortSource(county.recent && county.recent.url))}</small></article>`;
+    const marked = list.filter((row) => isHighlightRow(row, withAcres)).length;
+    const readable = (county.readableYears || []).join(", ");
+    return `<article class="card"><strong>${escapeHtml(county.name)} ${escapeHtml(county.stateCode)}</strong><em>${list.length}</em><small>Tax year ${escapeHtml(String(county.historic.year))} × ${escapeHtml(String(county.recent.year))} — ${escapeHtml(String(county.span))} tax years apart<br>${marked} ${withAcres ? "at 1–6 ac" : "on every readable year"}<br>Readable years: ${escapeHtml(readable)}</small></article>`;
   }).join("");
 
   const sections = (snapshot.counties || []).map((county) => {
     const list = byCounty.get(county.name) || [];
     if (!list.length) return "";
-    const marked = list.filter((row) => scPdf.isTargetAcreage(row.acres)).length;
-    const cols = visibleColumns(list);
+    const marked = list.filter((row) => isHighlightRow(row, withAcres)).length;
+    const cols = visibleColumns(list, withAcres);
     const head = cols.map((col) => `<th class="${col.cls}">${escapeHtml(col.label)}</th>`).join("");
     const body = list.map((row) => (
-      `<tr class="${scPdf.rowClass(row)}">` + cols.map((col) => {
+      `<tr class="${isHighlightRow(row, withAcres) ? "row-target" : ""}">` + cols.map((col) => {
         const extra = col.id === "tms" ? "id" : (col.cls.includes("num") ? "num" : "");
         return `<td class="${extra}">${cell(displayValue(row, col))}</td>`;
       }).join("") + "</tr>"
     )).join("");
     const facts = officeFacts(county.id, state);
+    const allYears = county.allYears
+      ? county.allYears.count + " of these are on all " + county.allYears.years.length + " readable years (" + county.allYears.years.join(", ") + ")"
+      : null;
     return `
       <section class="county">
         <table>
@@ -261,12 +306,14 @@ function renderHtml(snapshot, rows, state) {
                 <div class="banner-inner">
                   <div>
                     <div class="name">${escapeHtml(county.name)} County, ${escapeHtml(county.stateCode)}</div>
-                    <div class="meta">FIPS ${escapeHtml(county.fips || "")} · newest list ${escapeHtml(String(county.recent && county.recent.year || "—"))} × historic list ${escapeHtml(String(county.historic && county.historic.year || "—"))} · identifiers only · county office links, never owners</div>
+                    <div class="meta">FIPS ${escapeHtml(county.fips || "")} · tax year ${escapeHtml(String(county.historic.year))} list × tax year ${escapeHtml(String(county.recent.year))} list · ${escapeHtml(String(county.span))} tax years apart · parcel identifiers and amounts only, never owners</div>
                     <div class="facts"><b>Sale process.</b> ${escapeHtml(regimeLine(county.stateCode))}</div>
                     <div class="facts"><b>Official office.</b> ${escapeHtml(facts.urls.join(" · ") || "No official office page responded during this run.")}</div>
-                    <div class="sources">${escapeHtml(shortSource(county.recent && county.recent.url))} · ${escapeHtml(shortSource(county.historic && county.historic.url))}</div>
+                    ${allYears ? `<div class="facts"><b>Persistence.</b> ${escapeHtml(allYears)}.</div>` : ""}
+                    ${county.noAcreage ? `<div class="facts"><b>No acreage.</b> This advertisement does not publish an acreage column, so no acreage is shown and none is estimated.</div>` : ""}
+                    <div class="sources">${escapeHtml(shortSource(county.historic.url))} · ${escapeHtml(shortSource(county.recent.url))}</div>
                   </div>
-                  <div class="count">${list.length}<div class="meta">parcels</div><div class="meta">${marked} at 1–6 ac</div></div>
+                  <div class="count">${list.length}<div class="meta">parcels</div><div class="meta">${marked} ${withAcres ? "at 1–6 ac" : "every year"}</div></div>
                 </div>
               </th>
             </tr>
@@ -281,35 +328,57 @@ function renderHtml(snapshot, rows, state) {
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Out-of-state five-year delinquent file</title>
+  <title>${escapeHtml(spanText)}</title>
   <style>${printCss()}</style>
 </head>
 <body>
   <section class="cover">
     <p class="kicker">Southeast Aerial Systems</p>
-    <h1>Out-of-state delinquent file<span>Maggie Valley, North Carolina · Grand Canyon, Arizona</span></h1>
-    <p class="cover-lede">Parcels that appear on a county's newest published delinquent or tax-lien list and on a published list from about five years earlier. These counties sit outside the 46-county South Carolina registry and are not part of South Carolina pricing. Identifiers, listing specs, and official office links only — owner names are not stored. Gold rows are 1–6 acres.</p>
+    <h1>Haywood County, North Carolina<span>${escapeHtml(spanText)} · Maggie Valley and the Haywood County tax district</span></h1>
+    <p class="cover-lede">Parcels that appear on the county's advertised tax-lien list for tax year ${escapeHtml(String((snapshot.counties[0] || {}).historic ? snapshot.counties[0].historic.year : ""))} and again on the list for tax year ${escapeHtml(String((snapshot.counties[0] || {}).recent ? snapshot.counties[0].recent.year : ""))} — ${escapeHtml(String(snapshot.span))} tax years apart. This county sits outside the 46-county South Carolina registry and is not part of South Carolina pricing. Parcel identifiers, advertised amounts, and official office links only — owner names are not stored.</p>
     <div class="stats">
-      <div class="stat"><b>${rows.length.toLocaleString("en-US")}</b><span>Parcels in both years</span></div>
-      <div class="stat"><b>${(snapshot.counties || []).length}</b><span>Counties with a pair</span></div>
-      <div class="stat"><b>${escapeHtml(String(snapshot.season || ""))}</b><span>Season</span></div>
-      <div class="stat"><b>${highlight.toLocaleString("en-US")}</b><span>Highlighted 1–6 acres</span></div>
+      <div class="stat"><b>${rows.length.toLocaleString("en-US")}</b><span>Parcels on both lists</span></div>
+      <div class="stat"><b>${escapeHtml(String(snapshot.span))}</b><span>Tax years apart</span></div>
+      <div class="stat"><b>${((snapshot.counties[0] || {}).readableYears || []).length}</b><span>Readable list years</span></div>
+      <div class="stat"><b>${highlight.toLocaleString("en-US")}</b><span>${withAcres ? "Highlighted 1–6 acres" : "On every readable year"}</span></div>
     </div>
     <div class="cards">${cards}</div>
     <div class="read">
-      <div><strong>What a row is</strong>A parcel identifier that appears on both the newest published list and a published list from about five years earlier. Sorted by county, then acres smallest first; unknown acres last.</div>
-      <div><strong>Two different regimes</strong>North Carolina advertises tax liens under G.S. 105-369 and then forecloses — there are no lien certificates. Arizona sells lien certificates each February under A.R.S. Title 42, Ch. 18. <span class="swatch"></span>Gold rows are 1–6 acres.</div>
-      <div><strong>What is left off</strong>Owner names are not stored, and no obituary or death notice was used. Federal (NPS, USFS) and tribal land near the Grand Canyon is not on any county tax roll and is not in this file. Not for commercial solicitation.</div>
+      <div><strong>What a row is</strong>A parcel identifier that the county advertised as a delinquent tax lien in both tax years named above. The identifier is the North Carolina grid PIN exactly as the county publishes it in the advertisement, with hyphens stripped.</div>
+      <div><strong>How it is read</strong>The advertised list is read by column: the PARCEL column is located in the header and only that column is read. <span class="swatch"></span>${withAcres ? "Gold rows are 1–6 acres." : "Gold rows were advertised in every year that could be read — the most persistent delinquencies."}</div>
+      <div><strong>What is left off</strong>The advertisement carries a LIABLE OWNER column. It is dropped and never written here. No obituary or death notice was used. ${escapeHtml(county0NoAcreageNote(snapshot))} Not for commercial solicitation.</div>
     </div>
-    <p class="legal"><strong>${escapeHtml(formatDate(snapshot.generatedAt) || "Draft")}.</strong> ${escapeHtml(snapshot.source || "")} Full source list, HTTP status of every URL, and what was unavailable: docs/OUT_OF_STATE.md.</p>
+    <p class="legal"><strong>${escapeHtml(formatDate(snapshot.generatedAt) || "Draft")}.</strong> ${escapeHtml(snapshot.source || "")} Every source URL, its HTTP status, the row counts per year, and every intersection with its true year span: docs/OUT_OF_STATE.md.</p>
   </section>
   ${sections}
 </body>
 </html>`;
+  assertNoOwners(html);
+  return html;
+}
+
+function county0NoAcreageNote(snapshot) {
+  const county = (snapshot.counties || [])[0];
+  return county && county.noAcreage
+    ? "This advertisement publishes no acreage, so no acreage figure appears anywhere in this file."
+    : "";
+}
+
+/**
+ * Refuse to print anything owner-shaped: an all-caps surname-comma-forename run,
+ * a company suffix next to a parcel, or the dropped column's own header.
+ */
+function assertNoOwners(html) {
   if (/\bowner_name\b|\bowner_location\b|"owner":/i.test(html)) {
     throw new Error("out-of-state PDF refused to write owner fields");
   }
-  return html;
+  if (/[A-Z]{3,}\s*,\s*[A-Z]{3,}/.test(html.replace(/<[^>]+>/g, " "))) {
+    throw new Error("out-of-state PDF refused to write an owner-shaped name");
+  }
+  if (/\b(LLC|INC|HEIRS|ETAL|\/EXR|\/TR|\/LE|\/LT)\b\s*\d{10}/.test(html)) {
+    throw new Error("out-of-state PDF refused to write an owner next to a parcel");
+  }
+  return true;
 }
 
 async function printWithPlaywrightChromium(htmlPath, dest) {
@@ -350,7 +419,7 @@ async function toPdf(htmlPath, dest) {
 
 async function write(snapshot, state, options) {
   const opts = options || {};
-  const dest = opts.dest || defaultDest();
+  const dest = opts.dest || defaultDest(snapshot);
   const rows = buildRows(snapshot);
   if (!rows.length) return { rowCount: 0, dest: null, html: null, note: "no paired parcels" };
   const html = renderHtml(snapshot, rows, state);
@@ -360,7 +429,7 @@ async function write(snapshot, state, options) {
   const printed = await toPdf(path.resolve(htmlPath), dest);
   let copy = null;
   if (printed.dest) {
-    const extra = opts.copyTo === false ? null : (opts.copyTo || downloadsDest());
+    const extra = opts.copyTo === false ? null : (opts.copyTo || downloadsDest(snapshot));
     if (extra && extra !== printed.dest) {
       try {
         fs.mkdirSync(path.dirname(extra), { recursive: true });
@@ -377,17 +446,22 @@ async function write(snapshot, state, options) {
     copy,
     html: htmlPath,
     engine: printed.engine,
+    fileName: path.basename(dest),
     note: printed.dest ? null : "no PDF engine on this host; designed HTML written instead",
   };
 }
 
 module.exports = {
-  FILENAME,
+  fileNameFor,
   defaultDest,
   downloadsDest,
   buildRows,
+  hasAcreage,
+  isHighlightRow,
+  sortRows,
   visibleColumns,
   renderHtml,
+  assertNoOwners,
   regimeLine,
   write,
 };

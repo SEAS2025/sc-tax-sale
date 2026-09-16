@@ -24,10 +24,43 @@
         { "url": "https://www.haywoodcountync.gov/Bids.aspx?CatID=17&txtSort=Category&showAllBids=&Status=open", "role": "notices" },
         { "url": "https://www.haywoodcountync.gov/Bids.aspx?CatID=17&txtSort=Category&showAllBids=True", "role": "notices" },
         { "url": "https://taxes.haywoodcountync.gov/", "role": "search" },
-        { "url": "https://www.themountaineer.com/news/haywood-county-delinquent-property-taxes-searchable-database/table_aacb7d88-cdf3-11ed-86d6-63fe99f2cb89.html", "role": "listing", "year": 2022 },
-        { "url": "https://www.themountaineer.com/news/haywood-county-delinquent-property-taxes-2023/table_b947921c-ecb9-11ee-be16-d3009a61771d.html", "role": "listing", "year": 2023 },
-        { "url": "https://www.themountaineer.com/haywood-county-delinquent-tax-listings-2025/table_5350fa1b-a3ce-47a1-bff2-52bec243d9ce.html", "role": "listing", "year": 2025 }
+        { "url": "https://www.themountaineer.com/search/?q=delinquent+tax&t=article&l=100&s=start_time&sd=desc", "role": "index", "note": "Public search index used to discover which advertisement years were published." },
+        {
+          "url": "https://www.themountaineer.com/news/local/county_government/haywood-county-delinquent-tax-liens-2017/article_46577228-27ac-11e8-84db-db93d9d0fe16.html",
+          "role": "listing",
+          "taxYear": 2017,
+          "advertisedYear": 2018,
+          "format": "asset-pdf",
+          "followAssetPdfs": true,
+          "note": "G.S. 105-369 advertisement for tax year 2017, ordered by the Haywood County Board of Commissioners on 5 February 2018. Published as six public PDF assets with Liable Owner / Parcel / Amount columns."
+        },
+        {
+          "url": "https://www.themountaineer.com/news/haywood-county-delinquent-property-taxes-searchable-database/table_aacb7d88-cdf3-11ed-86d6-63fe99f2cb89.html",
+          "role": "listing",
+          "taxYear": 2022,
+          "advertisedYear": 2023,
+          "format": "html-table",
+          "note": "Published 29 March 2023. Header row LIABLE OWNER / PARCEL / AMOUNT; parcel is the NC grid PIN with hyphens stripped."
+        },
+        {
+          "url": "https://www.themountaineer.com/news/haywood-county-delinquent-property-taxes-2023/table_b947921c-ecb9-11ee-be16-d3009a61771d.html",
+          "role": "listing",
+          "taxYear": 2023,
+          "advertisedYear": 2024,
+          "format": "html-table",
+          "note": "Published 26 March 2024."
+        },
+        {
+          "url": "https://www.themountaineer.com/haywood-county-delinquent-tax-listings-2025/table_5350fa1b-a3ce-47a1-bff2-52bec243d9ce.html",
+          "role": "listing",
+          "taxYear": 2025,
+          "advertisedYear": 2026,
+          "format": "html-table",
+          "note": "Published 16 April 2026."
+        }
       ],
+      "identifierNote": "Haywood publishes the North Carolina grid PIN with its hyphens stripped, for example 8614733009 for 8614-73-3009. The canonical form kept in this repo is that digits-only 10-character string, applied to both sides of every intersection.",
+      "noAcreage": true,
       "waybackTargets": [
         { "host": "haywoodcountync.gov", "match": "delinquent" },
         { "host": "haywoodcountync.gov", "match": "foreclos" },
@@ -64,6 +97,12 @@
         { "host": "coconino.az.gov", "match": "tax-lien" },
         { "host": "coconino.az.gov", "match": "taxlien" },
         { "host": "coconino.arizonataxsale.com", "match": "" }
+      ],
+      "limitations": [
+        "The county pages that responded are navigation and Document Center index pages. They carry no parcel table and no assessor parcel numbers at all, so the zero here is a real absence of published data rather than a reader that failed.",
+        "The statutory A.R.S. 42-18109 delinquent list is published in a newspaper of general circulation. Arizona newspaper legal-notice archives were not machine-readable from a public page during this run.",
+        "The annual lien auction runs on a RealAuction site whose item lists load through JavaScript behind a bidder account. No login was attempted and nothing was bypassed, so no auction inventory was read.",
+        "No Arizona parcel is reported. Nothing is estimated or filled in to make the Grand Canyon side look populated."
       ]
     },
     {
@@ -92,6 +131,10 @@
         { "host": "mohavecounty.us", "match": "delinquent" },
         { "host": "mohavecounty.us", "match": "tax" },
         { "host": "mohave.arizonataxsale.com", "match": "" }
+      ],
+      "limitations": [
+        "Same situation as Coconino: the pages that responded carry no parcel table and no assessor parcel numbers, so this is a real absence of published data.",
+        "No Mohave parcel is reported."
       ]
     },
     {
