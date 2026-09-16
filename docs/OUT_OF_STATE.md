@@ -8,7 +8,7 @@ They are not counted by `engine/test.js`, are not part of SC pricing, and are no
 
 Public records only. No login, captcha, or paywall was bypassed. **No obituaries, death notices, or any owner-name source were used.** Parcel identifiers and amounts only — owner names are never stored or published.
 
-Generated 2026-09-16T21:54:59.893Z by `engine/out-of-state.js` (driver: `scripts/hunt-out-of-state.sh`).
+Generated 2026-09-16T21:55:00.019Z by `engine/out-of-state.js` (driver: `scripts/hunt-out-of-state.sh`).
 Recent window 2026/2025/2024 · historic window 2020/2021/2022.
 
 ## Status of this run
@@ -17,16 +17,16 @@ Recent window 2026/2025/2024 · historic window 2020/2021/2022.
 - `land`: completed 2026-09-16T21:19:27.204Z
 - `lists`: completed 2026-09-16T21:21:31.027Z
 - `wayback`: completed 2026-09-16T21:54:59.888Z
-- `pair`: not completed in this run
+- `pair`: completed 2026-09-16T21:55:00.016Z
 
 ## Summary
 
 | County | Regime | Verified sources | Lists with identifiers | Years found | Parcels on both windows |
 | --- | --- | --- | --- | --- | --- |
-| Haywood NC | Foreclosure (NC) | 10 | 0 | none | — |
-| Coconino AZ | Lien certificate (AZ) | 7 | 0 | none | — |
-| Mohave AZ | Lien certificate (AZ) | 6 | 0 | none | — |
-| Yavapai AZ | Lien certificate (AZ) | 3 | 0 | none | — |
+| Haywood NC | Foreclosure (NC) | 10 | 0 | none | 0 |
+| Coconino AZ | Lien certificate (AZ) | 7 | 0 | none | 0 |
+| Mohave AZ | Lien certificate (AZ) | 6 | 0 | none | 0 |
+| Yavapai AZ | Lien certificate (AZ) | 3 | 0 | none | 0 |
 
 ## Haywood County, NC
 
@@ -74,7 +74,7 @@ Statute text verified over the network:
 
 **Pairing a recent list against a ~5-year-earlier list.**
 
-- Pairing has not run yet.
+- **0 paired parcels.** Reason: no recent list with usable identifiers.
 
 **Wayback CDX problems.** haywoodcountync.gov|delinquent: cdx exhausted after 5 attempts; haywoodcountync.gov|foreclos: cdx exhausted after 5 attempts; themountaineer.com|delinquent: cdx exhausted after 5 attempts
 
@@ -125,7 +125,7 @@ Call log:
 
 **Pairing a recent list against a ~5-year-earlier list.**
 
-- Pairing has not run yet.
+- **0 paired parcels.** Reason: no recent list with usable identifiers.
 
 **Wayback CDX problems.** coconino.az.gov|delinquent: cdx exhausted after 5 attempts; coconino.az.gov|taxlien: cdx exhausted after 5 attempts
 
@@ -161,7 +161,7 @@ Statute text verified over the network:
 
 **Pairing a recent list against a ~5-year-earlier list.**
 
-- Pairing has not run yet.
+- **0 paired parcels.** Reason: no recent list with usable identifiers.
 
 **Wayback CDX problems.** mohavecounty.us|tax: cdx exhausted after 5 attempts; mohave.arizonataxsale.com|*: cdx exhausted after 5 attempts
 
@@ -192,7 +192,7 @@ Statute text verified over the network:
 
 **Pairing a recent list against a ~5-year-earlier list.**
 
-- Pairing has not run yet.
+- **0 paired parcels.** Reason: no recent list with usable identifiers.
 
 ## How much Grand Canyon land is actually on a county tax roll
 
