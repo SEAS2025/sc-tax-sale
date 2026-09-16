@@ -238,6 +238,16 @@ async function politeFetch(url, options) {
         await sleep(wait);
         continue;
       }
+      // Identify a document from its headers without pulling the file down.
+      // CivicPlus answers HEAD with 404 but GET with 200, so a sweep has to
+      // issue a GET and then drop the body.
+      if (opts.cancelBody && response.body) {
+        try {
+          await response.body.cancel();
+        } catch (_err) {
+          // an already-closed stream is fine
+        }
+      }
       return response;
     } catch (err) {
       lastError = err;
@@ -632,12 +642,15 @@ function filenameFromHead(response) {
   return match ? decodeURIComponent(match[1].replace(/"$/, "")) : "";
 }
 
-async function docCenterSweep(county, origin, maxId, want, ctx) {
+async function docCenterSweep(county, origin, range, want, ctx) {
+  const minId = range.min || 1;
+  const maxId = range.max || 4000;
   const found = [];
   const hits = [];
   const target = want === "historic" ? HISTORIC_YEARS : RECENT_YEARS;
   const ids = [];
-  for (let id = 1; id <= maxId; id += 1) ids.push(id);
+  for (let id = minId; id <= maxId; id += 1) ids.push(id);
+  const total = ids.length;
   let scanned = 0;
   let throttled = 0;
   let lastBeat = Date.now();
@@ -653,15 +666,15 @@ async function docCenterSweep(county, origin, maxId, want, ctx) {
       if (ctx) ctx.touch();
       if (scanned % 100 === 0 || Date.now() - lastBeat > 60000) {
         lastBeat = Date.now();
-        log("      doccenter", county.id, "probed " + scanned + "/" + maxId + ",", hits.length, "listing-like so far");
+        log("      doccenter", county.id, "probed " + scanned + "/" + total + ",", hits.length, "listing-like so far");
       }
       try {
         const response = await politeFetch(url, {
-          method: "HEAD",
           profile: PROFILE_SWEEP,
           timeoutMs: 15000,
           retries: 0,
           maxBackoffMs: 4000,
+          cancelBody: true,
         });
         if (!response) continue;
         if (response.status === 429 || response.status === 503) {
@@ -899,12 +912,13 @@ function checkpoint(message) {
 
 function parseArgs() {
   const argv = process.argv.slice(2);
-  const opts = { only: null, skipWayback: false, maxDocId: 4000, skipSweep: false };
+  const opts = { only: null, skipWayback: false, minDocId: 1, maxDocId: 4000, skipSweep: false };
   for (let i = 0; i < argv.length; i += 1) {
     if (argv[i] === "--only") opts.only = argv[++i].split(",").map((s) => s.trim()).filter(Boolean);
     else if (argv[i] === "--skip-wayback") opts.skipWayback = true;
     else if (argv[i] === "--skip-sweep") opts.skipSweep = true;
     else if (argv[i] === "--max-doc-id") opts.maxDocId = Number(argv[++i]) || 4000;
+    else if (argv[i] === "--min-doc-id") opts.minDocId = Number(argv[++i]) || 1;
   }
   return opts;
 }
@@ -945,7 +959,7 @@ async function huntCounty(county, needs, opts) {
         try {
           finds.push(...await runPhase(
             "doccenter " + county.id + "/" + host,
-            (ctx) => docCenterSweep(county, "https://" + host, opts.maxDocId, want, ctx),
+            (ctx) => docCenterSweep(county, "https://" + host, { min: opts.minDocId, max: opts.maxDocId }, want, ctx),
           ));
         } catch (err) {
           log("    doccenter failed", String(err.message || err).slice(0, 80));
