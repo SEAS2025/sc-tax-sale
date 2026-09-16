@@ -8,7 +8,7 @@ They are not counted by `engine/test.js`, are not part of SC pricing, and are no
 
 Public records only. No login, captcha, or paywall was bypassed. **No obituaries, death notices, or any owner-name source were used.** Parcel identifiers and amounts only — owner names are never stored or published.
 
-Generated 2026-09-16T21:21:31.031Z by `engine/out-of-state.js` (driver: `scripts/hunt-out-of-state.sh`).
+Generated 2026-09-16T21:54:59.893Z by `engine/out-of-state.js` (driver: `scripts/hunt-out-of-state.sh`).
 Recent window 2026/2025/2024 · historic window 2020/2021/2022.
 
 ## Status of this run
@@ -16,7 +16,7 @@ Recent window 2026/2025/2024 · historic window 2020/2021/2022.
 - `verify`: completed 2026-09-16T21:19:11.463Z
 - `land`: completed 2026-09-16T21:19:27.204Z
 - `lists`: completed 2026-09-16T21:21:31.027Z
-- `wayback`: not completed in this run
+- `wayback`: completed 2026-09-16T21:54:59.888Z
 - `pair`: not completed in this run
 
 ## Summary
@@ -76,6 +76,8 @@ Statute text verified over the network:
 
 - Pairing has not run yet.
 
+**Wayback CDX problems.** haywoodcountync.gov|delinquent: cdx exhausted after 5 attempts; haywoodcountync.gov|foreclos: cdx exhausted after 5 attempts; themountaineer.com|delinquent: cdx exhausted after 5 attempts
+
 ## Coconino County, AZ
 
 **Focus.** Grand Canyon Village, Tusayan, Williams, Flagstaff
@@ -111,12 +113,21 @@ Call log:
 | — | 0 | hop:coconino.az.gov | only-0-identifiers | https://www.coconino.az.gov/376/Tax-Liens |
 | — | 0 | registry:auction | only-0-identifiers | https://coconino.arizonataxsale.com/ |
 | — | 0 | registry:docs | only-0-identifiers | https://www.coconino.az.gov/DocumentCenter |
+| 2020 | 0 | wayback:coconino.arizonataxsale.com | only-0-identifiers | https://web.archive.org/web/20201029132323id_/https://coconino.arizonataxsale.com/ |
+| 2020 | 0 | wayback:coconino.arizonataxsale.com | only-0-identifiers | https://web.archive.org/web/20201029145701id_/https://coconino.arizonataxsale.com/index.… |
+| 2020 | 0 | wayback:coconino.arizonataxsale.com | only-0-identifiers | https://web.archive.org/web/20200920192554id_/https://coconino.arizonataxsale.com/index.… |
+| 2020 | 0 | wayback:coconino.arizonataxsale.com | only-0-identifiers | https://web.archive.org/web/20200920204544id_/https://coconino.arizonataxsale.com/index.… |
+| 2020 | 0 | wayback:coconino.arizonataxsale.com | only-0-identifiers | https://web.archive.org/web/20200811130318id_/https://coconino.arizonataxsale.com/index.… |
+| 2020 | 0 | wayback:coconino.arizonataxsale.com | only-0-identifiers | https://web.archive.org/web/20201029145644id_/https://coconino.arizonataxsale.com/robots… |
+| 2024 | 0 | wayback:coconino.arizonataxsale.com | only-0-identifiers | https://web.archive.org/web/20240614110553id_/https://coconino.arizonataxsale.com/common… |
 
-**Identifier format observed in the retrieved text.** `NNN-NNN-NNNN` (9 tokens, e.g. `877-884-8060`), `NNN-NNNN` (5 tokens, e.g. `679-8188`), `N-N` (1 tokens, e.g. `0-0`)
+**Identifier format observed in the retrieved text.** `NNN-NNN-NNNN` (10 tokens, e.g. `877-884-8060`), `NNN-NNNN` (5 tokens, e.g. `679-8188`), `N-N` (4 tokens, e.g. `0-0`), `N.NNNN-N` (2 tokens, e.g. `1.1472-1`), `NN-NN` (1 tokens, e.g. `30-60`)
 
 **Pairing a recent list against a ~5-year-earlier list.**
 
 - Pairing has not run yet.
+
+**Wayback CDX problems.** coconino.az.gov|delinquent: cdx exhausted after 5 attempts; coconino.az.gov|taxlien: cdx exhausted after 5 attempts
 
 ## Mohave County, AZ
 
@@ -151,6 +162,8 @@ Statute text verified over the network:
 **Pairing a recent list against a ~5-year-earlier list.**
 
 - Pairing has not run yet.
+
+**Wayback CDX problems.** mohavecounty.us|tax: cdx exhausted after 5 attempts; mohave.arizonataxsale.com|*: cdx exhausted after 5 attempts
 
 ## Yavapai County, AZ
 
