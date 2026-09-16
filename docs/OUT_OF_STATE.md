@@ -8,7 +8,7 @@ They are not counted by `engine/test.js`, are not part of SC pricing, and are no
 
 Public records only. No login, captcha, or paywall was bypassed. **No obituaries, death notices, or any owner-name source were used.** The published lists do carry a `LIABLE OWNER` column; that column is located only so it can be dropped, and no owner value is written to any snapshot, JSON file, document, or PDF.
 
-Generated 2026-09-16T22:48:49.959Z by `engine/out-of-state.js` (driver: `scripts/hunt-out-of-state.sh`).
+Generated 2026-09-16T22:48:53.531Z by `engine/out-of-state.js` (driver: `scripts/hunt-out-of-state.sh`).
 
 ## Status of this run
 
@@ -17,7 +17,7 @@ Generated 2026-09-16T22:48:49.959Z by `engine/out-of-state.js` (driver: `scripts
 - `lists`: 2026-09-16T22:41:15.641Z
 - `wayback`: 2026-09-16T22:48:48.034Z
 - `pair`: 2026-09-16T22:48:49.933Z
-- `pdf`: not completed in this run
+- `pdf`: wrote /home/user1/Projects/sc-tax-sale/inbox/repeat/Haywood-NC-5-year-delinquent.pdf (1357 rows, engine playwright-chromium)
 
 ## Summary
 
