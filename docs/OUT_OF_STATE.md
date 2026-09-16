@@ -8,14 +8,14 @@ They are not counted by `engine/test.js`, are not part of SC pricing, and are no
 
 Public records only. No login, captcha, or paywall was bypassed. **No obituaries, death notices, or any owner-name source were used.** Parcel identifiers and amounts only — owner names are never stored or published.
 
-Generated 2026-09-16T21:19:27.207Z by `engine/out-of-state.js` (driver: `scripts/hunt-out-of-state.sh`).
+Generated 2026-09-16T21:21:31.031Z by `engine/out-of-state.js` (driver: `scripts/hunt-out-of-state.sh`).
 Recent window 2026/2025/2024 · historic window 2020/2021/2022.
 
 ## Status of this run
 
 - `verify`: completed 2026-09-16T21:19:11.463Z
 - `land`: completed 2026-09-16T21:19:27.204Z
-- `lists`: not completed in this run
+- `lists`: completed 2026-09-16T21:21:31.027Z
 - `wayback`: not completed in this run
 - `pair`: not completed in this run
 
@@ -53,9 +53,24 @@ Statute text verified over the network:
 
 **Lists retrieved.**
 
-_No list responded._
+| Year | Identifiers | Source | Status | URL |
+| --- | --- | --- | --- | --- |
+| — | 0 | registry:office | only-0-identifiers | https://www.haywoodcountync.gov/274/Tax-Collections |
+| — | 0 | hop:haywoodcountync.gov | only-0-identifiers | https://www.haywoodcountync.gov/m/faq?cat=29 |
+| — | 0 | hop:haywoodcountync.gov | only-0-identifiers | https://www.haywoodcountync.gov/m/faq?cat=29 |
+| — | 0 | hop:haywoodcountync.gov | only-0-identifiers | https://www.haywoodcountync.gov/m/faq?cat=29 |
+| — | 0 | hop:haywoodcountync.gov | only-0-identifiers | https://www.haywoodcountync.gov/m/faq?cat=29 |
+| — | 0 | hop:haywoodcountync.gov | only-0-identifiers | https://www.haywoodcountync.gov/m/faq?cat=29 |
+| — | 0 | hop:haywoodcountync.gov | only-0-identifiers | https://www.haywoodcountync.gov/337/Tax-Foreclosures |
+| — | 0 | hop:haywoodcountync.gov | only-0-identifiers | https://www.haywoodcountync.gov/Bids.aspx?CatID=17&amp;txtSort=Category&amp;showAllBids=… |
+| — | 0 | registry:notices | only-0-identifiers | https://www.haywoodcountync.gov/Bids.aspx?CatID=17&txtSort=Category&showAllBids=&Status=… |
+| 2026 | 0 | hop:haywoodcountync.gov | only-0-identifiers | https://www.haywoodcountync.gov/bids.aspx?bidID=257 |
+| — | 0 | registry:search | only-0-identifiers | https://taxes.haywoodcountync.gov/ |
+| 2022 | 0 | registry:listing | only-0-identifiers | https://www.themountaineer.com/news/haywood-county-delinquent-property-taxes-searchable-… |
+| 2023 | 0 | registry:listing | only-0-identifiers | https://www.themountaineer.com/news/haywood-county-delinquent-property-taxes-2023/table_… |
+| 2025 | 0 | registry:listing | only-0-identifiers | https://www.themountaineer.com/haywood-county-delinquent-tax-listings-2025/table_5350fa1… |
 
-**Identifier format observed in the retrieved text.** _No list text was retrieved, so no identifier format was observed._
+**Identifier format observed in the retrieved text.** `NNN.NN` (7625 tokens, e.g. `848.32`), `NN.NN` (993 tokens, e.g. `59.60`), `N.NN` (470 tokens, e.g. `6.94`), `NNN-NNN` (7 tokens, e.g. `105-348`), `NNN-NNN-NNNN` (4 tokens, e.g. `828-452-6643`), `N-NNN-NNN-NNNN` (1 tokens, e.g. `1-877-729-8290`)
 
 **Pairing a recent list against a ~5-year-earlier list.**
 
@@ -89,9 +104,15 @@ Call log:
 
 **Lists retrieved.**
 
-_No list responded._
+| Year | Identifiers | Source | Status | URL |
+| --- | --- | --- | --- | --- |
+| — | 0 | registry:office | only-0-identifiers | https://www.coconino.az.gov/372/Treasurer |
+| — | 0 | hop:coconino.az.gov | only-0-identifiers | https://www.coconino.az.gov/376/Tax-Liens |
+| — | 0 | hop:coconino.az.gov | only-0-identifiers | https://www.coconino.az.gov/376/Tax-Liens |
+| — | 0 | registry:auction | only-0-identifiers | https://coconino.arizonataxsale.com/ |
+| — | 0 | registry:docs | only-0-identifiers | https://www.coconino.az.gov/DocumentCenter |
 
-**Identifier format observed in the retrieved text.** _No list text was retrieved, so no identifier format was observed._
+**Identifier format observed in the retrieved text.** `NNN-NNN-NNNN` (9 tokens, e.g. `877-884-8060`), `NNN-NNNN` (5 tokens, e.g. `679-8188`), `N-N` (1 tokens, e.g. `0-0`)
 
 **Pairing a recent list against a ~5-year-earlier list.**
 
@@ -119,9 +140,13 @@ Statute text verified over the network:
 
 **Lists retrieved.**
 
-_No list responded._
+| Year | Identifiers | Source | Status | URL |
+| --- | --- | --- | --- | --- |
+| — | 0 | registry:office | only-0-identifiers | https://www.mohave.gov/ |
+| — | 0 | registry:office | only-0-identifiers | https://www.mohave.gov/ContentPage.aspx?id=95&cid=444 |
+| — | 0 | registry:auction | only-0-identifiers | https://mohave.arizonataxsale.com/ |
 
-**Identifier format observed in the retrieved text.** _No list text was retrieved, so no identifier format was observed._
+**Identifier format observed in the retrieved text.** `NNN-NNN-NNNN` (2 tokens, e.g. `928-753-9141`)
 
 **Pairing a recent list against a ~5-year-earlier list.**
 
@@ -145,9 +170,12 @@ Statute text verified over the network:
 
 **Lists retrieved.**
 
-_No list responded._
+| Year | Identifiers | Source | Status | URL |
+| --- | --- | --- | --- | --- |
+| — | 0 | registry:office | only-0-identifiers | https://www.yavapaiaz.gov/Home |
+| — | 0 | registry:auction | only-0-identifiers | https://yavapai.arizonataxsale.com/ |
 
-**Identifier format observed in the retrieved text.** _No list text was retrieved, so no identifier format was observed._
+**Identifier format observed in the retrieved text.** `NNNN-NNNN` (1 tokens, e.g. `2026-2027`), `NN-NNN.NN` (1 tokens, e.g. `38-431.02`)
 
 **Pairing a recent list against a ~5-year-earlier list.**
 
