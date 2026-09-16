@@ -8,12 +8,12 @@ They are not counted by `engine/test.js`, are not part of SC pricing, and are no
 
 Public records only. No login, captcha, or paywall was bypassed. **No obituaries, death notices, or any owner-name source were used.** Parcel identifiers and amounts only — owner names are never stored or published.
 
-Generated 2026-09-16T21:13:47.018Z by `engine/out-of-state.js` (driver: `scripts/hunt-out-of-state.sh`).
+Generated 2026-09-16T21:19:11.466Z by `engine/out-of-state.js` (driver: `scripts/hunt-out-of-state.sh`).
 Recent window 2026/2025/2024 · historic window 2020/2021/2022.
 
 ## Status of this run
 
-- `verify`: completed 2026-09-16T21:13:47.015Z
+- `verify`: completed 2026-09-16T21:19:11.463Z
 - `land`: not completed in this run
 - `lists`: not completed in this run
 - `wayback`: not completed in this run
@@ -23,7 +23,109 @@ Recent window 2026/2025/2024 · historic window 2020/2021/2022.
 
 | County | Regime | Verified sources | Lists with identifiers | Years found | Parcels on both windows |
 | --- | --- | --- | --- | --- | --- |
-| Yavapai AZ | Lien certificate (AZ) | 2 | 0 | none | — |
+| Haywood NC | Foreclosure (NC) | 10 | 0 | none | — |
+| Coconino AZ | Lien certificate (AZ) | 7 | 0 | none | — |
+| Mohave AZ | Lien certificate (AZ) | 6 | 0 | none | — |
+| Yavapai AZ | Lien certificate (AZ) | 3 | 0 | none | — |
+
+## Haywood County, NC
+
+**Focus.** Maggie Valley, Waynesville, Clyde, Canton
+
+**Statutory basis.** North Carolina does not sell tax lien certificates. G.S. 105-369 requires the tax collector to report and advertise tax liens on real property annually; collection ends in a tax foreclosure sale under G.S. 105-374 (mortgage style) or G.S. 105-375 (in rem).
+
+Statute text verified over the network:
+- <https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_105/GS_105-369.html> — HTTP 200
+- <https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_105/GS_105-374.html> — HTTP 200
+- <https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_105/GS_105-375.html> — HTTP 200
+
+**Official sources verified.**
+- <https://www.haywoodcountync.gov/274/Tax-Collections> — HTTP 200, 130030 bytes, via fetch (office)
+- <https://www.haywoodcountync.gov/337/Tax-Foreclosures> — HTTP 200, 98830 bytes, via fetch (office)
+- <https://www.haywoodcountync.gov/Bids.aspx?CatID=17&txtSort=Category&showAllBids=&Status=open> — HTTP 200, 104568 bytes, via fetch (notices)
+- <https://taxes.haywoodcountync.gov/> — HTTP 200, 703 bytes, via fetch (search)
+- <https://www.themountaineer.com/news/haywood-county-delinquent-property-taxes-searchable-database/table_aacb7d88-cdf3-11ed-86d6-63fe99f2cb89.html> — HTTP 200, 1423770 bytes, via fetch (listing)
+- <https://www.themountaineer.com/news/haywood-county-delinquent-property-taxes-2023/table_b947921c-ecb9-11ee-be16-d3009a61771d.html> — HTTP 200, 1393041 bytes, via fetch (listing)
+- <https://www.themountaineer.com/haywood-county-delinquent-tax-listings-2025/table_5350fa1b-a3ce-47a1-bff2-52bec243d9ce.html> — HTTP 200, 1412715 bytes, via playwright (listing)
+
+**Not reachable / blocked.**
+- <https://www.haywoodcountync.gov/Bids.aspx?CatID=17&txtSort=Category&showAllBids=True> — HTTP 404
+
+**Lists retrieved.**
+
+_No list responded._
+
+**Identifier format observed in the retrieved text.** _No list text was retrieved, so no identifier format was observed._
+
+**Pairing a recent list against a ~5-year-earlier list.**
+
+- Pairing has not run yet.
+
+## Coconino County, AZ
+
+**Focus.** Grand Canyon Village, Tusayan, Williams, Flagstaff
+
+**Statutory basis.** Arizona counties sell tax lien certificates at an annual auction, normally in February. A.R.S. 42-18106 requires the county treasurer to prepare a delinquent tax list; 42-18109 requires publication in a newspaper of general circulation; 42-18112 sets the sale. A certificate holder may begin judicial foreclosure after three years under A.R.S. 42-18152, so a parcel that is still delinquent five years later has normally carried liens across several sales.
+
+Statute text verified over the network:
+- <https://www.azleg.gov/ars/42/18106.htm> — HTTP 200
+- <https://www.azleg.gov/ars/42/18109.htm> — HTTP 200
+- <https://www.azleg.gov/ars/42/18112.htm> — HTTP 200
+- <https://www.azleg.gov/ars/42/18152.htm> — HTTP 200
+
+**Official sources verified.**
+- <https://www.coconino.az.gov/treasurer> — HTTP 200, 147117 bytes, via playwright (office)
+- <https://coconino.arizonataxsale.com/> — HTTP 200, 21749 bytes, via playwright (auction)
+- <https://www.coconino.az.gov/DocumentCenter> — HTTP 200, 542147 bytes, via playwright (docs)
+
+**Not reachable / blocked.**
+- <https://www.coconino.az.gov/166/Treasurer> — HTTP 404
+- <https://www.coconino.az.gov/165/Tax-Lien-Sale> — HTTP 404
+- <https://treasurer.coconino.az.gov/> — HTTP 0 — page.goto: Timeout 45000ms exceeded.
+Call log:
+  - navigating to "https://treasurer.coconino.az.gov/", waiting until "domcontentloaded"
+
+- <https://publicnoticeads.com/az/> — HTTP 200
+
+**Lists retrieved.**
+
+_No list responded._
+
+**Identifier format observed in the retrieved text.** _No list text was retrieved, so no identifier format was observed._
+
+**Pairing a recent list against a ~5-year-earlier list.**
+
+- Pairing has not run yet.
+
+## Mohave County, AZ
+
+**Focus.** Grand Canyon West / Peach Springs side, Kingman, Lake Havasu
+
+**Statutory basis.** Same Arizona statutory cadence as Coconino: annual February tax lien certificate auction under A.R.S. Title 42, Chapter 18, with the delinquent list published in a newspaper of general circulation.
+
+Statute text verified over the network:
+- <https://www.azleg.gov/ars/42/18106.htm> — HTTP 200
+- <https://www.azleg.gov/ars/42/18109.htm> — HTTP 200
+- <https://www.azleg.gov/ars/42/18112.htm> — HTTP 200
+
+**Official sources verified.**
+- <https://www.mohave.gov/> — HTTP 200, 125396 bytes, via fetch (office)
+- <https://www.mohavecounty.us/ContentPage.aspx?id=95&cid=444> — HTTP 200, 88212 bytes, via playwright (office)
+- <https://mohave.arizonataxsale.com/> — HTTP 200, 21739 bytes, via playwright (auction)
+
+**Not reachable / blocked.**
+- <https://www.mohave.gov/ContentPage.aspx?id=95&cid=444> — HTTP 404
+- <https://publicnoticeads.com/az/> — HTTP 200
+
+**Lists retrieved.**
+
+_No list responded._
+
+**Identifier format observed in the retrieved text.** _No list text was retrieved, so no identifier format was observed._
+
+**Pairing a recent list against a ~5-year-earlier list.**
+
+- Pairing has not run yet.
 
 ## Yavapai County, AZ
 
@@ -35,11 +137,11 @@ Statute text verified over the network:
 - <https://www.azleg.gov/ars/42/18112.htm> — HTTP 200
 
 **Official sources verified.**
-- <https://www.yavapaiaz.gov/> — HTTP 200, 179477 bytes, via fetch (office)
+- <https://www.yavapaiaz.gov/> — HTTP 200, 179479 bytes, via fetch (office)
+- <https://yavapai.arizonataxsale.com/> — HTTP 200, 21576 bytes, via playwright (auction)
 
 **Not reachable / blocked.**
 - <https://www.yavapaiaz.gov/Departments/Treasurer> — HTTP 404
-- <https://yavapai.arizonataxsale.com/> — HTTP 403
 
 **Lists retrieved.**
 

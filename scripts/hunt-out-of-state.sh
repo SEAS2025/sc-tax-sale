@@ -41,44 +41,49 @@ say() { printf '[%s] %s\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" "$*"; }
 
 # ---------------------------------------------------------------- git helpers
 
+# No git identity is configured on this host, so it is supplied per commit with
+# -c. Nothing in the user's git config is modified by this script.
+GIT_AS=(git -c user.name=SEAS2025 -c user.email=SEAS2025@users.noreply.github.com)
+
 sync_repo() {
-  say "git: fetching origin"
-  git fetch origin --quiet 2>&1 | tail -3
-  # Rebase our own commits on top of whatever the SC agent pushed. Our files do
-  # not overlap theirs, so this should never need a manual merge.
-  if ! git -c rebase.autoStash=true pull --rebase origin "$BRANCH" 2>&1 | tail -5; then
-    say "git: pull --rebase failed, aborting rebase and continuing on local state"
-    git rebase --abort >/dev/null 2>&1
+  say "git: fetching origin (read only)"
+  timeout 90 git fetch origin --quiet 2>&1 | tail -3
+}
+
+# Pushing is opt-in. The clone on this host carries a commit from the South
+# Carolina track that has not been published yet, and pushing this branch would
+# publish it too. Default is commit-only; the laptop pulls from this host.
+maybe_push() {
+  [ "${OOS_PUSH:-0}" = "1" ] || { say "git: push disabled (set OOS_PUSH=1 to publish)"; return 0; }
+  if timeout 120 "${GIT_AS[@]}" -c credential.helper='!gh auth git-credential' push origin "HEAD:$BRANCH" 2>&1 | tail -3; then
+    say "git: pushed to origin/$BRANCH"
+  else
+    say "git: push failed; work is committed locally on this host"
   fi
 }
 
 checkpoint() {
   local msg="$1"
-  local staged=0
   for f in "${OWNED[@]}"; do
-    if [ -e "$REPO/$f" ]; then
-      git add -- "$f" 2>/dev/null && staged=1
-    fi
+    [ -e "$REPO/$f" ] && git add -- "$f" 2>/dev/null
   done
-  [ "$staged" -eq 1 ] || return 0
+  # Refuse to commit anything that is not on the owned list, so a second agent
+  # working this same clone is never swept into our commit.
+  local extra
+  extra="$(git diff --cached --name-only | grep -v -F -x -f <(printf '%s\n' "${OWNED[@]}") || true)"
+  if [ -n "$extra" ]; then
+    say "git: unexpected staged paths, unstaging them: $(printf '%s ' $extra)"
+    printf '%s\n' "$extra" | while read -r p; do [ -n "$p" ] && git restore --staged -- "$p"; done
+  fi
   if git diff --cached --quiet; then
     say "git: nothing new to commit"
     return 0
   fi
-  # Refuse to commit anything that is not on the owned list.
-  local extra
-  extra="$(git diff --cached --name-only | grep -v -F -x -f <(printf '%s\n' "${OWNED[@]}") || true)"
-  if [ -n "$extra" ]; then
-    say "git: unexpected staged paths, unstaging them: $extra"
-    printf '%s\n' "$extra" | while read -r p; do [ -n "$p" ] && git restore --staged -- "$p"; done
-  fi
-  git diff --cached --quiet && { say "git: nothing to commit after filtering"; return 0; }
-  git commit -q -m "$msg" && say "git: committed — $msg"
-  sync_repo
-  if git push origin "HEAD:$BRANCH" 2>&1 | tail -3; then
-    say "git: pushed"
+  if "${GIT_AS[@]}" commit -q -m "$msg"; then
+    say "git: committed — $msg ($(git rev-parse --short HEAD))"
+    maybe_push
   else
-    say "git: push failed (will retry at next checkpoint); work is committed locally"
+    say "git: commit failed"
   fi
 }
 
@@ -176,4 +181,6 @@ ls -la "$HOME/Downloads/Out-of-state-5-year-delinquent.pdf" 2>/dev/null
 checkpoint "Out-of-state: final findings for Haywood NC and Coconino/Mohave AZ."
 guard_no_raw_files
 
+say "to collect this work from another machine:"
+say "  git pull ssh://aimainframe/~/Projects/sc-tax-sale $BRANCH"
 say "hunt-out-of-state complete"
