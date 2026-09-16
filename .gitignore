@@ -1,0 +1,13 @@
+node_modules/
+.env
+.env.*
+.wrangler/
+out/
+*.pdf
+*REALAD*.csv
+*tax-sale*.csv
+full_*structured.json
+cross_full_*.json
+web/parcels.geojson
+.DS_Store
+*.log

@@ -1,0 +1,20 @@
+{
+  "name": "sc-tax-sale",
+  "version": "1.0.0",
+  "description": "SC Tax Sale Atlas — county registry and parameterized delinquent-tax sale engine. Southeast Aerial Systems.",
+  "private": false,
+  "type": "commonjs",
+  "bin": {
+    "sc-tax-sale": "./engine/cli.js"
+  },
+  "scripts": {
+    "test": "node --test engine/test.js",
+    "sync-site": "node scripts/sync-site-data.js",
+    "counties": "node engine/cli.js counties",
+    "build-registry": "node scripts/build-registry.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "ISC"
+}

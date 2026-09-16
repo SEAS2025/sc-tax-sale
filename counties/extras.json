@@ -1,0 +1,20 @@
+{
+  "note": "Out-of-state extras from the original analysis app. Not part of the 46-county South Carolina registry and not included in SC pricing.",
+  "counties": [
+    {
+      "id": "haywood",
+      "name": "Haywood",
+      "state": "NC",
+      "status": "mentioned",
+      "inScPricing": false,
+      "originalPage": "NCTaxSale / HaywoodSection",
+      "notes": "Separate North Carolina track in the original app (Maggie Valley area, delinquent lists described for 2022, 2023, and 2025). Not an SC county. Source URLs below were copied from that page and were not re-fetched for this repo.",
+      "sourceUrls": {
+        "2022": "https://www.themountaineer.com/news/haywood-county-delinquent-property-taxes-searchable-database/table_aacb7d88-cdf3-11ed-86d6-63fe99f2cb89.html",
+        "2023": "https://www.themountaineer.com/news/haywood-county-delinquent-property-taxes-2023/table_b947921c-ecb9-11ee-be16-d3009a61771d.html",
+        "2025": "https://www.themountaineer.com/haywood-county-delinquent-tax-listings-2025/table_5350fa1b-a3ce-47a1-bff2-52bec243d9ce.html"
+      },
+      "taxBillSearchTemplate": "https://taxes.haywoodcountync.gov/ITSPublic/TaxBillSearch?parcelNumber={PIN}"
+    }
+  ]
+}

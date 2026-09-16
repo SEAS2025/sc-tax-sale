@@ -1,0 +1,955 @@
+{
+  "title": "South Carolina counties",
+  "state": "SC",
+  "stateFips": "45",
+  "count": 46,
+  "generatedFrom": "scripts/build-registry.js",
+  "centerSource": "U.S. Census Bureau 2020 Gazetteer internal points (INTPTLAT, INTPTLONG), 2020_gaz_counties_45.txt",
+  "fipsSource": "U.S. Census Bureau county FIPS (COUNTYFP) in the same Gazetteer file. Lexington 063, Kershaw 055.",
+  "statuses": {
+    "live": "Adapter and official treasurer/GIS pages are in place. A sale-cycle file is not stored in this repo.",
+    "researched": "Official pages and/or a local parser exist. Not a live sale file in this product.",
+    "unknown": "County is in the registry only. Endpoints were not verified."
+  },
+  "counties": [
+    {
+      "id": "abbeville",
+      "name": "Abbeville",
+      "state": "SC",
+      "fips": "001",
+      "stateFips": "45",
+      "geoid": "45001",
+      "center": [
+        34.229041,
+        -82.454058
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "aiken",
+      "name": "Aiken",
+      "state": "SC",
+      "fips": "003",
+      "stateFips": "45",
+      "geoid": "45003",
+      "center": [
+        33.550013,
+        -81.632983
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "allendale",
+      "name": "Allendale",
+      "state": "SC",
+      "fips": "005",
+      "stateFips": "45",
+      "geoid": "45005",
+      "center": [
+        32.979757,
+        -81.363265
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "anderson",
+      "name": "Anderson",
+      "state": "SC",
+      "fips": "007",
+      "stateFips": "45",
+      "geoid": "45007",
+      "center": [
+        34.521235,
+        -82.638603
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "bamberg",
+      "name": "Bamberg",
+      "state": "SC",
+      "fips": "009",
+      "stateFips": "45",
+      "geoid": "45009",
+      "center": [
+        33.203021,
+        -81.053161
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "barnwell",
+      "name": "Barnwell",
+      "state": "SC",
+      "fips": "011",
+      "stateFips": "45",
+      "geoid": "45011",
+      "center": [
+        33.260552,
+        -81.434228
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "beaufort",
+      "name": "Beaufort",
+      "state": "SC",
+      "fips": "013",
+      "stateFips": "45",
+      "geoid": "45013",
+      "center": [
+        32.358112,
+        -80.689422
+      ],
+      "status": "researched",
+      "identifier": "pin",
+      "identifierFormat": "R+17-digits",
+      "adapter": "beaufort",
+      "geocode": null,
+      "treasurerUrl": "https://www.beaufortcountytreasurer.com/research-and-data",
+      "gisUrl": "https://experience.arcgis.com/experience/9e534a7884744a2680a0f472e2aabdc3",
+      "notes": "Parser ready (PIN, not TMS). Not wired as a live CSV in the original app. County-published GIS links verified 2026-09-16. The older Html5Viewer URL returned 404; Parcels/MapServer redirected to login. No parcel count is claimed.",
+      "csvRedistributed": false,
+      "taxBillLookupUrl": "https://www.beaufortcountytreasurer.com/tax-bill-lookup",
+      "mappingSiteUrl": "https://gis-department-mapping-site-collage-bcscgis.hub.arcgis.com/",
+      "gisDepartmentUrl": "https://www.beaufortcountysc.gov/gis/",
+      "parcelFeatureServiceUrl": "https://gis.beaufortcountysc.gov/server/rest/services/Hosted/AddressParcels/FeatureServer"
+    },
+    {
+      "id": "berkeley",
+      "name": "Berkeley",
+      "state": "SC",
+      "fips": "015",
+      "stateFips": "45",
+      "geoid": "45015",
+      "center": [
+        33.2077,
+        -79.953655
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "calhoun",
+      "name": "Calhoun",
+      "state": "SC",
+      "fips": "017",
+      "stateFips": "45",
+      "geoid": "45017",
+      "center": [
+        33.67478,
+        -80.780347
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "charleston",
+      "name": "Charleston",
+      "state": "SC",
+      "fips": "019",
+      "stateFips": "45",
+      "geoid": "45019",
+      "center": [
+        32.800458,
+        -79.94248
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "cherokee",
+      "name": "Cherokee",
+      "state": "SC",
+      "fips": "021",
+      "stateFips": "45",
+      "geoid": "45021",
+      "center": [
+        35.049796,
+        -81.607647
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "chester",
+      "name": "Chester",
+      "state": "SC",
+      "fips": "023",
+      "stateFips": "45",
+      "geoid": "45023",
+      "center": [
+        34.689342,
+        -81.161249
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "chesterfield",
+      "name": "Chesterfield",
+      "state": "SC",
+      "fips": "025",
+      "stateFips": "45",
+      "geoid": "45025",
+      "center": [
+        34.637018,
+        -80.159227
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "clarendon",
+      "name": "Clarendon",
+      "state": "SC",
+      "fips": "027",
+      "stateFips": "45",
+      "geoid": "45027",
+      "center": [
+        33.664682,
+        -80.217889
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "colleton",
+      "name": "Colleton",
+      "state": "SC",
+      "fips": "029",
+      "stateFips": "45",
+      "geoid": "45029",
+      "center": [
+        32.835018,
+        -80.655244
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "darlington",
+      "name": "Darlington",
+      "state": "SC",
+      "fips": "031",
+      "stateFips": "45",
+      "geoid": "45031",
+      "center": [
+        34.332185,
+        -79.962115
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "dillon",
+      "name": "Dillon",
+      "state": "SC",
+      "fips": "033",
+      "stateFips": "45",
+      "geoid": "45033",
+      "center": [
+        34.390172,
+        -79.374964
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "dorchester",
+      "name": "Dorchester",
+      "state": "SC",
+      "fips": "035",
+      "stateFips": "45",
+      "geoid": "45035",
+      "center": [
+        33.082186,
+        -80.404697
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "edgefield",
+      "name": "Edgefield",
+      "state": "SC",
+      "fips": "037",
+      "stateFips": "45",
+      "geoid": "45037",
+      "center": [
+        33.776498,
+        -81.968245
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "fairfield",
+      "name": "Fairfield",
+      "state": "SC",
+      "fips": "039",
+      "stateFips": "45",
+      "geoid": "45039",
+      "center": [
+        34.395669,
+        -81.127001
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "florence",
+      "name": "Florence",
+      "state": "SC",
+      "fips": "041",
+      "stateFips": "45",
+      "geoid": "45041",
+      "center": [
+        34.028535,
+        -79.710233
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "georgetown",
+      "name": "Georgetown",
+      "state": "SC",
+      "fips": "043",
+      "stateFips": "45",
+      "geoid": "45043",
+      "center": [
+        33.417531,
+        -79.296333
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "greenville",
+      "name": "Greenville",
+      "state": "SC",
+      "fips": "045",
+      "stateFips": "45",
+      "geoid": "45045",
+      "center": [
+        34.892645,
+        -82.372077
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "greenwood",
+      "name": "Greenwood",
+      "state": "SC",
+      "fips": "047",
+      "stateFips": "45",
+      "geoid": "45047",
+      "center": [
+        34.155796,
+        -82.127876
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "hampton",
+      "name": "Hampton",
+      "state": "SC",
+      "fips": "049",
+      "stateFips": "45",
+      "geoid": "45049",
+      "center": [
+        32.778334,
+        -81.143822
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "horry",
+      "name": "Horry",
+      "state": "SC",
+      "fips": "051",
+      "stateFips": "45",
+      "geoid": "45051",
+      "center": [
+        33.909269,
+        -78.976675
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "jasper",
+      "name": "Jasper",
+      "state": "SC",
+      "fips": "053",
+      "stateFips": "45",
+      "geoid": "45053",
+      "center": [
+        32.43059,
+        -81.021627
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "kershaw",
+      "name": "Kershaw",
+      "state": "SC",
+      "fips": "055",
+      "stateFips": "45",
+      "geoid": "45055",
+      "center": [
+        34.338356,
+        -80.590885
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "lancaster",
+      "name": "Lancaster",
+      "state": "SC",
+      "fips": "057",
+      "stateFips": "45",
+      "geoid": "45057",
+      "center": [
+        34.686818,
+        -80.703688
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "laurens",
+      "name": "Laurens",
+      "state": "SC",
+      "fips": "059",
+      "stateFips": "45",
+      "geoid": "45059",
+      "center": [
+        34.483676,
+        -82.005498
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "lee",
+      "name": "Lee",
+      "state": "SC",
+      "fips": "061",
+      "stateFips": "45",
+      "geoid": "45061",
+      "center": [
+        34.15864,
+        -80.251209
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "lexington",
+      "name": "Lexington",
+      "state": "SC",
+      "fips": "063",
+      "stateFips": "45",
+      "geoid": "45063",
+      "center": [
+        33.899246,
+        -81.266118
+      ],
+      "status": "live",
+      "identifier": "tms",
+      "identifierFormat": "dashed-sections",
+      "adapter": "lexington",
+      "geocode": "geocodeLexingtonTMS",
+      "treasurerUrl": "https://lex-co.sc.gov/treasurer/delinquent-taxes",
+      "gisUrl": "https://maps.lex-co.com/OneMap/",
+      "notes": "Live county in the original Base44 analysis app. Adapter, TMS section geocoder, and CSV schema are implemented. The original CDN CSV is not redistributed (owner names and addresses). Obtain lists from the treasurer page.",
+      "csvFilename": "Lexington_both_2022_list_and_2025_REALAD.csv",
+      "csvRedistributed": false,
+      "csvSchema": [
+        "tms",
+        "owner_location_2025_REALAD",
+        "owner_location_2022_list",
+        "amount_2025_REALAD",
+        "amount_2022_list"
+      ],
+      "treasurerUrlAliasRedirectsFrom": "https://lex-co.sc.gov/departments/treasurer/delinquent-taxes",
+      "propertySearchUrl": "https://www.lex-co.com/PropSearch/",
+      "gisQueryTemplate": "https://maps.lex-co.com/OneMap/?query=17b6046d7b9-layer-6_4,TMS,{TMS}",
+      "propertyCardTemplate": "https://www.lex-co.com/PropSearch/#/property?tm={TMS_NODASH}",
+      "planningGisUrl": "https://lex-co.sc.gov/planning-gis"
+    },
+    {
+      "id": "marion",
+      "name": "Marion",
+      "state": "SC",
+      "fips": "067",
+      "stateFips": "45",
+      "geoid": "45067",
+      "center": [
+        34.08362,
+        -79.354001
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "marlboro",
+      "name": "Marlboro",
+      "state": "SC",
+      "fips": "069",
+      "stateFips": "45",
+      "geoid": "45069",
+      "center": [
+        34.60167,
+        -79.679435
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "mccormick",
+      "name": "McCormick",
+      "state": "SC",
+      "fips": "065",
+      "stateFips": "45",
+      "geoid": "45065",
+      "center": [
+        33.897599,
+        -82.316196
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "newberry",
+      "name": "Newberry",
+      "state": "SC",
+      "fips": "071",
+      "stateFips": "45",
+      "geoid": "45071",
+      "center": [
+        34.289881,
+        -81.599676
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "oconee",
+      "name": "Oconee",
+      "state": "SC",
+      "fips": "073",
+      "stateFips": "45",
+      "geoid": "45073",
+      "center": [
+        34.748766,
+        -83.06154
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "orangeburg",
+      "name": "Orangeburg",
+      "state": "SC",
+      "fips": "075",
+      "stateFips": "45",
+      "geoid": "45075",
+      "center": [
+        33.436135,
+        -80.802913
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "pickens",
+      "name": "Pickens",
+      "state": "SC",
+      "fips": "077",
+      "stateFips": "45",
+      "geoid": "45077",
+      "center": [
+        34.885368,
+        -82.723377
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "richland",
+      "name": "Richland",
+      "state": "SC",
+      "fips": "079",
+      "stateFips": "45",
+      "geoid": "45079",
+      "center": [
+        34.029095,
+        -80.898037
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "saluda",
+      "name": "Saluda",
+      "state": "SC",
+      "fips": "081",
+      "stateFips": "45",
+      "geoid": "45081",
+      "center": [
+        34.005278,
+        -81.727903
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "spartanburg",
+      "name": "Spartanburg",
+      "state": "SC",
+      "fips": "083",
+      "stateFips": "45",
+      "geoid": "45083",
+      "center": [
+        34.932014,
+        -81.991624
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "sumter",
+      "name": "Sumter",
+      "state": "SC",
+      "fips": "085",
+      "stateFips": "45",
+      "geoid": "45085",
+      "center": [
+        33.91614,
+        -80.382376
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "union",
+      "name": "Union",
+      "state": "SC",
+      "fips": "087",
+      "stateFips": "45",
+      "geoid": "45087",
+      "center": [
+        34.690397,
+        -81.615896
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "williamsburg",
+      "name": "Williamsburg",
+      "state": "SC",
+      "fips": "089",
+      "stateFips": "45",
+      "geoid": "45089",
+      "center": [
+        33.626462,
+        -79.716474
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    },
+    {
+      "id": "york",
+      "name": "York",
+      "state": "SC",
+      "fips": "091",
+      "stateFips": "45",
+      "geoid": "45091",
+      "center": [
+        34.970188,
+        -81.183187
+      ],
+      "status": "unknown",
+      "identifier": null,
+      "identifierFormat": null,
+      "adapter": null,
+      "geocode": null,
+      "treasurerUrl": null,
+      "gisUrl": null,
+      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+    }
+  ]
+}
