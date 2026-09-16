@@ -41,7 +41,7 @@ const HISTORIC_YEARS = new Set([2020, 2021, 2022]);
 // Politeness profiles. Wayback gets one request at a time with a wide gap
 // because earlier runs tripped its 503 rate limiter.
 const PROFILE_SITE = { concurrency: 2, minIntervalMs: 900 };
-const PROFILE_SWEEP = { concurrency: 4, minIntervalMs: 260 };
+const PROFILE_SWEEP = { concurrency: 8, minIntervalMs: 110 };
 const PROFILE_WAYBACK = { concurrency: 1, minIntervalMs: 6000 };
 
 // Counties whose current list is hosted but whose ~2020-2022 archive is
@@ -293,17 +293,32 @@ function waybackUrl(timestamp, original) {
 
 const CDX_KEEP = /\.(pdf|xls|xlsx|csv)(\?|$)/i;
 
-async function cdxRows(host, from, to) {
-  // matchType=domain covers the bare domain and every subdomain in one query.
-  // Asking for "www.host/*" alone silently misses captures filed under the
-  // bare host, which is how the first pass came back empty.
-  const url = "https://web.archive.org/cdx/search/cdx"
-    + "?url=" + encodeURIComponent(host) + "&matchType=domain"
+// Several counties published the list as a plain page rather than a file
+// (Colleton's /2020-tax-sale-list, for one), so an archived HTML capture is
+// just as good a source as an archived PDF. Anything with no extension at all
+// is treated as a possible page; validate() still demands real identifiers.
+const CDX_PAGE = /\.(jpg|jpeg|png|gif|svg|css|js|ico|woff2?|ttf|zip|mp4|webp)(\?|$)/i;
+
+function keepCapture(row) {
+  if (CDX_KEEP.test(row.original)) return true;
+  const mime = row.mimetype || "";
+  if (/pdf|excel|spreadsheet/i.test(mime)) return true;
+  if (CDX_PAGE.test(row.original)) return false;
+  if (/image|video|audio|font|css|javascript/i.test(mime)) return false;
+  // Everything else -- text/html, warc/revisit, or an unknown type -- is worth
+  // a look. Revisit records carry no real mimetype but replay perfectly well.
+  return true;
+}
+
+function bigEnough(row) {
+  if (!CDX_KEEP.test(row.original)) return true; // pages and revisits run small
+  return row.length === 0 || row.length > 8000;
+}
+
+async function cdxRaw(query, label) {
+  const url = "https://web.archive.org/cdx/search/cdx?" + query
     + "&output=json&fl=original,timestamp,statuscode,mimetype,length"
-    + "&filter=statuscode:200"
-    + "&filter=urlkey:.*(tax|delinq|sale|realad|advertis|forfeit).*"
-    + "&collapse=urlkey&limit=900"
-    + "&from=" + from + "&to=" + to;
+    + "&filter=statuscode:200&limit=900";
   try {
     const response = await politeFetch(url, {
       profile: PROFILE_WAYBACK,
@@ -311,23 +326,21 @@ async function cdxRows(host, from, to) {
       retries: 6,
     });
     if (!response || !response.ok) {
-      log("    cdx", host, from + "-" + to, "http", response ? response.status : "error");
+      log("    cdx", label, "http", response ? response.status : "error");
       return [];
     }
     const body = await response.text();
-    if (!body.trim()) {
-      log("    cdx", host, from + "-" + to, "no captures");
-      return [];
-    }
-    let rows;
-    try {
-      rows = JSON.parse(body);
-    } catch (_err) {
-      log("    cdx", host, from + "-" + to, "non-json reply", body.slice(0, 60).replace(/\s+/g, " "));
-      return [];
+    let rows = null;
+    if (body.trim()) {
+      try {
+        rows = JSON.parse(body);
+      } catch (_err) {
+        log("    cdx", label, "non-json reply", body.slice(0, 60).replace(/\s+/g, " "));
+        return [];
+      }
     }
     if (!Array.isArray(rows) || rows.length < 2) {
-      log("    cdx", host, from + "-" + to, "no captures");
+      log("    cdx", label, "no captures");
       return [];
     }
     return rows.slice(1).map((row) => ({
@@ -338,9 +351,34 @@ async function cdxRows(host, from, to) {
       length: Number(row[4]) || 0,
     }));
   } catch (err) {
-    log("    cdx", host, from + "-" + to, "failed", String(err.message || err).slice(0, 60));
+    log("    cdx", label, "failed", String(err.message || err).slice(0, 60));
     return [];
   }
+}
+
+// matchType=domain covers the bare domain and every subdomain in one query.
+// Asking for "www.host/*" alone silently misses captures filed under the
+// bare host, which is how the first pass came back empty.
+function cdxRows(host, from, to) {
+  return cdxRaw("url=" + encodeURIComponent(host) + "&matchType=domain"
+    + "&filter=urlkey:.*(tax|delinq|sale|realad|advertis|forfeit).*"
+    + "&collapse=urlkey&from=" + from + "&to=" + to, host + " " + from + "-" + to);
+}
+
+/**
+ * Counties that republish to the same path every year are the best archive
+ * source there is: the current list URL, replayed at an older capture, IS the
+ * older list. collapse=timestamp:4 keeps one capture per year.
+ */
+function cdxExact(url, from, to) {
+  return cdxRaw("url=" + encodeURIComponent(url) + "&matchType=exact"
+    + "&collapse=timestamp:4&from=" + from + "&to=" + to, "exact " + url.slice(-60));
+}
+
+/** The folder a county keeps its lists in usually holds the older ones too. */
+function cdxPrefix(dirUrl, from, to) {
+  return cdxRaw("url=" + encodeURIComponent(dirUrl) + "&matchType=prefix"
+    + "&collapse=urlkey&from=" + from + "&to=" + to, "prefix " + dirUrl.slice(-60));
 }
 
 function rankCdx(row) {
@@ -356,19 +394,96 @@ function rankCdx(row) {
   return score;
 }
 
+function knownListingUrls(county) {
+  const urls = catalog.seedsFor(county.id).map((row) => row.url)
+    .concat(((calendar.getSeed(county.id) || {}).listingWatchUrls) || [])
+    .concat(county.listingSampleUrl ? [county.listingSampleUrl] : []);
+  return [...new Set(urls.filter((url) => url && !/web\.archive\.org/.test(url)))];
+}
+
+function parentDir(url) {
+  try {
+    const parsed = new URL(url);
+    const parts = parsed.pathname.split("/");
+    parts.pop();
+    return parsed.origin + parts.join("/") + "/";
+  } catch (_err) {
+    return null;
+  }
+}
+
+/**
+ * Try the cheap, high-yield shots first: replay the county's own current list
+ * URL at an old capture, then sweep the folder it lives in. Only then fall
+ * back to a domain-wide sweep, which is noisy and much slower.
+ */
+async function waybackTargeted(county, want, from, to, target) {
+  const found = [];
+  const seen = new Set();
+  const dirs = new Set();
+  for (const known of knownListingUrls(county)) {
+    const rows = await cdxExact(known, from, to);
+    const dir = parentDir(known);
+    if (dir) dirs.add(dir);
+    for (const row of rows) {
+      const year = Number(String(row.timestamp).slice(0, 4));
+      if (!target.has(year)) continue;
+      const url = waybackUrl(row.timestamp, row.original);
+      if (seen.has(url) || alreadyKnown(county.id, url)) continue;
+      seen.add(url);
+      const verdict = await validate(county.id, {
+        url, year, source: "wayback-exact", profile: PROFILE_WAYBACK, timeoutMs: 120000, retries: 2,
+      });
+      log("      ", verdict.ok ? "HIT " : "miss", year, verdict.reason, "(replay of current list URL)");
+      if (verdict.ok) found.push(verdict);
+      if (found.length >= 2) return found;
+    }
+  }
+  for (const dir of dirs) {
+    const rows = (await cdxPrefix(dir, from, to))
+      .filter(keepCapture)
+      .filter((row) => catalog.looksLikeListing(row.original))
+      .map((row) => ({ row, score: rankCdx(row) }))
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 12);
+    for (const { row } of rows) {
+      const year = Number(String(row.timestamp).slice(0, 4));
+      if (!target.has(year)) continue;
+      const url = waybackUrl(row.timestamp, row.original);
+      if (seen.has(url) || alreadyKnown(county.id, url)) continue;
+      seen.add(url);
+      const verdict = await validate(county.id, {
+        url, year, source: "wayback-prefix", profile: PROFILE_WAYBACK, timeoutMs: 120000, retries: 2,
+      });
+      log("      ", verdict.ok ? "HIT " : "miss", year, verdict.reason, row.original.slice(0, 100));
+      if (verdict.ok) found.push(verdict);
+      if (found.length >= 2) return found;
+    }
+  }
+  return found;
+}
+
 async function huntWayback(county, want, budget) {
   const found = [];
   const hosts = [...new Set(countyHosts(county).map((host) => host.replace(/^www\./, "")))];
   if (!hosts.length) return found;
-  const spans = want === "historic" ? [["2019", "2022"]] : [["2023", "2026"]];
+  const spans = want === "historic" ? [["2020", "2022"]] : [["2024", "2026"]];
+  const targetYears = want === "historic" ? HISTORIC_YEARS : RECENT_YEARS;
+  try {
+    const targeted = await waybackTargeted(county, want, spans[0][0], spans[0][1], targetYears);
+    found.push(...targeted);
+    if (found.length >= 2) return found;
+  } catch (err) {
+    log("    wayback targeted failed", String(err.message || err).slice(0, 60));
+  }
   for (const host of hosts) {
     for (const [from, to] of spans) {
       const rows = await cdxRows(host, from, to);
       if (!rows.length) continue;
       const wanted = rows
-        .filter((row) => CDX_KEEP.test(row.original) || /pdf|excel|spreadsheet/i.test(row.mimetype || ""))
+        .filter(keepCapture)
         .filter((row) => catalog.looksLikeListing(row.original))
-        .filter((row) => row.length === 0 || row.length > 8000)
+        .filter(bigEnough)
         .map((row) => ({ row, score: rankCdx(row) }))
         .sort((a, b) => b.score - a.score)
         .slice(0, budget);
@@ -376,7 +491,10 @@ async function huntWayback(county, want, budget) {
       for (const { row } of wanted) {
         const year = Number(String(row.timestamp).slice(0, 4));
         const target = want === "historic" ? HISTORIC_YEARS : RECENT_YEARS;
-        if (!target.has(year)) continue;
+        if (!target.has(year)) {
+          log("       skip", year, "out of window", row.original.slice(0, 90));
+          continue;
+        }
         const url = waybackUrl(row.timestamp, row.original);
         if (alreadyKnown(county.id, url)) continue;
         const verdict = await validate(county.id, {
