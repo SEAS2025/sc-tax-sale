@@ -1,0 +1,299 @@
+{
+  "id": "oconee",
+  "browsedAt": "2026-09-16T17:27:23.052Z",
+  "seedUrls": [
+    "https://oconeesc.com/"
+  ],
+  "seedSource": "https://www.sccounties.org/county-information",
+  "pages": [
+    {
+      "url": "https://oconeesc.com/",
+      "finalUrl": "https://oconeesc.com/#year=2026&month=9&day=16&view=month",
+      "status": 200,
+      "title": "Oconee County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [
+        "September 15, 2026"
+      ],
+      "tables": [
+        {
+          "headers": [
+            "Sun Mon Tue Wed Thu Fri Sat",
+            "Sun",
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat"
+          ],
+          "rowCount": 9
+        },
+        {
+          "headers": [
+            "Sun",
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat"
+          ],
+          "rowCount": 1
+        },
+        {
+          "headers": [],
+          "rowCount": 6
+        }
+      ]
+    },
+    {
+      "url": "https://oconeesc.com/delinquent-tax",
+      "finalUrl": "https://oconeesc.com/delinquent-tax",
+      "status": 200,
+      "title": "Delinquent Tax",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": true,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": [
+        {
+          "headers": [],
+          "rowCount": 3
+        },
+        {
+          "headers": [],
+          "rowCount": 6
+        }
+      ]
+    },
+    {
+      "url": "https://oconeesc.com/treasurer-home",
+      "finalUrl": "https://oconeesc.com/treasurer-home",
+      "status": 200,
+      "title": "Treasurer",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": [
+        {
+          "headers": [],
+          "rowCount": 3
+        },
+        {
+          "headers": [],
+          "rowCount": 5
+        }
+      ]
+    },
+    {
+      "url": "https://oconeesc.com/delinquent-tax/tax-sale-information",
+      "finalUrl": "https://oconeesc.com/delinquent-tax/tax-sale-information",
+      "status": 200,
+      "title": "Tax Sale Information",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": true,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": [
+        {
+          "headers": [],
+          "rowCount": 3
+        },
+        {
+          "headers": [],
+          "rowCount": 6
+        }
+      ]
+    },
+    {
+      "url": "https://oconeesc.com/delinquent-tax/bidder-registration",
+      "finalUrl": "https://oconeesc.com/delinquent-tax/bidder-registration",
+      "status": 200,
+      "title": "Bidder Registration",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": [
+        {
+          "headers": [],
+          "rowCount": 3
+        },
+        {
+          "headers": [],
+          "rowCount": 6
+        }
+      ]
+    },
+    {
+      "url": "https://oconeesc.com/delinquent-tax/common-questions",
+      "finalUrl": "https://oconeesc.com/delinquent-tax/common-questions",
+      "status": 200,
+      "title": "Common Questions",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": [
+        {
+          "headers": [],
+          "rowCount": 3
+        },
+        {
+          "headers": [],
+          "rowCount": 6
+        }
+      ]
+    },
+    {
+      "url": "https://oconeesc.com/delinquent-tax/sale-list",
+      "finalUrl": "https://oconeesc.com/delinquent-tax/sale-list",
+      "status": 200,
+      "title": "Sale List",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": true,
+      "civicplus": false,
+      "saleDates": [
+        "November 9, 2026",
+        "October 21, 2026",
+        "October 29, 2026",
+        "November 5, 2026"
+      ],
+      "tables": [
+        {
+          "headers": [
+            "Item Number",
+            "Owner Name",
+            "Map Number",
+            "Description",
+            "Total Tax Due"
+          ],
+          "rowCount": 6
+        },
+        {
+          "headers": [],
+          "rowCount": 3
+        },
+        {
+          "headers": [],
+          "rowCount": 6
+        }
+      ]
+    }
+  ],
+  "candidateLinks": [
+    {
+      "text": "",
+      "href": "https://oconeesc.com/delinquent-tax",
+      "kind": "html",
+      "foundOn": "https://oconeesc.com/#year=2026&month=9&day=16&view=month"
+    },
+    {
+      "text": "HOW DO I..?",
+      "href": "https://oconeesc.com/delinquent-tax#",
+      "kind": "html",
+      "foundOn": "https://oconeesc.com/delinquent-tax"
+    },
+    {
+      "text": "Bidder Registration",
+      "href": "https://oconeesc.com/delinquent-tax/bidder-registration",
+      "kind": "html",
+      "foundOn": "https://oconeesc.com/delinquent-tax"
+    },
+    {
+      "text": "Common Questions",
+      "href": "https://oconeesc.com/delinquent-tax/common-questions",
+      "kind": "html",
+      "foundOn": "https://oconeesc.com/delinquent-tax"
+    },
+    {
+      "text": "Sale List",
+      "href": "https://oconeesc.com/delinquent-tax/sale-list",
+      "kind": "html",
+      "foundOn": "https://oconeesc.com/delinquent-tax"
+    },
+    {
+      "text": "Tax Sale Information",
+      "href": "https://oconeesc.com/delinquent-tax/tax-sale-information",
+      "kind": "html",
+      "foundOn": "https://oconeesc.com/delinquent-tax"
+    },
+    {
+      "text": "Overage Information",
+      "href": "https://oconeesc.com/delinquent-tax/tax-sale-information/overage-information",
+      "kind": "html",
+      "foundOn": "https://oconeesc.com/delinquent-tax"
+    },
+    {
+      "text": "HOW DO I..?",
+      "href": "https://oconeesc.com/delinquent-tax/tax-sale-information#",
+      "kind": "html",
+      "foundOn": "https://oconeesc.com/delinquent-tax/tax-sale-information"
+    }
+  ],
+  "followed": [
+    {
+      "url": "https://oconeesc.com/delinquent-tax/bidder-registration",
+      "blocked": false,
+      "blockReason": null,
+      "title": "Bidder Registration",
+      "saleDates": []
+    },
+    {
+      "url": "https://oconeesc.com/delinquent-tax/common-questions",
+      "blocked": false,
+      "blockReason": null,
+      "title": "Common Questions",
+      "saleDates": []
+    },
+    {
+      "url": "https://oconeesc.com/delinquent-tax/sale-list",
+      "blocked": false,
+      "blockReason": null,
+      "title": "Sale List",
+      "saleDates": [
+        "November 9, 2026",
+        "October 21, 2026",
+        "October 29, 2026",
+        "November 5, 2026"
+      ]
+    }
+  ],
+  "blocked": [],
+  "arcgis": [],
+  "qpublic": [],
+  "wayback": [
+    {
+      "error": "wayback HTTP 503"
+    }
+  ],
+  "suggestedFamily": "html-table",
+  "treasurerUrl": "https://oconeesc.com/delinquent-tax",
+  "listingSampleUrl": null,
+  "notes": "8 listing-like link(s)."
+}

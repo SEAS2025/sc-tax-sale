@@ -103,6 +103,9 @@ test("status counts: Lexington live, researched families, rest unknown", () => {
   assert.equal(getCounty("georgetown").listingSampleUrl.includes("DocumentCenter/View/3625"), true);
   assert.equal(getCounty("york").gisUrl.includes("experience.arcgis.com"), true);
   assert.equal(getCounty("york").gisUrl.includes("MapServer"), false);
+  assert.equal(getCounty("oconee").sourceFamily, "html-table");
+  assert.equal(getCounty("saluda").treasurerUrl.includes("delinquent-tax-sale"), true);
+  assert.equal(getCounty("colleton").sourceFamily, "county-pdf");
 });
 
 test("registry does not republish the owner CSV or Base44 secrets", () => {
@@ -185,6 +188,14 @@ test("family adapters ingest fixtures without emitting owner names", () => {
     assert.equal(summary.rows.some((row) => row.owner), false);
   }
   assert.equal(table.rows[0].tms, "0136001300600");
+  const oconee = families.ingestFile(
+    { id: "oconee", sourceFamily: "html-table" },
+    path.join(__dirname, "fixtures", "html-table-oconee.html")
+  );
+  assert.equal(oconee.rowCount, 3);
+  assert.equal(oconee.rows[0].tms, "100-00-00-001.000");
+  assert.equal(oconee.amountTotal, 149.5);
+  assert.equal(JSON.stringify(families.publicSummary(oconee)).includes("EXAMPLE OWNER"), false);
   assert.equal(table.amountTotal, 360.5);
   assert.equal(pdf.rows[2].tms, "1000000003");
   const dashed = families.ingestFile(

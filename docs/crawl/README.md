@@ -17,4 +17,6 @@ Firefox (Playwright) visits each county’s official website from the SC Associa
 | Calhoun | page-or-newspaper | [Tax Collector](https://calhouncounty.sc.gov/departments/tax-collector). No current listing. |
 | York | page-or-newspaper | [Tax Collection](https://www.yorkcountysc.gov/216/Tax-Collection). Sale 12 Oct 2026. County-published Experience URL recorded; no MapServer invented. |
 
-Other county reports in this folder are in progress. A cookie-consent script that mentions reCaptcha is not a captcha wall.
+As of this pass, 32 counties are `researched` and Lexington is `live`. Thirteen still have no confirmed tax-sale page: see the keep-going report. A cookie-consent script that mentions reCaptcha is not a captcha wall. A Cloudflare “Just a moment” page is a captcha wall and is not solved.
+
+Lists found as county-hosted files (not stored in git): Georgetown Document Center View/3625, Colleton `taxsale-1-30-26.pdf`, Cherokee scan PDF. York’s 2025 dashboard is an Experience Builder item the county page linked.

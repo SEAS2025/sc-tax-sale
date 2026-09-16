@@ -1,0 +1,634 @@
+{
+  "id": "colleton",
+  "browsedAt": "2026-09-16T17:23:13.669Z",
+  "seedUrls": [
+    "http://www.colletoncounty.org"
+  ],
+  "seedSource": "https://www.sccounties.org/county-information",
+  "pages": [
+    {
+      "url": "http://www.colletoncounty.org",
+      "finalUrl": "https://www.colletoncounty.org/",
+      "status": 200,
+      "title": "Colleton County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [
+        "March 1, 2026"
+      ],
+      "tables": []
+    },
+    {
+      "url": "https://www.colletoncounty.org/delinquent-tax",
+      "finalUrl": "https://www.colletoncounty.org/delinquent-tax",
+      "status": 200,
+      "title": "Delinquent Tax | Colleton County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [
+        "February 20, 2026"
+      ],
+      "tables": []
+    },
+    {
+      "url": "https://www.colletoncounty.org/#mm-2",
+      "finalUrl": "https://www.colletoncounty.org/#mm-2",
+      "status": 200,
+      "title": "Colleton County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [
+        "March 1, 2026"
+      ],
+      "tables": []
+    },
+    {
+      "url": "https://www.colletoncounty.org/delinquent-tax/tax-sale",
+      "finalUrl": "https://www.colletoncounty.org/delinquent-tax/tax-sale",
+      "status": 200,
+      "title": "Tax Sale | Colleton County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [
+        "February 20, 2026"
+      ],
+      "tables": []
+    },
+    {
+      "url": "https://www.colletoncounty.org/treasurer",
+      "finalUrl": "https://www.colletoncounty.org/treasurer",
+      "status": 200,
+      "title": "Treasurer | Colleton County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [
+        "March 24, 2022"
+      ],
+      "tables": [
+        {
+          "headers": [],
+          "rowCount": 6
+        }
+      ]
+    },
+    {
+      "url": "https://www.colletoncounty.org/departments",
+      "finalUrl": "https://www.colletoncounty.org/departments",
+      "status": 200,
+      "title": "Departments | Colleton County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [
+        "September 19, 2023"
+      ],
+      "tables": []
+    }
+  ],
+  "candidateLinks": [
+    {
+      "text": "Delinquent Tax",
+      "href": "https://www.colletoncounty.org/delinquent-tax",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/"
+    },
+    {
+      "text": "Delinquent Tax",
+      "href": "https://www.colletoncounty.org/#mm-2",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/"
+    },
+    {
+      "text": "Tax Sale",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-2",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-28",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-31",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-32",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-33",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-34",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Close submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-1",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-3",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-5",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-6",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-7",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-8",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-9",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-10",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-11",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-12",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-13",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-15",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-21",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-22",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-23",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-24",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-25",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-26",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-27",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-4",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-14",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-16",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-18",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-20",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-17",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-19",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-29",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-30",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Skip to main content",
+      "href": "https://www.colletoncounty.org/delinquent-tax#main-content",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "here",
+      "href": "https://www.colletoncounty.org/sites/default/files/uploads/taxsale-1-30-26.pdf",
+      "kind": "pdf",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "",
+      "href": "https://www.colletoncounty.org/sites/default/files/uploads/del_tax/taxsalelist-01-29.pdf",
+      "kind": "pdf",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Click here.",
+      "href": "http://www.colletoncounty.org/tax-sale/2014-list",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "What happens when property is sold for delinquent tax?",
+      "href": "https://www.colletoncounty.org/faq/what-happens-when-property-sold-delinquent-tax",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "When do taxes become delinquent?",
+      "href": "https://www.colletoncounty.org/faq/when-do-taxes-become-delinquent",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Close menu",
+      "href": "https://www.colletoncounty.org/delinquent-tax#mm-0",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-2",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-28",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-31",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-32",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-33",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-34",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Close submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-1",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-3",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-5",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-6",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-7",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-8",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-9",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-10",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-11",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-12",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-13",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-15",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-21",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-22",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-23",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-24",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-25",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-26",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-27",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-4",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-14",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-16",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-18",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-20",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-17",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-19",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-29",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Open submenu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-30",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Skip to main content",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#main-content",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Close menu",
+      "href": "https://www.colletoncounty.org/delinquent-tax/tax-sale#mm-0",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/delinquent-tax/tax-sale"
+    },
+    {
+      "text": "Delinquent Tax",
+      "href": "https://www.colletoncounty.org/treasurer#mm-2",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/treasurer"
+    },
+    {
+      "text": "Delinquent Tax",
+      "href": "https://www.colletoncounty.org/departments#mm-2",
+      "kind": "html",
+      "foundOn": "https://www.colletoncounty.org/departments"
+    }
+  ],
+  "followed": [],
+  "blocked": [],
+  "arcgis": [],
+  "qpublic": [
+    {
+      "text": "Property & Tax Search, View and Pay",
+      "href": "https://qpublic.schneidercorp.com/Application.aspx?AppID=1046&LayerID=23500&PageTypeID=2&PageID=9798",
+      "note": "Assessor lookup, not a sale list. Not scraped."
+    },
+    {
+      "text": "Search Property Tax Records",
+      "href": "https://qpublic.schneidercorp.com/Application.aspx?AppID=1046&LayerID=23500&PageTypeID=2&PageID=9798",
+      "note": "Assessor lookup, not a sale list. Not scraped."
+    },
+    {
+      "text": "Property & Tax Search, View and Pay (opens in a new tab)",
+      "href": "https://qpublic.schneidercorp.com/Application.aspx?AppID=1046&LayerID=23500&PageTypeID=2&PageID=9798",
+      "note": "Assessor lookup, not a sale list. Not scraped."
+    }
+  ],
+  "wayback": [
+    {
+      "error": "wayback HTTP 503"
+    }
+  ],
+  "suggestedFamily": "county-pdf",
+  "treasurerUrl": "https://www.colletoncounty.org/delinquent-tax",
+  "listingSampleUrl": "https://www.colletoncounty.org/sites/default/files/uploads/taxsale-1-30-26.pdf",
+  "notes": "qPublic/Beacon link seen; not used as the sale universe. 82 listing-like link(s)."
+}

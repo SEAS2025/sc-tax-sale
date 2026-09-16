@@ -244,6 +244,100 @@ const RESEARCHED = {
     notes:
       "Family page-or-newspaper. Browsed 16 Sep 2026. Delinquent tax collector page says the office plans and conducts tax sales. No current listing file. Assessor rollback and 2012–2018 sales PDFs are not the tax-sale ad.",
   },
+  saluda: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl: "https://saludacounty.sc.gov/departments/tax-collector/delinquent-tax-sale",
+    notes:
+      "Family page-or-newspaper. Browsed 16 Sep 2026. 2026 sale Tuesday 8 Dec 2026 at 10 a.m. List will be in the Twin City News and on this page for three weeks, plus an updated list on the page Monday 7 Dec after 4:30 p.m. Not posted yet.",
+  },
+  orangeburg: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl: "https://www.orangeburgcounty.org/362/General-Tax-Sale-Information",
+    notes:
+      "Family page-or-newspaper. Browsed 16 Sep 2026. Sale Monday 14 Dec 2026, 10 a.m., Orangeburg County Conference Center. Real property advertised in the Times and Democrat for three weeks. List is the newspaper or the delinquent tax office. No file downloaded.",
+  },
+  hampton: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl: "https://www.hamptoncountysc.org/29/Delinquent-Tax",
+    notes:
+      "Family page-or-newspaper. Browsed 16 Sep 2026. FAQ says the sale is usually the first Monday in October or November. No listing file on the page.",
+  },
+  greenwood: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl: "https://www.greenwoodcounty-sc.gov/tax-collector",
+    notes:
+      "Family page-or-newspaper. Browsed 16 Sep 2026. Tax collector page says redemptions and tax-sale matters are handled by the Tax Office, Room 101 of the courthouse. No listing file.",
+  },
+  lee: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl: "https://www.leecountysc.org/directory/departments___elected_officials/delinquent_tax.php",
+    notes:
+      "Family page-or-newspaper. Browsed 16 Sep 2026. Page says the sale is normally the first Monday in November in the courtroom, subject to change. No listing file.",
+  },
+  union: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl: "https://gearupunionsc.com/departments/delinquent-tax-office/",
+    notes:
+      "Family page-or-newspaper. Browsed 16 Sep 2026. 2025 sale was 3 Nov 2025. Unsold properties are being assigned; the list is at the auditor’s office, not a public file on the page.",
+  },
+  fairfield: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl: "https://www.fairfieldsc.com/departments/tax-collector",
+    notes:
+      "Family page-or-newspaper. Browsed 16 Sep 2026. Tax collector page links a 2026 schedule of events, bidder terms, and an overage notice. No parcel listing file.",
+  },
+  marlboro: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl:
+      "https://marlborocounty.sc.gov/Documents/Delinquent%20Tax/Tax%20Sale%20-%202026%20Calendar.pdf",
+    notes:
+      "Family page-or-newspaper. Calendar PDF says sale 9 Nov 2026. Ads in the Herald Advocate starting 8 Oct 2026. Calendar is not a parcel list and was not stored as a sale file.",
+  },
+  kershaw: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl: "https://www.kershaw.sc.gov/government/departments-r-z/treasurer/delinquent-matters",
+    notes:
+      "Family page-or-newspaper. Browsed 16 Sep 2026. Delinquent matters page covers overage claims and a policy that county employees cannot bid. No current parcel file.",
+  },
+  jasper: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl: "https://www.jaspercountysc.gov/services/forfeited-land/",
+    notes:
+      "Family page-or-newspaper. Browsed 16 Sep 2026. Forfeited Land page describes post-sale assignments that did not meet the minimum bid. No current sale list file. Agenda PDFs are meetings, not the ad.",
+  },
+  oconee: {
+    status: "researched",
+    sourceFamily: "html-table",
+    identifier: "map",
+    treasurerUrl: "https://oconeesc.com/delinquent-tax/sale-list",
+    listingUrl: "https://oconeesc.com/delinquent-tax/sale-list",
+    notes:
+      "Family html-table. Browsed 16 Sep 2026. Sale list page columns: Item Number, Owner Name, Map Number, Description, Total Tax Due. Tax sale information page says the 2025 sale is 9 Nov 2026. Bidder registration is a separate page. Do not scrape the live table into git.",
+  },
+  marion: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl: "https://www.marionsc.org/departments/tax_collector/index.php",
+    notes:
+      "Family page-or-newspaper. Browsed 16 Sep 2026. Tax collector menu links a Tax Sale Information Form docx. That form was not stored. No parcel table on the page.",
+  },
+  darlington: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl: "https://www.darcosc.com/departments/tax_collector.php",
+    notes:
+      "Family page-or-newspaper. Browsed 16 Sep 2026. Sale is held in December at Darlington Middle School. Real property is advertised in the Darlington News and Press for three weeks. Specific date is by phone. No listing file on the page.",
+  },
   colleton: {
     status: "researched",
     sourceFamily: "county-pdf",

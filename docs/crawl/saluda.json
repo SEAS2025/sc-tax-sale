@@ -1,0 +1,137 @@
+{
+  "id": "saluda",
+  "browsedAt": "2026-09-16T17:25:32.299Z",
+  "seedUrls": [
+    "https://saludacounty.sc.gov/"
+  ],
+  "seedSource": "https://www.sccounties.org/county-information",
+  "pages": [
+    {
+      "url": "https://saludacounty.sc.gov/",
+      "finalUrl": "https://saludacounty.sc.gov/",
+      "status": 200,
+      "title": "Home | Saluda County",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://saludacounty.sc.gov/departments/tax-collector",
+      "finalUrl": "https://saludacounty.sc.gov/departments/tax-collector",
+      "status": 200,
+      "title": "Tax Collector | Saluda County",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://saludacounty.sc.gov/departments/treasurer",
+      "finalUrl": "https://saludacounty.sc.gov/departments/treasurer",
+      "status": 200,
+      "title": "Treasurer | Saluda County",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": true,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://saludacounty.sc.gov/departments",
+      "finalUrl": "https://saludacounty.sc.gov/departments",
+      "status": 200,
+      "title": "Departments | Saluda County",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://saludacounty.sc.gov/news",
+      "finalUrl": "https://saludacounty.sc.gov/news",
+      "status": 200,
+      "title": "Recent News | Saluda County",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [
+        "October 14, 2026",
+        "October 7, 2026"
+      ],
+      "tables": []
+    },
+    {
+      "url": "https://saludacounty.sc.gov/departments/tax-collector/delinquent-tax-sale",
+      "finalUrl": "https://saludacounty.sc.gov/departments/tax-collector/delinquent-tax-sale",
+      "status": 200,
+      "title": "Delinquent Tax Sale | Saluda County",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [
+        "December 8, 2026"
+      ],
+      "tables": [
+        {
+          "headers": [],
+          "rowCount": 11
+        }
+      ]
+    }
+  ],
+  "candidateLinks": [
+    {
+      "text": "Delinquent Tax Sale",
+      "href": "https://saludacounty.sc.gov/departments/tax-collector/delinquent-tax-sale",
+      "kind": "html",
+      "foundOn": "https://saludacounty.sc.gov/departments/tax-collector"
+    },
+    {
+      "text": "Skip to main content",
+      "href": "https://saludacounty.sc.gov/departments/tax-collector/delinquent-tax-sale#main-content",
+      "kind": "html",
+      "foundOn": "https://saludacounty.sc.gov/departments/tax-collector/delinquent-tax-sale"
+    },
+    {
+      "text": "Menu",
+      "href": "https://saludacounty.sc.gov/departments/tax-collector/delinquent-tax-sale#",
+      "kind": "html",
+      "foundOn": "https://saludacounty.sc.gov/departments/tax-collector/delinquent-tax-sale"
+    }
+  ],
+  "followed": [],
+  "blocked": [],
+  "arcgis": [],
+  "qpublic": [],
+  "wayback": [
+    {
+      "error": "wayback HTTP 503"
+    }
+  ],
+  "suggestedFamily": "page-or-newspaper",
+  "treasurerUrl": "https://saludacounty.sc.gov/departments/tax-collector/delinquent-tax-sale",
+  "listingSampleUrl": null,
+  "notes": "3 listing-like link(s)."
+}

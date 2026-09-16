@@ -132,6 +132,18 @@ Opened or cited while classifying source families. No GIS URLs added. No listing
 | York | page-or-newspaper | https://www.yorkcountysc.gov/216/Tax-Collection (200). Sale 12 Oct 2026. Experience item on the page: experience/ef9243d9330c4891ba724689f2eb1502. |
 | Colleton | county-pdf | https://www.colletoncounty.org/delinquent-tax/tax-sale (200). Listing PDF taxsale-1-30-26.pdf. Dotted map. File not stored. |
 | Chester | page-or-newspaper | Tax collector URL linked from the homepage. Cloudflare challenge. Not solved. |
+| Darlington | page-or-newspaper | https://www.darcosc.com/departments/tax_collector.php. December sale. Darlington News and Press. |
+| Saluda | page-or-newspaper | https://saludacounty.sc.gov/departments/tax-collector/delinquent-tax-sale. Sale 8 Dec 2026. Twin City News. |
+| Orangeburg | page-or-newspaper | https://www.orangeburgcounty.org/362/General-Tax-Sale-Information. Sale 14 Dec 2026. Times and Democrat. |
+| Hampton | page-or-newspaper | https://www.hamptoncountysc.org/29/Delinquent-Tax. Usually first Monday in October or November. |
+| Greenwood | page-or-newspaper | https://www.greenwoodcounty-sc.gov/tax-collector. Tax Office, Room 101. |
+| Lee | page-or-newspaper | https://www.leecountysc.org/directory/departments___elected_officials/delinquent_tax.php. Usually first Monday in November. |
+| Union | page-or-newspaper | https://gearupunionsc.com/departments/delinquent-tax-office/. 2025 sale 3 Nov 2025. Unsold list at the auditor. |
+| Fairfield | page-or-newspaper | https://www.fairfieldsc.com/departments/tax-collector. 2026 schedule PDF, no parcel list. |
+| Marlboro | page-or-newspaper | Calendar PDF. Sale 9 Nov 2026. Herald Advocate. |
+| Kershaw | page-or-newspaper | https://www.kershaw.sc.gov/government/departments-r-z/treasurer/delinquent-matters |
+| Jasper | page-or-newspaper | https://www.jaspercountysc.gov/services/forfeited-land/ post-sale assignments. |
+| Marion | page-or-newspaper | https://www.marionsc.org/departments/tax_collector/index.php. Information form docx, not stored. |
 
 qPublic/Beacon (`qpublic.schneidercorp.com`) is an assessor GIS portal for many SC counties. It is not a tax-sale list.
 

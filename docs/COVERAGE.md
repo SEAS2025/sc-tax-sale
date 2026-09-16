@@ -30,6 +30,8 @@ Lexington (live) and Beaufort (parser ready). Text extract, then a layout-specif
 
 **Greenville** publishes a live HTML table at `https://www.greenvillecounty.org/appsAS400/Taxsale/` (HTTP 200). Columns: `Item #`, `Map #`, `Name`, `Amount Due`. Map numbers are 13-digit strings, sometimes with a letter prefix (`WG06030500300`). That is one adapter for every county that dumps the same four columns to HTML. Do not scrape the Greenville table into this repo (owner names).
 
+**Oconee** (browsed 16 Sep 2026) publishes a live table at `https://oconeesc.com/delinquent-tax/sale-list`. Columns: `Item Number`, `Owner Name`, `Map Number`, `Description`, `Total Tax Due`. The same html-table adapter reads that header row. Sale date on the information page: 9 Nov 2026. Do not scrape the table into git.
+
 ### 3. `county-pdf` — treasurer-hosted listing PDF
 
 **Charleston** posts `https://www.charlestoncounty.org/departments/delinquent-tax/files/RP-Tax-Sale-Listing.pdf` from `https://www.charlestoncounty.gov/departments/delinquent-tax/tax-sale.php` (HTTP 200). Rows are 10-digit PINs (`4601102055`), class code, owner, situs, appraisal, assessed, acreage, total due. The PDF itself quotes S.C. Code § 30-2-50 (no using the list for commercial solicitation). Parse locally; do not republish.

@@ -1,0 +1,206 @@
+{
+  "id": "orangeburg",
+  "browsedAt": "2026-09-16T17:24:56.900Z",
+  "seedUrls": [
+    "https://www.orangeburgcounty.org/"
+  ],
+  "seedSource": "https://www.sccounties.org/county-information",
+  "pages": [
+    {
+      "url": "https://www.orangeburgcounty.org/",
+      "finalUrl": "https://www.orangeburgcounty.org/",
+      "status": 200,
+      "title": "Orangeburg County, SC | Official Website",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": true,
+      "saleDates": [],
+      "tables": [
+        {
+          "headers": [
+            "Sun",
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat"
+          ],
+          "rowCount": 6
+        }
+      ]
+    },
+    {
+      "url": "https://www.orangeburgcounty.org/27/Departments",
+      "finalUrl": "https://www.orangeburgcounty.org/27/Departments",
+      "status": 200,
+      "title": "Departments | Orangeburg County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": true,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.orangeburgcounty.org/Search/Results?searchPhrase=tax+sale",
+      "finalUrl": "https://www.orangeburgcounty.org/Search/Results?searchPhrase=tax+sale",
+      "status": 200,
+      "title": null,
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": true,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.orangeburgcounty.org/357/Delinquent-Tax",
+      "finalUrl": "https://www.orangeburgcounty.org/357/Delinquent-Tax",
+      "status": 200,
+      "title": "Delinquent Tax | Orangeburg County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": true,
+      "civicplus": true,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.orangeburgcounty.org/362/General-Tax-Sale-Information",
+      "finalUrl": "https://www.orangeburgcounty.org/362/General-Tax-Sale-Information",
+      "status": 200,
+      "title": "General Tax Sale Information | Orangeburg County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": true,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.orangeburgcounty.org/357/delinquent-tax",
+      "finalUrl": "https://www.orangeburgcounty.org/357/Delinquent-Tax",
+      "status": 304,
+      "title": "Delinquent Tax | Orangeburg County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": true,
+      "civicplus": true,
+      "saleDates": [],
+      "tables": []
+    },
+    {
+      "url": "https://www.orangeburgcounty.org/m/FAQ#question-185",
+      "finalUrl": "https://www.orangeburgcounty.org/m/FAQ#question-185",
+      "status": 200,
+      "title": "FAQs - CivicPlus.CMS.FAQ",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": true,
+      "saleDates": [],
+      "tables": [
+        {
+          "headers": [],
+          "rowCount": 4
+        }
+      ]
+    }
+  ],
+  "candidateLinks": [
+    {
+      "text": "Delinquent Tax",
+      "href": "https://www.orangeburgcounty.org/357/Delinquent-Tax",
+      "kind": "html",
+      "foundOn": "https://www.orangeburgcounty.org/27/Departments"
+    },
+    {
+      "text": "Delinquent Tax Submenu",
+      "href": "https://www.orangeburgcounty.org/27/Departments#",
+      "kind": "html",
+      "foundOn": "https://www.orangeburgcounty.org/27/Departments"
+    },
+    {
+      "text": "General Tax Sale Information",
+      "href": "https://www.orangeburgcounty.org/362/General-Tax-Sale-Information",
+      "kind": "html",
+      "foundOn": "https://www.orangeburgcounty.org/27/Departments"
+    },
+    {
+      "text": "Delinquent Tax",
+      "href": "https://www.orangeburgcounty.org/357/delinquent-tax",
+      "kind": "html",
+      "foundOn": "https://www.orangeburgcounty.org/Search/Results?searchPhrase=tax+sale"
+    },
+    {
+      "text": "Where is the tax sale held and what time does it begin?",
+      "href": "https://www.orangeburgcounty.org/m/FAQ#question-185",
+      "kind": "html",
+      "foundOn": "https://www.orangeburgcounty.org/Search/Results?searchPhrase=tax+sale"
+    }
+  ],
+  "followed": [
+    {
+      "url": "https://www.orangeburgcounty.org/357/Delinquent-Tax",
+      "blocked": false,
+      "blockReason": null,
+      "title": "Delinquent Tax | Orangeburg County, SC",
+      "saleDates": []
+    },
+    {
+      "url": "https://www.orangeburgcounty.org/362/General-Tax-Sale-Information",
+      "blocked": false,
+      "blockReason": null,
+      "title": "General Tax Sale Information | Orangeburg County, SC",
+      "saleDates": []
+    },
+    {
+      "url": "https://www.orangeburgcounty.org/357/Delinquent-Tax",
+      "blocked": false,
+      "blockReason": null,
+      "title": "Delinquent Tax | Orangeburg County, SC",
+      "saleDates": []
+    },
+    {
+      "url": "https://www.orangeburgcounty.org/m/FAQ#question-185",
+      "blocked": false,
+      "blockReason": null,
+      "title": "FAQs - CivicPlus.CMS.FAQ",
+      "saleDates": []
+    }
+  ],
+  "blocked": [],
+  "arcgis": [],
+  "qpublic": [
+    {
+      "text": "Assessments",
+      "href": "https://qpublic.schneidercorp.com/Application.aspx?App=OrangeburgCountySC&PageType=Search",
+      "note": "Assessor lookup, not a sale list. Not scraped."
+    }
+  ],
+  "wayback": [
+    {
+      "error": "wayback HTTP 503"
+    }
+  ],
+  "suggestedFamily": "page-or-newspaper",
+  "treasurerUrl": "https://www.orangeburgcounty.org/357/Delinquent-Tax",
+  "listingSampleUrl": null,
+  "notes": "qPublic/Beacon link seen; not used as the sale universe. 5 listing-like link(s)."
+}

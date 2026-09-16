@@ -1,0 +1,247 @@
+{
+  "id": "darlington",
+  "browsedAt": "2026-09-16T17:23:32.964Z",
+  "seedUrls": [
+    "http://www.darcosc.com"
+  ],
+  "seedSource": "https://www.sccounties.org/county-information",
+  "pages": [
+    {
+      "url": "http://www.darcosc.com",
+      "finalUrl": "https://www.darcosc.com/",
+      "status": 200,
+      "title": "Darlington County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [
+        "October 8, 2026",
+        "September 24, 2026"
+      ],
+      "tables": [
+        {
+          "headers": [
+            "Sun Mon Tue Wed Thu Fri Sat",
+            "Sun",
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat"
+          ],
+          "rowCount": 9
+        },
+        {
+          "headers": [
+            "Sun",
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat"
+          ],
+          "rowCount": 1
+        },
+        {
+          "headers": [],
+          "rowCount": 6
+        },
+        {
+          "headers": [
+            "SunMonTueWedThuFriSat",
+            "Sun",
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat"
+          ],
+          "rowCount": 9
+        },
+        {
+          "headers": [
+            "Sun",
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat"
+          ],
+          "rowCount": 1
+        },
+        {
+          "headers": [],
+          "rowCount": 6
+        },
+        {
+          "headers": [],
+          "rowCount": 8
+        }
+      ]
+    },
+    {
+      "url": "https://www.darcosc.com/government/treasurer/index.php",
+      "finalUrl": "https://www.darcosc.com/government/treasurer/index.php",
+      "status": 200,
+      "title": "Darlington County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": [
+        {
+          "headers": [],
+          "rowCount": 8
+        }
+      ]
+    },
+    {
+      "url": "https://www.darcosc.com/departments/tax_collector.php",
+      "finalUrl": "https://www.darcosc.com/departments/tax_collector.php",
+      "status": 200,
+      "title": "Darlington County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": true,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": [
+        {
+          "headers": [],
+          "rowCount": 8
+        }
+      ]
+    },
+    {
+      "url": "https://www.darcosc.com/departments/index.php",
+      "finalUrl": "https://www.darcosc.com/departments/index.php",
+      "status": 200,
+      "title": "Darlington County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": [
+        {
+          "headers": [],
+          "rowCount": 8
+        }
+      ]
+    },
+    {
+      "url": "https://www.darcosc.com/government/county_council/agendas_minutes_videos/index.php",
+      "finalUrl": "https://www.darcosc.com/government/county_council/agendas_minutes_videos/index.php",
+      "status": 200,
+      "title": "Darlington County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": [
+        {
+          "headers": [],
+          "rowCount": 8
+        }
+      ]
+    },
+    {
+      "url": "https://www.darcosc.com/government/boards_commissions/agendas_and_minues.php",
+      "finalUrl": "https://www.darcosc.com/government/boards_commissions/agendas_and_minues.php",
+      "status": 200,
+      "title": "Darlington County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": [
+        {
+          "headers": [],
+          "rowCount": 8
+        }
+      ]
+    },
+    {
+      "url": "https://www.darcosc.com/government/boards_commissions/planning_commission/agendas_minutes.php",
+      "finalUrl": "https://www.darcosc.com/government/boards_commissions/planning_commission/agendas_minutes.php",
+      "status": 200,
+      "title": "Darlington County, SC",
+      "blocked": false,
+      "blockReason": null,
+      "error": null,
+      "mentionsTaxSale": false,
+      "mentionsNewspaper": false,
+      "civicplus": false,
+      "saleDates": [],
+      "tables": [
+        {
+          "headers": [],
+          "rowCount": 8
+        }
+      ]
+    }
+  ],
+  "candidateLinks": [
+    {
+      "text": "Sale of Vehicle Form",
+      "href": "https://www.darcosc.com/Documents/Government/County%20Auditor/Sale%20of%20Vehicle%20Form.pdf",
+      "kind": "pdf",
+      "foundOn": "https://www.darcosc.com/"
+    }
+  ],
+  "followed": [
+    {
+      "url": "https://www.darcosc.com/Documents/Government/County%20Auditor/Sale%20of%20Vehicle%20Form.pdf",
+      "kind": "pdf",
+      "note": "Listing file recorded, not downloaded into git."
+    }
+  ],
+  "blocked": [],
+  "arcgis": [],
+  "qpublic": [
+    {
+      "text": "Darlington County Assessor Data",
+      "href": "http://www.qpublic.net/sc/darlington/",
+      "note": "Assessor lookup, not a sale list. Not scraped."
+    },
+    {
+      "text": "Darlington County Assessor Data",
+      "href": "http://www.qpublic.net/sc/darlington/",
+      "note": "Assessor lookup, not a sale list. Not scraped."
+    },
+    {
+      "text": "Darlington County Assessor Data",
+      "href": "http://www.qpublic.net/sc/darlington/",
+      "note": "Assessor lookup, not a sale list. Not scraped."
+    }
+  ],
+  "wayback": [
+    {
+      "error": "The operation was aborted due to timeout"
+    }
+  ],
+  "suggestedFamily": "county-pdf",
+  "treasurerUrl": "https://www.darcosc.com/government/treasurer/index.php",
+  "listingSampleUrl": "https://www.darcosc.com/Documents/Government/County%20Auditor/Sale%20of%20Vehicle%20Form.pdf",
+  "notes": "qPublic/Beacon link seen; not used as the sale universe. 1 listing-like link(s)."
+}
