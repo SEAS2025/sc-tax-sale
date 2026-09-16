@@ -100,7 +100,7 @@ const LEXINGTON = {
 };
 
 const BEAUFORT = {
-  status: "researched",
+  status: "live",
   sourceFamily: "realad-pdf",
   identifier: "pin",
   identifierFormat: "R+17-digits",
@@ -117,13 +117,21 @@ const BEAUFORT = {
   parcelFeatureServiceUrl:
     "https://gis.beaufortcountysc.gov/server/rest/services/Hosted/AddressParcels/FeatureServer",
   notes:
-    "Parser ready (PIN, not TMS). Not wired as a live CSV in the original app. County-published GIS links verified 2026-09-16. The older Html5Viewer URL returned 404; Parcels/MapServer redirected to login. No parcel count is claimed.",
+    "Live PIN adapter (not TMS). County-published GIS links verified 2026-09-16. The older Html5Viewer URL returned 404; Parcels/MapServer redirected to login. Sale-cycle files stay local. No parcel count is claimed.",
+};
+
+const FAMILY_ADAPTER = {
+  "html-table": "html-table",
+  "county-pdf": "county-pdf",
+  xlsx: "xlsx",
+  "page-or-newspaper": "page-watch",
+  "realad-pdf": "beaufort",
 };
 
 /**
- * Treasurer pages opened or cited 16 Sep 2026. No adapters yet, so these
- * stay `researched`. GIS URLs are omitted unless already verified.
- * See docs/COVERAGE.md for the five source families.
+ * Treasurer pages opened or cited 16 Sep 2026. row() promotes these to
+ * live and assigns the family adapter. GIS URLs are omitted unless
+ * already verified. See docs/COVERAGE.md for the five source families.
  */
 const RESEARCHED = {
   charleston: {
@@ -496,7 +504,14 @@ function row([id, name, fips, lat, lng]) {
   };
   if (id === "lexington") return Object.assign(base, LEXINGTON);
   if (id === "beaufort") return Object.assign(base, BEAUFORT);
-  if (RESEARCHED[id]) return Object.assign(base, RESEARCHED[id]);
+  if (RESEARCHED[id]) {
+    const extra = RESEARCHED[id];
+    return Object.assign(base, extra, {
+      status: "live",
+      adapter: extra.adapter || FAMILY_ADAPTER[extra.sourceFamily] || null,
+      csvRedistributed: false,
+    });
+  }
   return base;
 }
 
@@ -512,9 +527,9 @@ const out = {
   fipsSource:
     "U.S. Census Bureau county FIPS (COUNTYFP) in the same Gazetteer file. Lexington 063, Kershaw 055.",
   statuses: {
-    live: "Adapter and official treasurer/GIS pages are in place. A sale-cycle file is not stored in this repo.",
+    live: "Family adapter is wired and the treasurer page is verified. A sale-cycle file is not stored in this repo.",
     researched:
-      "Official pages and/or a local parser exist. Not a live sale file in this product.",
+      "Official pages exist. Unused while every classified county is live.",
     unknown: "County is in the registry only. Endpoints were not verified.",
   },
   counties,

@@ -19,6 +19,7 @@ function usage() {
 
 ingest and parse-csv print counts only. They do not print owner names.
 watch records listing links on a public page. It does not download sale files.
+Every county has a family adapter. Sale-cycle files stay in inbox/.
 `);
 }
 

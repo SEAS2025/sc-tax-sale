@@ -1,6 +1,6 @@
 # Engine
 
-The engine is parameterized by `counties/sc.json`. A county without an `adapter` cannot be parsed. That is intentional.
+The engine is parameterized by `counties/sc.json`. Every county has an `adapter` from its source family. `ingest` and `watch` print counts and listing links only.
 
 ## Commands
 

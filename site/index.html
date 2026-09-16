@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SC Tax Sale Atlas — Southeast Aerial Systems</title>
-  <meta name="description" content="South Carolina delinquent tax sale analysis for all 46 counties. Lexington is live. Beaufort parser is ready. Public-record research, not legal advice.">
+  <meta name="description" content="South Carolina delinquent tax sale analysis for all 46 counties. Every county has a live family adapter. Sale files stay local. Public-record research, not legal advice.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
     <div class="mast-inner">
       <p class="brand-kicker">Southeast Aerial Systems</p>
       <h1>SC Tax Sale Atlas</h1>
-      <p class="lede">South Carolina delinquent tax sale analysis. Forty-six counties in one registry. There is no statewide file — counties publish HTML tables, PDFs, spreadsheets, or newspaper ads. No invented endpoints, and no owner lists published here.</p>
+      <p class="lede">South Carolina delinquent tax sale analysis. Forty-six counties, each with a live family adapter. There is no statewide file — counties publish HTML tables, PDFs, spreadsheets, or newspaper ads. No invented endpoints, and no owner lists published here.</p>
       <div class="mast-actions">
         <a class="btn primary" href="mailto:southeastaerialsystems@gmail.com?subject=SC%20Tax%20Sale%20Atlas%20waitlist">Join the waitlist</a>
         <a class="btn ghost" href="#pricing">See pricing</a>
@@ -37,8 +37,8 @@
       <p>The schematic is a working map from the original analysis screen, not a surveyed boundary file. Color follows registry status.</p>
     </div>
     <div class="legend" aria-hidden="true">
-      <span><i class="swatch live"></i> Live — Lexington</span>
-      <span><i class="swatch researched"></i> Treasurer page classified</span>
+      <span><i class="swatch live"></i> Live — family adapter wired</span>
+      <span><i class="swatch researched"></i> Page classified, adapter pending</span>
       <span><i class="swatch unknown"></i> In registry, page not opened</span>
     </div>
     <div class="atlas">
@@ -58,24 +58,20 @@
   <section class="band tight" id="status">
     <div class="cards">
       <article class="status-card live">
-        <p class="eyebrow">Live</p>
-        <h3>Lexington County</h3>
-        <p>The original product. Tax map system numbers in dashed sections (<code>06-1234-5678</code> and the map-block form <code>000600-06-119</code>), a section-grid geocoder, and the crosswalk CSV schema. Treasurer and OneMap pages were checked on 16 September 2026.</p>
-        <p>The sale-cycle CSV that the original app hosted is not in this repository. It contains owner names and addresses. Pull current lists from the treasurer.</p>
-        <p><a href="https://lex-co.sc.gov/treasurer/delinquent-taxes">Lexington delinquent taxes</a> · <a href="https://maps.lex-co.com/OneMap/">OneMap</a></p>
+        <p class="eyebrow">Live · realad-pdf</p>
+        <h3>Lexington &amp; Beaufort</h3>
+        <p>Lexington is the original product: dashed TMS, section-grid geocoder, crosswalk CSV. Beaufort uses PIN (<code>R</code> plus 17 digits) in the same <code>tms</code> column. Sale-cycle files stay on your machine.</p>
+        <p><a href="https://lex-co.sc.gov/treasurer/delinquent-taxes">Lexington</a> · <a href="https://www.beaufortcountytreasurer.com/research-and-data">Beaufort</a></p>
       </article>
-      <article class="status-card researched">
-        <p class="eyebrow">Parser ready</p>
-        <h3>Beaufort County</h3>
-        <p>A later PDF port of the Lexington workflow. Identifiers are parcel PINs (<code>R</code> plus 17 digits), still stored in a column named <code>tms</code> so the same tools can run. Not a live CSV in the original app.</p>
-        <p>County mapping links were checked on 16 September 2026. An older viewer URL from the first app returned 404. No parcel count is stated.</p>
-        <p><a href="https://www.beaufortcountytreasurer.com/research-and-data">Treasurer research &amp; data</a> · <a href="https://experience.arcgis.com/experience/9e534a7884744a2680a0f472e2aabdc3">County GIS mapping</a></p>
+      <article class="status-card live">
+        <p class="eyebrow">Live · ingest families</p>
+        <h3>HTML, PDF, spreadsheet</h3>
+        <p>Greenville and Oconee are HTML tables. Charleston, Georgetown, Colleton, Cherokee, and Florence are treasurer PDFs. Horry and Dillon are spreadsheets. Drop a local file in <code>inbox/</code> and <code>ingest</code> prints counts only.</p>
       </article>
-      <article class="status-card unknown">
-        <p class="eyebrow">How the rest get done</p>
-        <h3>Five source families, not 46 parsers</h3>
-        <p>Statute lets each county set its own sale date and advertise for three weeks. Greenville is an HTML table, Charleston a PIN PDF, Horry an Excel sheet, others a CivicPlus page or the newspaper. Three ingest adapters plus a page watcher cover that. GIS (qPublic, OneMap) is how you locate a parcel after you have an ID — it is not the sale list.</p>
-        <p>FIPS codes follow the Census Bureau. Lexington is 063 and Kershaw is 055.</p>
+      <article class="status-card live">
+        <p class="eyebrow">Live · page watch</p>
+        <h3>Newspaper and seasonal pages</h3>
+        <p>The other counties have a verified treasurer page and a watcher. When a listing file appears, the same ingest command collapses into table, PDF, or spreadsheet. GIS (qPublic, OneMap) locates a parcel after you have an ID — it is not the sale list.</p>
       </article>
     </div>
   </section>
@@ -100,7 +96,7 @@
       <li><strong>Registry.</strong> <code>counties/sc.json</code> names all 46 counties, Census FIPS, and only the URLs that were verified.</li>
       <li><strong>Lexington.</strong> Reads a local CSV with columns <code>tms</code>, <code>owner_location_2025_REALAD</code>, <code>owner_location_2022_list</code>, <code>amount_2025_REALAD</code>, <code>amount_2022_list</code>. Geocodes by TMS section grid. Summaries omit owner names.</li>
       <li><strong>Beaufort.</strong> Parses treasurer PDF text for PINs and amounts. Drafts a treasurer inquiry from a file you already have.</li>
-      <li><strong>Everything else.</strong> The command says there is no adapter yet. That is the point.</li>
+      <li><strong>Every other county.</strong> <code>ingest</code> and <code>watch</code> use that county’s family adapter. Owner lists never go in git.</li>
     </ol>
   </section>
 
@@ -113,7 +109,7 @@
       <article>
         <h3>County pack</h3>
         <p class="price">$79 <span>/ sale cycle</span></p>
-        <p>One South Carolina county for one sale cycle: registry status, adapter if it exists, and the official pages we have verified.</p>
+        <p>One South Carolina county for one sale cycle: live family adapter and the official pages we have verified. You supply this year’s list.</p>
         <a href="mailto:southeastaerialsystems@gmail.com?subject=SC%20Tax%20Sale%20Atlas%20%E2%80%94%20County%20pack%20%2479">Request a county pack</a>
       </article>
       <article>
@@ -125,13 +121,13 @@
       <article class="featured">
         <h3>Statewide season</h3>
         <p class="price">$490</p>
-        <p>The full 46-county registry for one sale season, with Lexington live and Beaufort parser-ready called out honestly. Haywood, NC is not included.</p>
+        <p>The full 46-county registry for one sale season, every county with a live family adapter. Haywood, NC is not included. Sale files are not hosted here.</p>
         <a href="mailto:southeastaerialsystems@gmail.com?subject=SC%20Tax%20Sale%20Atlas%20%E2%80%94%20Statewide%20season%20%24490">Request the season</a>
       </article>
       <article>
         <h3>Annual</h3>
         <p class="price">$1,490</p>
-        <p>A year of South Carolina sale-cycle work across the same 46-county registry. Still not a promise of 46 live data feeds.</p>
+        <p>A year of South Carolina sale-cycle work across the same 46 live adapters. Still not a hosted statewide owner list.</p>
         <a href="mailto:southeastaerialsystems@gmail.com?subject=SC%20Tax%20Sale%20Atlas%20%E2%80%94%20Annual%20%241%2C490">Ask about annual</a>
       </article>
     </div>

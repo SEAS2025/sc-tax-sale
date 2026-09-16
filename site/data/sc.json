@@ -7,8 +7,8 @@
   "centerSource": "U.S. Census Bureau 2020 Gazetteer internal points (INTPTLAT, INTPTLONG), 2020_gaz_counties_45.txt",
   "fipsSource": "U.S. Census Bureau county FIPS (COUNTYFP) in the same Gazetteer file. Lexington 063, Kershaw 055.",
   "statuses": {
-    "live": "Adapter and official treasurer/GIS pages are in place. A sale-cycle file is not stored in this repo.",
-    "researched": "Official pages and/or a local parser exist. Not a live sale file in this product.",
+    "live": "Family adapter is wired and the treasurer page is verified. A sale-cycle file is not stored in this repo.",
+    "researched": "Official pages exist. Unused while every classified county is live.",
     "unknown": "County is in the registry only. Endpoints were not verified."
   },
   "counties": [
@@ -23,15 +23,16 @@
         34.229041,
         -82.454058
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://abbevillecountysc.com/delinquent-tax-collector/",
       "gisUrl": null,
-      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026. FAQ says the sale is usually the first Monday in November and delinquent parcels are advertised in The Press and Banner for three weeks. No listing file linked. A cookie-consent script mentions reCaptcha; the page content loaded."
+      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026. FAQ says the sale is usually the first Monday in November and delinquent parcels are advertised in The Press and Banner for three weeks. No listing file linked. A cookie-consent script mentions reCaptcha; the page content loaded.",
+      "csvRedistributed": false
     },
     {
       "id": "aiken",
@@ -44,15 +45,16 @@
         33.550013,
         -81.632983
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://www.aikencountysc.gov/309/Delinquent-Tax-Sale",
       "gisUrl": null,
-      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026 from the SCAC homepage. 2026 sale 2 Nov 2026, advertised in the Aiken Standard. Bidder instructions PDF is DocumentCenter/View/2540; no parcel list on the page. Registration 18 Sep–16 Oct 2026. qPublic link is assessor lookup only."
+      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026 from the SCAC homepage. 2026 sale 2 Nov 2026, advertised in the Aiken Standard. Bidder instructions PDF is DocumentCenter/View/2540; no parcel list on the page. Registration 18 Sep–16 Oct 2026. qPublic link is assessor lookup only.",
+      "csvRedistributed": false
     },
     {
       "id": "allendale",
@@ -65,15 +67,16 @@
         32.979757,
         -81.363265
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://www.allendalecounty.com/",
       "gisUrl": null,
-      "notes": "Family page-or-newspaper. Official homepage opened 16 Sep 2026. No dedicated delinquent-tax page; inner /government/county_offices and /other_elected_officials paths 404. Online payments go to allendaletreasurer.qpaybill.com. No parcel list on the county site."
+      "notes": "Family page-or-newspaper. Official homepage opened 16 Sep 2026. No dedicated delinquent-tax page; inner /government/county_offices and /other_elected_officials paths 404. Online payments go to allendaletreasurer.qpaybill.com. No parcel list on the county site.",
+      "csvRedistributed": false
     },
     {
       "id": "anderson",
@@ -86,15 +89,16 @@
         34.521235,
         -82.638603
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://www.andersoncountysc.org/tax-sale/",
       "gisUrl": null,
-      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026. Sale 19 Oct 2026 at the Civic Center of Anderson. Page says property listings will be posted on that site beginning 30 Sep 2026. 2025 Forfeited Land Commission real-estate and mobile-home PDFs are on the same page (post-sale, not the current sale universe). acpass login wall was not bypassed."
+      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026. Sale 19 Oct 2026 at the Civic Center of Anderson. Page says property listings will be posted on that site beginning 30 Sep 2026. 2025 Forfeited Land Commission real-estate and mobile-home PDFs are on the same page (post-sale, not the current sale universe). acpass login wall was not bypassed.",
+      "csvRedistributed": false
     },
     {
       "id": "bamberg",
@@ -107,15 +111,16 @@
         33.203021,
         -81.053161
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://www.bambergcounty.sc.gov/tax-services/delinquent-tax-office/delinquent-tax-properties",
       "gisUrl": null,
-      "notes": "Family page-or-newspaper. 2025 sale 8 Dec 2025; advertised in the Bamberg Leader. A seasonal Tax Sale List link, not a standing file."
+      "notes": "Family page-or-newspaper. 2025 sale 8 Dec 2025; advertised in the Bamberg Leader. A seasonal Tax Sale List link, not a standing file.",
+      "csvRedistributed": false
     },
     {
       "id": "barnwell",
@@ -128,15 +133,16 @@
         33.260552,
         -81.434228
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://www.barnwellcountysc.us/m/directory/department?did=15",
       "gisUrl": null,
-      "notes": "Family page-or-newspaper. CivicPlus staff directory is the only official tax-collector page (Alissa Abbott, 803-541-1048). No sale date or parcel file on the site. Website Sign In is a CivicPlus CMS account, not a tax-sale login. List historically in The People Sentinel / scpublicnotices.com; that is a newspaper ad, not a county file."
+      "notes": "Family page-or-newspaper. CivicPlus staff directory is the only official tax-collector page (Alissa Abbott, 803-541-1048). No sale date or parcel file on the site. Website Sign In is a CivicPlus CMS account, not a tax-sale login. List historically in The People Sentinel / scpublicnotices.com; that is a newspaper ad, not a county file.",
+      "csvRedistributed": false
     },
     {
       "id": "beaufort",
@@ -149,7 +155,7 @@
         32.358112,
         -80.689422
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "realad-pdf",
       "identifier": "pin",
       "identifierFormat": "R+17-digits",
@@ -157,7 +163,7 @@
       "geocode": null,
       "treasurerUrl": "https://www.beaufortcountytreasurer.com/research-and-data",
       "gisUrl": "https://experience.arcgis.com/experience/9e534a7884744a2680a0f472e2aabdc3",
-      "notes": "Parser ready (PIN, not TMS). Not wired as a live CSV in the original app. County-published GIS links verified 2026-09-16. The older Html5Viewer URL returned 404; Parcels/MapServer redirected to login. No parcel count is claimed.",
+      "notes": "Live PIN adapter (not TMS). County-published GIS links verified 2026-09-16. The older Html5Viewer URL returned 404; Parcels/MapServer redirected to login. Sale-cycle files stay local. No parcel count is claimed.",
       "csvRedistributed": false,
       "taxBillLookupUrl": "https://www.beaufortcountytreasurer.com/tax-bill-lookup",
       "mappingSiteUrl": "https://gis-department-mapping-site-collage-bcscgis.hub.arcgis.com/",
@@ -175,15 +181,16 @@
         33.2077,
         -79.953655
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://berkeleycountysc.gov/dept/delinquent-tax-collector/",
       "gisUrl": null,
-      "notes": "Family page-or-newspaper. Playwright still gets a Cloudflare challenge on this URL and does not solve it. A human browser pass recorded ads in the Post and Courier and land/mobile-home sales in November or December, with no county listing file."
+      "notes": "Family page-or-newspaper. Playwright still gets a Cloudflare challenge on this URL and does not solve it. A human browser pass recorded ads in the Post and Courier and land/mobile-home sales in November or December, with no county listing file.",
+      "csvRedistributed": false
     },
     {
       "id": "calhoun",
@@ -196,15 +203,16 @@
         33.67478,
         -80.780347
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://calhouncounty.sc.gov/departments/tax-collector",
       "gisUrl": null,
-      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026. Delinquent tax collector page says the office plans and conducts tax sales. No current listing file. Assessor rollback and 2012–2018 sales PDFs are not the tax-sale ad."
+      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026. Delinquent tax collector page says the office plans and conducts tax sales. No current listing file. Assessor rollback and 2012–2018 sales PDFs are not the tax-sale ad.",
+      "csvRedistributed": false
     },
     {
       "id": "charleston",
@@ -217,16 +225,17 @@
         32.800458,
         -79.94248
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "county-pdf",
       "identifier": "pin",
       "identifierFormat": "10-digit",
-      "adapter": null,
+      "adapter": "county-pdf",
       "geocode": null,
       "treasurerUrl": "https://www.charlestoncounty.gov/departments/delinquent-tax/tax-sale.php",
       "gisUrl": null,
       "notes": "Family county-pdf. 2025 listing PDF uses 10-digit PINs. 2026 sale advertised to begin 9 Nov 2026. PDF cites S.C. Code 30-2-50. Ingest extracted text with `ingest charleston`. Do not commit the listing.",
-      "listingSampleUrl": "https://www.charlestoncounty.org/departments/delinquent-tax/files/RP-Tax-Sale-Listing.pdf?v=0"
+      "listingSampleUrl": "https://www.charlestoncounty.org/departments/delinquent-tax/files/RP-Tax-Sale-Listing.pdf?v=0",
+      "csvRedistributed": false
     },
     {
       "id": "cherokee",
@@ -239,16 +248,17 @@
         35.049796,
         -81.607647
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "county-pdf",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "county-pdf",
       "geocode": null,
       "treasurerUrl": "https://cherokeecountysc.gov/delinquent-tax/",
       "gisUrl": null,
       "notes": "Family county-pdf. Browsed 16 Sep 2026. Delinquent Tax page links a one-page TAX-SALE-TAB.pdf (Aug 2026) and a bidder PDF. Page 1 has no text layer, so it was not parsed. Not stored in git.",
-      "listingSampleUrl": "https://cherokeecountysc.gov/wp-content/uploads/2026/08/TAX-SALE-TAB.pdf"
+      "listingSampleUrl": "https://cherokeecountysc.gov/wp-content/uploads/2026/08/TAX-SALE-TAB.pdf",
+      "csvRedistributed": false
     },
     {
       "id": "chester",
@@ -261,15 +271,16 @@
         34.689342,
         -81.161249
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://chestercountysc.gov/departments/tax-and-finance-departments/tax-collector",
       "gisUrl": null,
-      "notes": "Family page-or-newspaper. Playwright hit a Cloudflare challenge and did not solve it. A human browser pass on 16 Sep 2026 read the public tax collector page: ads the last three weeks of October; sale the first Monday of November or December. No parcel file. Forfeited Land Auction link to terryhowe.com was not scraped."
+      "notes": "Family page-or-newspaper. Playwright hit a Cloudflare challenge and did not solve it. A human browser pass on 16 Sep 2026 read the public tax collector page: ads the last three weeks of October; sale the first Monday of November or December. No parcel file. Forfeited Land Auction link to terryhowe.com was not scraped.",
+      "csvRedistributed": false
     },
     {
       "id": "chesterfield",
@@ -282,15 +293,16 @@
         34.637018,
         -80.159227
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://www.chesterfieldcountysc.com/tax-collector",
       "gisUrl": null,
-      "notes": "Family page-or-newspaper. Homepage and Tax Collector page opened 16 Sep 2026. Homepage announces sale Monday 26 Oct 2026; bidder registration due 23 Oct 2026. FAQ says parcels are advertised in county newspapers for three weeks. The linked PDF is a bidder registration form, not a parcel list."
+      "notes": "Family page-or-newspaper. Homepage and Tax Collector page opened 16 Sep 2026. Homepage announces sale Monday 26 Oct 2026; bidder registration due 23 Oct 2026. FAQ says parcels are advertised in county newspapers for three weeks. The linked PDF is a bidder registration form, not a parcel list.",
+      "csvRedistributed": false
     },
     {
       "id": "clarendon",
@@ -303,15 +315,16 @@
         33.664682,
         -80.217889
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://www.clarendoncountysc.gov/our-government/treasurer/",
       "gisUrl": null,
-      "notes": "Family page-or-newspaper. SCAC homepage redirected from clarendoncountygov.org to clarendoncountysc.gov. Treasurer page opened 16 Sep 2026. No tax-sale list linked."
+      "notes": "Family page-or-newspaper. SCAC homepage redirected from clarendoncountygov.org to clarendoncountysc.gov. Treasurer page opened 16 Sep 2026. No tax-sale list linked.",
+      "csvRedistributed": false
     },
     {
       "id": "colleton",
@@ -324,16 +337,17 @@
         32.835018,
         -80.655244
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "county-pdf",
       "identifier": "map",
       "identifierFormat": "dotted, e.g. 213-00-00-020.000",
-      "adapter": null,
+      "adapter": "county-pdf",
       "geocode": null,
       "treasurerUrl": "https://www.colletoncounty.org/delinquent-tax/tax-sale",
       "gisUrl": null,
       "notes": "Family county-pdf. Browsed 16 Sep 2026. Sale advertised for 20 Feb 2026 at the Colleton Civic Center. Listing PDF headers are Owner Name, Map Number, Description, Acres, Total Tax Due. Dotted map numbers. File not stored. The text adapter accepts this map shape on a local extract.",
-      "listingSampleUrl": "https://www.colletoncounty.org/sites/default/files/uploads/taxsale-1-30-26.pdf"
+      "listingSampleUrl": "https://www.colletoncounty.org/sites/default/files/uploads/taxsale-1-30-26.pdf",
+      "csvRedistributed": false
     },
     {
       "id": "darlington",
@@ -346,15 +360,16 @@
         34.332185,
         -79.962115
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://www.darcosc.com/departments/tax_collector.php",
       "gisUrl": null,
-      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026. Sale is held in December at Darlington Middle School. Real property is advertised in the Darlington News and Press for three weeks. Specific date is by phone. No listing file on the page."
+      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026. Sale is held in December at Darlington Middle School. Real property is advertised in the Darlington News and Press for three weeks. Specific date is by phone. No listing file on the page.",
+      "csvRedistributed": false
     },
     {
       "id": "dillon",
@@ -367,16 +382,17 @@
         34.390172,
         -79.374964
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "xlsx",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "xlsx",
       "geocode": null,
       "treasurerUrl": "https://www.dilloncountysc.org/departments/treasurer.php",
       "gisUrl": null,
       "notes": "Family xlsx. Treasurer page opened 16 Sep 2026. The county labels PAPER.XLS as Delinquent Tax Sale List (application/vnd.ms-excel, Last-Modified 6 May 2026). HEAD only; file not stored. Column map not recorded.",
-      "listingSampleUrl": "https://www.dilloncountysc.org/Documents/Departments/Treasurer/PAPER.XLS"
+      "listingSampleUrl": "https://www.dilloncountysc.org/Documents/Departments/Treasurer/PAPER.XLS",
+      "csvRedistributed": false
     },
     {
       "id": "dorchester",
@@ -389,15 +405,16 @@
         33.082186,
         -80.404697
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://www.dorchestercountysc.gov/government/property-tax-services/delinquent-tax",
       "gisUrl": null,
-      "notes": "Family page-or-newspaper. 2026 sale 19 Oct 2026 with a published fee calendar. No listing file sampled."
+      "notes": "Family page-or-newspaper. 2026 sale 19 Oct 2026 with a published fee calendar. No listing file sampled.",
+      "csvRedistributed": false
     },
     {
       "id": "edgefield",
@@ -410,15 +427,16 @@
         33.776498,
         -81.968245
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://edgefieldcounty.sc.gov/tax-collector/",
       "gisUrl": null,
-      "notes": "Family page-or-newspaper. Tax Collector page opened 16 Sep 2026. Sales are the first Monday in December. No parcel file on the page."
+      "notes": "Family page-or-newspaper. Tax Collector page opened 16 Sep 2026. Sales are the first Monday in December. No parcel file on the page.",
+      "csvRedistributed": false
     },
     {
       "id": "fairfield",
@@ -431,15 +449,16 @@
         34.395669,
         -81.127001
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://www.fairfieldsc.com/departments/tax-collector",
       "gisUrl": null,
-      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026. Tax collector page links a 2026 schedule of events, bidder terms, and an overage notice. No parcel listing file."
+      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026. Tax collector page links a 2026 schedule of events, bidder terms, and an overage notice. No parcel listing file.",
+      "csvRedistributed": false
     },
     {
       "id": "florence",
@@ -452,16 +471,17 @@
         34.028535,
         -79.710233
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "county-pdf",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "county-pdf",
       "geocode": null,
       "treasurerUrl": "https://www.florencecountysc.gov/offices/delinquent-tax/",
       "gisUrl": "https://flocogis.maps.arcgis.com/apps/instant/basic/index.html?appid=b4d40bf0ec4d4829aceaa520c74949c3",
       "notes": "Family county-pdf. Official page opened 16 Sep 2026. Sale 5 Oct 2026 (continues 6 Oct if needed). County-hosted 2026 real-property and mobile-home PDFs on S3 last-modified 11 Sep 2026 (HEAD only, not stored). Lists were promised for September; they are posted. GIS Instant app is linked from the same page; no MapServer invented.",
-      "listingSampleUrl": "https://s3.us-east-1.amazonaws.com/files.florenceco.org/public/DelinquentTax/2026/2026%20Tax%20Sale%20List%20Real%209-01-26.pdf"
+      "listingSampleUrl": "https://s3.us-east-1.amazonaws.com/files.florenceco.org/public/DelinquentTax/2026/2026%20Tax%20Sale%20List%20Real%209-01-26.pdf",
+      "csvRedistributed": false
     },
     {
       "id": "georgetown",
@@ -474,16 +494,17 @@
         33.417531,
         -79.296333
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "county-pdf",
       "identifier": "tax-map",
       "identifierFormat": "dashed, e.g. 01-0117-008-00-00",
-      "adapter": null,
+      "adapter": "county-pdf",
       "geocode": null,
       "treasurerUrl": "https://www.gtcountysc.gov/408/Tax-Sale",
       "gisUrl": null,
       "notes": "Family county-pdf. Browsed 16 Sep 2026. Document Center has 2025 Tax Sale List (View/3625), properties sold 11-03-2025 (View/3796), and 2024 sold (View/3882). First page headers include TaxMapNumber and CountyItemNumber. Dashed map samples look like 01-0117-008-00-00. PDF not stored. The county-pdf text adapter still keys off 10-digit PINs (Charleston); Georgetown needs a dashed-map text fixture before ingest.",
-      "listingSampleUrl": "https://www.gtcountysc.gov/DocumentCenter/View/3625"
+      "listingSampleUrl": "https://www.gtcountysc.gov/DocumentCenter/View/3625",
+      "csvRedistributed": false
     },
     {
       "id": "greenville",
@@ -496,16 +517,17 @@
         34.892645,
         -82.372077
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "html-table",
       "identifier": "map",
       "identifierFormat": "13-digit",
-      "adapter": null,
+      "adapter": "html-table",
       "geocode": null,
       "treasurerUrl": "https://www.greenvillecounty.org/TaxCollector/",
       "gisUrl": null,
       "notes": "Family html-table. Live HTML columns Item #, Map #, Name, Amount Due. Map numbers are 13-digit, sometimes with a letter prefix. HTTP 200 on 16 Sep 2026. Ingest a saved table with `ingest greenville`. Do not scrape into git.",
-      "listingUrl": "https://www.greenvillecounty.org/appsAS400/Taxsale/"
+      "listingUrl": "https://www.greenvillecounty.org/appsAS400/Taxsale/",
+      "csvRedistributed": false
     },
     {
       "id": "greenwood",
@@ -518,15 +540,16 @@
         34.155796,
         -82.127876
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://www.greenwoodcounty-sc.gov/tax-collector",
       "gisUrl": null,
-      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026. Tax collector page says redemptions and tax-sale matters are handled by the Tax Office, Room 101 of the courthouse. No listing file."
+      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026. Tax collector page says redemptions and tax-sale matters are handled by the Tax Office, Room 101 of the courthouse. No listing file.",
+      "csvRedistributed": false
     },
     {
       "id": "hampton",
@@ -539,15 +562,16 @@
         32.778334,
         -81.143822
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://www.hamptoncountysc.org/29/Delinquent-Tax",
       "gisUrl": null,
-      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026. FAQ says the sale is usually the first Monday in October or November. No listing file on the page."
+      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026. FAQ says the sale is usually the first Monday in October or November. No listing file on the page.",
+      "csvRedistributed": false
     },
     {
       "id": "horry",
@@ -560,15 +584,16 @@
         33.909269,
         -78.976675
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "xlsx",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "xlsx",
       "geocode": null,
       "treasurerUrl": "https://www.horrycountysc.gov/departments/treasurer/delinquent-tax/",
       "gisUrl": null,
-      "notes": "Family xlsx. Treasurer page (HTTP 200) advertises Delinquent List 08.19.26.xlsx. Ingest a local workbook with `ingest horry`. Column map is header-based. Do not commit the spreadsheet."
+      "notes": "Family xlsx. Treasurer page (HTTP 200) advertises Delinquent List 08.19.26.xlsx. Ingest a local workbook with `ingest horry`. Column map is header-based. Do not commit the spreadsheet.",
+      "csvRedistributed": false
     },
     {
       "id": "jasper",
@@ -581,15 +606,16 @@
         32.43059,
         -81.021627
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://www.jaspercountysc.gov/services/forfeited-land/",
       "gisUrl": null,
-      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026. Forfeited Land page describes post-sale assignments that did not meet the minimum bid. No current sale list file. Agenda PDFs are meetings, not the ad."
+      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026. Forfeited Land page describes post-sale assignments that did not meet the minimum bid. No current sale list file. Agenda PDFs are meetings, not the ad.",
+      "csvRedistributed": false
     },
     {
       "id": "kershaw",
@@ -602,15 +628,16 @@
         34.338356,
         -80.590885
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://www.kershaw.sc.gov/government/departments-r-z/treasurer/delinquent-matters",
       "gisUrl": null,
-      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026. Delinquent matters page covers overage claims and a policy that county employees cannot bid. No current parcel file."
+      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026. Delinquent matters page covers overage claims and a policy that county employees cannot bid. No current parcel file.",
+      "csvRedistributed": false
     },
     {
       "id": "lancaster",
@@ -623,15 +650,16 @@
         34.686818,
         -80.703688
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://www.lancastercountysc.gov/198/Tax-Sale-Procedures",
       "gisUrl": null,
-      "notes": "Family page-or-newspaper. 2026 sale 9 Nov 2026. Updated list after 5 pm 6 Nov for registered bidders."
+      "notes": "Family page-or-newspaper. 2026 sale 9 Nov 2026. Updated list after 5 pm 6 Nov for registered bidders.",
+      "csvRedistributed": false
     },
     {
       "id": "laurens",
@@ -644,15 +672,16 @@
         34.483676,
         -82.005498
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://laurenscountysc.gov/departments/treasurer/delinquent_taxes.php",
       "gisUrl": null,
-      "notes": "Family page-or-newspaper. SCAC seed laurenscounty.us is not the treasurer site. Official page browsed 16 Sep 2026. 2025 sale was 3 Dec 2025; list in the Laurens County Advertiser and Clinton Chronicle. Registration for the next sale reopens 1 Nov 2026. Newspaper viewer is a subscribe wall; not bypassed."
+      "notes": "Family page-or-newspaper. SCAC seed laurenscounty.us is not the treasurer site. Official page browsed 16 Sep 2026. 2025 sale was 3 Dec 2025; list in the Laurens County Advertiser and Clinton Chronicle. Registration for the next sale reopens 1 Nov 2026. Newspaper viewer is a subscribe wall; not bypassed.",
+      "csvRedistributed": false
     },
     {
       "id": "lee",
@@ -665,15 +694,16 @@
         34.15864,
         -80.251209
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://www.leecountysc.org/directory/departments___elected_officials/delinquent_tax.php",
       "gisUrl": null,
-      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026. Page says the sale is normally the first Monday in November in the courtroom, subject to change. No listing file."
+      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026. Page says the sale is normally the first Monday in November in the courtroom, subject to change. No listing file.",
+      "csvRedistributed": false
     },
     {
       "id": "lexington",
@@ -722,15 +752,16 @@
         34.08362,
         -79.354001
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://www.marionsc.org/departments/tax_collector/index.php",
       "gisUrl": null,
-      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026. Tax collector menu links a Tax Sale Information Form docx. That form was not stored. No parcel table on the page."
+      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026. Tax collector menu links a Tax Sale Information Form docx. That form was not stored. No parcel table on the page.",
+      "csvRedistributed": false
     },
     {
       "id": "marlboro",
@@ -743,15 +774,16 @@
         34.60167,
         -79.679435
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://marlborocounty.sc.gov/Documents/Delinquent%20Tax/Tax%20Sale%20-%202026%20Calendar.pdf",
       "gisUrl": null,
-      "notes": "Family page-or-newspaper. Calendar PDF says sale 9 Nov 2026. Ads in the Herald Advocate starting 8 Oct 2026. Calendar is not a parcel list and was not stored as a sale file."
+      "notes": "Family page-or-newspaper. Calendar PDF says sale 9 Nov 2026. Ads in the Herald Advocate starting 8 Oct 2026. Calendar is not a parcel list and was not stored as a sale file.",
+      "csvRedistributed": false
     },
     {
       "id": "mccormick",
@@ -764,15 +796,16 @@
         33.897599,
         -82.316196
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://mccormickcountysc.org/departments/treasurer.php",
       "gisUrl": null,
-      "notes": "Family page-or-newspaper. Treasurer / Tax Collector page opened 16 Sep 2026. Sale is the first Monday in October. Ads in The McCormick Messenger for three consecutive weeks. No parcel file on the page."
+      "notes": "Family page-or-newspaper. Treasurer / Tax Collector page opened 16 Sep 2026. Sale is the first Monday in October. Ads in The McCormick Messenger for three consecutive weeks. No parcel file on the page.",
+      "csvRedistributed": false
     },
     {
       "id": "newberry",
@@ -785,15 +818,16 @@
         34.289881,
         -81.599676
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://www.newberrycounty.gov/delinquent-tax/tax-sales",
       "gisUrl": null,
-      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026 after the county site redirected from newberrycounty.net. Tax sales page and a procedures PDF (tax_sale_info-consolidated.pdf) exist. The delinquent-tax page still lists a sale on 3 Nov 2025. No current parcel file stored."
+      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026 after the county site redirected from newberrycounty.net. Tax sales page and a procedures PDF (tax_sale_info-consolidated.pdf) exist. The delinquent-tax page still lists a sale on 3 Nov 2025. No current parcel file stored.",
+      "csvRedistributed": false
     },
     {
       "id": "oconee",
@@ -806,16 +840,17 @@
         34.748766,
         -83.06154
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "html-table",
       "identifier": "map",
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "html-table",
       "geocode": null,
       "treasurerUrl": "https://oconeesc.com/delinquent-tax/sale-list",
       "gisUrl": null,
       "notes": "Family html-table. Browsed 16 Sep 2026. Sale list page columns: Item Number, Owner Name, Map Number, Description, Total Tax Due. Tax sale information page says the 2025 sale is 9 Nov 2026. Bidder registration is a separate page. Do not scrape the live table into git.",
-      "listingUrl": "https://oconeesc.com/delinquent-tax/sale-list"
+      "listingUrl": "https://oconeesc.com/delinquent-tax/sale-list",
+      "csvRedistributed": false
     },
     {
       "id": "orangeburg",
@@ -828,15 +863,16 @@
         33.436135,
         -80.802913
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://www.orangeburgcounty.org/362/General-Tax-Sale-Information",
       "gisUrl": null,
-      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026. Sale Monday 14 Dec 2026, 10 a.m., Orangeburg County Conference Center. Real property advertised in the Times and Democrat for three weeks. List is the newspaper or the delinquent tax office. No file downloaded."
+      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026. Sale Monday 14 Dec 2026, 10 a.m., Orangeburg County Conference Center. Real property advertised in the Times and Democrat for three weeks. List is the newspaper or the delinquent tax office. No file downloaded.",
+      "csvRedistributed": false
     },
     {
       "id": "pickens",
@@ -849,15 +885,16 @@
         34.885368,
         -82.723377
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://www.co.pickens.sc.us/departments/delinquent_tax/index.php",
       "gisUrl": null,
-      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026. Next sale Tuesday 13 Oct 2026 at the Performing Arts Center in Liberty. List is in the local newspaper and on this page for three weeks before the sale; an unofficial list is posted the Friday before. Results PDFs for prior sales are on the site and were not stored."
+      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026. Next sale Tuesday 13 Oct 2026 at the Performing Arts Center in Liberty. List is in the local newspaper and on this page for three weeks before the sale; an unofficial list is posted the Friday before. Results PDFs for prior sales are on the site and were not stored.",
+      "csvRedistributed": false
     },
     {
       "id": "richland",
@@ -870,15 +907,16 @@
         34.029095,
         -80.898037
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://www.richlandcountysc.gov/Property-Business/Taxes/Delinquent-Taxes/Tax-Sale",
       "gisUrl": null,
-      "notes": "Family page-or-newspaper. 2025 sale ended. Bidder portal at www7.richlandcountysc.gov/TaxSaleBidder. No 2026 file sampled."
+      "notes": "Family page-or-newspaper. 2025 sale ended. Bidder portal at www7.richlandcountysc.gov/TaxSaleBidder. No 2026 file sampled.",
+      "csvRedistributed": false
     },
     {
       "id": "saluda",
@@ -891,15 +929,16 @@
         34.005278,
         -81.727903
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://saludacounty.sc.gov/departments/tax-collector/delinquent-tax-sale",
       "gisUrl": null,
-      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026. 2026 sale Tuesday 8 Dec 2026 at 10 a.m. List will be in the Twin City News and on this page for three weeks, plus an updated list on the page Monday 7 Dec after 4:30 p.m. Not posted yet."
+      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026. 2026 sale Tuesday 8 Dec 2026 at 10 a.m. List will be in the Twin City News and on this page for three weeks, plus an updated list on the page Monday 7 Dec after 4:30 p.m. Not posted yet.",
+      "csvRedistributed": false
     },
     {
       "id": "spartanburg",
@@ -912,15 +951,16 @@
         34.932014,
         -81.991624
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://www.spartanburgcounty.org/640/2025-Tax-Sale-Info",
       "gisUrl": null,
-      "notes": "Family page-or-newspaper. CivicPlus page for 18–19 Nov 2025. Final 2025 list was posted as unavailable when checked via the CivicPlus mirror."
+      "notes": "Family page-or-newspaper. CivicPlus page for 18–19 Nov 2025. Final 2025 list was posted as unavailable when checked via the CivicPlus mirror.",
+      "csvRedistributed": false
     },
     {
       "id": "sumter",
@@ -933,15 +973,16 @@
         33.91614,
         -80.382376
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://www.sumtercountysc.gov/departments/s_-_z/treasurer/delinquent_tax.php",
       "gisUrl": null,
-      "notes": "Family page-or-newspaper. 2026 sale 9 Mar 2026. Page links a 2025 list of properties. File was not downloaded."
+      "notes": "Family page-or-newspaper. 2026 sale 9 Mar 2026. Page links a 2025 list of properties. File was not downloaded.",
+      "csvRedistributed": false
     },
     {
       "id": "union",
@@ -954,15 +995,16 @@
         34.690397,
         -81.615896
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://gearupunionsc.com/departments/delinquent-tax-office/",
       "gisUrl": null,
-      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026. 2025 sale was 3 Nov 2025. Unsold properties are being assigned; the list is at the auditor’s office, not a public file on the page."
+      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026. 2025 sale was 3 Nov 2025. Unsold properties are being assigned; the list is at the auditor’s office, not a public file on the page.",
+      "csvRedistributed": false
     },
     {
       "id": "williamsburg",
@@ -975,15 +1017,16 @@
         33.626462,
         -79.716474
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://www.williamsburgcounty.sc.gov/325/Delinquent-Tax-Sale",
       "gisUrl": null,
-      "notes": "Family page-or-newspaper. 2025 sale was 3 Dec 2025. Page says 2026 information will be added at the appropriate time."
+      "notes": "Family page-or-newspaper. 2025 sale was 3 Dec 2025. Page says 2026 information will be added at the appropriate time.",
+      "csvRedistributed": false
     },
     {
       "id": "york",
@@ -996,15 +1039,16 @@
         34.970188,
         -81.183187
       ],
-      "status": "researched",
+      "status": "live",
       "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
-      "adapter": null,
+      "adapter": "page-watch",
       "geocode": null,
       "treasurerUrl": "https://www.yorkcountysc.gov/216/Tax-Collection",
       "gisUrl": "https://experience.arcgis.com/experience/ef9243d9330c4891ba724689f2eb1502",
-      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026. Tax Collection page links a 2026 fact sheet (sale 12 Oct 2026, in person, no parcel file) and an Experience Builder item titled 2025 York County Delinquent Tax Sales Dashboard. That item URL was on the county page; no MapServer was invented. Fact sheet PDF not stored."
+      "notes": "Family page-or-newspaper. Browsed 16 Sep 2026. Tax Collection page links a 2026 fact sheet (sale 12 Oct 2026, in person, no parcel file) and an Experience Builder item titled 2025 York County Delinquent Tax Sales Dashboard. That item URL was on the county page; no MapServer was invented. Fact sheet PDF not stored.",
+      "csvRedistributed": false
     }
   ]
 }

@@ -1,12 +1,44 @@
 "use strict";
 
 const fs = require("fs");
+const path = require("path");
 const htmlTable = require("./adapters/families/html-table");
 const countyPdf = require("./adapters/families/county-pdf");
 const xlsx = require("./adapters/families/xlsx");
 const pageWatch = require("./adapters/families/page-watch");
 const lexington = require("./adapters/lexington");
 const beaufort = require("./adapters/beaufort");
+
+function familyFromPath(filePath, fallback) {
+  const ext = path.extname(String(filePath || "")).toLowerCase();
+  if (ext === ".xlsx" || ext === ".xls") return "xlsx";
+  if (ext === ".html" || ext === ".htm") {
+    return fallback === "page-or-newspaper" ? "page-or-newspaper" : "html-table";
+  }
+  if (ext === ".csv" && fallback === "realad-pdf") return "realad-pdf";
+  return fallback;
+}
+
+function ingestPageOrNewspaper(text, county) {
+  const table = htmlTable.parseHtml(text, county);
+  if (table.rowCount) return table;
+  const pdf = countyPdf.parseText(text, county);
+  if (pdf.rowCount) return pdf;
+  const watched = pageWatch.inspectHtml(text);
+  return {
+    family: "page-or-newspaper",
+    countyId: county && county.id ? county.id : null,
+    rowCount: 0,
+    amountTotal: 0,
+    recognizedIds: 0,
+    listingLinkCount: watched.listingLinks.length,
+    blocked: watched.blocked,
+    blockReason: watched.blockReason,
+    suggestedCollapse: watched.suggestedCollapse,
+    missingColumns: watched.listingLinks.length ? [] : ["seasonal listing file"],
+    rows: [],
+  };
+}
 
 const FAMILIES = {
   "html-table": {
@@ -35,6 +67,9 @@ const FAMILIES = {
     id: "page-or-newspaper",
     adapter: "page-watch",
     label: "Seasonal page, newspaper ad, or bidder portal",
+    ingest(text, county) {
+      return ingestPageOrNewspaper(text, county);
+    },
     watch(html, pageUrl) {
       return pageWatch.inspectHtml(html, pageUrl);
     },
@@ -69,12 +104,16 @@ function publicSummary(summary) {
     recognizedIds: summary.recognizedIds != null ? summary.recognizedIds : null,
     missingColumns: summary.missingColumns || [],
     identifierFormat: summary.identifierFormat || null,
+    listingLinkCount: summary.listingLinkCount != null ? summary.listingLinkCount : undefined,
+    suggestedCollapse: summary.suggestedCollapse || undefined,
+    blocked: summary.blocked || undefined,
   };
 }
 
 function ingestFile(county, filePath, familyId) {
-  const id = familyId || (county && county.sourceFamily);
-  const family = FAMILIES[id];
+  const requested = familyId || (county && county.sourceFamily);
+  const id = familyFromPath(filePath, requested);
+  const family = FAMILIES[id] || FAMILIES[requested];
   if (!family || typeof family.ingest !== "function") {
     const err = new Error("No ingest adapter for family " + id);
     err.code = "NO_FAMILY";

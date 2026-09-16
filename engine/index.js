@@ -4,11 +4,35 @@ const registry = require("./registry");
 const families = require("./families");
 const lexington = require("./adapters/lexington");
 const beaufort = require("./adapters/beaufort");
+const htmlTable = require("./adapters/families/html-table");
+const countyPdf = require("./adapters/families/county-pdf");
+const xlsx = require("./adapters/families/xlsx");
 const { geocodeLexingtonTms, parseLexingtonTms } = require("./geocode/lexington-tms");
+
+function wrapFamily(id, parseFileText) {
+  return {
+    id,
+    parseFileText,
+    draftInquiry: beaufort.draftInquiry,
+  };
+}
 
 const adapters = {
   lexington,
   beaufort,
+  "html-table": wrapFamily("html-table", (text, county) => htmlTable.parseHtml(text, county)),
+  "county-pdf": wrapFamily("county-pdf", (text, county) => countyPdf.parseText(text, county)),
+  xlsx: {
+    id: "xlsx",
+    parseFile: (file, county) => xlsx.parseFile(file, county),
+    parseFileText() {
+      throw new Error("xlsx ingest needs a spreadsheet path: node engine/cli.js ingest <county> file.xlsx");
+    },
+    draftInquiry: beaufort.draftInquiry,
+  },
+  "page-watch": wrapFamily("page-watch", (text, county) => (
+    families.FAMILIES["page-or-newspaper"].ingest(text, county)
+  )),
 };
 
 function getAdapter(countyId) {

@@ -2,7 +2,7 @@
 
 There is no statewide tax-sale file. S.C. Code Ann. § 12-51-40 lets each county set its own sale date, then requires the delinquent tax officer to advertise the parcels under “Delinquent Tax Sale” once a week for three consecutive weeks. The original Base44 app already knew this: `scCounties.js` listed all 46 names, but only Lexington had a `csvUrl`. Cloning the Beaufort PDF parser 45 times will not work. PDF layouts, identifiers, and even whether a list exists on the website all differ.
 
-What scales is **one canonical row** plus **five source families**. A county graduates from `unknown` → `researched` when its family and treasurer URL are verified, then to `live` when an adapter can ingest a local file without storing owner lists in git.
+What scales is **one canonical row** plus **five source families**. A county is `live` when its family adapter is wired and the treasurer page is verified. Sale-cycle files stay in a local `inbox/` and are never committed.
 
 ## Canonical row
 
@@ -109,11 +109,11 @@ New counties add a normalizer in `engine/ids/`, not a new product.
 
 ## What not to do
 
-- Do not claim 46 live feeds. The original product had **one**.
+- Do not claim 46 hosted owner lists. All 46 adapters are live; the files stay local.
 - Do not use these lists for commercial solicitation. Charleston’s PDF cites § 30-2-50.
 - Do not store owner CSVs in git.
 - Do not scrape qPublic for the sale universe. The sale universe is the treasurer ad.
 
 ## Current registry after this pass
 
-See `counties/sc.json`. Status words are unchanged: `live` needs an adapter, `researched` means the page/family is verified, `unknown` means we still have not opened a treasurer URL.
+See `counties/sc.json`. All 46 counties are `live` with a family adapter. That is not a statewide download of owner names.
