@@ -130,6 +130,8 @@ Opened or cited while classifying source families. No GIS URLs added. No listing
 | Cherokee | county-pdf | https://cherokeecountysc.gov/delinquent-tax/ (200). Scan PDF, no text layer. |
 | Calhoun | page-or-newspaper | https://calhouncounty.sc.gov/departments/tax-collector (200). No current listing. |
 | York | page-or-newspaper | https://www.yorkcountysc.gov/216/Tax-Collection (200). Sale 12 Oct 2026. Experience item on the page: experience/ef9243d9330c4891ba724689f2eb1502. |
+| Colleton | county-pdf | https://www.colletoncounty.org/delinquent-tax/tax-sale (200). Listing PDF taxsale-1-30-26.pdf. Dotted map. File not stored. |
+| Chester | page-or-newspaper | Tax collector URL linked from the homepage. Cloudflare challenge. Not solved. |
 
 qPublic/Beacon (`qpublic.schneidercorp.com`) is an assessor GIS portal for many SC counties. It is not a tax-sale list.
 

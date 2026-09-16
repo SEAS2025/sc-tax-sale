@@ -31,7 +31,10 @@ const SEEDS = {
   ],
   cherokee: ["https://www.cherokeecountysc.gov"],
   chester: ["https://www.chestercountysc.gov"],
-  chesterfield: ["http://www.chesterfieldcountysc.com"],
+  chesterfield: [
+    "http://www.chesterfieldcountysc.com",
+    "https://www.chesterfieldcountysc.com/taxes",
+  ],
   clarendon: ["http://www.clarendoncountygov.org"],
   colleton: ["http://www.colletoncounty.org"],
   darlington: ["http://www.darcosc.com"],

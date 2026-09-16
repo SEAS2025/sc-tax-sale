@@ -187,6 +187,15 @@ test("family adapters ingest fixtures without emitting owner names", () => {
   assert.equal(table.rows[0].tms, "0136001300600");
   assert.equal(table.amountTotal, 360.5);
   assert.equal(pdf.rows[2].tms, "1000000003");
+  const dashed = families.ingestFile(
+    getCounty("georgetown"),
+    path.join(__dirname, "fixtures", "county-pdf-dashed.txt")
+  );
+  assert.equal(dashed.rowCount, 4);
+  assert.equal(dashed.rows[3].tms, "213-00-00-020.000");
+  assert.equal(dashed.identifierFormat, "dotted-map");
+  assert.equal(dashed.rows[0].tms, "01-0117-008-00-00");
+  assert.equal(JSON.stringify(families.publicSummary(dashed)).includes("EXAMPLE OWNER"), false);
   assert.ok(Math.abs(pdf.amountTotal - 4224.56) < 0.001);
   assert.equal(sheet.amountTotal, 149.5);
   assert.equal(html.includes("EXAMPLE OWNER A"), true);

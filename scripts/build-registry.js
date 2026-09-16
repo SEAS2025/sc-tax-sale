@@ -244,6 +244,25 @@ const RESEARCHED = {
     notes:
       "Family page-or-newspaper. Browsed 16 Sep 2026. Delinquent tax collector page says the office plans and conducts tax sales. No current listing file. Assessor rollback and 2012–2018 sales PDFs are not the tax-sale ad.",
   },
+  colleton: {
+    status: "researched",
+    sourceFamily: "county-pdf",
+    identifier: "map",
+    identifierFormat: "dotted, e.g. 213-00-00-020.000",
+    treasurerUrl: "https://www.colletoncounty.org/delinquent-tax/tax-sale",
+    listingSampleUrl:
+      "https://www.colletoncounty.org/sites/default/files/uploads/taxsale-1-30-26.pdf",
+    notes:
+      "Family county-pdf. Browsed 16 Sep 2026. Sale advertised for 20 Feb 2026 at the Colleton Civic Center. Listing PDF headers are Owner Name, Map Number, Description, Acres, Total Tax Due. Dotted map numbers. File not stored. The text adapter accepts this map shape on a local extract.",
+  },
+  chester: {
+    status: "researched",
+    sourceFamily: "page-or-newspaper",
+    treasurerUrl:
+      "https://chestercountysc.gov/departments/tax-and-finance-departments/tax-collector",
+    notes:
+      "Family page-or-newspaper. Homepage links Tax Collector and Forfeited Land Commission. Those pages returned a Cloudflare challenge on 16 Sep 2026 and were not read. Challenge was not solved. A Forfeited Land Auction link points at terryhowe.com; not scraped.",
+  },
   york: {
     status: "researched",
     sourceFamily: "page-or-newspaper",

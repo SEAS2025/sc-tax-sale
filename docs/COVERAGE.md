@@ -40,6 +40,8 @@ Lexington (live) and Beaufort (parser ready). Text extract, then a layout-specif
 
 **Cherokee** links a one-page scan, `https://cherokeecountysc.gov/wp-content/uploads/2026/08/TAX-SALE-TAB.pdf`, from [Delinquent Tax](https://cherokeecountysc.gov/delinquent-tax/). No text layer, so it was not parsed.
 
+**Colleton** [tax sale](https://www.colletoncounty.org/delinquent-tax/tax-sale) links `taxsale-1-30-26.pdf` (sale advertised 20 Feb 2026). Headers: Map Number, Description, Acres, Total Tax Due. Map shape `213-00-00-020.000`. File not stored.
+
 ### 4. `xlsx` — spreadsheet download
 
 **Horry** treasurer page `https://www.horrycountysc.gov/departments/treasurer/delinquent-tax/` (HTTP 200) advertises `Delinquent List 08.19.26.xlsx`. One sheet-to-canonical adapter covers every county that uses Excel. Column names will still need a per-file map the first time.

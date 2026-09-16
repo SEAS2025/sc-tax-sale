@@ -9,6 +9,8 @@ const { parseAmount } = require("../../csv");
  */
 
 const PIN_10 = /\b(\d{10})\b/;
+const DASHED_MAP = /\b(\d{2}-\d{4}-\d{3}-\d{2}-\d{2})\b/;
+const DOTTED_MAP = /\b(\d{3}-\d{2}-\d{2}-\d{3}\.\d{3})\b/;
 const MONEY = /\$[\d,]+\.\d{2}/g;
 
 function parseText(text, county) {
@@ -16,13 +18,16 @@ function parseText(text, county) {
   const rows = [];
   for (const line of lines) {
     const pin = line.match(PIN_10);
+    const dashed = line.match(DASHED_MAP);
+    const dotted = line.match(DOTTED_MAP);
+    const id = dotted ? dotted[1] : dashed ? dashed[1] : pin ? pin[1] : null;
     const money = line.match(MONEY);
-    if (!pin || !money) continue;
+    if (!id || !money) continue;
     const amount = parseAmount(money[money.length - 1]);
     if (!amount) continue;
-    const rest = line.replace(pin[0], "").replace(MONEY, "");
+    const rest = line.replace(id, "").replace(MONEY, "");
     rows.push({
-      tms: pin[1],
+      tms: id,
       amount,
       hasOwner: /[A-Za-z]{3,}/.test(rest),
     });
@@ -34,7 +39,11 @@ function parseText(text, county) {
     amountTotal: rows.reduce((sum, row) => sum + row.amount, 0),
     recognizedIds: rows.filter((row) => row.tms).length,
     missingColumns: rows.length ? [] : ["10-digit PIN", "total due"],
-    identifierFormat: rows.length ? "10-digit" : null,
+    identifierFormat: rows.some((row) => /\.\d{3}$/.test(row.tms))
+      ? "dotted-map"
+      : rows.some((row) => row.tms.includes("-"))
+        ? "dashed-tax-map"
+        : rows.length ? "10-digit" : null,
     rows,
   };
 }

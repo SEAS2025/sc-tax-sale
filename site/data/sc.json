@@ -261,15 +261,15 @@
         34.689342,
         -81.161249
       ],
-      "status": "unknown",
-      "sourceFamily": null,
+      "status": "researched",
+      "sourceFamily": "page-or-newspaper",
       "identifier": null,
       "identifierFormat": null,
       "adapter": null,
       "geocode": null,
-      "treasurerUrl": null,
+      "treasurerUrl": "https://chestercountysc.gov/departments/tax-and-finance-departments/tax-collector",
       "gisUrl": null,
-      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+      "notes": "Family page-or-newspaper. Homepage links Tax Collector and Forfeited Land Commission. Those pages returned a Cloudflare challenge on 16 Sep 2026 and were not read. Challenge was not solved. A Forfeited Land Auction link points at terryhowe.com; not scraped."
     },
     {
       "id": "chesterfield",
@@ -324,15 +324,16 @@
         32.835018,
         -80.655244
       ],
-      "status": "unknown",
-      "sourceFamily": null,
-      "identifier": null,
-      "identifierFormat": null,
+      "status": "researched",
+      "sourceFamily": "county-pdf",
+      "identifier": "map",
+      "identifierFormat": "dotted, e.g. 213-00-00-020.000",
       "adapter": null,
       "geocode": null,
-      "treasurerUrl": null,
+      "treasurerUrl": "https://www.colletoncounty.org/delinquent-tax/tax-sale",
       "gisUrl": null,
-      "notes": "In the 46-county registry. Treasurer and GIS URLs are unset until verified against an official page. Do not invent ArcGIS endpoints."
+      "notes": "Family county-pdf. Browsed 16 Sep 2026. Sale advertised for 20 Feb 2026 at the Colleton Civic Center. Listing PDF headers are Owner Name, Map Number, Description, Acres, Total Tax Due. Dotted map numbers. File not stored. The text adapter accepts this map shape on a local extract.",
+      "listingSampleUrl": "https://www.colletoncounty.org/sites/default/files/uploads/taxsale-1-30-26.pdf"
     },
     {
       "id": "darlington",
