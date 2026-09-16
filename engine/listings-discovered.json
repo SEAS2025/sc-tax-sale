@@ -37,5 +37,21 @@
       "source": "wayback-exact",
       "confirmedAt": "2026-09-16"
     }
+  ],
+  "oconee": [
+    {
+      "url": "https://web.archive.org/web/20201001145102id_/https://oconeesc.com/delinquent-tax/sale-list",
+      "year": 2020,
+      "idCount": 10,
+      "source": "wayback-exact",
+      "confirmedAt": "2026-09-16"
+    },
+    {
+      "url": "https://web.archive.org/web/20210115170342id_/https://oconeesc.com/delinquent-tax/sale-list",
+      "year": 2021,
+      "idCount": 479,
+      "source": "wayback-exact",
+      "confirmedAt": "2026-09-16"
+    }
   ]
 }
