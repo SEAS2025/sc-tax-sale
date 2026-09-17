@@ -122,5 +122,14 @@
       "source": "wayback:fairfieldsc.com",
       "confirmedAt": "2026-09-16"
     }
+  ],
+  "spartanburg": [
+    {
+      "url": "https://web.archive.org/web/20201204024542id_/https://www.spartanburgcounty.org/DocumentCenter/View/14895/2020-Tax-Sale-Ad-2nd-run-RE-with-updates",
+      "year": 2020,
+      "idCount": 847,
+      "source": "wayback:spartanburgcounty.org",
+      "confirmedAt": "2026-09-17"
+    }
   ]
 }
