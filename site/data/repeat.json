@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "generatedAt": "2026-09-16T22:31:46.771Z",
+  "generatedAt": "2026-09-17T00:44:06.055Z",
   "recentYears": [
     2024,
     2025,
@@ -13,11 +13,11 @@
   ],
   "source": "Official leftover and current sale lists crossed with hosted 2020–2022 lists. Identifiers only.",
   "note": "Parcel identifiers and amounts only. Owner names are not stored.",
-  "bothCount": 999,
-  "withBoth": 6,
-  "withRecent": 13,
-  "withHistoric": 7,
-  "changedCount": 13,
+  "bothCount": 1221,
+  "withBoth": 9,
+  "withRecent": 15,
+  "withHistoric": 12,
+  "changedCount": 11,
   "counties": [
     {
       "id": "abbeville",
@@ -66,7 +66,7 @@
       "historic": null,
       "bothCount": 0,
       "both": [],
-      "changed": true
+      "changed": false
     },
     {
       "id": "barnwell",
@@ -94,10 +94,14 @@
       "id": "berkeley",
       "name": "Berkeley",
       "recent": null,
-      "historic": null,
+      "historic": {
+        "year": 2020,
+        "url": "https://web.archive.org/web/20201110023344id_/https://berkeleycountysc.gov/delinquent-tax-sale-list/",
+        "idCount": 727
+      },
       "bothCount": 0,
       "both": [],
-      "changed": false
+      "changed": true
     },
     {
       "id": "calhoun",
@@ -355,7 +359,7 @@
           "amountHistoric": null
         }
       ],
-      "changed": true
+      "changed": false
     },
     {
       "id": "charleston",
@@ -1119,11 +1123,15 @@
     {
       "id": "clarendon",
       "name": "Clarendon",
-      "recent": null,
+      "recent": {
+        "year": 2024,
+        "url": "https://web.archive.org/web/20241201194756id_/https://www.clarendoncountygov.org/wp-content/uploads/2024/11/2024-Notice-of-Delinquent-Tax-Sale-Week-3.pdf",
+        "idCount": 692
+      },
       "historic": null,
       "bothCount": 0,
       "both": [],
-      "changed": false
+      "changed": true
     },
     {
       "id": "colleton",
@@ -1136,7 +1144,7 @@
       "historic": null,
       "bothCount": 0,
       "both": [],
-      "changed": true
+      "changed": false
     },
     {
       "id": "darlington",
@@ -1158,7 +1166,7 @@
       "historic": null,
       "bothCount": 0,
       "both": [],
-      "changed": true
+      "changed": false
     },
     {
       "id": "dorchester",
@@ -1181,11 +1189,330 @@
     {
       "id": "fairfield",
       "name": "Fairfield",
-      "recent": null,
-      "historic": null,
-      "bothCount": 0,
-      "both": [],
-      "changed": false
+      "recent": {
+        "year": 2025,
+        "url": "https://web.archive.org/web/20251117184457id_/https://www.fairfieldsc.com/uploads/uploads/11-3-2025_Tax_Sale_Listing.pdf",
+        "idCount": 300
+      },
+      "historic": {
+        "year": 2021,
+        "url": "https://web.archive.org/web/20211206063042id_/https://www.fairfieldsc.com/uploads/general/11-1-21-TAX-SALE-INFO-FOR-PAPER-3.pdf",
+        "idCount": 238
+      },
+      "bothCount": 62,
+      "both": [
+        {
+          "tms": "127-00-03-015",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "186-01-14-012",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "183-02-03-030",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "041-00-00-030",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "126-04-09-014",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "126-01-23-016",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "126-03-03-016",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "182-03-01-015",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "104-00-03-045",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "065-00-00-085",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "198-00-03-021",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "176-01-03-044",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "125-00-02-028",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "145-02-08-002",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "089-04-03-006",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "126-01-26-017",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "185-04-01-038",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "026-02-01-030",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "189-00-02-016",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "126-03-01-011",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "150-00-00-060",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "144-02-02-007",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "080-00-00-053",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "196-00-03-017",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "195-00-02-023",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "025-04-01-028",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "043-00-00-025",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "126-03-01-016",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "176-03-01-003",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "211-00-02-005",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "126-01-26-001",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "145-02-06-021",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "223-00-01-004",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "184-00-00-058",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "081-00-00-037",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "126-03-03-012",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "026-02-05-012",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "126-02-01-005",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "127-00-03-010",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "127-00-04-020",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "162-00-01-110",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "183-02-01-039",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "134-02-00-024",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "134-02-00-029",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "126-01-19-011",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "126-03-22-003",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "126-03-22-004",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "145-01-24-002",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "145-01-24-003",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "179-00-01-007",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "034-00-00-004",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "146-01-02-025",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "176-03-01-010",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "145-02-06-008",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "126-03-12-012",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "126-02-14-011",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "043-00-00-002",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "160-00-00-071",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "126-01-22-009",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "126-01-27-003",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "126-01-36-010",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "145-02-13-016",
+          "amountRecent": null,
+          "amountHistoric": null
+        }
+      ],
+      "changed": true
     },
     {
       "id": "florence",
@@ -3071,9 +3398,764 @@
         "url": "https://www.greenvillecounty.org/appsAS400/Taxsale/",
         "idCount": 1905
       },
-      "historic": null,
-      "bothCount": 0,
-      "both": [],
+      "historic": {
+        "year": 2021,
+        "url": "https://web.archive.org/web/20211022232845id_/http://www.greenvillecounty.org/appsAS400/Taxsale/",
+        "idCount": 836
+      },
+      "bothCount": 150,
+      "both": [
+        {
+          "tms": "0606030102110",
+          "amountRecent": 40274.62,
+          "amountHistoric": 33972.67
+        },
+        {
+          "tms": "0189020205600",
+          "amountRecent": 32064.89,
+          "amountHistoric": 13507.07
+        },
+        {
+          "tms": "P015100114700",
+          "amountRecent": 21499.47,
+          "amountHistoric": 19488.77
+        },
+        {
+          "tms": "0284000200500",
+          "amountRecent": 10345.09,
+          "amountHistoric": 8239.4
+        },
+        {
+          "tms": "0267000100801",
+          "amountRecent": 10272.66,
+          "amountHistoric": 8178.01
+        },
+        {
+          "tms": "0157000600201",
+          "amountRecent": 10030.67,
+          "amountHistoric": 21044.19
+        },
+        {
+          "tms": "0531020100201",
+          "amountRecent": 8809.31,
+          "amountHistoric": 7054.61
+        },
+        {
+          "tms": "0646050100800",
+          "amountRecent": 6108.13,
+          "amountHistoric": 10449.72
+        },
+        {
+          "tms": "P015020301100",
+          "amountRecent": 6090.51,
+          "amountHistoric": 5221.83
+        },
+        {
+          "tms": "T007000100113",
+          "amountRecent": 5855.48,
+          "amountHistoric": 8419.06
+        },
+        {
+          "tms": "0576020100330",
+          "amountRecent": 5504.06,
+          "amountHistoric": 4890.55
+        },
+        {
+          "tms": "0107001202800",
+          "amountRecent": 5355.13,
+          "amountHistoric": 4462.7
+        },
+        {
+          "tms": "0397000101901",
+          "amountRecent": 5225.98,
+          "amountHistoric": 3231.1
+        },
+        {
+          "tms": "0163000202200",
+          "amountRecent": 5190.34,
+          "amountHistoric": 2849.82
+        },
+        {
+          "tms": "0298000100402",
+          "amountRecent": 4966.22,
+          "amountHistoric": 5780
+        },
+        {
+          "tms": "T006000301300",
+          "amountRecent": 4741.27,
+          "amountHistoric": 8751.2
+        },
+        {
+          "tms": "0501040102000",
+          "amountRecent": 4519.48,
+          "amountHistoric": 3658.68
+        },
+        {
+          "tms": "0641010100810",
+          "amountRecent": 4393.99,
+          "amountHistoric": 3466.53
+        },
+        {
+          "tms": "0086000100200",
+          "amountRecent": 4351.33,
+          "amountHistoric": 2404.53
+        },
+        {
+          "tms": "T013000202700",
+          "amountRecent": 4320.39,
+          "amountHistoric": 1566.95
+        },
+        {
+          "tms": "0048000201200",
+          "amountRecent": 4024.84,
+          "amountHistoric": 4186.6
+        },
+        {
+          "tms": "0354000100802",
+          "amountRecent": 3952.61,
+          "amountHistoric": 3008.59
+        },
+        {
+          "tms": "0619010103202",
+          "amountRecent": 3899.79,
+          "amountHistoric": 3106.42
+        },
+        {
+          "tms": "0537050202003",
+          "amountRecent": 3834.96,
+          "amountHistoric": 6025.47
+        },
+        {
+          "tms": "0053000200200",
+          "amountRecent": 3768.06,
+          "amountHistoric": 1357.81
+        },
+        {
+          "tms": "0608030100100",
+          "amountRecent": 3533.85,
+          "amountHistoric": 3149.14
+        },
+        {
+          "tms": "0420000101501",
+          "amountRecent": 3314.7,
+          "amountHistoric": 2981.38
+        },
+        {
+          "tms": "0175000302400",
+          "amountRecent": 3287.75,
+          "amountHistoric": 1642.33
+        },
+        {
+          "tms": "0538070103300",
+          "amountRecent": 3281.67,
+          "amountHistoric": 2735.17
+        },
+        {
+          "tms": "0103002500500",
+          "amountRecent": 3269.83,
+          "amountHistoric": 2930.35
+        },
+        {
+          "tms": "0652080101200",
+          "amountRecent": 3214.41,
+          "amountHistoric": 4667.81
+        },
+        {
+          "tms": "0201000300800",
+          "amountRecent": 3185.69,
+          "amountHistoric": 4541.67
+        },
+        {
+          "tms": "0167000801600",
+          "amountRecent": 3174.49,
+          "amountHistoric": 875.1
+        },
+        {
+          "tms": "0652120100600",
+          "amountRecent": 3144.21,
+          "amountHistoric": 2976.14
+        },
+        {
+          "tms": "0577040111401",
+          "amountRecent": 3064.73,
+          "amountHistoric": 2513.36
+        },
+        {
+          "tms": "0145000701006",
+          "amountRecent": 2971.85,
+          "amountHistoric": 4618.02
+        },
+        {
+          "tms": "0389000100700",
+          "amountRecent": 2925.36,
+          "amountHistoric": 4459.27
+        },
+        {
+          "tms": "0374000301801",
+          "amountRecent": 2915.74,
+          "amountHistoric": 2433.55
+        },
+        {
+          "tms": "B014000100202",
+          "amountRecent": 2847.55,
+          "amountHistoric": 4239.85
+        },
+        {
+          "tms": "0053000200300",
+          "amountRecent": 2838.77,
+          "amountHistoric": 2145.15
+        },
+        {
+          "tms": "0127000401800",
+          "amountRecent": 2788.51,
+          "amountHistoric": 2367.73
+        },
+        {
+          "tms": "0620010100101",
+          "amountRecent": 2737.8,
+          "amountHistoric": 2093.95
+        },
+        {
+          "tms": "0136001301501",
+          "amountRecent": 2603.78,
+          "amountHistoric": 1470.71
+        },
+        {
+          "tms": "0588010102503",
+          "amountRecent": 2561.18,
+          "amountHistoric": 2066.84
+        },
+        {
+          "tms": "0372000200900",
+          "amountRecent": 2487.47,
+          "amountHistoric": 3795.11
+        },
+        {
+          "tms": "0121000100500",
+          "amountRecent": 2440.53,
+          "amountHistoric": 3673.83
+        },
+        {
+          "tms": "0246000100503",
+          "amountRecent": 2377.46,
+          "amountHistoric": 2366.17
+        },
+        {
+          "tms": "0252000100818",
+          "amountRecent": 2364.54,
+          "amountHistoric": 1944.78
+        },
+        {
+          "tms": "0119000901200",
+          "amountRecent": 2288.9,
+          "amountHistoric": 3076.06
+        },
+        {
+          "tms": "M015020201700",
+          "amountRecent": 2285.09,
+          "amountHistoric": 3067.88
+        },
+        {
+          "tms": "0645070101900",
+          "amountRecent": 2260.23,
+          "amountHistoric": 6721.6
+        },
+        {
+          "tms": "T009100108200",
+          "amountRecent": 2259.86,
+          "amountHistoric": 3349.35
+        },
+        {
+          "tms": "T007000110800",
+          "amountRecent": 2240.75,
+          "amountHistoric": 1997.07
+        },
+        {
+          "tms": "0646140101800",
+          "amountRecent": 2218.74,
+          "amountHistoric": 3495.96
+        },
+        {
+          "tms": "0645030101800",
+          "amountRecent": 2212.36,
+          "amountHistoric": 3653.58
+        },
+        {
+          "tms": "0499020102000",
+          "amountRecent": 2173.32,
+          "amountHistoric": 1079.04
+        },
+        {
+          "tms": "M015050100605",
+          "amountRecent": 2168.27,
+          "amountHistoric": 1402.23
+        },
+        {
+          "tms": "0254000300506",
+          "amountRecent": 2161.25,
+          "amountHistoric": 1815.62
+        },
+        {
+          "tms": "0067070201600",
+          "amountRecent": 2056.35,
+          "amountHistoric": 2887.76
+        },
+        {
+          "tms": "0605010101900",
+          "amountRecent": 2042.52,
+          "amountHistoric": 1435.61
+        },
+        {
+          "tms": "0539130101100",
+          "amountRecent": 2013.86,
+          "amountHistoric": 2688.14
+        },
+        {
+          "tms": "0634030102116",
+          "amountRecent": 2013.4,
+          "amountHistoric": 1568.24
+        },
+        {
+          "tms": "0379000401300",
+          "amountRecent": 2011.52,
+          "amountHistoric": 1680.13
+        },
+        {
+          "tms": "T029050102300",
+          "amountRecent": 2006.11,
+          "amountHistoric": 1628.75
+        },
+        {
+          "tms": "0174020500800",
+          "amountRecent": 2002.57,
+          "amountHistoric": 3268.08
+        },
+        {
+          "tms": "0505080102801",
+          "amountRecent": 1999.47,
+          "amountHistoric": 1505.93
+        },
+        {
+          "tms": "0493000601500",
+          "amountRecent": 1996.5,
+          "amountHistoric": 5848.95
+        },
+        {
+          "tms": "0314000301200",
+          "amountRecent": 1985.94,
+          "amountHistoric": 1503.62
+        },
+        {
+          "tms": "0373000300900",
+          "amountRecent": 1904.87,
+          "amountHistoric": 2713.65
+        },
+        {
+          "tms": "0638180100600",
+          "amountRecent": 1880.47,
+          "amountHistoric": 1506.95
+        },
+        {
+          "tms": "0538080104503",
+          "amountRecent": 1874.93,
+          "amountHistoric": 1580.7
+        },
+        {
+          "tms": "0471000101800",
+          "amountRecent": 1848.88,
+          "amountHistoric": 2580.68
+        },
+        {
+          "tms": "0175000302300",
+          "amountRecent": 1846.57,
+          "amountHistoric": 1532.36
+        },
+        {
+          "tms": "0663010101000",
+          "amountRecent": 1841.84,
+          "amountHistoric": 2385.8
+        },
+        {
+          "tms": "B011000304700",
+          "amountRecent": 1839.11,
+          "amountHistoric": 1450.21
+        },
+        {
+          "tms": "G015001200600",
+          "amountRecent": 1806.02,
+          "amountHistoric": 1260.21
+        },
+        {
+          "tms": "P032000112300",
+          "amountRecent": 1805.52,
+          "amountHistoric": 1297.53
+        },
+        {
+          "tms": "0176000109300",
+          "amountRecent": 1800.58,
+          "amountHistoric": 2763.1
+        },
+        {
+          "tms": "0171000801000",
+          "amountRecent": 1784.58,
+          "amountHistoric": 1464.56
+        },
+        {
+          "tms": "0667060104200",
+          "amountRecent": 1771.97,
+          "amountHistoric": 2502.3
+        },
+        {
+          "tms": "0248000215000",
+          "amountRecent": 1766.85,
+          "amountHistoric": 1462.99
+        },
+        {
+          "tms": "0631100100501",
+          "amountRecent": 1763.03,
+          "amountHistoric": 804.54
+        },
+        {
+          "tms": "0504020104313",
+          "amountRecent": 1753.21,
+          "amountHistoric": 1456.35
+        },
+        {
+          "tms": "0102000202700",
+          "amountRecent": 1731.21,
+          "amountHistoric": 2491.09
+        },
+        {
+          "tms": "0646070100700",
+          "amountRecent": 1663.47,
+          "amountHistoric": 2413.2
+        },
+        {
+          "tms": "0687060101900",
+          "amountRecent": 1659.33,
+          "amountHistoric": 677.79
+        },
+        {
+          "tms": "0102000218900",
+          "amountRecent": 1657.74,
+          "amountHistoric": 2391.07
+        },
+        {
+          "tms": "M004040100600",
+          "amountRecent": 1654.74,
+          "amountHistoric": 1081.03
+        },
+        {
+          "tms": "0122000502000",
+          "amountRecent": 1618.63,
+          "amountHistoric": 1329.23
+        },
+        {
+          "tms": "0646060100200",
+          "amountRecent": 1615.6,
+          "amountHistoric": 1298.04
+        },
+        {
+          "tms": "0164000601200",
+          "amountRecent": 1602.91,
+          "amountHistoric": 1321.23
+        },
+        {
+          "tms": "0542040107100",
+          "amountRecent": 1596.51,
+          "amountHistoric": 3122.24
+        },
+        {
+          "tms": "0112001206400",
+          "amountRecent": 1594.22,
+          "amountHistoric": 2309.61
+        },
+        {
+          "tms": "B002030400100",
+          "amountRecent": 1592.56,
+          "amountHistoric": 1998.16
+        },
+        {
+          "tms": "0054000504600",
+          "amountRecent": 1522.64,
+          "amountHistoric": 1072.74
+        },
+        {
+          "tms": "0155000900300",
+          "amountRecent": 1517.87,
+          "amountHistoric": 2354.5
+        },
+        {
+          "tms": "0243000300215",
+          "amountRecent": 1517.38,
+          "amountHistoric": 1932.63
+        },
+        {
+          "tms": "0238020100700",
+          "amountRecent": 1488.6,
+          "amountHistoric": 1476.73
+        },
+        {
+          "tms": "0384000100900",
+          "amountRecent": 1485.58,
+          "amountHistoric": 1988.81
+        },
+        {
+          "tms": "0619010103210",
+          "amountRecent": 1465.16,
+          "amountHistoric": 1724.28
+        },
+        {
+          "tms": "0253000101300",
+          "amountRecent": 1465.12,
+          "amountHistoric": 2083.24
+        },
+        {
+          "tms": "0235000400104",
+          "amountRecent": 1452.34,
+          "amountHistoric": 2009.2
+        },
+        {
+          "tms": "M011020203203",
+          "amountRecent": 1442.23,
+          "amountHistoric": 1164.05
+        },
+        {
+          "tms": "0111001501100",
+          "amountRecent": 1431.86,
+          "amountHistoric": 3409
+        },
+        {
+          "tms": "0110000602400",
+          "amountRecent": 1429.75,
+          "amountHistoric": 2007.11
+        },
+        {
+          "tms": "0226000100800",
+          "amountRecent": 1420.6,
+          "amountHistoric": 1989.66
+        },
+        {
+          "tms": "0612030102202",
+          "amountRecent": 1418.56,
+          "amountHistoric": 1051.29
+        },
+        {
+          "tms": "B005040100600",
+          "amountRecent": 1405.59,
+          "amountHistoric": 998.83
+        },
+        {
+          "tms": "0560030100804",
+          "amountRecent": 1399.41,
+          "amountHistoric": 982.67
+        },
+        {
+          "tms": "0591030100201",
+          "amountRecent": 1398.92,
+          "amountHistoric": 1672.12
+        },
+        {
+          "tms": "T022000100916",
+          "amountRecent": 1360.96,
+          "amountHistoric": 778.43
+        },
+        {
+          "tms": "0437000502100",
+          "amountRecent": 1358.7,
+          "amountHistoric": 1040.9
+        },
+        {
+          "tms": "0568040100809",
+          "amountRecent": 1348.8,
+          "amountHistoric": 1437.36
+        },
+        {
+          "tms": "0330010102601",
+          "amountRecent": 1341.41,
+          "amountHistoric": 1183.89
+        },
+        {
+          "tms": "0637040100800",
+          "amountRecent": 1319.66,
+          "amountHistoric": 1311.49
+        },
+        {
+          "tms": "0151000601600",
+          "amountRecent": 1318.48,
+          "amountHistoric": 893.73
+        },
+        {
+          "tms": "0238020100702",
+          "amountRecent": 1301.77,
+          "amountHistoric": 1128.69
+        },
+        {
+          "tms": "0492000102204",
+          "amountRecent": 1281.66,
+          "amountHistoric": 770.05
+        },
+        {
+          "tms": "0367000100205",
+          "amountRecent": 1265.15,
+          "amountHistoric": 1246.09
+        },
+        {
+          "tms": "0126000400700",
+          "amountRecent": 1256.16,
+          "amountHistoric": 1219.87
+        },
+        {
+          "tms": "0617060100900",
+          "amountRecent": 1256.06,
+          "amountHistoric": 861.82
+        },
+        {
+          "tms": "0247000506100",
+          "amountRecent": 1244.75,
+          "amountHistoric": 1207.87
+        },
+        {
+          "tms": "0416000100500",
+          "amountRecent": 1243.68,
+          "amountHistoric": 899.99
+        },
+        {
+          "tms": "0618010101428",
+          "amountRecent": 1243.02,
+          "amountHistoric": 907.06
+        },
+        {
+          "tms": "0548010102100",
+          "amountRecent": 1232.62,
+          "amountHistoric": 847.41
+        },
+        {
+          "tms": "0124000700800",
+          "amountRecent": 1208.63,
+          "amountHistoric": 1646.3
+        },
+        {
+          "tms": "0370000801100",
+          "amountRecent": 1190.75,
+          "amountHistoric": 823.55
+        },
+        {
+          "tms": "0645090100600",
+          "amountRecent": 1172.01,
+          "amountHistoric": 3975.08
+        },
+        {
+          "tms": "0175000302500",
+          "amountRecent": 1164.26,
+          "amountHistoric": 557.24
+        },
+        {
+          "tms": "0655020500600",
+          "amountRecent": 1163.9,
+          "amountHistoric": 985.76
+        },
+        {
+          "tms": "0405000105200",
+          "amountRecent": 1138.04,
+          "amountHistoric": 711.26
+        },
+        {
+          "tms": "T034000109100",
+          "amountRecent": 1135.81,
+          "amountHistoric": 1504.03
+        },
+        {
+          "tms": "P015010402500",
+          "amountRecent": 1119.19,
+          "amountHistoric": 1396.99
+        },
+        {
+          "tms": "0519000100900",
+          "amountRecent": 1104.11,
+          "amountHistoric": 1084.94
+        },
+        {
+          "tms": "0645020100502",
+          "amountRecent": 1102.28,
+          "amountHistoric": 752.85
+        },
+        {
+          "tms": "0664050100700",
+          "amountRecent": 1092.24,
+          "amountHistoric": 4389.32
+        },
+        {
+          "tms": "0170000400200",
+          "amountRecent": 1032.7,
+          "amountHistoric": 1110.09
+        },
+        {
+          "tms": "0616010104200",
+          "amountRecent": 1013.53,
+          "amountHistoric": 2187.16
+        },
+        {
+          "tms": "0645090100500",
+          "amountRecent": 999.69,
+          "amountHistoric": 2590.43
+        },
+        {
+          "tms": "T023000800902",
+          "amountRecent": 984.84,
+          "amountHistoric": 1198.99
+        },
+        {
+          "tms": "0511010103300",
+          "amountRecent": 984.02,
+          "amountHistoric": 1206.96
+        },
+        {
+          "tms": "M012040200204",
+          "amountRecent": 970.1,
+          "amountHistoric": 1386.54
+        },
+        {
+          "tms": "0567020101700",
+          "amountRecent": 931.48,
+          "amountHistoric": 860.15
+        },
+        {
+          "tms": "0501040100403",
+          "amountRecent": 927.29,
+          "amountHistoric": 700.23
+        },
+        {
+          "tms": "0514040100700",
+          "amountRecent": 918.9,
+          "amountHistoric": 601.16
+        },
+        {
+          "tms": "0024000100100",
+          "amountRecent": 895.08,
+          "amountHistoric": 820.56
+        },
+        {
+          "tms": "0645060100600",
+          "amountRecent": 840.12,
+          "amountHistoric": 1198.58
+        },
+        {
+          "tms": "0538090104101",
+          "amountRecent": 754.04,
+          "amountHistoric": 654.78
+        },
+        {
+          "tms": "T008000400600",
+          "amountRecent": 747.05,
+          "amountHistoric": 571.5
+        },
+        {
+          "tms": "0567010103302",
+          "amountRecent": 677.7,
+          "amountHistoric": 460.62
+        }
+      ],
       "changed": true
     },
     {
@@ -3105,7 +4187,7 @@
       "historic": null,
       "bothCount": 0,
       "both": [],
-      "changed": true
+      "changed": false
     },
     {
       "id": "jasper",
@@ -4523,7 +5605,7 @@
           "amountHistoric": 135.11
         }
       ],
-      "changed": true
+      "changed": false
     },
     {
       "id": "marion",
@@ -4569,9 +5651,64 @@
         "url": "https://oconeesc.com/delinquent-tax/sale-list",
         "idCount": 11
       },
-      "historic": null,
-      "bothCount": 0,
-      "both": [],
+      "historic": {
+        "year": 2022,
+        "url": "https://web.archive.org/web/20220522034419id_/https://oconeesc.com/delinquent-tax/sale-list",
+        "idCount": 11
+      },
+      "bothCount": 10,
+      "both": [
+        {
+          "tms": "1525571767401",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1516729492971",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1516897412099",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1516729492972",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1516927770138",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1524072684874",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1516644135296",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1634309085567",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1634309085570",
+          "amountRecent": null,
+          "amountHistoric": null
+        },
+        {
+          "tms": "1634309085571",
+          "amountRecent": null,
+          "amountHistoric": null
+        }
+      ],
       "changed": true
     },
     {
@@ -4614,10 +5751,14 @@
       "id": "spartanburg",
       "name": "Spartanburg",
       "recent": null,
-      "historic": null,
+      "historic": {
+        "year": 2020,
+        "url": "https://web.archive.org/web/20201204024542id_/https://www.spartanburgcounty.org/DocumentCenter/View/14895/2020-Tax-Sale-Ad-2nd-run-RE-with-updates",
+        "idCount": 847
+      },
       "bothCount": 0,
       "both": [],
-      "changed": false
+      "changed": true
     },
     {
       "id": "sumter",

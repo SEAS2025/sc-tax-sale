@@ -1,15 +1,15 @@
 # Hunt status
 
-Generated 2026-09-16 21:09 UTC from `site/data/repeat.json` and `inbox/hunt/state.json`.
+Generated 2026-09-17 00:44 UTC from `site/data/repeat.json` and `inbox/hunt/state.json`.
 
 A county is **paired** only when an officially hosted current list and an officially
 hosted 2020-2022 list share parcel identifiers. Counties with no hosted list are
 reported as empty; nothing here is inferred or filled in.
 
-- Paired counties: **5** of 46
-- Repeat parcels: **976**
-- Counties with a recent list: 12
-- Counties with a historic list: 7
+- Paired counties: **9** of 46
+- Repeat parcels: **1,221**
+- Counties with a recent list: 15
+- Counties with a historic list: 12
 
 | County | Recent list | Historic list | Repeat parcels | Status |
 | --- | --- | --- | ---: | --- |
@@ -17,25 +17,25 @@ reported as empty; nothing here is inferred or filled in.
 | Aiken | — | — | — | no list hosted yet; sale 2026-11-02; ad in Aiken Standard |
 | Allendale | — | — | — | nothing hosted found |
 | Anderson | — | — | — | no list hosted yet; sale 2026-10-19 |
-| Bamberg | 2025 (8,235 ids) | — | — | have 2025; no 2020-2022 archive found |
+| Bamberg | 2025 (696 ids) | — | — | have 2025; no 2020-2022 archive found |
 | Barnwell | — | — | — | nothing hosted found |
 | Beaufort | — | 2022 (2,245 ids) | — | have 2022 archive; no current list hosted |
-| Berkeley | — | — | — | nothing hosted found |
+| Berkeley | — | 2020 (727 ids) | — | have 2020 archive; no current list hosted |
 | Calhoun | 2025 (268 ids) | 2022 (243 ids) | 48 | paired |
 | Charleston | 2025 (811 ids) | 2021 (876 ids) | 118 | paired |
-| Cherokee | — | 2021 (111 ids) | — | have 2021 archive; no current list hosted |
-| Chester | — | — | — | no list hosted yet; ad in County newspapers, last three weeks of October |
+| Cherokee | 2024 (529 ids) | 2021 (111 ids) | 23 | paired |
+| Chester | — | — | — | blocked: www.chestercountysc.gov http-403; chestercountysc.gov http-403 |
 | Chesterfield | — | — | — | no list hosted yet; sale 2026-10-26; ad in County newspapers |
-| Clarendon | — | — | — | nothing hosted found |
+| Clarendon | 2024 (692 ids) | — | — | have 2024; no 2020-2022 archive found |
 | Colleton | 2026 (374 ids) | — | — | have 2026; no 2020-2022 archive found |
 | Darlington | — | — | — | nothing hosted found |
-| Dillon | 2026 (854 ids) | — | — | have 2026; no 2020-2022 archive found |
+| Dillon | 2026 (851 ids) | — | — | have 2026; no 2020-2022 archive found |
 | Dorchester | — | — | — | no list hosted yet; sale 2026-10-19 |
-| Edgefield | — | — | — | no list hosted yet; sale 2026-12-07 |
-| Fairfield | — | — | — | no list hosted yet; sale 2026-11-02; ad in Country Chronicle |
+| Edgefield | — | — | — | blocked: edgefieldcounty.sc.gov http-403 |
+| Fairfield | 2025 (300 ids) | 2021 (238 ids) | 62 | paired |
 | Florence | 2026 (1,434 ids) | 2021 (1,710 ids) | 369 | paired |
 | Georgetown | 2025 (280 ids) | — | — | have 2025; no 2020-2022 archive found |
-| Greenville | 2026 (1,995 ids) | — | — | have 2026; no 2020-2022 archive found |
+| Greenville | 2026 (1,905 ids) | 2021 (836 ids) | 150 | paired |
 | Greenwood | — | — | — | nothing hosted found |
 | Hampton | — | — | — | no list hosted yet |
 | Horry | 2026 (5,776 ids) | — | — | have 2026; no 2020-2022 archive found |
@@ -49,12 +49,12 @@ reported as empty; nothing here is inferred or filled in.
 | Marlboro | — | — | — | no list hosted yet; sale 2026-11-09; ad in Herald Advocate |
 | McCormick | — | — | — | no list hosted yet; sale 2026-10-05; ad in The McCormick Messenger |
 | Newberry | — | — | — | nothing hosted found |
-| Oconee | 2026 (11 ids) | — | — | have 2026; no 2020-2022 archive found |
+| Oconee | 2026 (11 ids) | 2022 (11 ids) | 10 | paired |
 | Orangeburg | — | — | — | no list hosted yet; sale 2026-12-14; ad in Times and Democrat |
 | Pickens | — | — | — | no list hosted yet; sale 2026-10-13; ad in Local newspaper and the delinquent-tax page |
 | Richland | — | — | — | nothing hosted found |
 | Saluda | — | — | — | no list hosted yet; sale 2026-12-08; ad in Twin City News |
-| Spartanburg | — | — | — | no list hosted yet; sale 2026-12-08 |
+| Spartanburg | — | 2020 (847 ids) | — | have 2020 archive; no current list hosted |
 | Sumter | — | — | — | nothing hosted found |
 | Union | — | — | — | no list hosted yet; sale 2026-11-10; ad in Union County News |
 | Williamsburg | 2025 (882 ids) | 2020 (1,522 ids) | 170 | paired |
